@@ -18,6 +18,8 @@
   --footer-default-invert-color-custom: #ffffff;
   --footer-default-invert-svg-color-custom: #ffffff;
 
+  --button-primary-color-custom: #ffffff;
+
   --header-default-margin-custom: 0 0 2em 0;
   --header-default-margin-mobile-custom: 0 0 2em 0;
 }
