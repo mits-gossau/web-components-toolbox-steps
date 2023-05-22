@@ -6,6 +6,18 @@
   */
 
 :root {
-  --background-color: #ffffff;
+  --background-color: #222222;
+  --color-disabled: #6c6c6c;
+  --color-hover: #433b4c;
+  --color-secondary: #1B191D;
+  --color-tertiary: #1B191D;
+  --color: #ffffff;
+  --footer-default-invert-svg-color-custom: #222222;
+
+  --navigation-default-color-custom: #ffffff;
+  --footer-default-invert-color-custom: #ffffff;
   --footer-default-invert-svg-color-custom: #ffffff;
+
+  --header-default-margin-custom: 0 0 2em 0;
+  --header-default-margin-mobile-custom: 0 0 2em 0;
 }
