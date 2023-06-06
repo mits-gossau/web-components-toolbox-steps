@@ -21,11 +21,12 @@
 
     --background-color: var(--steps-color-light-grey);
     --color: var(--steps-color-black);
-    --a-color: var(--steps-color-blue);
-    --color-hover: var(--steps-color-blue-light);
+    --a-color: var(--steps-color-black);
+    --color-hover: var(--steps-color-grey);
     --color-disabled: var(--steps-color-grey);
-    --color-secondary: var(--steps-color-blue);
+    --color-secondary: var(--steps-color-black);
     --color-tertiary: var(--steps-color-blue);
+    --button-quaternary-color-custom: var(--steps-color-black);
 
     --footer-default-invert-svg-color-custom: var(--steps-color-black);
     --navigation-default-color-custom: var(--steps-color-white);
@@ -51,6 +52,9 @@
     /* margins and paddings */
     --header-default-margin-custom: 0 0 2em 0;
     --header-default-margin-mobile-custom: 0 0 2em 0;
+
+    /* border radius */
+    --button-secondary-border-radius: 24px;
 }
 
 :root {
