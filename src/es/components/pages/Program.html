@@ -280,31 +280,45 @@
                 :host {
                   --button-secondary-width: 100%;
                 }
-                :host .event-items {
+                :host .event-list {
                   list-style: none;
                   margin: 1.25rem 0;
                   padding-left: 0;
                 }
-                :host .event-items li {
+                :host .event-item {
                   border-top: 1px solid var(--steps-color-black);
                   padding: 1.25rem 0;
-                }
-                :host .event-items li:last-child {
-                  border-bottom: 1px solid var(--steps-color-black)
-                }
-                :host .o-card-event {
                   display: flex;
                   flex-direction: row;
                   gap: 2rem;
                 }
-                :host .o-card-event p {
+                :host .event-item:last-child {
+                  border-bottom: 1px solid var(--steps-color-black)
+                }
+                :host .event-item p {
                   margin: 0;
+                }
+                :host .event-date {
+                  min-width: 100px;
+                  white-space: nowrap;
+                }
+                :host .event-date p {
+                  font-size: var(--h1-font-size);
+                }
+                :host .event-date span {
+                  display: block;
+                  font-size: 1.4rem;
                 }
                 :host .event-info {
                   display: flex;
                   flex-direction: column;
                   gap: 1.25rem;
                   width: 100%;
+                }
+                :host .event-info > * {
+                  flex-grow: 0;
+                  flex-shrink: 0;
+                  hyphens: auto;
                 }
                 :host .event-info .legend-icons {
                   display: inline-block;
@@ -316,61 +330,139 @@
                 :host .event-buttons {
                   display: flex;
                   flex-direction: column;
-                  align-items: flex-end;
+                  justify-content: center;
                   gap: 1.25rem;
                 }
                 :host .event-buttons a-button {
                   width: 100%;
                   white-space: nowrap;
                 }
+                :host .event-buttons > span {
+                  color: var(--steps-color-red);
+                }
+                :host .sold-out {
+                  color: var(--m-gray-400);
+                  cursor: not-allowed;
+                }
+                :host .sold-out img[src*="svg"] {
+                  opacity: 0.4;
+                }
                 
                 @media only screen and (min-width: 768px)  {
-                  :host .o-card-event { 
+                  :host .event-item { 
                     gap: 4rem;
                   }
+                  :host .event-date {
+                    min-width: 150px;
+                  }
                   :host .event-info {
-                    display: flex;
                     flex-direction: row;
                     justify-content: space-between;
-                    gap: 1.25rem;
+                  }
+                  :host .event-info > * {
+                    flex-basis: 20%;
+                  }
+                  :host .event-buttons {
+                    align-items: center;
                   }
                 }
               </style>
-              <ul class="event-items">
-                <li>
-                  <div class="o-card-event">
-                    <div class="event-date">
-                      <p><span>Samstag</span><br />24.12.</p>
-                    </div>
-                    <div class="event-info">
-                      <p>
-                        <strong>Far From The Norm (GBR)</strong><br />
-                        <span>BLKDOG</span><br />
-                        <span>Botis Seva</span>
-                      </p>
-                      <p>
-                        <strong>Neuchatel</strong><br />
-                        <span>Théatre du Passage, ADN</span>
-                      </p>
-                      <p>
-                        20.00 Uhr<br />
-                        <br />
-                        <span class="legend-icons">
-                          <img src="../../../img/icons/icon-uebertitel.svg" width="24" height="24" /> 
-                          <img src="../../../img/icons/icon-einfuehrung.svg" width="24" height="24" /> 
-                          <img src="../../../img/icons/icon-nachbesprechung.svg" width="24" height="24" /> 
-                          <img src="../../../img/icons/icon-familien.svg" width="24" height="24" />
-                        </span>
-                        <span class="legend-icons">
-                          <img src="../../../img/icons/icon-hoerbenachteiligung.svg" width="24" height="24" />
-                          <img src="../../../img/icons/icon-nicht-rollstuhlgaengig.svg" width="24" height="24" />
-                        </span>
-                      </p>
-                      <p class="event-buttons">
-                        <a-button namespace="button-secondary-">Info &#8594;</a-button>
-                        <a-button namespace="button-secondary-">Tickets &#8594;</a-button>
-                      </p>
-                    </div>
+              <ul class="event-list">
+                <li class="event-item">
+                  <div class="event-date">
+                    <p><span>Samstag</span>24.12.</p>
+                  </div>
+                  <div class="event-info">
+                    <p>
+                      <strong>Far From The Norm (GBR)</strong><br />
+                      <span>BLKDOG</span><br />
+                      <span>Botis Seva</span>
+                    </p>
+                    <p>
+                      <strong>Neuchatel</strong><br />
+                      <span>Théatre du Passage, ADN</span>
+                    </p>
+                    <p>
+                      20.00 Uhr<br />
+                      <br />
+                      <span class="legend-icons">
+                        <img src="../../../img/icons/icon-uebertitel.svg" width="24" height="24" /> 
+                        <img src="../../../img/icons/icon-einfuehrung.svg" width="24" height="24" /> 
+                        <img src="../../../img/icons/icon-nachbesprechung.svg" width="24" height="24" /> 
+                        <img src="../../../img/icons/icon-familien.svg" width="24" height="24" />
+                      </span>
+                      <span class="legend-icons">
+                        <img src="../../../img/icons/icon-hoerbenachteiligung.svg" width="24" height="24" />
+                        <img src="../../../img/icons/icon-nicht-rollstuhlgaengig.svg" width="24" height="24" />
+                      </span>
+                    </p>
+                    <p class="event-buttons">
+                      <a-button namespace="button-secondary-">Info &#8594;</a-button>
+                      <a-button namespace="button-secondary-">Tickets &#8594;</a-button>
+                    </p>
+                  </div>
+                </li>
+                <li class="event-item sold-out">
+                  <div class="event-date">
+                    <p><span>Samstag</span>10.5.</p>
+                  </div>
+                  <div class="event-info">
+                    <p>
+                      <strong>Mustername auf 4 Zeilen (DE)</strong><br />
+                      <span>Muster</span><br />
+                      <span>Hans Muster</span>
+                    </p>
+                    <p>
+                      <strong>St. Gallen</strong><br />
+                      <span>Theater St. Gallen, Schauspielhaus</span>
+                    </p>
+                    <p>
+                      19.30 Uhr<br />
+                      <br />
+                      <span class="legend-icons">
+                        <img src="../../../img/icons/icon-uebertitel.svg" width="24" height="24" /> 
+                        <img src="../../../img/icons/icon-einfuehrung.svg" width="24" height="24" /> 
+                      </span>
+                      <span class="legend-icons">
+                        <img src="../../../img/icons/icon-hoerbenachteiligung.svg" width="24" height="24" />
+                      </span>
+                    </p>
+                    <p class="event-buttons">
+                      <span>aus&shy;verkauft</span>
+                    </p>
+                  </div>
+                </li>
+                <li class="event-item">
+                  <div class="event-date">
+                    <p><span>Donnerstag</span>3.5.</p>
+                  </div>
+                  <div class="event-info">
+                    <p>
+                      <strong>Mustername (CH)</strong><br />
+                      <span>Muster Yeah</span><br />
+                      <span>Millena Muster</span>
+                    </p>
+                    <p>
+                      <strong>Basel</strong><br />
+                      <span>Kaserne Muster Muster auf</span>
+                    </p>
+                    <p>
+                      16.30 Uhr<br />
+                      <br />
+                      <span class="legend-icons">
+                        <img src="../../../img/icons/icon-uebertitel.svg" width="24" height="24" /> 
+                        <img src="../../../img/icons/icon-einfuehrung.svg" width="24" height="24" /> 
+                        <img src="../../../img/icons/icon-nachbesprechung.svg" width="24" height="24" /> 
+                      </span>
+                      <span class="legend-icons">
+                        <img src="../../../img/icons/icon-hoerbenachteiligung.svg" width="24" height="24" />
+                        <img src="../../../img/icons/icon-nicht-rollstuhlgaengig.svg" width="24" height="24" />
+                      </span>
+                    </p>
+                    <p class="event-buttons">
+                      <a-button namespace="button-secondary-">Info &#8594;</a-button>
+                      <a-button namespace="button-secondary-">Tickets &#8594;</a-button>
+                    </p>
                   </div>
                 </li>
               </ul>
