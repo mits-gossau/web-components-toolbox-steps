@@ -34,20 +34,28 @@
   --footer-default-invert-svg-color-custom: var(--steps-color-white);
   --button-primary-color-custom: var(--steps-color-white);
 
-  /* font sizes  */
-  --steps-font-size: 112.5%;
-  --steps-font-size-body: calc(0.875rem + 0.25vw);
-  --steps-font-size-h1: calc(1.5rem + 2.25vw);
-  --steps-font-size-h2: calc(1.125rem + 2vw);
-  --steps-font-size-h3: calc(1rem + 1.5vw);
-  --steps-font-size-h4: calc(0.875rem + 1.125vw);
-  --steps-font-size-h5: calc(0.875rem + 0.625vw);
-  --steps-font-size-h6: var(--font-size-body);
+  /* font family */
+  --font-family: sans-serif;
+  --font-family-strong: sans-serif;
 
+  /* font sizes  */
+  --steps-font-size: 62.5%; /* 10px */
+  --steps-font-size-body: calc(1.6rem + 0.225vw); /* ~18px */
+  --steps-font-size-h1: calc(2.5rem + 2.5vw);
+  --steps-font-size-h2: calc(2.25rem + 2vw);
+  --steps-font-size-h3: calc(2rem + 1.5vw);
+  --steps-font-size-h4: calc(1.875rem + 1vw);
+  --steps-font-size-h5: calc(1.75rem + 0.5vw);
+  --steps-font-size-h6: var(--steps-font-size-body);
+
+  --font-size: var(--steps-font-size-body);
+  --font-size-mobile: var(--steps-font-size-body);
   --h1-font-size: var(--steps-font-size-h1);
   --h2-font-size: var(--steps-font-size-h1);
   --h3-font-size: var(--steps-font-size-h1);
   --h6-font-size: var(--steps-font-size-h6);
+  --p-font-size: var(--steps-font-size-body);
+  --a-font-size: var(--steps-font-size-body);
 
   /* font weights */
   --a-font-weight: bold;
@@ -68,4 +76,8 @@
 :root {
   background-color: var(--background-color);
   color: var(--color);
+}
+
+html {
+  font-size: 62.5%;
 }

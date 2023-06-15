@@ -132,15 +132,17 @@
         <c-fetch-modules>
           <o-body>
 
-            <h1>Spielplan</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
+            <!-- <header>
+              <h1>Spielplan</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </header> -->
 
-            <section>
+            <!-- <section>
               <style>
                 :host ul.list-legend {
                   padding-left: 0;
@@ -171,9 +173,9 @@
                   F&uuml;r die ganze Familie
                 </li>
               </ul>
-            </section>
+            </section> -->
 
-            <section>
+            <!-- <section>
               <style>
                 :host .filter-buttons {
                   display: flex;
@@ -186,8 +188,8 @@
                   }
                 }
                 :host a-button:not(:last-child) {
-                  margin-right: 20px;
-                  margin-bottom: 20px;
+                  margin-right: 1.25rem;
+                  margin-bottom: 1.25rem;
                 }
                 @media only screen and (min-width: 768px)  {
                   :host a-button:not(:last-child) {
@@ -198,7 +200,7 @@
                   --button-secondary-font-family: var(--font-family-bold);
                 }
                 :host .filter-items {
-                  margin: 10px 0
+                  margin: 0.625rem 0
                 }
                 :host .filter-items ul {
                   padding-left: 0;
@@ -213,8 +215,8 @@
                   flex-direction: column;
                   align-items: center;
                   justify-content: space-between;
-                  margin: 0 20px 0 0;
-                  padding: 10px 0;
+                  margin: 0 1.25rem 0 0;
+                  padding: 0.625rem 0;
                 }
                 :host .filter-items a::before {
                   display: block;
@@ -227,7 +229,7 @@
                   margin: 0 1px;
                 }
                 :host .filter-items a:hover {
-                  color: var(--m-black);
+                  color: var(--steps-color-black);
                   font-family: var(--font-family-bold);
                   font-weight: normal;
                 }
@@ -235,8 +237,6 @@
               <div class="filter-buttons">
                 <a-button namespace="button-secondary-">Datum ausw&auml;hlen &#8594; &#x1F4C5;</a-button>
                 <a-button namespace="button-secondary-">Compagnien &#8594;</a-button>
-                <!-- → &#8594; ↓ &#8595; -->
-                <!--<a-button namespace="button-secondary-">Ort &#8594;</a-button>-->
                 <a-button namespace="button-secondary-" class="active">Ort &#8595;</a-button>
               </div>
               <div class="filter-items">
@@ -273,24 +273,64 @@
                   <li><a href="#" data-text="Biel/Bienne">Biel/Bienne</a></li> 
                 </ul>
               </div>
-            </section>
+            </section> -->
 
             <section>
+              <style>
+                :host .event-items {
+                  list-style: none;
+                  margin: 1.25rem 0;
+                  padding-left: 0;
+                }
+                :host .event-items li {
+                  border-top: 1px solid var(--steps-color-black);
+                  padding: 1.25rem 0;
+                }
+                :host .event-items li:last-child {
+                  border-bottom: 1px solid var(--steps-color-black)
+                }
+                :host .o-card-event {
+                  display: flex;
+                  flex-direction: row;
+                  gap: 1.25rem;
+                }
+                :host .o-card-event p {
+                  margin: 0;
+                }
+                :host .event-info {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 1.25rem;
+                }
+              </style>
               <ul class="event-items">
                 <li>
-                  <div>
-                    <div class="event-date"><small>Samstag</small><br />24.12.</div>
+                  <div class="o-card-event">
+                    <div class="event-date">
+                      <p><span>Samstag</span><br />24.12.</p>
+                    </div>
                     <div class="event-info">
-                      <div>
-                        <span class="event-title">Far From The Norm (GBR)</span><br />
+                      <p>
+                        <strong>Far From The Norm (GBR)</strong><br />
                         <span>BLKDOG</span><br />
                         <span>Botis Seva</span>
-                      </div>
-                      <div>
-                        <span class="event-title">Neuchatel</span><br />
+                      </p>
+                      <p>
+                        <strong>Neuchatel</strong><br />
                         <span>Théatre du Passage, ADN</span>
-                      </div>
-                      <div></div>
+                      </p>
+                      <p>
+                        20.00 Uhr<br />
+                        <br />
+                        <img src="../../../img/icons/icon-uebertitel.svg" width="24" height="24" /> 
+                        <img src="../../../img/icons/icon-einfuehrung.svg" width="24" height="24" /> 
+                        <img src="../../../img/icons/icon-nachbesprechung.svg" width="24" height="24" /> 
+                        <img src="../../../img/icons/icon-familien.svg" width="24" height="24" /> 
+                        &nbsp;&nbsp;&nbsp;
+                        <img src="../../../img/icons/icon-hoerbenachteiligung.svg" width="24" height="24" />
+                        <img src="../../../img/icons/icon-nicht-rollstuhlgaengig.svg" width="24" height="24" />
+                      </p>
+                      <p><a-button namespace="button-secondary-">Tickets &#8594;</a-button></p>
                     </div>
                   </div>
                 </li>
