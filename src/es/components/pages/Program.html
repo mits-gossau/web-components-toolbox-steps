@@ -291,6 +291,7 @@
                   display: flex;
                   flex-direction: row;
                   gap: 2rem;
+                  position: relative;
                 }
                 :host .event-item:last-child {
                   border-bottom: 1px solid var(--steps-color-black)
@@ -337,15 +338,26 @@
                   width: 100%;
                   white-space: nowrap;
                 }
-                :host .event-buttons > span {
-                  color: var(--steps-color-red);
-                }
                 :host .sold-out {
                   color: var(--m-gray-400);
                   cursor: not-allowed;
                 }
+                :host .sold-out .event-buttons,
                 :host .sold-out img[src*="svg"] {
                   opacity: 0.4;
+                }
+                :host .badge-sold-out {
+                  background-color: var(--steps-color-white);
+                  border: 2px dashed var(--steps-color-red);
+                  color: var(--steps-color-red);
+                  display: inline-block;
+                  padding: 1.25rem;
+                  position: absolute;
+                  top: calc(50% - 32.5px);
+                  left: calc(50% - 100px);
+                  text-align: center;
+                  transform: rotate(2deg);
+                  width: 200px;
                 }
                 
                 @media only screen and (min-width: 768px)  {
@@ -403,6 +415,7 @@
                   </div>
                 </li>
                 <li class="event-item sold-out">
+                  <p class="badge-sold-out">aus&shy;verkauft</p>
                   <div class="event-date">
                     <p><span>Samstag</span>10.5.</p>
                   </div>
@@ -428,7 +441,7 @@
                       </span>
                     </p>
                     <p class="event-buttons">
-                      <span>aus&shy;verkauft</span>
+                      <a-button namespace="button-secondary-">Info &#8594;</a-button>
                     </p>
                   </div>
                 </li>
