@@ -1,0 +1,22 @@
+{
+    "events": [
+        {
+            "title": "Event 1",
+            "location": "Ort 1",
+            "date": "Datum 1",
+            "description": "Beschreibung 1"
+        },
+        {
+            "title": "Event 2",
+            "location": "Ort 2",
+            "date": "Datum 2",
+            "description": "Beschreibung 2"
+        },
+        {
+            "title": "Event 3",
+            "location": "Ort 3",
+            "date": "Datum 3",
+            "description": "Beschreibung 3"
+        }
+    ]
+}

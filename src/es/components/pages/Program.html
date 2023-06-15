@@ -132,6 +132,10 @@
         <c-fetch-modules>
           <o-body>
 
+            <script src="../organisms/eventList/EventList.js" ></script>
+            <event-list json-url="http://localhost:3003/events"></event-list>
+
+
             <!-- <header>
               <h1>Spielplan</h1>
               <p>
@@ -275,7 +279,7 @@
               </div>
             </section> -->
 
-            <section>
+            <!-- <section>
               <style>
                 :host {
                   --button-secondary-width: 100%;
@@ -345,6 +349,9 @@
                 :host .sold-out .event-buttons,
                 :host .sold-out img[src*="svg"] {
                   opacity: 0.4;
+                }
+                :host .sold-out .event-buttons a-button:last-child {
+                  display: none;
                 }
                 :host .badge-sold-out {
                   background-color: var(--steps-color-white);
@@ -442,6 +449,7 @@
                     </p>
                     <p class="event-buttons">
                       <a-button namespace="button-secondary-">Info &#8594;</a-button>
+                      <a-button namespace="button-secondary-">Tickets &#8594;</a-button>
                     </p>
                   </div>
                 </li>
@@ -479,7 +487,7 @@
                   </div>
                 </li>
               </ul>
-            </section>
+            </section> -->
 
 
           </o-body>
