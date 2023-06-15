@@ -216,22 +216,20 @@
                   margin: 0 20px 0 0;
                   padding: 10px 0;
                 }
-                :host .filter-items a::after {
+                :host .filter-items a::before {
+                  display: block;
                   content: attr(data-text);
-                  content: attr(data-text)/"";
+                  font-family: var(--font-family-bold);
+                  font-weight: normal;
                   height: 0;
-                  visibility: hidden;
                   overflow: hidden;
-                  -webkit-user-select: none;
-                     -moz-user-select: none;
-                      -ms-user-select: none;
-                          user-select: none;
-                  pointer-events: none;
-                  font-weight: var(--font-family-bold);
+                  visibility: hidden;
+                  margin: 0 1px;
                 }
                 :host .filter-items a:hover {
                   color: var(--m-black);
                   font-family: var(--font-family-bold);
+                  font-weight: normal;
                 }
               </style>
               <div class="filter-buttons">
