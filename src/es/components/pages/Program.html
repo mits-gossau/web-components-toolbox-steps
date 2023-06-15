@@ -277,6 +277,9 @@
 
             <section>
               <style>
+                :host {
+                  --button-secondary-width: 100%;
+                }
                 :host .event-items {
                   list-style: none;
                   margin: 1.25rem 0;
@@ -292,7 +295,7 @@
                 :host .o-card-event {
                   display: flex;
                   flex-direction: row;
-                  gap: 1.25rem;
+                  gap: 2rem;
                 }
                 :host .o-card-event p {
                   margin: 0;
@@ -301,6 +304,36 @@
                   display: flex;
                   flex-direction: column;
                   gap: 1.25rem;
+                  width: 100%;
+                }
+                :host .event-info .legend-icons {
+                  display: inline-block;
+                  white-space: nowrap;
+                }
+                :host .event-info .legend-icons:not(:last-child) {
+                  margin-right: 1.25rem;
+                }
+                :host .event-buttons {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-end;
+                  gap: 1.25rem;
+                }
+                :host .event-buttons a-button {
+                  width: 100%;
+                  white-space: nowrap;
+                }
+                
+                @media only screen and (min-width: 768px)  {
+                  :host .o-card-event { 
+                    gap: 4rem;
+                  }
+                  :host .event-info {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    gap: 1.25rem;
+                  }
                 }
               </style>
               <ul class="event-items">
@@ -322,15 +355,21 @@
                       <p>
                         20.00 Uhr<br />
                         <br />
-                        <img src="../../../img/icons/icon-uebertitel.svg" width="24" height="24" /> 
-                        <img src="../../../img/icons/icon-einfuehrung.svg" width="24" height="24" /> 
-                        <img src="../../../img/icons/icon-nachbesprechung.svg" width="24" height="24" /> 
-                        <img src="../../../img/icons/icon-familien.svg" width="24" height="24" /> 
-                        &nbsp;&nbsp;&nbsp;
-                        <img src="../../../img/icons/icon-hoerbenachteiligung.svg" width="24" height="24" />
-                        <img src="../../../img/icons/icon-nicht-rollstuhlgaengig.svg" width="24" height="24" />
+                        <span class="legend-icons">
+                          <img src="../../../img/icons/icon-uebertitel.svg" width="24" height="24" /> 
+                          <img src="../../../img/icons/icon-einfuehrung.svg" width="24" height="24" /> 
+                          <img src="../../../img/icons/icon-nachbesprechung.svg" width="24" height="24" /> 
+                          <img src="../../../img/icons/icon-familien.svg" width="24" height="24" />
+                        </span>
+                        <span class="legend-icons">
+                          <img src="../../../img/icons/icon-hoerbenachteiligung.svg" width="24" height="24" />
+                          <img src="../../../img/icons/icon-nicht-rollstuhlgaengig.svg" width="24" height="24" />
+                        </span>
                       </p>
-                      <p><a-button namespace="button-secondary-">Tickets &#8594;</a-button></p>
+                      <p class="event-buttons">
+                        <a-button namespace="button-secondary-">Info &#8594;</a-button>
+                        <a-button namespace="button-secondary-">Tickets &#8594;</a-button>
+                      </p>
                     </div>
                   </div>
                 </li>
