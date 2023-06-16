@@ -1,3 +1,5 @@
+import('../../web-components-toolbox/src/es/components/atoms/button/Button.js').then(module => self.customElements.define('a-button', module.default));
+
 class EventList extends HTMLElement {
   constructor() {
     super();
