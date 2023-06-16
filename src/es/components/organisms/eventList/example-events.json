@@ -6,11 +6,13 @@
         "uebertitel",
         "einfuehrung",
         "nachbesprechung",
-        "familien",
+        "familien"
+      ],
+      "location": "Neuchatel",
+      "location_icons": [
         "hoerbenachteiligung",
         "nicht-rollstuhlgaengig"
       ],
-      "location": "Neuchatel",
       "location_subline": "Théatre du Passage, ADN",
       "sold_out": false,
       "title": "Far From The Norm (GBR)",
@@ -18,8 +20,11 @@
     },
     {
       "timestamp": "1703442600",
-      "icons": ["uebertitel", "einfuehrung", "hoerbenachteiligung"],
+      "icons": ["uebertitel", "einfuehrung"],
       "location": "St. Gallen",
+      "location_icons": [
+        "hoerbenachteiligung"
+      ],
       "location_subline": "Theater St. Gallen, Schauspielhaus",
       "sold_out": true,
       "title": "Mustername auf 4 Zeilen (DE)",
@@ -30,11 +35,13 @@
       "icons": [
         "uebertitel",
         "einfuehrung",
-        "nachbesprechung",
+        "nachbesprechung"
+      ],
+      "location": "Basel",
+      "location_icons": [
         "hoerbenachteiligung",
         "nicht-rollstuhlgaengig"
       ],
-      "location": "Basel",
       "location_subline": "Kaserne Muster Muster auf",
       "sold_out": false,
       "title": "Mustername (CH)",

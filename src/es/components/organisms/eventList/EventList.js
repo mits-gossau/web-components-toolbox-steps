@@ -37,10 +37,20 @@ class EventList extends HTMLElement {
       });
 
       /* icons */
-      const icons = event.icons;
-      let iconImages = "";
-      for (const icon of icons) {
-        iconImages +=
+      const eventIconsArray = event.icons;
+      let eventIcons = "";
+      for (const icon of eventIconsArray) {
+        eventIcons +=
+          '<img src="../../../img/icons/icon-' +
+          icon +
+          '.svg" class="legend-icon-' +
+          icon +
+          '" width="24" height="24" />';
+      }
+      const locationIconsArray = event.location_icons;
+      let locationIcons = "";
+      for (const icon of locationIconsArray) {
+        locationIcons +=
           '<img src="../../../img/icons/icon-' +
           icon +
           '.svg" class="legend-icon-' +
@@ -67,7 +77,10 @@ class EventList extends HTMLElement {
                 ${time} Uhr<br />
                 <br />
                 <span class="legend-icons">
-                  ${iconImages}
+                  ${eventIcons}
+                </span>
+                <span class="legend-icons">
+                  ${locationIcons}
                 </span>
               </p>
               <p class="event-buttons">
@@ -127,15 +140,8 @@ class EventList extends HTMLElement {
           }
           :host .legend-icons {
             display: inline-block;
+            margin-right: 1.25rem;
             white-space: nowrap;
-          }
-          :host .legend-icon-hoerbenachteiligung,
-          :host .legend-icon-nicht-rollstuhlgaengig {
-            margin-left: 1.25rem;
-          }
-          :host .legend-icon-hoerbenachteiligung +
-          .legend-icon-nicht-rollstuhlgaengig {
-            margin-left: 0;
           }
           :host .event-buttons {
             display: flex;
