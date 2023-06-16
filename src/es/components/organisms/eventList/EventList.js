@@ -46,15 +46,9 @@ class EventList extends HTMLElement {
           '" width="24" height="24" />';
       }
 
-      /* badge */
-      const soldOut = event.sold_out;
-      const soldOutMessage = soldOut
-        ? '<p class="badge-sold-out">aus&shy;verkauft</p>'
-        : "";
-
       eventHtml += /*html*/ `
-          <li class="event-item">
-            ${soldOutMessage}
+          <li class="${event.sold_out ? "sold-out event-item" : "event-item"}">
+            ${event.sold_out ? '<p class="badge-sold-out">aus&shy;verkauft</p>' : ""}
             <div class="event-date">
               <p><span>${weekDay}</span>${dateShort}</p>
             </div>
@@ -108,8 +102,8 @@ class EventList extends HTMLElement {
             margin: 0;
           }
           :host .event-date {
-            min-width: 100px;
             white-space: nowrap;
+            min-width: 28vw;
           }
           :host .event-date p {
             font-size: var(--h1-font-size);
@@ -174,6 +168,7 @@ class EventList extends HTMLElement {
             text-align: center;
             transform: rotate(2deg);
             width: 200px;
+            z-index: 2;
           }
           
           @media only screen and (min-width: 768px)  {
@@ -181,7 +176,7 @@ class EventList extends HTMLElement {
               gap: 4rem;
             }
             :host .event-date {
-              min-width: 150px;
+              min-width: 15vw;
             }
             :host .event-info {
               flex-direction: row;
