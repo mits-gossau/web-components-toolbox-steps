@@ -1,22 +1,44 @@
 {
-    "events": [
-        {
-            "title": "Event 1",
-            "location": "Ort 1",
-            "date": "Datum 1",
-            "description": "Beschreibung 1"
-        },
-        {
-            "title": "Event 2",
-            "location": "Ort 2",
-            "date": "Datum 2",
-            "description": "Beschreibung 2"
-        },
-        {
-            "title": "Event 3",
-            "location": "Ort 3",
-            "date": "Datum 3",
-            "description": "Beschreibung 3"
-        }
-    ]
+  "events": [
+    {
+      "timestamp": "1692122400",
+      "icons": [
+        "uebertitel",
+        "einfuehrung",
+        "nachbesprechung",
+        "familien",
+        "hoerbenachteiligung",
+        "nicht-rollstuhlgaengig"
+      ],
+      "location": "Neuchatel",
+      "location_subline": "Théatre du Passage, ADN",
+      "sold_out": false,
+      "title": "Far From The Norm (GBR)",
+      "title_subline": "BLKDOG<br />Botis Seva"
+    },
+    {
+      "timestamp": "1703442600",
+      "icons": ["uebertitel", "einfuehrung", "hoerbenachteiligung"],
+      "location": "St. Gallen",
+      "location_subline": "Theater St. Gallen, Schauspielhaus",
+      "sold_out": true,
+      "title": "Mustername auf 4 Zeilen (DE)",
+      "title_subline": "Muster<br />Hans Muster"
+    },
+    {
+      "timestamp": "1692208800",
+      "icons": [
+        "uebertitel",
+        "einfuehrung",
+        "nachbesprechung",
+        "hoerbenachteiligung",
+        "nicht-rollstuhlgaengig"
+      ],
+      "location": "Basel",
+      "location_subline": "Kaserne Muster Muster auf",
+      "sold_out": false,
+      "title": "Mustername (CH)",
+      "title_subline": "Muster Yeah<br />Millena Muster"
+    }
+  ]
 }
