@@ -1,4 +1,6 @@
-import('../../web-components-toolbox/src/es/components/atoms/button/Button.js').then(module => self.customElements.define('a-button', module.default));
+import(
+  "../../web-components-toolbox/src/es/components/atoms/button/Button.js"
+).then((module) => self.customElements.define("a-button", module.default));
 
 class EventList extends HTMLElement {
   constructor() {
@@ -60,7 +62,11 @@ class EventList extends HTMLElement {
 
       eventHtml += /*html*/ `
           <li class="${event.sold_out ? "sold-out event-item" : "event-item"}">
-            ${event.sold_out ? '<p class="badge-sold-out">aus&shy;verkauft</p>' : ""}
+            ${
+              event.sold_out
+                ? '<p class="badge-sold-out">aus&shy;verkauft</p>'
+                : ""
+            }
             <div class="event-date">
               <p><span>${weekDay}</span>${dateShort}</p>
             </div>
@@ -83,9 +89,9 @@ class EventList extends HTMLElement {
                   ${locationIcons}
                 </span>
               </p>
-              <p class="event-buttons">
-                <a-button namespace="button-secondary-">Info &#8594;</a-button>
+              <p class="event-cta">
                 <a-button namespace="button-secondary-">Tickets &#8594;</a-button>
+                <a href="#">Mehr Details</a>
               </p>
             </div>
           </li>
@@ -96,6 +102,7 @@ class EventList extends HTMLElement {
         <style>
           :host {
             --button-secondary-width: 100%;
+            --event-plan-date-font-size: calc(2.5rem + 1vw);
           }
           :host .event-list {
             list-style: none;
@@ -121,7 +128,7 @@ class EventList extends HTMLElement {
             min-width: 28vw;
           }
           :host .event-date p {
-            font-size: var(--h1-font-size);
+            font-size: var(--event-plan-date-font-size);
           }
           :host .event-date span {
             display: block;
@@ -143,25 +150,30 @@ class EventList extends HTMLElement {
             margin-right: 1.25rem;
             white-space: nowrap;
           }
-          :host .event-buttons {
+          :host .event-cta {
             display: flex;
             flex-direction: column;
             justify-content: center;
             gap: 1.25rem;
+            padding: 1.25rem 0;
           }
-          :host .event-buttons a-button {
+          :host .event-cta a-button {
             width: 100%;
             white-space: nowrap;
+          }
+          :host .event-cta a {
+            padding: var(--button-secondary-padding);
+            padding-left: 0;
           }
           :host .sold-out {
             color: var(--m-gray-400);
             cursor: not-allowed;
           }
-          :host .sold-out .event-buttons,
+          :host .sold-out .event-cta,
           :host .sold-out img[src*="svg"] {
             opacity: 0.4;
           }
-          :host .sold-out .event-buttons a-button:last-child {
+          :host .sold-out .event-cta a-button {
             display: none;
           }
           :host .badge-sold-out {
@@ -184,7 +196,7 @@ class EventList extends HTMLElement {
               gap: 4rem;
             }
             :host .event-date {
-              min-width: 15vw;
+              min-width: 10vw;
             }
             :host .event-info {
               flex-direction: row;
@@ -193,8 +205,11 @@ class EventList extends HTMLElement {
             :host .event-info > * {
               flex-basis: 20%;
             }
-            :host .event-buttons {
+            :host .event-cta {
               align-items: center;
+            }
+            :host .event-cta a {
+              padding-left: var(--button-secondary-padding);
             }
           }
         </style>
