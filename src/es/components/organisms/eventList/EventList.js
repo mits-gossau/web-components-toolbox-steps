@@ -163,8 +163,7 @@ class EventList extends HTMLElement {
             white-space: nowrap;
           }
           :host .event-cta a {
-            padding: var(--button-secondary-padding);
-            padding-left: 0;
+            padding-top: var(--button-secondary-padding) ;
           }
           :host .sold-out {
             color: var(--m-gray-400);
@@ -203,15 +202,15 @@ class EventList extends HTMLElement {
               flex-direction: row;
               justify-content: space-between;
             }
-            :host .event-info > * {
+            :host .event-info > *:first-child {
+              flex-basis: 25%;
+            }
+            :host .event-info > *:not(:first-child) {
               flex-basis: 20%;
             }
             :host .event-cta {
               align-items: center;
               padding: 0;
-            }
-            :host .event-cta a {
-              padding-left: var(--button-secondary-padding);
             }
           }
         </style>

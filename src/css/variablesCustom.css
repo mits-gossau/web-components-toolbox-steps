@@ -64,7 +64,7 @@
   --header-default-margin-custom: 0 0 2rem 0;
   --header-default-margin-mobile-custom: 0 0 2rem 0;
   --h-margin-bottom: 0.25em;
-  --button-secondary-padding: 0.5rem 1rem;
+  --button-secondary-padding: 0.25rem 0.75rem;
   --a-margin: 0;
 
   /* border radius */
