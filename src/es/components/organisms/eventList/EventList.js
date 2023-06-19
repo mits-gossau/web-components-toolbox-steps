@@ -153,9 +153,10 @@ class EventList extends HTMLElement {
           :host .event-cta {
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-between;
             gap: 1.25rem;
             padding: 1.25rem 0;
+            font-size: var(--font-size);
           }
           :host .event-cta a-button {
             width: 100%;
@@ -207,6 +208,7 @@ class EventList extends HTMLElement {
             }
             :host .event-cta {
               align-items: center;
+              padding: 0;
             }
             :host .event-cta a {
               padding-left: var(--button-secondary-padding);
