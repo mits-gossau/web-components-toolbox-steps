@@ -48,7 +48,7 @@ export default class EventList extends Shadow() {
     this.css = /* css */`
       :host {
         --button-secondary-width: 100%;
-        --event-date-font-size: calc(2.5rem + 1vw);
+        --button-secondary-font-size: 1rem;
       }
       :host .event-list {
         list-style: none;
@@ -60,7 +60,7 @@ export default class EventList extends Shadow() {
         padding: 1.25rem 0;
         display: flex;
         flex-direction: row;
-        gap: 2rem;
+        gap: 1rem;
         position: relative;
       }
       :host .event-item:last-child {
@@ -78,7 +78,7 @@ export default class EventList extends Shadow() {
       }
       :host .event-date span {
         display: block;
-        font-size: 1.4rem;
+        font-size: 1.8rem;
       }
       :host .event-info {
         display: flex;
@@ -102,13 +102,14 @@ export default class EventList extends Shadow() {
         justify-content: space-between;
         gap: 1.25rem;
         padding: 1.25rem 0;
-        font-size: var(--font-size);
+        font-size: 1rem;
       }
       :host .event-cta a-button {
         width: 100%;
         white-space: nowrap;
       }
       :host .event-cta a {
+        color: var(--steps-color-black);
         padding-top: var(--button-secondary-padding) ;
       }
       :host .sold-out {
@@ -139,7 +140,7 @@ export default class EventList extends Shadow() {
       
       @media only screen and (min-width: 768px)  {
         :host .event-item { 
-          gap: 4rem;
+          gap: 2rem;
         }
         :host .event-date {
           min-width: 10vw;
@@ -209,7 +210,7 @@ export default class EventList extends Shadow() {
                 : ''
             }
             <div class="event-date">
-              <p><span>${weekDay}</span>${dateShort}</p>
+              <p>${weekDay}<br /><span>${dateShort}</span></p>
             </div>
             <div class="event-info">
               <p>
