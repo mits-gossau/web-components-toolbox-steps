@@ -102,7 +102,7 @@ class EventList extends HTMLElement {
         <style>
           :host {
             --button-secondary-width: 100%;
-            --event-plan-date-font-size: calc(2.5rem + 1vw);
+            --event-date-font-size: calc(2.5rem + 1vw);
           }
           :host .event-list {
             list-style: none;
@@ -128,7 +128,7 @@ class EventList extends HTMLElement {
             min-width: 28vw;
           }
           :host .event-date p {
-            font-size: var(--event-plan-date-font-size);
+            font-size: var(--event-date-font-size);
           }
           :host .event-date span {
             display: block;
