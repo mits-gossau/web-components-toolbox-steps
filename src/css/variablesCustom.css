@@ -48,14 +48,14 @@
   --steps-font-size-h5: calc(1.75rem + 0.5vw);
   --steps-font-size-h6: var(--steps-font-size-body);
 
-  --font-size: var(--steps-font-size-body);
+  /* --font-size: var(--steps-font-size-body);
   --font-size-mobile: var(--steps-font-size-body);
   --h1-font-size: var(--steps-font-size-h1);
   --h2-font-size: var(--steps-font-size-h1);
   --h3-font-size: var(--steps-font-size-h1);
   --h6-font-size: var(--steps-font-size-h6);
   --p-font-size: var(--steps-font-size-body);
-  --a-font-size: var(--steps-font-size-body);
+  --a-font-size: var(--steps-font-size-body); */
 
   /* font weights */
   --a-font-weight: bold;
