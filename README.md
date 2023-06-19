@@ -10,7 +10,7 @@ Official frontend repository of [steps.ch](https://steps.ch)
 npm run update
 ```
 
-👇 Run web server with demo pages
+👇 Run web server with demo pages incl. json server
 
 ```
 npm run serve
@@ -23,6 +23,8 @@ npm run fix
 ```
 
 ## Local JSON Server
+
+> Hint: The JSON server is running with the web server together (see scripts)
 
 Install JSON Server
 
