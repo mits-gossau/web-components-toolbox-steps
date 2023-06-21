@@ -112,31 +112,6 @@ export default class EventList extends Shadow() {
         color: var(--steps-color-black);
         padding-top: var(--button-secondary-padding) ;
       }
-      :host .sold-out {
-        color: var(--m-gray-400);
-        cursor: not-allowed;
-      }
-      :host .sold-out .event-cta,
-      :host .sold-out img[src*="svg"] {
-        opacity: 0.4;
-      }
-      :host .sold-out .event-cta a-button {
-        display: none;
-      }
-      :host .badge-sold-out {
-        background-color: var(--steps-color-white);
-        border: 2px dashed var(--steps-color-red);
-        color: var(--steps-color-red);
-        display: inline-block;
-        padding: 1.25rem;
-        position: absolute;
-        top: calc(50% - 32.5px);
-        left: calc(50% - 100px);
-        text-align: center;
-        transform: rotate(2deg);
-        width: 200px;
-        z-index: 2;
-      }
       
       @media only screen and (min-width: 768px)  {
         :host .event-item { 
@@ -191,7 +166,7 @@ export default class EventList extends Shadow() {
           icon +
           '" width="24" height="24" />'
       }
-      const locationIconsArray = event.location_icons
+      const locationIconsArray = event.locationIcons
       let locationIcons = ''
       for (const icon of locationIconsArray) {
         locationIcons +=
@@ -202,24 +177,23 @@ export default class EventList extends Shadow() {
           '" width="24" height="24" />'
       }
 
+      /* buttons */
+      const ctaButton = `<a-button namespace="button-secondary-">Tickets &#8594;</a-button>`
+      const soldOutButton = `<a-button namespace="button-secondary-">ausverkauft</a-button>`
+
       eventHtml += /* html */ `
-          <li class="${event.sold_out ? 'sold-out event-item' : 'event-item'}">
-            ${
-              event.sold_out
-                ? '<p class="badge-sold-out">ausverkauft</p>'
-                : ''
-            }
+          <li class="event-item">
             <div class="event-date">
               <p>${weekDay}<br /><span>${dateShort}</span></p>
             </div>
             <div class="event-info">
               <p>
                 <strong>${event.title}</strong><br />
-                <span>${event.title_subline}</span>
+                <span>${event.titleSubline}</span>
               </p>
               <p>
                 <strong>${event.location}</strong><br />
-                <span>${event.location_subline}</span>
+                <span>${event.locationSubline}</span>
               </p>
               <p>
                 ${time} Uhr<br />
@@ -232,7 +206,7 @@ export default class EventList extends Shadow() {
                 </span>
               </p>
               <p class="event-cta">
-                <a-button namespace="button-secondary-">Tickets &#8594;</a-button>
+                ${event.soldOut ? soldOutButton : ctaButton}
                 <a href="#">Mehr Details</a>
               </p>
             </div>

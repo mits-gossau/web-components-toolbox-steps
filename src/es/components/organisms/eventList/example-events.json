@@ -8,15 +8,15 @@
         "familien"
       ],
       "location": "Neuchatel",
-      "location_icons": [
+      "locationIcons": [
         "hoerbenachteiligung",
         "nicht-rollstuhlgaengig"
       ],
-      "location_subline": "Théatre du Passage, ADN",
-      "sold_out": false,
+      "locationSubline": "Théatre du Passage, ADN",
+      "soldOut": false,
       "timestamp": "1692122400",
       "title": "Far From The Norm (GBR)",
-      "title_subline": "BLKDOG<br />Botis Seva"
+      "titleSubline": "BLKDOG<br />Botis Seva"
     },
     {
       "icons": [
@@ -24,14 +24,14 @@
         "einfuehrung"
       ],
       "location": "St. Gallen",
-      "location_icons": [
+      "locationIcons": [
         "hoerbenachteiligung"
       ],
-      "location_subline": "Theater St. Gallen, Schauspielhaus",
-      "sold_out": true,
+      "locationSubline": "Theater St. Gallen, Schauspielhaus",
+      "soldOut": true,
       "timestamp": "1703442600",
       "title": "Mustername auf 4 Zeilen (DE)",
-      "title_subline": "Muster<br />Hans Muster"
+      "titleSubline": "Muster<br />Hans Muster"
     },
     {
       "icons": [
@@ -40,15 +40,15 @@
         "nachbesprechung"
       ],
       "location": "Basel",
-      "location_icons": [
+      "locationIcons": [
         "hoerbenachteiligung",
         "nicht-rollstuhlgaengig"
       ],
-      "location_subline": "Kaserne Muster Muster auf",
-      "sold_out": false,
+      "locationSubline": "Kaserne Muster Muster auf",
+      "soldOut": false,
       "timestamp": "1692208800",
       "title": "Mustername (CH)",
-      "title_subline": "Muster Yeah<br />Millena Muster"
+      "titleSubline": "Muster Yeah<br />Millena Muster"
     }
   ]
 }
