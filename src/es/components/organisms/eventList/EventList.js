@@ -3,7 +3,7 @@ import { Shadow } from '../../web-components-toolbox/src/es/components/prototype
 import(
   '../../web-components-toolbox/src/es/components/atoms/button/Button.js'
 // @ts-ignore
-).then((module) => self.customElements.define('a-button', module.default))
+).then((module) => customElements.define('a-button', module.default))
 
 /**
  * EventList

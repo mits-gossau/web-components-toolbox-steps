@@ -1,9 +1,9 @@
 // @ts-check
-import { Shadow } from "../../web-components-toolbox/src/es/components/prototypes/Shadow.js";
+import { Shadow } from '../../web-components-toolbox/src/es/components/prototypes/Shadow.js'
 import(
-  "../../web-components-toolbox/src/es/components/atoms/button/Button.js"
+  '../../web-components-toolbox/src/es/components/atoms/button/Button.js'
   // @ts-ignore
-).then((module) => self.customElements.define("a-button", module.default));
+).then((module) => customElements.define('a-button', module.default))
 
 /**
  * EventCard
@@ -15,24 +15,24 @@ import(
  */
 
 export default class EventCard extends Shadow() {
-  constructor(options = {}, ...args) {
-    super({ importMetaUrl: import.meta.url, ...options }, ...args);
-    this.event = {};
+  constructor (options = {}, ...args) {
+    super({ importMetaUrl: import.meta.url, ...options }, ...args)
+    this.event = {}
   }
 
-  connectedCallback() {
-    if (this.shouldRenderCSS()) this.renderCSS();
+  connectedCallback () {
+    if (this.shouldRenderCSS()) this.renderCSS()
     this.event = {
-      icons: JSON.parse(this.getAttribute("icons")),
-      location: this.getAttribute("location"),
-      locationIcons: JSON.parse(this.getAttribute("location-icons")),
-      locationSubline: this.getAttribute("location-subline"),
-      soldOut: this.getAttribute("sold-out") === "true",
-      timestamp: this.getAttribute("timestamp"),
-      title: this.getAttribute("title"),
-      titleSubline: this.getAttribute("title-subline"),
-    };
-    this.renderHTML();
+      icons: JSON.parse(this.getAttribute('icons')),
+      location: this.getAttribute('location'),
+      locationIcons: JSON.parse(this.getAttribute('location-icons')),
+      locationSubline: this.getAttribute('location-subline'),
+      soldOut: this.getAttribute('sold-out') === 'true',
+      timestamp: this.getAttribute('timestamp'),
+      title: this.getAttribute('title'),
+      titleSubline: this.getAttribute('title-subline')
+    }
+    this.renderHTML()
   }
 
   /**
@@ -40,13 +40,13 @@ export default class EventCard extends Shadow() {
    *
    * @return {boolean}
    */
-  shouldRenderCSS() {
+  shouldRenderCSS () {
     return !this.root.querySelector(
       `:host > style[_css], ${this.tagName} > style[_css]`
-    );
+    )
   }
 
-  renderCSS() {
+  renderCSS () {
     this.css = /* css */ `
       :host {
         --button-secondary-width: 100%;
@@ -162,64 +162,64 @@ export default class EventCard extends Shadow() {
           padding: 0;
         }
       }
-    `;
+    `
   }
 
-  renderHTML() {
-    let eventHtml = "";
+  renderHTML () {
+    let eventHtml = ''
 
     /* date and time */
     const weekDay = new Date(this.event.timestamp * 1000).toLocaleDateString(
-      "de-CH",
+      'de-CH',
       {
-        weekday: "long",
+        weekday: 'long'
       }
-    );
+    )
     const dateShort = new Date(this.event.timestamp * 1000).toLocaleDateString(
-      "de-CH",
+      'de-CH',
       {
-        day: "numeric",
-        month: "numeric",
+        day: 'numeric',
+        month: 'numeric'
       }
-    );
+    )
     const time = new Date(this.event.timestamp * 1000).toLocaleTimeString(
-      "de-CH",
+      'de-CH',
       {
-        hour: "2-digit",
-        minute: "2-digit",
+        hour: '2-digit',
+        minute: '2-digit'
       }
-    );
+    )
 
     /* icons */
-    const eventIconsArray = this.event.icons;
-    let eventIcons = "";
+    const eventIconsArray = this.event.icons
+    let eventIcons = ''
     for (const icon of eventIconsArray) {
       eventIcons +=
         '<img src="../../img/icons/icon-' +
         icon +
         '.svg" class="legend-icon-' +
         icon +
-        '" width="24" height="24" />';
+        '" width="24" height="24" />'
     }
-    const locationIconsArray = this.event.locationIcons;
-    let locationIcons = "";
+    const locationIconsArray = this.event.locationIcons
+    let locationIcons = ''
     for (const icon of locationIconsArray) {
       locationIcons +=
         '<img src="../../img/icons/icon-' +
         icon +
         '.svg" class="legend-icon-' +
         icon +
-        '" width="24" height="24" />';
+        '" width="24" height="24" />'
     }
 
     eventHtml += /* html */ `
           <div class="${
-            this.event.soldOut ? "sold-out event-item" : "event-item"
+            this.event.soldOut ? 'sold-out event-item' : 'event-item'
           }">
             ${
               this.event.soldOut
                 ? '<p class="badge-sold-out">ausverkauft</p>'
-                : ""
+                : ''
             }
             <div class="event-date">
               <p>${weekDay}<br /><span>${dateShort}</span></p>
@@ -249,12 +249,12 @@ export default class EventCard extends Shadow() {
               </p>
             </div>
           </div>
-        `;
+        `
 
     this.html = /* html */ `
         <div class="event-card">
           ${eventHtml}
         </div>
-      `;
+      `
   }
 }
