@@ -60,27 +60,10 @@
   --font-family: HelveticaNowText, Helvetica, Arial, sans-serif;
 
   /* font sizes  */
-  --steps-font-size: 62.5%; /* 10px */
-  --steps-font-size-body: calc(1.6rem + 0.225vw); /* ~18px */
-  --steps-font-size-h1: calc(2.5rem + 2.5vw);
-  --steps-font-size-h2: calc(2.25rem + 2vw);
-  --steps-font-size-h3: calc(2rem + 1.5vw);
-  --steps-font-size-h4: calc(1.875rem + 1vw);
-  --steps-font-size-h5: calc(1.75rem + 0.5vw);
-  --steps-font-size-h6: var(--steps-font-size-body);
-
-/*   
-  --font-size: var(--steps-font-size-body);
-  --font-size-mobile: var(--steps-font-size-body);
-  --h1-font-size: var(--steps-font-size-h1);
-  --h2-font-size: var(--steps-font-size-h1);
-  --h3-font-size: var(--steps-font-size-h1);
-  --h6-font-size: var(--steps-font-size-h6);
-  --p-font-size: var(--steps-font-size-body);
-  --a-font-size: var(--steps-font-size-body);
-  */
-  /* --font-size: 112.5%;
-  --font-size-mobile: 100%;  */
+  --steps-h-font-size: clamp(32px, 5vw, 50px);
+  --h1-font-size: var(--steps-h-font-size);
+  --h2-font-size: var(--steps-h-font-size);
+  --h3-font-size: var(--steps-h-font-size);
 
   /* font weights */
   --a-font-weight: bold;
