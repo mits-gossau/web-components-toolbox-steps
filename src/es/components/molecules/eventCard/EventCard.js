@@ -114,31 +114,6 @@ export default class EventCard extends Shadow() {
         color: var(--steps-color-black);
         padding-top: var(--button-secondary-padding) ;
       }
-      :host .sold-out {
-        color: var(--m-gray-400);
-        cursor: not-allowed;
-      }
-      :host .sold-out .event-cta,
-      :host .sold-out img[src*="svg"] {
-        opacity: 0.4;
-      }
-      :host .sold-out .event-cta a-button {
-        display: none;
-      }
-      :host .badge-sold-out {
-        background-color: var(--steps-color-white);
-        border: 2px dashed var(--steps-color-red);
-        color: var(--steps-color-red);
-        display: inline-block;
-        padding: 1.25rem;
-        position: absolute;
-        top: calc(50% - 32.5px);
-        left: calc(50% - 100px);
-        text-align: center;
-        transform: rotate(2deg);
-        width: 200px;
-        z-index: 2;
-      }
       
       @media only screen and (min-width: 768px)  {
         :host .event-item { 
@@ -212,26 +187,24 @@ export default class EventCard extends Shadow() {
         '" width="24" height="24" />'
     }
 
+    /* buttons */
+    const ctaButton = `<a-button namespace="button-secondary-">Tickets &#8594;</a-button>`
+    const soldOutButton = `<a-button namespace="button-secondary-">ausverkauft</a-button>`
+
+
     eventHtml += /* html */ `
-          <div class="${
-            this.event.soldOut ? 'sold-out event-item' : 'event-item'
-          }">
-            ${
-              this.event.soldOut
-                ? '<p class="badge-sold-out">ausverkauft</p>'
-                : ''
-            }
+          <div class="event-item">
             <div class="event-date">
               <p>${weekDay}<br /><span>${dateShort}</span></p>
             </div>
             <div class="event-info">
               <p>
                 <strong>${this.event.title}</strong><br />
-                <span>${this.event.title_subline}</span>
+                <span>${this.event.titleSubline}</span>
               </p>
               <p>
                 <strong>${this.event.location}</strong><br />
-                <span>${this.event.location_subline}</span>
+                <span>${this.event.locationSubline}</span>
               </p>
               <p>
                 ${time} Uhr<br />
@@ -244,7 +217,7 @@ export default class EventCard extends Shadow() {
                 </span>
               </p>
               <p class="event-cta">
-                <a-button namespace="button-secondary-">Tickets &#8594;</a-button>
+                ${this.event.soldOut ? soldOutButton : ctaButton}
                 <a href="#">Mehr Details</a>
               </p>
             </div>
