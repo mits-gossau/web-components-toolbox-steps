@@ -217,7 +217,12 @@
       separateFolder: true
     },
     {
-      selector: 'steps-',
+      selector: 'm-steps-',
+      url: 'molecules/',
+      separateFolder: true
+    },
+    {
+      selector: 'o-steps-',
       url: 'organisms/',
       separateFolder: true
     }
