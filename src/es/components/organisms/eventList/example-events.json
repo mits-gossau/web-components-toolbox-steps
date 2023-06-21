@@ -1,7 +1,6 @@
 {
   "events": [
     {
-      "timestamp": "1692122400",
       "icons": [
         "uebertitel",
         "einfuehrung",
@@ -15,23 +14,26 @@
       ],
       "location_subline": "Théatre du Passage, ADN",
       "sold_out": false,
+      "timestamp": "1692122400",
       "title": "Far From The Norm (GBR)",
       "title_subline": "BLKDOG<br />Botis Seva"
     },
     {
-      "timestamp": "1703442600",
-      "icons": ["uebertitel", "einfuehrung"],
+      "icons": [
+        "uebertitel",
+        "einfuehrung"
+      ],
       "location": "St. Gallen",
       "location_icons": [
         "hoerbenachteiligung"
       ],
       "location_subline": "Theater St. Gallen, Schauspielhaus",
       "sold_out": true,
+      "timestamp": "1703442600",
       "title": "Mustername auf 4 Zeilen (DE)",
       "title_subline": "Muster<br />Hans Muster"
     },
     {
-      "timestamp": "1692208800",
       "icons": [
         "uebertitel",
         "einfuehrung",
@@ -44,6 +46,7 @@
       ],
       "location_subline": "Kaserne Muster Muster auf",
       "sold_out": false,
+      "timestamp": "1692208800",
       "title": "Mustername (CH)",
       "title_subline": "Muster Yeah<br />Millena Muster"
     }
