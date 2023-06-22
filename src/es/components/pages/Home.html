@@ -1,29 +1,84 @@
-<h1>Headline 1</h1>
-<h2>Headline 2</h2>
-<h3>Headline 3</h3>
-<p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-  <u>incididunt ut labore</u> et dolore magna aliqua. Ut enim ad minim veniam,
-  quis nostrud exercitation <i>ullamco laboris nisi</i> ut aliquip ex ea commodo
-  consequat. Duis aute irure dolor in reprehenderit involuptate velit esse
-  cillum dolore eu <b>fugiat nulla pariatur</b>.Excepteur sint occaecat
-  cupidatat <strike>non proident</strike>, sunt in culpa qui
-  <a href="#">officia deserunt mollit</a> anim id est laborum.
-</p>
-<p>&nbsp;</p>
-<p>
-  <a href="#">
-    <strong>Link with additional html &lt;strong&gt; tag</strong>
-  </a>
-</p>
-<p>
-  <a href="#">Link with css <code>font-weight: bold;</code> </a>
-</p>
-<p>&nbsp;</p>
-<div>
-  <a-button namespace="button-secondary-">Button</a-button>
-  <a-button namespace="button-secondary-" disabled>Button</a-button><br /><br />
-  <a-button namespace="button-quaternary-">Button</a-button>
-  <a-button namespace="button-quaternary-" disabled>Button</a-button>
-</div>
-<p>&nbsp;</p>
+<section style="min-height: 100vh">
+  <a-emotion-pictures namespace="emotion-pictures-with-logo-" tabindex="0" role="banner" class="visible">
+    <div class="shown">
+      <div>
+        <h2 class="font-size-big font-family-secondary">
+          Save the Date!<br />Next Steps:
+        </h2>
+        <h2 class="font-size-big font-family-secondary subline">
+          24.4. - 19.5.2024
+        </h2>
+        <div class="spacer-one"></div>
+        <a-button
+          hover-on-parent-shadow-root-host=""
+          namespace="button-primary-"
+          href="/spielplan"
+          target="_self"
+          tabindex="0"
+          data-href="/spielplan"
+          role="link"
+          hover=""
+          class=""
+        >
+          <a href="/spielplan" target="_self" type="button">
+            <span id="label">Zum Newsletter</span>
+          </a>
+        </a-button>
+      </div>
+      <a-picture
+        loading="eager"
+        tabindex="0"
+        loaded-bad-quality="true"
+        loaded="true"
+      >
+        <picture>
+          <source
+            media="(min-width:768px)"
+            data-srcset="https://testadmin.steps.ch/media/fldpvp5z/projekt-header-steps-2022-compagnie-massala.jpg?anchor=center&amp;mode=crop&amp;width=1440&amp;format=jpg&amp;quality=80&amp;rnd=133316536657930000"
+            srcset="
+              https://testadmin.steps.ch/media/fldpvp5z/projekt-header-steps-2022-compagnie-massala.jpg?anchor=center&amp;mode=crop&amp;width=1440&amp;format=jpg&amp;quality=80&amp;rnd=133316536657930000
+            " />
+          <img
+            data-src="https://testadmin.steps.ch/media/eynm4brz/5_steps2022_visual-fluxsartwork.jpeg?anchor=center&amp;mode=crop&amp;width=664&amp;format=jpeg&amp;quality=80&amp;rnd=133318354515130000"
+            decoding="sync"
+            loading="eager"
+            src="https://testadmin.steps.ch/media/eynm4brz/5_steps2022_visual-fluxsartwork.jpeg?anchor=center&amp;mode=crop&amp;width=664&amp;format=jpeg&amp;quality=80&amp;rnd=133318354515130000"
+        /></picture>
+      </a-picture>
+    </div>
+  </a-emotion-pictures>
+</section>
+
+<section>
+  <h1>Headline 1</h1>
+  <h2>Headline 2</h2>
+  <h3>Headline 3</h3>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor
+    <u>incididunt ut labore</u> et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation <i>ullamco laboris nisi</i> ut aliquip ex ea
+    commodo consequat. Duis aute irure dolor in reprehenderit involuptate velit
+    esse cillum dolore eu <b>fugiat nulla pariatur</b>.Excepteur sint occaecat
+    cupidatat <strike>non proident</strike>, sunt in culpa qui
+    <a href="#">officia deserunt mollit</a> anim id est laborum.
+  </p>
+  <p>&nbsp;</p>
+  <p>
+    <a href="#">
+      <strong>Link with additional html &lt;strong&gt; tag</strong>
+    </a>
+  </p>
+  <p>
+    <a href="#">Link with css <code>font-weight: bold;</code> </a>
+  </p>
+  <p>&nbsp;</p>
+  <div>
+    <a-button namespace="button-secondary-">Button</a-button>
+    <a-button namespace="button-secondary-" disabled>Button</a-button
+    ><br /><br />
+    <a-button namespace="button-quaternary-">Button</a-button>
+    <a-button namespace="button-quaternary-" disabled>Button</a-button>
+  </div>
+  <p>&nbsp;</p>
+</section>
