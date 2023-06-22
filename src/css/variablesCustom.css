@@ -82,6 +82,8 @@
   /* content */
   --ul-list-style: none;
   --any-content-width: 100vw;
+  --any-content-width-mobile: 100vw;
+  --any-content-spacing-mobile: 0;
   
 }
 
