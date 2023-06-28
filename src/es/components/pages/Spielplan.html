@@ -1,51 +1,53 @@
 <div style="padding: 20px">
 
-<header>
-  <h1>Spielplan</h1>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat.
-  </p>
-</header>
+  <header>
+    <h1>Spielplan</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat.
+    </p>
+  </header>
 
-<o-steps-event-list json-url="http://localhost:3003/events"></o-steps-event-list>
-<script src="../organisms/eventList/EventList.js" type="module"></script>
+  <section>
+    <style>
+      :host ul.list-legend {
+        padding-left: 0;
+      }
+      :host ul.list-legend li img[src$="svg"] {
+        position: relative;
+        top: -2px;
+        margin-right: 2px;
+        width: 24px;
+        height: 24px;
+      }
+    </style>
+    <ul class="list-legend">
+      <li>
+        <img src="/src/img/icons/icon-uebertitel.svg" width="24" height="24" />
+        Deskriptive &Uuml;bertitel
+      </li>
+      <li>
+        <img src="/src/img/icons/icon-einfuehrung.svg" width="24" height="24" />
+        Einf&uuml;hrung
+      </li>
+      <li>
+        <img src="/src/img/icons/icon-nachbesprechung.svg" width="24" height="24" />
+        Nachbesprechung
+      </li>
+      <li>
+        <img src="/src/img/icons/icon-familien.svg" width="24" height="24" />
+        F&uuml;r die ganze Familie
+      </li>
+    </ul>
+  </section> 
+
+  <o-steps-event-list json-url="http://localhost:3003/events"></o-steps-event-list>
+  <script src="../organisms/eventList/EventList.js" type="module"></script>
 
 </div>
-<!-- <section>
-              <style>
-                :host ul.list-legend {
-                  padding-left: 0;
-                }
-                :host ul.list-legend li img[src$="svg"] {
-                  position: relative;
-                  top: -2px;
-                  margin-right: 2px;
-                  width: 24px;
-                  height: 24px;
-                }
-              </style>
-              <ul class="list-legend">
-                <li>
-                  <img src="../../../img/icons/icon-uebertitel.svg" width="24" height="24" />
-                  Deskriptive &Uuml;bertitel
-                </li>
-                <li>
-                  <img src="../../../img/icons/icon-einfuehrung.svg" width="24" height="24" />
-                  Einf&uuml;hrung
-                </li>
-                <li>
-                  <img src="../../../img/icons/icon-nachbesprechung.svg" width="24" height="24" />
-                  Nachbesprechung
-                </li>
-                <li>
-                  <img src="../../../img/icons/icon-familien.svg" width="24" height="24" />
-                  F&uuml;r die ganze Familie
-                </li>
-              </ul>
-            </section> -->
+
 
 <!-- <section>
               <style>
