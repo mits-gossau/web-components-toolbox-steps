@@ -65,9 +65,6 @@ export default class EventCard extends Shadow() {
         gap: 1rem;
         position: relative;
       }
-      /*:host .event-item:last-child {
-        border-bottom: 1px solid var(--steps-color-black)
-      }*/
       :host .event-item p {
         margin: 0;
       }
