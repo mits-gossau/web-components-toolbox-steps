@@ -167,7 +167,7 @@ export default class EventCard extends Shadow() {
     let eventIcons = ''
     for (const icon of eventIconsArray) {
       eventIcons +=
-        '<img src="src/img/icons/icon-' +
+        '<img src="../../../../img/icons/icon-' +
         icon +
         '.svg" class="legend-icon-' +
         icon +
@@ -177,7 +177,7 @@ export default class EventCard extends Shadow() {
     let locationIcons = ''
     for (const icon of locationIconsArray) {
       locationIcons +=
-        '<img src="src/img/icons/icon-' +
+        '<img src="../../../../img/icons/icon-' +
         icon +
         '.svg" class="legend-icon-' +
         icon +
