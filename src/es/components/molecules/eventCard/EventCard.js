@@ -63,7 +63,7 @@ export default class EventCard extends Shadow() {
         --button-secondary-width: 100%;
         --button-secondary-font-size: 1rem;
       }
-      :host .event-item {
+      :host .event-card {
         border-top: 1px solid var(--steps-color-black);
         padding: 1.25rem 0;
         display: flex;
@@ -71,7 +71,7 @@ export default class EventCard extends Shadow() {
         gap: 1rem;
         position: relative;
       }
-      :host .event-item p {
+      :host .event-card p {
         margin: 0;
       }
       :host .event-date {
@@ -119,7 +119,7 @@ export default class EventCard extends Shadow() {
       }
       
       @media only screen and (min-width: 768px)  {
-        :host .event-item { 
+        :host .event-card { 
           gap: 2rem;
         }
         :host .event-date {
@@ -147,26 +147,11 @@ export default class EventCard extends Shadow() {
     let eventHtml = ''
 
     // date and time
-    const weekDay = new Date(this.event.timestamp * 1000).toLocaleDateString(
-      'de-CH',
-      {
-        weekday: 'long'
-      }
-    )
-    const dateShort = new Date(this.event.timestamp * 1000).toLocaleDateString(
-      'de-CH',
-      {
-        day: 'numeric',
-        month: 'numeric'
-      }
-    )
-    const time = new Date(this.event.timestamp * 1000).toLocaleTimeString(
-      'de-CH',
-      {
-        hour: '2-digit',
-        minute: '2-digit'
-      }
-    )
+    const eventTimestamp = new Date(this.event.timestamp * 1000);
+
+    const weekDay = eventTimestamp.toLocaleDateString('de-CH', { weekday: 'long' });
+    const dateShort = eventTimestamp.toLocaleDateString('de-CH', { day: 'numeric', month: 'numeric' });
+    const time = eventTimestamp.toLocaleTimeString('de-CH', { hour: '2-digit', minute: '2-digit' });
 
     // icons
     const generateIconHTML = (iconsArray) => {
@@ -184,43 +169,40 @@ export default class EventCard extends Shadow() {
     const ctaButton = `<a-button namespace="button-secondary-">${this.translationTexts.buttonTickets} &#8594;</a-button>`
     const soldOutButton = `<a-button namespace="button-secondary-">${this.translationTexts.soldOut}</a-button>`
 
-
-    eventHtml += /* html */ `
-      <div class="event-item">
-        <div class="event-date">
-          <p>${weekDay}<br /><span>${dateShort}</span></p>
-        </div>
-        <div class="event-info">
-          <p>
-            <strong>${this.event.company}</strong><br />
-            <span>${this.event.production}<br />${this.event.choreographer}</span>
-          </p>
-          <p>
-            <strong>${this.location.name}</strong><br />
-            <span>${this.location.subline}</span>
-          </p>
-          <p>
-            ${time} ${this.translationTexts.timeSuffix}<br />
-            <br />
-            <span class="legend-icons">
-              ${eventIcons}
-            </span>
-            <span class="legend-icons">
-              ${locationIcons}
-            </span>
-          </p>
-          <p class="event-cta">
-            ${this.event.soldOut ? soldOutButton : ctaButton}
-            <a href="#">${this.translationTexts.linkDetails}</a>
-          </p>
-        </div>
+    const eventInfoHtml = /* html */ `
+      <div class="event-info">
+        <p>
+          <strong>${this.event.company}</strong><br />
+          <span>${this.event.production}<br />${this.event.choreographer}</span>
+        </p>
+        <p>
+          <strong>${this.location.name}</strong><br />
+          <span>${this.location.subline}</span>
+        </p>
+        <p>
+          ${time} ${this.translationTexts.timeSuffix}<br />
+          <br />
+          <span class="legend-icons">
+            ${eventIcons}
+          </span>
+          <span class="legend-icons">
+            ${locationIcons}
+          </span>
+        </p>
+        <p class="event-cta">
+          ${this.event.soldOut ? soldOutButton : ctaButton}
+          <a href="#">${this.translationTexts.linkDetails}</a>
+        </p>
       </div>
-    `
+    `;
 
     this.html = /* html */ `
       <div class="event-card">
-        ${eventHtml}
+        <div class="event-date">
+          <p>${weekDay}<br /><span>${dateShort}</span></p>
+        </div>
+        ${eventInfoHtml}
       </div>
-    `
+    `;
   }
 }
