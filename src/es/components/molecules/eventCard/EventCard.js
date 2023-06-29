@@ -22,28 +22,39 @@ export default class EventCard extends Shadow() {
     this.translationTexts = {}
   }
 
-  connectedCallback () {
-    if (this.shouldRenderCSS()) this.renderCSS()
+  connectedCallback() {
+    if (this.shouldRenderCSS()) {
+      this.renderCSS();
+    }
+
+    // icons
+    const eventIcons = JSON.parse(this.getAttribute('eventIcons'));
+    const locationIcons = JSON.parse(this.getAttribute('locationIcons'));
+
+    // properties
     this.event = {
       choreographer: this.getAttribute('choreographer'),
       company: this.getAttribute('company'),
-      icons: this.getAttribute('eventIcons'),
+      icons: eventIcons,
       production: this.getAttribute('production'),
       soldOut: this.getAttribute('soldOut') === 'true',
       timestamp: this.getAttribute('timestamp'),
-    }
+    };
+
     this.location = {
       name: this.getAttribute('location'),
-      icons: this.getAttribute('locationIcons'),
+      icons: locationIcons,
       subline: this.getAttribute('locationSubline'),
-    }
+    };
+
     this.translationTexts = {
       buttonTickets: this.getAttribute('textButtonTickets'),
       linkDetails: this.getAttribute('textLinkDetails'),
       soldOut: this.getAttribute('textSoldOut'),
       timeSuffix: this.getAttribute('textTimeSuffix'),
-    }
-    this.renderHTML()
+    };
+
+    this.renderHTML();
   }
 
   /**
