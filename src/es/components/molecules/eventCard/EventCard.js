@@ -171,8 +171,8 @@ export default class EventCard extends Shadow() {
       return icons;
     };
 
-    const eventIcons = generateIconHTML(JSON.parse(this.event.icons));
-    const locationIcons = generateIconHTML(JSON.parse(this.location.icons));
+    const eventIcons = generateIconHTML(this.event.icons);
+    const locationIcons = generateIconHTML(this.location.icons);
 
     // buttons
     const ctaButton = `<a-button namespace="button-secondary-">${this.translationTexts.buttonTickets} &#8594;</a-button>`
