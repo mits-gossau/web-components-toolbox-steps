@@ -106,9 +106,26 @@
       }
     </style>
     <div class="filter-buttons">
-      <a-button namespace="button-secondary-"
+      
+      <input 
+        style="display: hidden"
+        type="date" 
+        id="date-picker" 
+        name="date-picker"
+        min="2024-08-20" 
+        max="2024-09-12"
+      ><a-button namespace="button-secondary-" id="dateButton"
         >Datum ausw&auml;hlen &#8594; &#x1F4C5;</a-button
       >
+      <script type="text/javascript">
+        window.addEventListener('load',function(){
+          document.getElementById("dateButton").addEventListener("click", () => {
+            console.log("dateButton clicked");
+            document.getElementById("date-picker").focus();
+          });
+        });
+      </script>
+
       <a-button namespace="button-secondary-">Compagnien &#8594;</a-button>
       <a-button namespace="button-secondary-" class="active"
         >Ort &#8595;</a-button
@@ -155,3 +172,4 @@
   ></o-steps-event-list>
   <script src="../organisms/eventList/EventList.js" type="module"></script>
 </div>
+
