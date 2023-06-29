@@ -1,54 +1,87 @@
 {
   "events": [
     {
-      "icons": [
-        "uebertitel",
-        "einfuehrung",
-        "nachbesprechung",
-        "familien"
-      ],
-      "location": "Neuchatel",
-      "locationIcons": [
-        "hoerbenachteiligung",
-        "nicht-rollstuhlgaengig"
-      ],
-      "locationSubline": "Théatre du Passage, ADN",
-      "soldOut": false,
-      "timestamp": "1692122400",
-      "title": "Far From The Norm (GBR)",
-      "titleSubline": "BLKDOG<br />Botis Seva"
+      "event": {
+        "choreographer": "Botis Seva",
+        "company": "BLKDOG",
+        "icons": [
+          "uebertitel",
+          "einfuehrung",
+          "nachbesprechung",
+          "familien"
+        ],
+        "production": "BLKDOG",
+        "soldOut": false,
+        "timestamp": "1692122400"
+      },
+      "location": {
+        "name": "Zürich",
+        "subline": "Théatre du Passage, ADN",
+        "icons": [
+          "hoerbenachteiligung",
+          "rollstuhlgaengig"
+        ]
+      },
+      "translationTexts" : {
+        "buttonTickets": "Tickets",
+        "linkDetails": "Mehr Details",
+        "soldOut": "ausverkauft",
+        "timeSuffix": "Uhr"
+      }
     },
     {
-      "icons": [
-        "uebertitel",
-        "einfuehrung"
-      ],
-      "location": "St. Gallen",
-      "locationIcons": [
-        "hoerbenachteiligung"
-      ],
-      "locationSubline": "Theater St. Gallen, Schauspielhaus",
-      "soldOut": true,
-      "timestamp": "1703442600",
-      "title": "Mustername auf 4 Zeilen (DE)",
-      "titleSubline": "Muster<br />Hans Muster"
+      "event": {
+        "choreographer": "Hans Muster",
+        "company": "Muster",
+        "icons": [
+          "uebertitel",
+          "einfuehrung"
+        ],
+        "production": "Muster",
+        "soldOut": true,
+        "timestamp": "1703442600"
+      },
+      "location": {
+        "name": "St. Gallen",
+        "subline": "Theater St. Gallen, Schauspielhaus",
+        "icons": [
+          "hoerbenachteiligung"
+        ]
+      },
+      "translationTexts" : {
+        "buttonTickets": "Tickets",
+        "linkDetails": "Mehr Details",
+        "soldOut": "ausverkauft",
+        "timeSuffix": "Uhr"
+      }
     },
     {
-      "icons": [
-        "uebertitel",
-        "einfuehrung",
-        "nachbesprechung"
-      ],
-      "location": "Basel",
-      "locationIcons": [
-        "hoerbenachteiligung",
-        "nicht-rollstuhlgaengig"
-      ],
-      "locationSubline": "Kaserne Muster Muster auf",
-      "soldOut": false,
-      "timestamp": "1692208800",
-      "title": "Mustername (CH)",
-      "titleSubline": "Muster Yeah<br />Millena Muster"
+      "event": {
+        "choreographer": "Millena Muster",
+        "company": "Mustername (CH)",
+        "icons": [
+          "uebertitel",
+          "einfuehrung",
+          "nachbesprechung"
+        ],
+        "production": "Muster Yeah",
+        "soldOut": false,
+        "timestamp": "1692208800"
+      },
+      "location": {
+        "name": "Basel",
+        "subline": "Kaserne Muster Muster auf",
+        "icons": [
+          "hoerbenachteiligung",
+          "rollstuhlgaengig"
+        ]
+      },
+      "translationTexts" : {
+        "buttonTickets": "Tickets",
+        "linkDetails": "Mehr Details",
+        "soldOut": "ausverkauft",
+        "timeSuffix": "Uhr"
+      }
     }
   ]
 }
