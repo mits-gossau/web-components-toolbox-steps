@@ -51,6 +51,7 @@ export default class EventList extends Shadow() {
         --button-secondary-font-size: 1rem;
       }
       :host .event-list {
+        border-bottom: 1px solid var(--steps-color-black);
         margin: 1.25rem 0;
       }
     `
