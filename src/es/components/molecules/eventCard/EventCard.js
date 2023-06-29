@@ -144,8 +144,6 @@ export default class EventCard extends Shadow() {
   }
 
   renderHTML () {
-    let eventHtml = ''
-
     // date and time
     const eventTimestamp = new Date(this.event.timestamp * 1000);
 
