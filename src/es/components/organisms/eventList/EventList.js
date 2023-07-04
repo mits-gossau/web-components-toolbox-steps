@@ -1,5 +1,6 @@
 // @ts-check
 import { Shadow } from '../../web-components-toolbox/src/es/components/prototypes/Shadow.js'
+// fetch modules / Shadow:Line 604
 import(
   '../../molecules/eventCard/EventCard.js'
   // @ts-ignore
@@ -58,6 +59,7 @@ export default class EventList extends Shadow() {
   }
 
   renderHTML () {
+    // array reduce acc = ''
     const eventHtml = this.events.map(item => /* html */`
       <m-steps-event-card 
         choreographer="${item.event.choreographer}"
