@@ -106,17 +106,13 @@
       }
     </style>
     <div class="filter-buttons">
-      
-      <input 
-        style="display: hidden"
-        type="date" 
-        id="date-picker" 
-        name="date-picker"
+
+      <a-steps-date-input 
         min="2024-08-20" 
-        max="2024-09-12"
-      ><a-button namespace="button-secondary-" id="dateButton"
-        >Datum ausw&auml;hlen &#8594; &#x1F4C5;</a-button
-      >
+        max="2024-09-12" 
+        placeholder="Datum auswählen"
+      ></a-steps-date-input>
+      
       <script type="text/javascript">
         window.addEventListener('load',function(){
           document.getElementById("dateButton").addEventListener("click", () => {
