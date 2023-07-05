@@ -3,7 +3,7 @@
     {
       "event": {
         "choreographer": "Botis Seva",
-        "company": "BLKDOG",
+        "name": "BLKDOG",
         "icons": [
           "uebertitel",
           "einfuehrung",
@@ -11,8 +11,8 @@
           "familien"
         ],
         "production": "BLKDOG",
-        "soldOut": false,
-        "timestamp": "1692122400"
+        "soldOut": "False",
+        "dateTime": "15.08.2024 18:00:00"
       },
       "location": {
         "name": "Zürich",
@@ -32,14 +32,14 @@
     {
       "event": {
         "choreographer": "Hans Muster",
-        "company": "Muster",
+        "name": "Muster",
         "icons": [
           "uebertitel",
           "einfuehrung"
         ],
         "production": "Muster",
-        "soldOut": true,
-        "timestamp": "1703442600"
+        "soldOut": "True",
+        "dateTime": "24.12.2023 18:30:00"
       },
       "location": {
         "name": "St. Gallen",
@@ -58,15 +58,15 @@
     {
       "event": {
         "choreographer": "Millena Muster",
-        "company": "Mustername (CH)",
+        "name": "Mustername (CH)",
         "icons": [
           "uebertitel",
           "einfuehrung",
           "nachbesprechung"
         ],
         "production": "Muster Yeah",
-        "soldOut": false,
-        "timestamp": "1692208800"
+        "soldOut": "False",
+        "dateTime": "05.08.2024 09:05:00"
       },
       "location": {
         "name": "Basel",

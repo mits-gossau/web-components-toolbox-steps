@@ -63,17 +63,18 @@ export default class EventList extends Shadow() {
     const eventHtml = this.events.map(item => /* html */`
       <m-steps-event-card 
         choreographer="${item.event.choreographer}"
-        company="${item.event.company}"
+        name="${item.event.name}"
         eventIcons='${JSON.stringify(item.event.icons)}'
         location="${item.location.name}"
         locationIcons='${JSON.stringify(item.location.icons)}'
         locationSubline="${item.location.subline}"
         production="${item.event.production}"
+        soldOut="${item.event.soldOut}"
         textButtonTickets="${item.translationTexts.buttonTickets}"
         textLinkDetails="${item.translationTexts.linkDetails}"
         textSoldOut="${item.translationTexts.soldOut}"
         textTimeSuffix="${item.translationTexts.timeSuffix}"
-        timestamp="${item.event.timestamp}"
+        dateTime="${item.event.dateTime}"
       ></m-steps-event-card>`).join('');
 
     this.html = /* html */ `

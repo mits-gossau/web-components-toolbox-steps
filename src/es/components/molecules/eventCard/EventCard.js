@@ -30,11 +30,11 @@ export default class EventCard extends Shadow() {
     // properties
     this.event = {
       choreographer: this.getAttribute('choreographer'),
-      company: this.getAttribute('company'),
+      name: this.getAttribute('name'),
       icons: eventIcons,
       production: this.getAttribute('production'),
-      soldOut: this.getAttribute('soldOut') === 'true',
-      timestamp: this.getAttribute('timestamp'),
+      soldOut: this.getAttribute('soldOut') === 'True',
+      dateTime: this.getAttribute('dateTime'),
     };
 
     this.location = {
@@ -152,8 +152,16 @@ export default class EventCard extends Shadow() {
 
   renderHTML () {
     // date and time
-    const eventTimestamp = new Date(this.event.timestamp * 1000);
-
+    const dateString = this.event.dateTime;
+    const dateParts = dateString.split(".");
+    const timeParts = dateParts[2].split(" ");
+    const day = parseInt(dateParts[0]);
+    const month = parseInt(dateParts[1]) - 1;
+    const year = parseInt(timeParts[0]);
+    const eventTime = timeParts[1];
+    const [hours, minutes, seconds] = eventTime.split(":");
+    const eventTimestamp = new Date(year, month, day, hours, minutes, seconds);
+    
     const weekDay = eventTimestamp.toLocaleDateString('de-CH', { weekday: 'long' });
     const dateShort = eventTimestamp.toLocaleDateString('de-CH', { day: 'numeric', month: 'numeric' });
     const time = eventTimestamp.toLocaleTimeString('de-CH', { hour: '2-digit', minute: '2-digit' });
@@ -177,7 +185,7 @@ export default class EventCard extends Shadow() {
     const eventInfoHtml = /* html */ `
       <div class="event-info">
         <p>
-          <strong>${this.event.company}</strong><br />
+          <strong>${this.event.name}</strong><br />
           <span>${this.event.production}<br />${this.event.choreographer}</span>
         </p>
         <p>
