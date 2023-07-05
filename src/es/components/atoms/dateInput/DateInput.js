@@ -37,7 +37,7 @@ export default class DateInput extends Shadow() {
     this.css = /* css */ `
         :host .date-input {
             background-color: transparent;
-            border-radius: 2.5rem;
+            border-radius: var(--border-radius, 0.5em);
             border: 2px solid black;
             color: var(--color, black);
             cursor: pointer;

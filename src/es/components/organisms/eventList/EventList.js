@@ -19,6 +19,14 @@ export default class EventList extends Shadow() {
   constructor (options = {}, ...args) {
     super({ importMetaUrl: import.meta.url, ...options }, ...args)
     this.events = []
+
+    this.answerEventNameListener = event => {
+      //this.renderHTML('loading')
+      /*event.detail.fetch.then(recipeData => {
+        this.renderHTML(recipeData.items)
+      })*/
+      console.log('helloooo', event, event.detail)
+    }
   }
 
   connectedCallback () {
@@ -34,6 +42,11 @@ export default class EventList extends Shadow() {
       .catch((error) => {
         console.error(error)
       })
+document.body.addEventListener(this.getAttribute('answer-event-name') || 'answer-event-name', this.answerEventNameListener)
+  }
+
+  disconnectedCallback () {
+    document.body.removeEventListener(this.getAttribute('answer-event-name') || 'answer-event-name', this.answerEventNameListener)
   }
 
   /**
