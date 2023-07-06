@@ -15,7 +15,9 @@
   </div>
   <div class="stage__overlay">
     <div class="stage__content">
-      <h2>Save the Date!<br>Next Steps:<br>24.4. - 19.5.2024</h2>
+      <h2>Save the Date!</h2>
+      <span>Next Steps:</span>
+      <span>24.4. - 19.5.2024</span>
       <a-button
         namespace="button-steps-"
         href="#"
@@ -33,12 +35,30 @@
 
           :host a svg {
             position: absolute;
-            right: 2.0rem;
+            right: 3.5rem;
             transition: right 0.3s ease-in-out;
           }
 
           :host a:hover svg {
-            right: 1.5rem;
+            right: 2.5rem;
+          }
+
+          @media (max-width: 768px) {
+            :host a {
+              padding: 16px 48px 16px 24px; /* mobile variable ? */
+            }
+
+            :host a span {
+              font-size: 16px;
+            }
+
+            :host a svg {
+              right: 2rem;
+            }
+
+            :host a:hover svg {
+              right: 1.5rem;
+            }
           }
         </style>
         <a href="/spielplan" target="_self" type="button">

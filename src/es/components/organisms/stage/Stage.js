@@ -52,14 +52,39 @@ export default class Stage extends Shadow() {
 
       :host .stage__content {
         z-index: 30;
+        display: flex;
+        flex-direction: column;
       }
 
       :host .stage__content h2 {
         font-size: 4.8rem;
-        line-height: 6.0rem;
+        font-weight: 400;
         color: var(--steps-color-white);
         text-align: center;
-        margin: 0 0 4.0rem;
+        margin: 0;
+      }
+
+      :host .stage__content span {
+        font-size: 4.8rem;
+        font-weight: 400;
+        color: var(--steps-color-white);
+        text-align: center;
+        display: inline-block;
+      }
+
+      :host .stage__content span + a-button {
+        margin-top: 4.0rem;
+      }
+
+      @media (max-width: 768px) {
+        :host .stage__content h2,
+        :host .stage__content span {
+          font-size: 2.4rem;
+        }
+
+        :host .stage__content span + a-button {
+          margin-top: 2.4rem;
+        }
       }
     `
   }
