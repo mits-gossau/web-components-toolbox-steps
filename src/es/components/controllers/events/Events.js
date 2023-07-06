@@ -39,8 +39,9 @@ export default class Events extends Shadow() {
       let endpoint = this.getAttribute('endpoint') + '?' + 'tags=' + event.detail.tags
       /*this.dispatchEvent(new CustomEvent(this.getAttribute('list-events') || 'list-events', {
         detail: {
-          fetch: fetch(endpoint, fetchOptions).then(response => {
+          fetch: (this._fetch || (this._fetch = fetch(endpoint, fetchOptions))).then(response => {
             if (response.status >= 200 && response.status <= 299) {
+              // TODO: Filter Stuff here
               return response.json()
             }
             throw new Error(response.statusText)
