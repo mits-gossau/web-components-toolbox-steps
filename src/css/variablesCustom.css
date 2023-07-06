@@ -88,9 +88,15 @@
 
   /* header */
   --header-nav-right-a-logo-top-mobile-custom: 2em;
-  --header-default-background-color: black;
+  --header-default-background-color: transparent;
+  --header-nav-right-background-color-custom: transparent;
+  --header-nav-right-margin-mobile-custom: 0;
+  --header-nav-right-a-menu-icon-margin: 0 10px 0 0;
+  --header-nav-right-logo-width-custom: 150px;
+  --logo-default-img-margin-mobile: -10px 0 0 -10px;
 
   /* navigation */
+  --navigation-default-color-custom: var(--steps-color-black);
   --navigation-default-a-link-text-align-mobile-custom: center;
   --navigation-default-arrow-display: none;
   --navigation-default-a-link-content-spacing-no-scroll-custom: 0.5rem;
