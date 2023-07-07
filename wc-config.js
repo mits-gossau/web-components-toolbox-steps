@@ -217,6 +217,16 @@
       separateFolder: true
     },
     {
+      selector: 'a-steps-',
+      url: 'atoms/',
+      separateFolder: true
+    },
+    {
+      selector: 'c-steps-',
+      url: 'controllers/',
+      separateFolder: true
+    },
+    {
       selector: 'm-steps-',
       url: 'molecules/',
       separateFolder: true

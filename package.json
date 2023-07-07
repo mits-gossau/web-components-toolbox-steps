@@ -3,6 +3,7 @@
   "description": "web components toolbox to be used in a CMS",
   "devDependencies": {
     "@playwright/test": "^1.35.1",
+    "json-server": "^0.17.3",
     "live-server": "*",
     "standard": "*"
   },

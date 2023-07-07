@@ -45,3 +45,7 @@ json-server --watch example-events.json --port 3003
 Now you are able to fetch the mock events under [http://localhost:3003/events](http://localhost:3003/events).
 
 For more information about JSON Server take a look at [https://github.com/typicode/json-server](https://github.com/typicode/json-server).
+
+## TODO:
+
+- [ ] DateInput.js making it ready for toolbox (analog Button Themes)
