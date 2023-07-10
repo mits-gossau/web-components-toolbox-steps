@@ -3,14 +3,14 @@
     {
       "event": {
         "choreographer": "Botis Seva",
-        "name": "BLKDOG",
+        "compagnieName": "BLKDOG",
         "icons": [
           "uebertitel",
           "einfuehrung",
           "nachbesprechung",
           "familien"
         ],
-        "production": "BLKDOG",
+        "productionTitle": "BLKDOG",
         "soldOut": "False",
         "dateTime": "15.08.2024 18:00:00"
       },
@@ -21,23 +21,17 @@
           "hoerbenachteiligung",
           "rollstuhlgaengig"
         ]
-      },
-      "translationTexts" : {
-        "buttonTickets": "Tickets",
-        "linkDetails": "Mehr Details",
-        "soldOut": "ausverkauft",
-        "timeSuffix": "Uhr"
       }
     },
     {
       "event": {
-        "choreographer": "Hans Muster",
-        "name": "Muster",
+        "choreographer": "Marc Brew, Sidi Larbi Cherkaoui",
+        "compagnieName": "Marc Brew Company | Eastman (GBR | BEL)",
         "icons": [
           "uebertitel",
           "einfuehrung"
         ],
-        "production": "Muster",
+        "productionTitle": "Les Porte-Voix – Cabaret Ventriloque",
         "soldOut": "True",
         "dateTime": "24.12.2023 18:30:00"
       },
@@ -47,24 +41,18 @@
         "icons": [
           "hoerbenachteiligung"
         ]
-      },
-      "translationTexts" : {
-        "buttonTickets": "Tickets",
-        "linkDetails": "Mehr Details",
-        "soldOut": "ausverkauft",
-        "timeSuffix": "Uhr"
       }
     },
     {
       "event": {
         "choreographer": "Millena Muster",
-        "name": "Mustername (CH)",
+        "compagnieName": "Mustername (CH)",
         "icons": [
           "uebertitel",
           "einfuehrung",
           "nachbesprechung"
         ],
-        "production": "Muster Yeah",
+        "productionTitle": "Muster Yeah",
         "soldOut": "False",
         "dateTime": "05.08.2024 09:05:00"
       },
@@ -75,13 +63,13 @@
           "hoerbenachteiligung",
           "rollstuhlgaengig"
         ]
-      },
-      "translationTexts" : {
-        "buttonTickets": "Tickets",
-        "linkDetails": "Mehr Details",
-        "soldOut": "ausverkauft",
-        "timeSuffix": "Uhr"
       }
     }
-  ]
+  ],
+  "translations" : {
+    "buttonTickets": "Tickets",
+    "linkDetails": "Mehr Details",
+    "soldOut": "ausverkauft",
+    "timeSuffix": "Uhr"
+  }
 }
