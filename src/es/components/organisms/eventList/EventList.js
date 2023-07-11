@@ -114,9 +114,11 @@ export default class EventList extends Shadow() {
         const {
           choreographer,
           company,
+          companyDetailPageUrl,
           eventDate,
           eventInformationIcons,
           location,
+          presaleUrl,
           production,
           soldOut,
           theater,
@@ -128,9 +130,11 @@ export default class EventList extends Shadow() {
         return /* html */ `<m-steps-event-card 
           choreographer="${choreographer}"
           company="${company}"
+          companyDetailPageUrl="${companyDetailPageUrl}"
           eventDate="${eventDate}"
           eventInformationIcons='${eventIcons}'
           location="${location}"
+          presaleUrl="${presaleUrl}"
           production="${production}"
           soldOut="${soldOut}"
           theater="${theater}"

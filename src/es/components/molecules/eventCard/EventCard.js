@@ -14,16 +14,19 @@ export default class EventCard extends Shadow() {
   constructor(options = {}, ...args) {
     super({ importMetaUrl: import.meta.url, ...options }, ...args);
     /**
-     * @typedef {Object} Event
-     * @property {string} choreographer - The name of the choreographer.
-     * @property {string} company - The name of the company.
+     * Represents an event.
+     * @typedef {object} Event
+     * @property {string} choreographer - The choreographer of the event.
+     * @property {string} company - The company associated with the event.
+     * @property {string} companyDetailPageUrl - The URL of the company's detail page.
      * @property {string} eventDate - The date and time of the event.
-     * @property {string[]} eventInformationIcons - An array of event information icons.
-     * @property {string} location - The location name.
-     * @property {string} production - The production title.
-     * @property {string} soldOut - Indicates whether the event is sold out.
-     * @property {string} theater - The theater name.
-     * @property {string[]} theaterInformationIcons - An array of theater information icons.
+     * @property {string[]} eventInformationIcons - An array of URLs representing event information icons.
+     * @property {string} location - The location of the event.
+     * @property {string} presaleUrl - The URL for purchasing tickets in advance.
+     * @property {string} production - The production associated with the event.
+     * @property {string} soldOut - Indicates if the event is sold out.
+     * @property {string} theater - The theater where the event takes place.
+     * @property {string[]} theaterInformationIcons - An array of URLs representing theater information icons.
      */
     /**
      * @type {Event}
@@ -31,9 +34,11 @@ export default class EventCard extends Shadow() {
     this.event = {
       choreographer: "",
       company: "",
+      companyDetailPageUrl: "",
       eventDate: "",
       eventInformationIcons: [],
       location: "",
+      presaleUrl: "",
       production: "",
       soldOut: "",
       theater: "",
@@ -50,11 +55,13 @@ export default class EventCard extends Shadow() {
     this.event = {
       choreographer: this.getAttribute("choreographer"),
       company: this.getAttribute("company"),
+      companyDetailPageUrl: this.getAttribute("companyDetailPageUrl"),
       eventDate: this.getAttribute("eventDate"),
       eventInformationIcons: JSON.parse(
         this.getAttribute("eventInformationIcons")
       ),
       location: this.getAttribute("location"),
+      presaleUrl: this.getAttribute("presaleUrl"),
       production: this.getAttribute("production"),
       soldOut: this.getAttribute("soldOut"),
       theater: this.getAttribute("theater"),
@@ -191,7 +198,7 @@ export default class EventCard extends Shadow() {
     const generateIconHTML = (iconsArray) => {
       let icons = "";
       for (const icon of iconsArray) {
-        icons += `<img src="../../../../img/icons/icon-${icon}.svg" class="legend-icon-${icon}" width="24" height="24" />`;
+        icons += `<img src="${icon}" width="24" height="24" />`;
       }
       return icons;
     };
@@ -199,11 +206,15 @@ export default class EventCard extends Shadow() {
     const eventIcons = generateIconHTML(this.event.eventInformationIcons);
     const theaterIcons = generateIconHTML(this.event.theaterInformationIcons);
 
+    // urls
+    const ticketsUrl = this.event.presaleUrl;
+    const detailsUrl = this.event.companyDetailPageUrl;
+
     // buttons
-    const buttonTickets = `<a-button namespace="button-secondary-">${this.getAttribute(
+    const buttonTickets = `<a-button namespace="button-secondary-" onclick="location.href='${ticketsUrl}'">${this.getAttribute(
       "textButtonTickets"
     )} &#8594;</a-button>`;
-    const buttonSoldOut = `<a-button namespace="button-secondary-">${this.getAttribute(
+    const buttonSoldOut = `<a-button namespace="button-secondary-" onclick="location.href='${ticketsUrl}'">${this.getAttribute(
       "textSoldOut"
     )}</a-button>`;
     const buttonCta =
@@ -231,7 +242,7 @@ export default class EventCard extends Shadow() {
         </p>
         <p class="event-cta">
           ${buttonCta}
-          <a href="#">${this.getAttribute("textLinkDetails")}</a>
+          <a href="${detailsUrl}">${this.getAttribute("textLinkDetails")}</a>
         </p>
       </div>
     `;
