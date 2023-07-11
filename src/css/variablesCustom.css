@@ -26,9 +26,6 @@
 }
 
 :root {
-  /* font reset readable rem values */
-  --font-size: 62.5%;
-
   /* colors */
   --steps-color-black: #000000;
   --steps-color-white: #ffffff;
@@ -100,8 +97,8 @@
   --button-steps-border-radius: 5.0rem;
   --button-steps-border-width: 0.2rem;
   --button-steps-border-color: var(--steps-color-white);
-  --button-steps-padding: 2.4rem 5.6rem 2.4rem 3.2rem;
-  --button-steps-font-size: 2.4rem;
+  --button-steps-padding: 1.2rem 2.8rem 1.2rem 1.6rem;
+  --button-steps-font-size: 1.2rem;
   --button-steps-font-size-mobile: 1.6rem;
   --button-steps-color: var(--steps-color-white);
   --button-steps-background-color-hover: transparent;

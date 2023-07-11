@@ -57,7 +57,7 @@ export default class Stage extends Shadow() {
       }
 
       :host .stage__content h2 {
-        font-size: 4.8rem;
+        font-size: var(--h1-font-size);
         font-weight: 400;
         color: var(--steps-color-white);
         text-align: center;
@@ -65,7 +65,7 @@ export default class Stage extends Shadow() {
       }
 
       :host .stage__content span {
-        font-size: 4.8rem;
+        font-size: var(--h1-font-size);
         font-weight: 400;
         color: var(--steps-color-white);
         text-align: center;
@@ -73,7 +73,7 @@ export default class Stage extends Shadow() {
       }
 
       :host .stage__content span + a-button {
-        margin-top: 4.0rem;
+        margin-top: 2.0rem;
       }
 
       @media (max-width: 768px) {
@@ -83,7 +83,7 @@ export default class Stage extends Shadow() {
         }
 
         :host .stage__content span + a-button {
-          margin-top: 2.4rem;
+          margin-top: 1.2rem;
         }
       }
     `
