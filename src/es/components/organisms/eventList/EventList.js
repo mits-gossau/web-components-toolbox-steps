@@ -19,6 +19,23 @@ export default class EventList extends Shadow() {
   constructor (options = {}, ...args) {
     super({ importMetaUrl: import.meta.url, ...options }, ...args)
     this.events = []
+    /**
+     * @typedef {Object} Translations
+     * @property {string} buttonTickets - The translation for the "Tickets" button.
+     * @property {string} linkDetails - The translation for the "Mehr Details" link.
+     * @property {string} soldOut - The translation for the "ausverkauft" message indicating sold-out status.
+     * @property {string} timeSuffix - The translation for the suffix added to time values, e.g., "Uhr".
+     */
+    /**
+     * @type {Translations}
+     */
+    this.translations = {
+      buttonTickets: '',
+      linkDetails: '',
+      soldOut: '',
+      timeSuffix: '',
+    }
+
 
     this.answerEventNameListener = event => {
       //this.renderHTML('loading')
@@ -31,18 +48,31 @@ export default class EventList extends Shadow() {
 
   connectedCallback () {
     if (this.shouldRenderCSS()) this.renderCSS()
-    const jsonUrl = this.getAttribute('json-url')
+    const dataEventsUrl = this.getAttribute('data-events')
+    const dataTranslationsUrl = this.getAttribute('data-translations')
+
     // @ts-ignore
-    fetch(jsonUrl)
+    fetch(dataEventsUrl)
       .then((response) => response.json())
       .then((data) => {
         this.events = data
+      })
+      .catch((error) => {
+        console.error(error)
+      })
+
+    // @ts-ignore
+    fetch(dataTranslationsUrl)
+      .then((response) => response.json())
+      .then((data) => {
+        this.translations = data
         this.renderHTML()
       })
       .catch((error) => {
         console.error(error)
       })
-document.body.addEventListener(this.getAttribute('answer-event-name') || 'answer-event-name', this.answerEventNameListener)
+
+    document.body.addEventListener(this.getAttribute('answer-event-name') || 'answer-event-name', this.answerEventNameListener)
   }
 
   disconnectedCallback () {
@@ -76,17 +106,17 @@ document.body.addEventListener(this.getAttribute('answer-event-name') || 'answer
     const eventHtml = this.events.map(item => /* html */`
       <m-steps-event-card 
         choreographer="${item.event.choreographer}"
-        name="${item.event.name}"
+        compagnieName="${item.event.compagnieName}"
         eventIcons='${JSON.stringify(item.event.icons)}'
         location="${item.location.name}"
         locationIcons='${JSON.stringify(item.location.icons)}'
         locationSubline="${item.location.subline}"
-        production="${item.event.production}"
+        productionTitle="${item.event.productionTitle}"
         soldOut="${item.event.soldOut}"
-        textButtonTickets="${item.translationTexts.buttonTickets}"
-        textLinkDetails="${item.translationTexts.linkDetails}"
-        textSoldOut="${item.translationTexts.soldOut}"
-        textTimeSuffix="${item.translationTexts.timeSuffix}"
+        textButtonTickets="${this.translations.buttonTickets}"
+        textLinkDetails="${this.translations.linkDetails}"
+        textSoldOut="${this.translations.soldOut}"
+        textTimeSuffix="${this.translations.timeSuffix}"
         dateTime="${item.event.dateTime}"
       ></m-steps-event-card>`).join('');
 

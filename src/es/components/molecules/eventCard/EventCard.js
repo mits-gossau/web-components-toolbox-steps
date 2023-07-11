@@ -13,9 +13,41 @@ import { Shadow } from '../../web-components-toolbox/src/es/components/prototype
 export default class EventCard extends Shadow() {
   constructor (options = {}, ...args) {
     super({ importMetaUrl: import.meta.url, ...options }, ...args)
-    this.event = {}
-    this.location = {}
-    this.translationTexts = {}
+    /**
+     * @typedef {Object} Event
+     * @property {string} choreographer - The name of the choreographer for the event.
+     * @property {string} compagnieName - The name of the company associated with the event.
+     * @property {string[]} icons - An array of icons associated with the event.
+     * @property {string} productionTitle - The title of the production associated with the event.
+     * @property {boolean} soldOut - Indicates if the event is sold out.
+     * @property {string} dateTime - The date and time of the event in the format "DD.MM.YYYY HH:mm:ss".
+     */
+    /**
+     * @type {Event}
+     */
+    this.event = {
+      choreographer: '',
+      compagnieName: '',
+      icons: [],
+      productionTitle: '',
+      soldOut: false,
+      dateTime: '',
+    }
+    /**
+     * @typedef {Object} Location
+     * @property {string} name - The location name (e.g., "Zürich").
+     * @property {string} subline - Additional information about the location (e.g., "Théatre du Passage, ADN").
+     * @property {string[]} icons - An array of icons associated with the location (e.g., ["hoerbenachteiligung", "rollstuhlgaengig"]).
+     */
+    
+    /**
+     * @type {Location}
+     */
+    this.location = {
+      name: '',
+      subline: '',
+      icons: [],
+    }
   }
 
   connectedCallback() {
@@ -30,9 +62,9 @@ export default class EventCard extends Shadow() {
     // properties
     this.event = {
       choreographer: this.getAttribute('choreographer'),
-      name: this.getAttribute('name'),
+      compagnieName: this.getAttribute('compagnieName'),
       icons: eventIcons,
-      production: this.getAttribute('production'),
+      productionTitle: this.getAttribute('productionTitle'),
       soldOut: this.getAttribute('soldOut') === 'True',
       dateTime: this.getAttribute('dateTime'),
     };
@@ -41,13 +73,6 @@ export default class EventCard extends Shadow() {
       name: this.getAttribute('location'),
       icons: locationIcons,
       subline: this.getAttribute('locationSubline'),
-    };
-
-    this.translationTexts = {
-      buttonTickets: this.getAttribute('textButtonTickets'),
-      linkDetails: this.getAttribute('textLinkDetails'),
-      soldOut: this.getAttribute('textSoldOut'),
-      timeSuffix: this.getAttribute('textTimeSuffix'),
     };
 
     this.renderHTML();
@@ -159,7 +184,7 @@ export default class EventCard extends Shadow() {
     const month = parseInt(dateParts[1]) - 1;
     const year = parseInt(timeParts[0]);
     const eventTime = timeParts[1];
-    const [hours, minutes, seconds] = eventTime.split(":");
+    const [hours, minutes, seconds] = eventTime.split(":").map(Number);
     const eventTimestamp = new Date(year, month, day, hours, minutes, seconds);
     
     const weekDay = eventTimestamp.toLocaleDateString('de-CH', { weekday: 'long' });
@@ -179,21 +204,21 @@ export default class EventCard extends Shadow() {
     const locationIcons = generateIconHTML(this.location.icons);
 
     // buttons
-    const ctaButton = `<a-button namespace="button-secondary-">${this.translationTexts.buttonTickets} &#8594;</a-button>`
-    const soldOutButton = `<a-button namespace="button-secondary-">${this.translationTexts.soldOut}</a-button>`
+    const ctaButton = `<a-button namespace="button-secondary-">${this.getAttribute('textButtonTickets')} &#8594;</a-button>`
+    const soldOutButton = `<a-button namespace="button-secondary-">${this.getAttribute('textSoldOut')}</a-button>`
 
     const eventInfoHtml = /* html */ `
       <div class="event-info">
         <p>
-          <strong>${this.event.name}</strong><br />
-          <span>${this.event.production}<br />${this.event.choreographer}</span>
+          <strong>${this.event.compagnieName}</strong><br />
+          <span>${this.event.productionTitle}<br />${this.event.choreographer}</span>
         </p>
         <p>
           <strong>${this.location.name}</strong><br />
           <span>${this.location.subline}</span>
         </p>
         <p>
-          ${time} ${this.translationTexts.timeSuffix}<br />
+          ${time} ${this.getAttribute('textTimeSuffix')}<br />
           <br />
           <span class="legend-icons">
             ${eventIcons}
@@ -204,7 +229,7 @@ export default class EventCard extends Shadow() {
         </p>
         <p class="event-cta">
           ${this.event.soldOut ? soldOutButton : ctaButton}
-          <a href="#">${this.translationTexts.linkDetails}</a>
+          <a href="#">${this.getAttribute('textLinkDetails')}</a>
         </p>
       </div>
     `;
