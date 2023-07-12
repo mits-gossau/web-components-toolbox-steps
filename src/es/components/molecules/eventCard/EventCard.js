@@ -207,10 +207,10 @@ export default class EventCard extends Shadow() {
     const detailsUrl = this.event.companyDetailPageUrl;
 
     // buttons
-    const buttonTickets = `<a-button namespace="button-secondary-" onclick="location.href='${ticketsUrl}'">${this.getAttribute(
+    const buttonTickets = `<a-button namespace="button-secondary-" onclick="window.open('${ticketsUrl}')">${this.getAttribute(
       "textButtonTickets"
     )} &#8594;</a-button>`;
-    const buttonSoldOut = `<a-button namespace="button-secondary-" onclick="location.href='${ticketsUrl}'">${this.getAttribute(
+    const buttonSoldOut = `<a-button namespace="button-secondary-" onclick="window.open('${ticketsUrl}')">${this.getAttribute(
       "textSoldOut"
     )}</a-button>`;
     const buttonCta =
