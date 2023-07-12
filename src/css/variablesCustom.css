@@ -86,6 +86,23 @@
   --any-content-width-mobile: 100vw;
   --any-content-spacing-mobile: 0;
 
+  /* stage picture fullwidth */
+  --picture-full-img-max-height: 100vh;
+  --picture-full-img-min-height: 100vh;
+  --picture-full-img-object-fit: cover;
+  --picture-full-img-width: 100%;
+  --picture-full-img-margin: 0;
+
+  /* stage button */
+  --button-steps-border-radius: 5.0rem;
+  --button-steps-border-width: 0.2rem;
+  --button-steps-border-color: var(--steps-color-white);
+  --button-steps-padding: 1.2rem 2.8rem 1.2rem 1.6rem;
+  --button-steps-font-size: 1.2rem;
+  --button-steps-font-size-mobile: 1.6rem;
+  --button-steps-color: var(--steps-color-white);
+  --button-steps-background-color-hover: transparent;
+
   /* header */
   --header-nav-right-a-logo-top-mobile-custom: 2em;
   --header-default-background-color: transparent;
