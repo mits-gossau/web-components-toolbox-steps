@@ -54,7 +54,7 @@ export default class EventList extends Shadow() {
     fetch(dataEventsUrl)
       .then((response) => response.json())
       .then((data) => {
-        this.events = data;
+        this.events = data.events;
       })
       .catch((error) => {
         console.error(error);
@@ -64,7 +64,7 @@ export default class EventList extends Shadow() {
     fetch(dataTranslationsUrl)
       .then((response) => response.json())
       .then((data) => {
-        this.translations = data;
+        this.translations = data.translations;
         this.renderHTML();
       })
       .catch((error) => {

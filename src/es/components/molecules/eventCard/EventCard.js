@@ -57,17 +57,13 @@ export default class EventCard extends Shadow() {
       company: this.getAttribute("company"),
       companyDetailPageUrl: this.getAttribute("companyDetailPageUrl"),
       eventDate: this.getAttribute("eventDate"),
-      eventInformationIcons: JSON.parse(
-        this.getAttribute("eventInformationIcons")
-      ),
+      eventInformationIcons: JSON.parse(this.getAttribute("eventInformationIcons")),
       location: this.getAttribute("location"),
       presaleUrl: this.getAttribute("presaleUrl"),
       production: this.getAttribute("production"),
       soldOut: this.getAttribute("soldOut"),
       theater: this.getAttribute("theater"),
-      theaterInformationIcons: JSON.parse(
-        this.getAttribute("theaterInformationIcons")
-      ),
+      theaterInformationIcons: JSON.parse(this.getAttribute("theaterInformationIcons")),
     };
 
     this.renderHTML();
