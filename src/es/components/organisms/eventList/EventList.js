@@ -43,58 +43,59 @@ export default class EventList extends Shadow() {
       }) */
       console.log('helloooo', event, event.detail)
     }
+
+    this.eventsLoaded = false;
+    this.translationsLoaded = false;
   }
 
   connectedCallback () {
     if (this.shouldRenderCSS()) this.renderCSS()
+
     const dataEventsUrl = this.getAttribute('data-events')
     const dataTranslationsUrl = this.getAttribute('data-translations')
-    let eventsLoaded = false;
-    let translationsLoaded = false;
 
-    // Check if the data already exists in localStorage
     const savedEventsData = localStorage.getItem('eventsData')
     const savedTranslationsData = localStorage.getItem('translationsData')
 
+    const handleEventsResponse = (data) => {
+      localStorage.setItem('eventsData', JSON.stringify(data.events))
+      this.events = data.events
+      this.eventsLoaded = true;
+      this.checkRenderHTML();
+    }
+
+    const handleTranslationsRepsonse = (data) => {
+      localStorage.setItem('translationsData', JSON.stringify(data.translations))
+      this.translations = data.translations
+      this.translationsLoaded = true
+      this.checkRenderHTML();
+    }
+
+    const handleError = (error) => {
+      console.error(error);
+    }
+
     if (savedEventsData) {
       this.events = JSON.parse(savedEventsData)
-      eventsLoaded = true;
+      this.eventsLoaded = true;
     } else {
-      // @ts-ignore
       fetch(dataEventsUrl)
         .then((response) => response.json())
-        .then((data) => {
-          localStorage.setItem('eventsData', JSON.stringify(data.events))
-          this.events = data.events
-          eventsLoaded = true;
-        })
-        .catch((error) => {
-          console.error(error)
-        })
+        .then(handleEventsResponse)
+        .catch(handleError)
     }
 
     if (savedTranslationsData) {
       this.translations = JSON.parse(savedTranslationsData)
-      translationsLoaded = true
+      this.translationsLoaded = true
     } else {
-      // @ts-ignore
       fetch(dataTranslationsUrl)
         .then((response) => response.json())
-        .then((data) => {
-          localStorage.setItem(
-            'translationsData',
-            JSON.stringify(data.translations)
-          )
-          this.translations = data.translations
-          translationsLoaded = true
-        })
-        .then(() => this.renderHTML())
-        .catch((error) => {
-          console.error(error)
-        })
+        .then(handleTranslationsRepsonse)
+        .catch(handleError)
     }
 
-    if (eventsLoaded && translationsLoaded) {
+    if (this.eventsLoaded && this.translationsLoaded) {
       this.renderHTML()
     }
   
@@ -102,6 +103,12 @@ export default class EventList extends Shadow() {
       this.getAttribute('answer-event-name') || 'answer-event-name',
       this.answerEventNameListener
     )
+  }
+
+  checkRenderHTML() {
+    if (this.eventsLoaded && this.translationsLoaded) {
+      this.renderHTML()
+    }
   }
 
   disconnectedCallback () {
