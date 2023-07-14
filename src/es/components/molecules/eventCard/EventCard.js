@@ -1,5 +1,5 @@
 // @ts-check
-import { Shadow } from "../../web-components-toolbox/src/es/components/prototypes/Shadow.js";
+import { Shadow } from '../../web-components-toolbox/src/es/components/prototypes/Shadow.js'
 
 /**
  * EventCard
@@ -11,8 +11,8 @@ import { Shadow } from "../../web-components-toolbox/src/es/components/prototype
  */
 
 export default class EventCard extends Shadow() {
-  constructor(options = {}, ...args) {
-    super({ importMetaUrl: import.meta.url, ...options }, ...args);
+  constructor (options = {}, ...args) {
+    super({ importMetaUrl: import.meta.url, ...options }, ...args)
     /**
      * Represents an event.
      * @typedef {object} Event
@@ -32,41 +32,41 @@ export default class EventCard extends Shadow() {
      * @type {Event}
      */
     this.event = {
-      choreographer: "",
-      company: "",
-      companyDetailPageUrl: "",
-      eventDate: "",
+      choreographer: '',
+      company: '',
+      companyDetailPageUrl: '',
+      eventDate: '',
       eventInformationIcons: [],
-      location: "",
-      presaleUrl: "",
-      production: "",
-      soldOut: "",
-      theater: "",
-      theaterInformationIcons: [],
-    };
+      location: '',
+      presaleUrl: '',
+      production: '',
+      soldOut: '',
+      theater: '',
+      theaterInformationIcons: []
+    }
   }
 
-  connectedCallback() {
+  connectedCallback () {
     if (this.shouldRenderCSS()) {
-      this.renderCSS();
+      this.renderCSS()
     }
 
     // properties
     this.event = {
-      choreographer: this.getAttribute("choreographer"),
-      company: this.getAttribute("company"),
-      companyDetailPageUrl: this.getAttribute("companyDetailPageUrl"),
-      eventDate: this.getAttribute("eventDate"),
-      eventInformationIcons: JSON.parse(this.getAttribute("eventInformationIcons")),
-      location: this.getAttribute("location"),
-      presaleUrl: this.getAttribute("presaleUrl"),
-      production: this.getAttribute("production"),
-      soldOut: this.getAttribute("soldOut"),
-      theater: this.getAttribute("theater"),
-      theaterInformationIcons: JSON.parse(this.getAttribute("theaterInformationIcons")),
-    };
+      choreographer: this.getAttribute('choreographer'),
+      company: this.getAttribute('company'),
+      companyDetailPageUrl: this.getAttribute('companyDetailPageUrl'),
+      eventDate: this.getAttribute('eventDate'),
+      eventInformationIcons: JSON.parse(this.getAttribute('eventInformationIcons')),
+      location: this.getAttribute('location'),
+      presaleUrl: this.getAttribute('presaleUrl'),
+      production: this.getAttribute('production'),
+      soldOut: this.getAttribute('soldOut'),
+      theater: this.getAttribute('theater'),
+      theaterInformationIcons: JSON.parse(this.getAttribute('theaterInformationIcons'))
+    }
 
-    this.renderHTML();
+    this.renderHTML()
   }
 
   /**
@@ -74,13 +74,13 @@ export default class EventCard extends Shadow() {
    *
    * @return {boolean}
    */
-  shouldRenderCSS() {
+  shouldRenderCSS () {
     return !this.root.querySelector(
       `:host > style[_css], ${this.tagName} > style[_css]`
-    );
+    )
   }
 
-  renderCSS() {
+  renderCSS () {
     this.css = /* css */ `
       :host {
         --button-secondary-width: 100%;
@@ -163,58 +163,58 @@ export default class EventCard extends Shadow() {
           padding: 0;
         }
       }
-    `;
+    `
   }
 
-  renderHTML() {
+  renderHTML () {
     // date and time
-    const dateString = this.event.eventDate;
-    const dateParts = dateString.split(".");
-    const timeParts = dateParts[2].split(" ");
-    const day = parseInt(dateParts[0]);
-    const month = parseInt(dateParts[1]) - 1;
-    const year = parseInt(timeParts[0]);
-    const eventTime = timeParts[1];
-    const [hours, minutes, seconds] = eventTime.split(":").map(Number);
-    const eventTimestamp = new Date(year, month, day, hours, minutes, seconds);
+    const dateString = this.event.eventDate
+    const dateParts = dateString.split('.')
+    const timeParts = dateParts[2].split(' ')
+    const day = parseInt(dateParts[0])
+    const month = parseInt(dateParts[1]) - 1
+    const year = parseInt(timeParts[0])
+    const eventTime = timeParts[1]
+    const [hours, minutes, seconds] = eventTime.split(':').map(Number)
+    const eventTimestamp = new Date(year, month, day, hours, minutes, seconds)
 
-    const weekDay = eventTimestamp.toLocaleDateString("de-CH", {
-      weekday: "long",
-    });
-    const dateShort = eventTimestamp.toLocaleDateString("de-CH", {
-      day: "numeric",
-      month: "numeric",
-    });
-    const time = eventTimestamp.toLocaleTimeString("de-CH", {
-      hour: "2-digit",
-      minute: "2-digit",
-    });
+    const weekDay = eventTimestamp.toLocaleDateString('de-CH', {
+      weekday: 'long'
+    })
+    const dateShort = eventTimestamp.toLocaleDateString('de-CH', {
+      day: 'numeric',
+      month: 'numeric'
+    })
+    const time = eventTimestamp.toLocaleTimeString('de-CH', {
+      hour: '2-digit',
+      minute: '2-digit'
+    })
 
     // icons
     const generateIconHTML = (iconsArray) => {
-      let icons = "";
+      let icons = ''
       for (const icon of iconsArray) {
-        icons += `<img src="${icon}" width="24" height="24" />`;
+        icons += `<img src="${icon}" width="24" height="24" />`
       }
-      return icons;
-    };
+      return icons
+    }
 
-    const eventIcons = generateIconHTML(this.event.eventInformationIcons);
-    const theaterIcons = generateIconHTML(this.event.theaterInformationIcons);
+    const eventIcons = generateIconHTML(this.event.eventInformationIcons)
+    const theaterIcons = generateIconHTML(this.event.theaterInformationIcons)
 
     // urls
-    const ticketsUrl = this.event.presaleUrl;
-    const detailsUrl = this.event.companyDetailPageUrl;
+    const ticketsUrl = this.event.presaleUrl
+    const detailsUrl = this.event.companyDetailPageUrl
 
     // buttons
     const buttonTickets = `<a-button namespace="button-secondary-" onclick="window.open('${ticketsUrl}')">${this.getAttribute(
-      "textButtonTickets"
-    )} &#8594;</a-button>`;
+      'textButtonTickets'
+    )} &#8594;</a-button>`
     const buttonSoldOut = `<a-button namespace="button-secondary-" onclick="window.open('${ticketsUrl}')">${this.getAttribute(
-      "textSoldOut"
-    )}</a-button>`;
+      'textSoldOut'
+    )}</a-button>`
     const buttonCta =
-      this.event.soldOut === "True" ? buttonSoldOut : buttonTickets;
+      this.event.soldOut === 'True' ? buttonSoldOut : buttonTickets
 
     const eventInfoHtml = /* html */ `
       <div class="event-info">
@@ -227,7 +227,7 @@ export default class EventCard extends Shadow() {
           <span>${this.event.theater}</span>
         </p>
         <p>
-          ${time} ${this.getAttribute("textTimeSuffix")}<br />
+          ${time} ${this.getAttribute('textTimeSuffix')}<br />
           <br />
           <span class="legend-icons">
             ${eventIcons}
@@ -238,10 +238,10 @@ export default class EventCard extends Shadow() {
         </p>
         <p class="event-cta">
           ${buttonCta}
-          <a href="${detailsUrl}">${this.getAttribute("textLinkDetails")}</a>
+          <a href="${detailsUrl}">${this.getAttribute('textLinkDetails')}</a>
         </p>
       </div>
-    `;
+    `
 
     this.html = /* html */ `
       <div class="event-card">
@@ -250,6 +250,6 @@ export default class EventCard extends Shadow() {
         </div>
         ${eventInfoHtml}
       </div>
-    `;
+    `
   }
 }

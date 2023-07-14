@@ -1,10 +1,10 @@
 // @ts-check
-import { Shadow } from "../../web-components-toolbox/src/es/components/prototypes/Shadow.js";
+import { Shadow } from '../../web-components-toolbox/src/es/components/prototypes/Shadow.js'
 // fetch modules / Shadow:Line 604
 import(
-  "../../molecules/eventCard/EventCard.js"
+  '../../molecules/eventCard/EventCard.js'
   // @ts-ignore
-).then((module) => customElements.define("m-steps-event-card", module.default));
+).then((module) => customElements.define('m-steps-event-card', module.default))
 
 /**
  * EventList
@@ -16,9 +16,9 @@ import(
  */
 
 export default class EventList extends Shadow() {
-  constructor(options = {}, ...args) {
-    super({ importMetaUrl: import.meta.url, ...options }, ...args);
-    this.events = [];
+  constructor (options = {}, ...args) {
+    super({ importMetaUrl: import.meta.url, ...options }, ...args)
+    this.events = []
     /**
      * @typedef {Object} Translations
      * @property {string} buttonTickets - The translation for the "Tickets" button.
@@ -30,29 +30,29 @@ export default class EventList extends Shadow() {
      * @type {Translations}
      */
     this.translations = {
-      buttonTickets: "",
-      linkDetails: "",
-      soldOut: "",
-      timeSuffix: "",
-    };
+      buttonTickets: '',
+      linkDetails: '',
+      soldOut: '',
+      timeSuffix: ''
+    }
 
     this.answerEventNameListener = (event) => {
-      //this.renderHTML('loading')
-      /*event.detail.fetch.then(recipeData => {
+      // this.renderHTML('loading')
+      /* event.detail.fetch.then(recipeData => {
         this.renderHTML(recipeData.items)
-      })*/
-      console.log("helloooo", event, event.detail);
-    };
+      }) */
+      console.log('helloooo', event, event.detail)
+    }
   }
 
-  connectedCallback() {
-    if (this.shouldRenderCSS()) this.renderCSS();
-    const dataEventsUrl = this.getAttribute("data-events");
-    const dataTranslationsUrl = this.getAttribute("data-translations");
+  connectedCallback () {
+    if (this.shouldRenderCSS()) this.renderCSS()
+    const dataEventsUrl = this.getAttribute('data-events')
+    const dataTranslationsUrl = this.getAttribute('data-translations')
 
     // Check if the data already exists in localStorage
-    const savedEventsData = localStorage.getItem('eventsData');
-    const savedTranslationsData = localStorage.getItem('translationsData');
+    const savedEventsData = localStorage.getItem('eventsData')
+    const savedTranslationsData = localStorage.getItem('translationsData')
 
     if (savedEventsData) {
       this.events = JSON.parse(savedEventsData)
@@ -61,12 +61,12 @@ export default class EventList extends Shadow() {
       fetch(dataEventsUrl)
         .then((response) => response.json())
         .then((data) => {
-          localStorage.setItem('eventsData', JSON.stringify(data.events));
-          this.events = data.events;
+          localStorage.setItem('eventsData', JSON.stringify(data.events))
+          this.events = data.events
         })
         .catch((error) => {
-          console.error(error);
-        });
+          console.error(error)
+        })
     }
 
     if (savedTranslationsData) {
@@ -76,27 +76,30 @@ export default class EventList extends Shadow() {
       fetch(dataTranslationsUrl)
         .then((response) => response.json())
         .then((data) => {
-          localStorage.setItem('translationsData', JSON.stringify(data.translations));
-          this.translations = data.translations;
+          localStorage.setItem(
+            'translationsData',
+            JSON.stringify(data.translations)
+          )
+          this.translations = data.translations
         })
         .catch((error) => {
-          console.error(error);
-        });
+          console.error(error)
+        })
     }
 
-    this.renderHTML();
+    this.renderHTML()
 
     document.body.addEventListener(
-      this.getAttribute("answer-event-name") || "answer-event-name",
+      this.getAttribute('answer-event-name') || 'answer-event-name',
       this.answerEventNameListener
-    );
+    )
   }
 
-  disconnectedCallback() {
+  disconnectedCallback () {
     document.body.removeEventListener(
-      this.getAttribute("answer-event-name") || "answer-event-name",
+      this.getAttribute('answer-event-name') || 'answer-event-name',
       this.answerEventNameListener
-    );
+    )
   }
 
   /**
@@ -104,13 +107,13 @@ export default class EventList extends Shadow() {
    *
    * @return {boolean}
    */
-  shouldRenderCSS() {
+  shouldRenderCSS () {
     return !this.root.querySelector(
       `:host > style[_css], ${this.tagName} > style[_css]`
-    );
+    )
   }
 
-  renderCSS() {
+  renderCSS () {
     this.css = /* css */ `
       :host {
         --button-secondary-width: 100%;
@@ -120,10 +123,10 @@ export default class EventList extends Shadow() {
         border-bottom: 1px solid var(--steps-color-black);
         margin: 1.25rem 0;
       }
-    `;
+    `
   }
 
-  renderHTML() {
+  renderHTML () {
     const eventHtml = this.events
       .map((event) => {
         const {
@@ -137,10 +140,10 @@ export default class EventList extends Shadow() {
           production,
           soldOut,
           theater,
-          theaterInformationIcons,
-        } = event;
-        const eventIcons = JSON.stringify(eventInformationIcons);
-        const theaterIcons = JSON.stringify(theaterInformationIcons);
+          theaterInformationIcons
+        } = event
+        const eventIcons = JSON.stringify(eventInformationIcons)
+        const theaterIcons = JSON.stringify(theaterInformationIcons)
 
         return /* html */ `<m-steps-event-card 
           choreographer="${choreographer}"
@@ -158,14 +161,14 @@ export default class EventList extends Shadow() {
           textLinkDetails="${this.translations.linkDetails}"
           textSoldOut="${this.translations.soldOut}"
           textTimeSuffix="${this.translations.timeSuffix}"
-        ></m-steps-event-card>`;
+        ></m-steps-event-card>`
       })
-      .join("");
+      .join('')
 
     this.html = /* html */ `
       <div class="event-list">
         ${eventHtml}
       </div>
-    `;
+    `
   }
 }
