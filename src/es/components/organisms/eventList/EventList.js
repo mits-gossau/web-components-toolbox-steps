@@ -71,6 +71,7 @@ export default class EventList extends Shadow() {
 
     if (savedTranslationsData) {
       this.translations = JSON.parse(savedTranslationsData)
+      this.renderHTML()
     } else {
       // @ts-ignore
       fetch(dataTranslationsUrl)
@@ -82,12 +83,11 @@ export default class EventList extends Shadow() {
           )
           this.translations = data.translations
         })
+        .then(() => this.renderHTML())
         .catch((error) => {
           console.error(error)
         })
     }
-
-    this.renderHTML()
 
     document.body.addEventListener(
       this.getAttribute('answer-event-name') || 'answer-event-name',
