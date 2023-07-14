@@ -49,6 +49,8 @@ export default class EventList extends Shadow() {
     if (this.shouldRenderCSS()) this.renderCSS()
     const dataEventsUrl = this.getAttribute('data-events')
     const dataTranslationsUrl = this.getAttribute('data-translations')
+    let eventsLoaded = false;
+    let translationsLoaded = false;
 
     // Check if the data already exists in localStorage
     const savedEventsData = localStorage.getItem('eventsData')
@@ -56,6 +58,7 @@ export default class EventList extends Shadow() {
 
     if (savedEventsData) {
       this.events = JSON.parse(savedEventsData)
+      eventsLoaded = true;
     } else {
       // @ts-ignore
       fetch(dataEventsUrl)
@@ -63,6 +66,7 @@ export default class EventList extends Shadow() {
         .then((data) => {
           localStorage.setItem('eventsData', JSON.stringify(data.events))
           this.events = data.events
+          eventsLoaded = true;
         })
         .catch((error) => {
           console.error(error)
@@ -71,7 +75,7 @@ export default class EventList extends Shadow() {
 
     if (savedTranslationsData) {
       this.translations = JSON.parse(savedTranslationsData)
-      this.renderHTML()
+      translationsLoaded = true
     } else {
       // @ts-ignore
       fetch(dataTranslationsUrl)
@@ -82,6 +86,7 @@ export default class EventList extends Shadow() {
             JSON.stringify(data.translations)
           )
           this.translations = data.translations
+          translationsLoaded = true
         })
         .then(() => this.renderHTML())
         .catch((error) => {
@@ -89,6 +94,10 @@ export default class EventList extends Shadow() {
         })
     }
 
+    if (eventsLoaded && translationsLoaded) {
+      this.renderHTML()
+    }
+  
     document.body.addEventListener(
       this.getAttribute('answer-event-name') || 'answer-event-name',
       this.answerEventNameListener
