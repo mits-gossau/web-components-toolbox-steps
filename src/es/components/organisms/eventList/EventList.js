@@ -44,8 +44,8 @@ export default class EventList extends Shadow() {
       console.log('helloooo', event, event.detail)
     }
 
-    this.eventsLoaded = false;
-    this.translationsLoaded = false;
+    this.eventsLoaded = false
+    this.translationsLoaded = false
   }
 
   connectedCallback () {
@@ -60,24 +60,24 @@ export default class EventList extends Shadow() {
     const handleEventsResponse = (data) => {
       localStorage.setItem('eventsData', JSON.stringify(data.events))
       this.events = data.events
-      this.eventsLoaded = true;
-      this.checkRenderHTML();
+      this.eventsLoaded = true
+      this.checkRenderHTML()
     }
 
     const handleTranslationsRepsonse = (data) => {
       localStorage.setItem('translationsData', JSON.stringify(data.translations))
       this.translations = data.translations
       this.translationsLoaded = true
-      this.checkRenderHTML();
+      this.checkRenderHTML()
     }
 
     const handleError = (error) => {
-      console.error(error);
+      console.error(error)
     }
 
     if (savedEventsData) {
       this.events = JSON.parse(savedEventsData)
-      this.eventsLoaded = true;
+      this.eventsLoaded = true
     } else {
       fetch(dataEventsUrl)
         .then((response) => response.json())
@@ -98,14 +98,14 @@ export default class EventList extends Shadow() {
     if (this.eventsLoaded && this.translationsLoaded) {
       this.renderHTML()
     }
-  
+
     document.body.addEventListener(
       this.getAttribute('answer-event-name') || 'answer-event-name',
       this.answerEventNameListener
     )
   }
 
-  checkRenderHTML() {
+  checkRenderHTML () {
     if (this.eventsLoaded && this.translationsLoaded) {
       this.renderHTML()
     }
