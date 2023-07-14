@@ -50,26 +50,41 @@ export default class EventList extends Shadow() {
     const dataEventsUrl = this.getAttribute("data-events");
     const dataTranslationsUrl = this.getAttribute("data-translations");
 
-    // @ts-ignore
-    fetch(dataEventsUrl)
-      .then((response) => response.json())
-      .then((data) => {
-        this.events = data.events;
-      })
-      .catch((error) => {
-        console.error(error);
-      });
+    // Check if the data already exists in localStorage
+    const savedEventsData = localStorage.getItem('eventsData');
+    const savedTranslationsData = localStorage.getItem('translationsData');
 
-    // @ts-ignore
-    fetch(dataTranslationsUrl)
-      .then((response) => response.json())
-      .then((data) => {
-        this.translations = data.translations;
-        this.renderHTML();
-      })
-      .catch((error) => {
-        console.error(error);
-      });
+    if (savedEventsData) {
+      this.events = JSON.parse(savedEventsData)
+    } else {
+      // @ts-ignore
+      fetch(dataEventsUrl)
+        .then((response) => response.json())
+        .then((data) => {
+          localStorage.setItem('eventsData', JSON.stringify(data.events));
+          this.events = data.events;
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+    }
+
+    if (savedTranslationsData) {
+      this.translations = JSON.parse(savedTranslationsData)
+    } else {
+      // @ts-ignore
+      fetch(dataTranslationsUrl)
+        .then((response) => response.json())
+        .then((data) => {
+          localStorage.setItem('translationsData', JSON.stringify(data.translations));
+          this.translations = data.translations;
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+    }
+
+    this.renderHTML();
 
     document.body.addEventListener(
       this.getAttribute("answer-event-name") || "answer-event-name",
