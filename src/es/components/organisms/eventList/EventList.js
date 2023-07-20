@@ -75,25 +75,27 @@ export default class EventList extends Shadow() {
       console.error(error)
     }
 
-    if (savedEventsData) {
+    // FYI: Andy preferred to always get the fetched data for debugging reasons, can be activated again later, although it should have a time limit or be sessionStorage
+    /*if (savedEventsData) {
       this.events = JSON.parse(savedEventsData)
       this.eventsLoaded = true
-    } else {
+    } else {*/
       fetch(dataEventsUrl)
         .then((response) => response.json())
         .then(handleEventsResponse)
         .catch(handleError)
-    }
+    //}
 
-    if (savedTranslationsData) {
+    // FYI: Andy preferred to always get the fetched data for debugging reasons, can be activated again later, although it should have a time limit or be sessionStorage
+    /*if (savedTranslationsData) {
       this.translations = JSON.parse(savedTranslationsData)
       this.translationsLoaded = true
-    } else {
+    } else {*/
       fetch(dataTranslationsUrl)
         .then((response) => response.json())
         .then(handleTranslationsRepsonse)
         .catch(handleError)
-    }
+    //}
 
     if (this.eventsLoaded && this.translationsLoaded) {
       this.renderHTML()
