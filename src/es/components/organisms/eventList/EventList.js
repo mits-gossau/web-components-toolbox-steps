@@ -5,6 +5,10 @@ import(
   '../../molecules/eventCard/EventCard.js'
   // @ts-ignore
 ).then((module) => customElements.define('m-steps-event-card', module.default))
+import(
+  '../../web-components-toolbox/src/es/components/atoms/dateSelect/DateSelect.js'
+  // @ts-ignore
+).then((module) => customElements.define('a-date-select', module.default))
 
 /**
  * EventList
@@ -58,14 +62,14 @@ export default class EventList extends Shadow() {
     const savedTranslationsData = localStorage.getItem('translationsData')
 
     const handleEventsResponse = (data) => {
-      localStorage.setItem('eventsData', JSON.stringify(data.events))
+      // localStorage.setItem('eventsData', JSON.stringify(data.events))
       this.events = data.events
       this.eventsLoaded = true
       this.checkRenderHTML()
     }
 
     const handleTranslationsRepsonse = (data) => {
-      localStorage.setItem('translationsData', JSON.stringify(data.translations))
+      // localStorage.setItem('translationsData', JSON.stringify(data.translations))
       this.translations = data.translations
       this.translationsLoaded = true
       this.checkRenderHTML()
@@ -141,6 +145,65 @@ export default class EventList extends Shadow() {
         border-bottom: 1px solid var(--steps-color-black);
         margin: 1.25rem 0;
       }
+      :host .filter-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 40px;
+      }
+      @media only screen and (min-width: 768px) {
+        :host .filter-buttons {
+          flex-direction: row;
+        }
+      }
+      :host a-date-select,
+      :host a-button:not(:last-child) {
+        margin-right: 1.25rem;
+        margin-bottom: 1.25rem;
+      }
+      @media only screen and (min-width: 768px) {
+        :host a-date-select, 
+        :host a-button:not(:last-child) {
+          margin-bottom: 0;
+        }
+      }
+      :host a-button.active {
+        --button-secondary-font-family: var(--font-family-bold);
+      }
+      :host .filter-items {
+        margin: 0.625rem 0;
+      }
+      :host .filter-items ul {
+        padding-left: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      :host .filter-items a {
+        text-decoration: none;
+        font-family: var(--font-family);
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 1.25rem 0 0;
+        padding: 0.625rem 0;
+      }
+      :host .filter-items a::before {
+        display: block;
+        content: attr(data-text);
+        font-family: var(--font-family-bold);
+        font-weight: normal;
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+        margin: 0 1px;
+      }
+      :host .filter-items a:hover {
+        color: var(--steps-color-black);
+        font-family: var(--font-family-bold);
+        font-weight: normal;
+      }
     `
   }
 
@@ -182,9 +245,48 @@ export default class EventList extends Shadow() {
         ></m-steps-event-card>`
       })
       .join('')
+    
+    // date kung fu
+    const eventDates = this.events.map(event => event.eventDate)
+    const dateObjects = eventDates.map(dateString => {
+      const dateParts = dateString.split('.')
+      const timeParts = dateParts[2].split(' ')
+      const day = parseInt(dateParts[0])
+      const month = parseInt(dateParts[1]) - 1
+      const year = parseInt(timeParts[0])
+      const eventTime = timeParts[1]
+      const [hours, minutes, seconds] = eventTime.split(':').map(Number)
+      
+      return new Date(year, month, day, hours, minutes, seconds)
+    })
+    const dateTimestamps = dateObjects.map(date => date.getTime())
+    const minTimestamp = Math.min(...dateTimestamps)
+    const maxTimestamp = Math.max(...dateTimestamps)
+    const minDate = new Date(minTimestamp)
+    const maxDate = new Date(maxTimestamp)
+    const formattedMinYear = minDate.toLocaleString('de-CH', { year: "numeric" })
+    const formattedMinMonth = minDate.toLocaleString('de-CH', { month: "2-digit" })
+    const formattedMinDay = minDate.toLocaleString('de-CH', { day: "2-digit" })
+    const formattedMinDate = formattedMinYear + '-' + formattedMinMonth + '-' + formattedMinDay
+    const formattedMaxYear = maxDate.toLocaleString('de-CH', { year: "numeric" })
+    const formattedMaxMonth = maxDate.toLocaleString('de-CH', { month: "2-digit" })
+    const formattedMaxDay = maxDate.toLocaleString('de-CH', {  day: "2-digit" })
+    const formattedMaxDate = formattedMaxYear + '-' + formattedMaxMonth + '-' + formattedMaxDay
 
     this.html = /* html */ `
       <div class="event-list">
+        <div class="filter-buttons">
+            <a-date-select 
+                namespace="date-select-secondary-"
+                placeholder="Datum auswählen"
+                calendarIndicator=" → 📅"
+                min="${formattedMinDate}"
+                max="${formattedMaxDate}"
+                closeTooltip="Zurücksetzen"
+                locale="de-CH"
+            ></a-date-select>
+        </div>
+
         ${eventHtml}
       </div>
     `
