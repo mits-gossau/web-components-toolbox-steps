@@ -59,11 +59,13 @@
             flex-direction: row;
           }
         }
+        :host a-date-select,
         :host a-button:not(:last-child) {
           margin-right: 1.25rem;
           margin-bottom: 1.25rem;
         }
         @media only screen and (min-width: 768px) {
+          :host a-date-select, 
           :host a-button:not(:last-child) {
             margin-bottom: 0;
           }
@@ -108,11 +110,15 @@
       </style>
       <div class="filter-buttons">
 
-        <a-steps-date-input 
-          min="2024-08-20" 
-          max="2024-09-12" 
-          placeholder="Datum auswählen"
-        ></a-steps-date-input>
+        <a-date-select 
+            namespace="date-select-secondary-"
+            placeholder="Datum auswählen"
+            calendarIndicator=" → 📅"
+            min="2024-08-20" 
+            max="2024-09-12" 
+            closeTooltip="Zurücksetzen"
+            locale="de-CH"
+        ></a-date-select>
         
         <script type="text/javascript">
           window.addEventListener('load',function(){
@@ -166,7 +172,7 @@
 
     <o-steps-event-list
       answer-event-name="list-events"
-      data-events="../../organisms/eventList/example-events.json"
+      data-events="https://api.json-generator.com/templates/hpINMz4yKYqK/data?access_token=xkvmxbpx2io4tgzfiod9uzktcqbefrd7ep7528a2"
       data-translations="../../organisms/eventList/example-translations.json"
     ></o-steps-event-list>
     <script src="../organisms/eventList/EventList.js" type="module"></script>
