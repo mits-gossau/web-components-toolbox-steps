@@ -50,6 +50,11 @@ export default class EventList extends Shadow() {
 
     this.eventsLoaded = false
     this.translationsLoaded = false
+
+    this.selectListener = (event) => {
+      event.preventDefault()
+      console.log(event, event.detail)
+    }
   }
 
   connectedCallback () {
@@ -109,6 +114,9 @@ export default class EventList extends Shadow() {
       this.getAttribute('answer-event-name') || 'answer-event-name',
       this.answerEventNameListener
     )
+
+    this.addEventListener("click", this.selectListener)
+    
   }
 
   checkRenderHTML () {
@@ -122,6 +130,8 @@ export default class EventList extends Shadow() {
       this.getAttribute('answer-event-name') || 'answer-event-name',
       this.answerEventNameListener
     )
+
+    this.removeEventListener("click", this.selectListener)
   }
 
   /**
@@ -246,7 +256,7 @@ export default class EventList extends Shadow() {
       })
       .join('')
     
-    // date kung fu
+    // Get the min and max date of events
     const eventDates = this.events.map(event => event.eventDate)
     const dateObjects = eventDates.map(dateString => {
       const dateParts = dateString.split('.')
