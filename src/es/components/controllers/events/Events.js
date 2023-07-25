@@ -28,37 +28,79 @@ export default class Events extends Shadow() {
 
     this.abortController = null
     this.requestListEventsListener = async event => {
-      console.log('hooooooooi!', event.detail)
       if (this.abortController) this.abortController.abort()
       this.abortController = new AbortController()
       // TODO: event.detail.pushHistory if yes this.setTag()
+
       const fetchOptions = {
         method: 'GET',
         signal: this.abortController.signal
       }
-      const endpoint = this.getAttribute('endpoint') + '?' + 'tags=' + event.detail.tags
-      /* this.dispatchEvent(new CustomEvent(this.getAttribute('list-events') || 'list-events', {
-        detail: {
-          fetch: (this._fetch || (this._fetch = fetch(endpoint, fetchOptions))).then(response => {
-            if (response.status >= 200 && response.status <= 299) {
-              // TODO: Filter Stuff here
-              return response.json()
+      const endpoint = this.getAttribute('endpoint')
+
+      const fetchEvents = async () => {
+        try {
+          const response = await fetch(endpoint, fetchOptions)
+          
+          if (response.status >= 200 && response.status <= 299) {
+            let { events, translations } = await response.json()
+
+            // Get the min and max date of events
+            const eventDates = events.map(event => event.eventDate)
+            const dateObjects = eventDates.map(dateString => {
+              const dateParts = dateString.split('.')
+              const timeParts = dateParts[2].split(' ')
+              const day = parseInt(dateParts[0])
+              const month = parseInt(dateParts[1]) - 1
+              const year = parseInt(timeParts[0])
+              const eventTime = timeParts[1]
+              const [hours, minutes, seconds] = eventTime.split(':').map(Number)
+              
+              return new Date(year, month, day, hours, minutes, seconds)
+            })
+            const dateTimestamps = dateObjects.map(date => date.getTime())
+            const minTimestamp = Math.min(...dateTimestamps)
+            const maxTimestamp = Math.max(...dateTimestamps)
+            
+            const minDate = new Date(minTimestamp)
+            const maxDate = new Date(maxTimestamp)
+
+            const formatDate = (date) => {
+              const formattedYear = date.toLocaleString('de-CH', { year: 'numeric' })
+              const formattedMonth = date.toLocaleString('de-CH', { month: '2-digit' })
+              const formattedDay = date.toLocaleString('de-CH', { day: '2-digit' })
+              return formattedYear + '-' + formattedMonth + '-' + formattedDay
             }
+
+            const formattedMinDate = formatDate(minDate)
+            const formattedMaxDate = formatDate(maxDate)
+            console.log(formattedMinDate, formattedMaxDate)
+
+            // Filter events by selected date
+            if (event.detail?.date) {
+              events = events.filter(eventArray => eventArray.eventDate.includes(event.detail.date))
+            }
+            
+            return {events, translations}
+          } else {
             throw new Error(response.statusText)
-          })
-        },
-        bubbles: true,
-        cancelable: true,
-        composed: true
-      })) */
-      this.dispatchEvent(new CustomEvent(this.getAttribute('list-events') || 'list-events', {
+          }
+        } catch (error) {
+          console.error(error)
+          return []
+        }
+      }
+      
+      const listEventsEvent = new CustomEvent(this.getAttribute('list-events') || 'list-events', {
         detail: {
-          test: 'hooooooi'
+          fetch: fetchEvents()
         },
         bubbles: true,
         cancelable: true,
         composed: true
-      }))
+      })
+      
+      this.dispatchEvent(listEventsEvent)
     }
     // inform about the url which would result on this filter
     this.requestHrefEventListener = event => {
@@ -74,6 +116,7 @@ export default class Events extends Shadow() {
   connectedCallback () {
     this.addEventListener(this.getAttribute('request-list-events') || 'request-list-events', this.requestListEventsListener)
     this.addEventListener('request-href-' + (this.getAttribute('request-list-events') || 'request-list-events'), this.requestHrefEventListener)
+    // this.addEventListener(document.getElementById('close-icon')?.addEventListener("click", () => this.requestListEventsListener))
     if (!this.hasAttribute('no-popstate')) self.addEventListener('popstate', this.updatePopState)
   }
 

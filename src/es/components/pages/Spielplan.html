@@ -1,4 +1,6 @@
-<c-steps-events>
+<c-steps-events
+  endpoint="https://api.json-generator.com/templates/hpINMz4yKYqK/data?access_token=xkvmxbpx2io4tgzfiod9uzktcqbefrd7ep7528a2"
+>
   <div style="padding: 40px 20px">
     <header>
       <h1>Spielplan</h1>
@@ -110,7 +112,7 @@
       </style>
       <div class="filter-buttons">
 
-        <!-- <a-date-select 
+        <a-date-select 
             namespace="date-select-secondary-"
             placeholder="Datum auswählen"
             calendarIndicator=" → 📅"
@@ -118,13 +120,14 @@
             max="2024-09-12" 
             closeTooltip="Zurücksetzen"
             locale="de-CH"
-        ></a-date-select> -->
+            request-event-name="request-list-events"
+        ></a-date-select>
         
         <!-- <script type="text/javascript">
           window.addEventListener('load',function(){
-            document.getElementById("dateButton").addEventListener("click", () => {
-              console.log("dateButton clicked");
-              document.getElementById("date-picker").focus();
+            document.getElementById("daySelect").addEventListener("change", () => {
+              console.log("daySelect changed");
+              // document.getElementById("date-picker").focus();
             });
           });
         </script> -->
@@ -172,8 +175,7 @@
 
     <o-steps-event-list
       answer-event-name="list-events"
-      data-events="https://api.json-generator.com/templates/hpINMz4yKYqK/data?access_token=xkvmxbpx2io4tgzfiod9uzktcqbefrd7ep7528a2"
-      data-translations="../../organisms/eventList/example-translations.json"
+      request-event-name="request-list-events"
     ></o-steps-event-list>
     <script src="../organisms/eventList/EventList.js" type="module"></script>
   </div>
