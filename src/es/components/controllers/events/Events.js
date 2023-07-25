@@ -116,7 +116,7 @@ export default class Events extends Shadow() {
   connectedCallback () {
     this.addEventListener(this.getAttribute('request-list-events') || 'request-list-events', this.requestListEventsListener)
     this.addEventListener('request-href-' + (this.getAttribute('request-list-events') || 'request-list-events'), this.requestHrefEventListener)
-    // this.addEventListener(document.getElementById('close-icon')?.addEventListener("click", () => this.requestListEventsListener))
+    window.document.getElementById('close-icon')?.addEventListener("click", () => console.log('reset date select!'))
     if (!this.hasAttribute('no-popstate')) self.addEventListener('popstate', this.updatePopState)
   }
 
