@@ -76,6 +76,9 @@ export default class Events extends Shadow() {
             const formattedMaxDate = formatDate(maxDate)
             console.log(formattedMinDate, formattedMaxDate)
 
+            const dateSelect = this.getElementsByTagName('a-date-select');
+            console.log(dateSelect)
+
             // Filter events by selected date
             if (event.detail?.date) {
               events = events.filter(eventArray => eventArray.eventDate.includes(event.detail.date))
@@ -111,13 +114,16 @@ export default class Events extends Shadow() {
       event.detail.pushHistory = false
       this.requestListEventsListener(event)
     }
+
+    // this.closeIconListener = (event) => {
+    //   console.log('close icon clicked!', event)
+    // }
   }
 
   connectedCallback () {
     this.addEventListener(this.getAttribute('request-list-events') || 'request-list-events', this.requestListEventsListener)
     this.addEventListener('request-href-' + (this.getAttribute('request-list-events') || 'request-list-events'), this.requestHrefEventListener)
-    window.document.getElementById('close-icon')?.addEventListener("click", () => console.log('reset date select!'))
-    if (!this.hasAttribute('no-popstate')) self.addEventListener('popstate', this.updatePopState)
+    if (!this.hasAttribute('no-popstate')) self.addEventListener('popstate', this.updatePopState) 
   }
 
   disconnectedCallback () {
