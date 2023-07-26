@@ -1,5 +1,10 @@
 // @ts-check
 import { Shadow } from '../../web-components-toolbox/src/es/components/prototypes/Shadow.js'
+import(
+  '../../web-components-toolbox/src/es/components/atoms/button/Button.js'
+  // @ts-ignore
+).then((module) => customElements.define('a-button', module.default))
+
 
 /**
  * EventCard
