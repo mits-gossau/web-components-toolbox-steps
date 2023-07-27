@@ -74,17 +74,19 @@ export default class Events extends Shadow() {
 
             const formattedMinDate = formatDate(minDate)
             const formattedMaxDate = formatDate(maxDate)
-            console.log(formattedMinDate, formattedMaxDate)
-
-            const dateSelect = this.getElementsByTagName('a-date-select');
-            console.log(dateSelect)
-
+          
             // Filter events by selected date
             if (event.detail?.date) {
               events = events.filter(eventArray => eventArray.eventDate.includes(event.detail.date))
             }
             
-            return {events, translations}
+            return {
+              events,
+              translations,
+              min: formattedMinDate,
+              max: formattedMaxDate,
+              //days: [1,2,3,4,8,9], months, years
+            }
           } else {
             throw new Error(response.statusText)
           }
@@ -93,17 +95,15 @@ export default class Events extends Shadow() {
           return []
         }
       }
-      
-      const listEventsEvent = new CustomEvent(this.getAttribute('list-events') || 'list-events', {
+           
+      this.dispatchEvent(new CustomEvent(this.getAttribute('list-events') || 'list-events', {
         detail: {
           fetch: fetchEvents()
         },
         bubbles: true,
         cancelable: true,
         composed: true
-      })
-      
-      this.dispatchEvent(listEventsEvent)
+      }))
     }
     // inform about the url which would result on this filter
     this.requestHrefEventListener = event => {
@@ -114,10 +114,6 @@ export default class Events extends Shadow() {
       event.detail.pushHistory = false
       this.requestListEventsListener(event)
     }
-
-    // this.closeIconListener = (event) => {
-    //   console.log('close icon clicked!', event)
-    // }
   }
 
   connectedCallback () {
