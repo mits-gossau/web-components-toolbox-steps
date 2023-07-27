@@ -41,55 +41,56 @@ export default class Events extends Shadow() {
       const fetchEvents = async () => {
         try {
           const response = await fetch(endpoint, fetchOptions)
-          
-          if (response.status >= 200 && response.status <= 299) {
-            let { events, translations } = await response.json()
 
-            // Get the min and max date of events
-            const eventDates = events.map(event => event.eventDate)
-            const dateObjects = eventDates.map(dateString => {
-              const dateParts = dateString.split('.')
-              const timeParts = dateParts[2].split(' ')
-              const day = parseInt(dateParts[0])
-              const month = parseInt(dateParts[1]) - 1
-              const year = parseInt(timeParts[0])
-              const eventTime = timeParts[1]
-              const [hours, minutes, seconds] = eventTime.split(':').map(Number)
-              
-              return new Date(year, month, day, hours, minutes, seconds)
-            })
-            const dateTimestamps = dateObjects.map(date => date.getTime())
-            const minTimestamp = Math.min(...dateTimestamps)
-            const maxTimestamp = Math.max(...dateTimestamps)
-            
-            const minDate = new Date(minTimestamp)
-            const maxDate = new Date(maxTimestamp)
-
-            const formatDate = (date) => {
-              const formattedYear = date.toLocaleString('de-CH', { year: 'numeric' })
-              const formattedMonth = date.toLocaleString('de-CH', { month: '2-digit' })
-              const formattedDay = date.toLocaleString('de-CH', { day: '2-digit' })
-              return formattedYear + '-' + formattedMonth + '-' + formattedDay
-            }
-
-            const formattedMinDate = formatDate(minDate)
-            const formattedMaxDate = formatDate(maxDate)
-          
-            // Filter events by selected date
-            if (event.detail?.date) {
-              events = events.filter(eventArray => eventArray.eventDate.includes(event.detail.date))
-            }
-            
-            return {
-              events,
-              translations,
-              min: formattedMinDate,
-              max: formattedMaxDate,
-              //days: [1,2,3,4,8,9], months, years
-            }
-          } else {
+          if(!response.ok) {
             throw new Error(response.statusText)
           }
+          
+          let { events, translations } = await response.json()
+
+          // Get the min and max date of events
+          const eventDates = events.map(event => event.eventDate)
+          const dateObjects = eventDates.map(dateString => {
+            const dateParts = dateString.split('.')
+            const timeParts = dateParts[2].split(' ')
+            const day = parseInt(dateParts[0])
+            const month = parseInt(dateParts[1]) - 1
+            const year = parseInt(timeParts[0])
+            const eventTime = timeParts[1]
+            const [hours, minutes, seconds] = eventTime.split(':').map(Number)
+            
+            return new Date(year, month, day, hours, minutes, seconds)
+          })
+          const dateTimestamps = dateObjects.map(date => date.getTime())
+          const minTimestamp = Math.min(...dateTimestamps)
+          const maxTimestamp = Math.max(...dateTimestamps)
+          
+          const minDate = new Date(minTimestamp)
+          const maxDate = new Date(maxTimestamp)
+
+          const formatDate = (date) => {
+            const formattedYear = date.toLocaleString('de-CH', { year: 'numeric' })
+            const formattedMonth = date.toLocaleString('de-CH', { month: '2-digit' })
+            const formattedDay = date.toLocaleString('de-CH', { day: '2-digit' })
+            return formattedYear + '-' + formattedMonth + '-' + formattedDay
+          }
+
+          const formattedMinDate = formatDate(minDate)
+          const formattedMaxDate = formatDate(maxDate)
+        
+          // Filter events by selected date
+          if (event.detail?.date) {
+            events = events.filter(eventArray => eventArray.eventDate.includes(event.detail.date))
+          }
+          
+          return {
+            events,
+            translations,
+            min: formattedMinDate,
+            max: formattedMaxDate,
+            //days: [1,2,3,4,8,9], months, years
+          }
+
         } catch (error) {
           console.error(error)
           return []
