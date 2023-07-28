@@ -84,6 +84,7 @@
   --button-secondary-border-radius: var(--border-radius);
   --button-secondary-border-radius-mobile: var(--border-radius);
   --date-select-secondary-border-radius: var(--border-radius);
+  --filter-accordion-secondary-border-radius: var(--border-radius);
 
   /* date select */
   --date-select-secondary-padding: 4px 12px;

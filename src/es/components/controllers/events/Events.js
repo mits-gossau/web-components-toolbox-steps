@@ -77,7 +77,10 @@ export default class Events extends Shadow() {
 
           const formattedMinDate = formatDate(minDate)
           const formattedMaxDate = formatDate(maxDate)
-        
+
+          const companies = events.map(event => event.company).sort()
+          const locations = events.map(event => event.location).sort()
+
           // Filter events by selected date
           if (event.detail?.date) {
             events = events.filter(eventArray => eventArray.eventDate.includes(event.detail.date))
@@ -88,6 +91,8 @@ export default class Events extends Shadow() {
             translations,
             min: formattedMinDate,
             max: formattedMaxDate,
+            companies,
+            locations
             //days: [1,2,3,4,8,9], months, years
           }
 
@@ -96,16 +101,28 @@ export default class Events extends Shadow() {
           return []
         }
       }
-           
+
+      const fetchedEvents = fetchEvents()
+
       this.dispatchEvent(new CustomEvent(this.getAttribute('list-events') || 'list-events', {
         detail: {
-          fetch: fetchEvents()
+          fetch: fetchedEvents
+        },
+        bubbles: true,
+        cancelable: true,
+        composed: true
+      }))
+
+      this.dispatchEvent(new CustomEvent(this.getAttribute('list-filter-items') || 'list-filter-items', {
+        detail: {
+          fetch: fetchedEvents
         },
         bubbles: true,
         cancelable: true,
         composed: true
       }))
     }
+
     // inform about the url which would result on this filter
     this.requestHrefEventListener = event => {
       if (event.detail && event.detail.resolve) event.detail.resolve(this.setTag(event.detail.tags.join(';'), event.detail.pushHistory).href)
@@ -119,12 +136,14 @@ export default class Events extends Shadow() {
 
   connectedCallback () {
     this.addEventListener(this.getAttribute('request-list-events') || 'request-list-events', this.requestListEventsListener)
+    this.addEventListener(this.getAttribute('request-list-filter-items') || 'request-list-filter-items', this.requestListEventsListener)
     this.addEventListener('request-href-' + (this.getAttribute('request-list-events') || 'request-list-events'), this.requestHrefEventListener)
-    if (!this.hasAttribute('no-popstate')) self.addEventListener('popstate', this.updatePopState) 
+    if (!this.hasAttribute('no-popstate')) self.addEventListener('popstate', this.updatePopState)
   }
 
   disconnectedCallback () {
     this.removeEventListener(this.getAttribute('request-list-events') || 'request-list-events', this.requestListEventsListener)
+    this.removeEventListener(this.getAttribute('request-list-filter-items') || 'request-list-filter-items', this.requestListEventsListener)
     this.removeEventListener('request-href-' + (this.getAttribute('request-list-events') || 'request-list-events'), this.requestHrefEventListener)
     if (!this.hasAttribute('no-popstate')) self.removeEventListener('popstate', this.updatePopState)
   }
