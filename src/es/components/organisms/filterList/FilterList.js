@@ -16,7 +16,7 @@ export default class FilterList extends Shadow() {
     this.companies = []
     this.locations = []
 
-    this.answerEventNameListener = (event) => {
+    this.answerEventListener = (event) => {
       event.detail.fetch.then((data) => this.renderHTML(data)) 
     }
 
@@ -27,8 +27,6 @@ export default class FilterList extends Shadow() {
       event.preventDefault()
       console.log(event, event.detail)
     }
-
-    
   }
 
   connectedCallback () {
@@ -40,7 +38,7 @@ export default class FilterList extends Shadow() {
 
     document.body.addEventListener(
       this.getAttribute('answer-event-name') || 'answer-event-name',
-      this.answerEventNameListener
+      this.answerEventListener
     )
 
     this.addEventListener("click", this.selectListener)
@@ -57,7 +55,7 @@ export default class FilterList extends Shadow() {
   disconnectedCallback () {
     document.body.removeEventListener(
       this.getAttribute('answer-event-name') || 'answer-event-name',
-      this.answerEventNameListener
+      this.answerEventListener
     )
 
     this.removeEventListener("click", this.selectListener)

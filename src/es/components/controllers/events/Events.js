@@ -102,34 +102,27 @@ export default class Events extends Shadow() {
         }
       }
 
-      const fetchedEvents = fetchEvents()
-
-      this.dispatchEvent(new CustomEvent(this.getAttribute('list-events') || 'list-events', {
-        detail: {
-          fetch: fetchedEvents
-        },
-        bubbles: true,
-        cancelable: true,
-        composed: true
-      }))
-
-      this.dispatchEvent(new CustomEvent(this.getAttribute('list-filter-items') || 'list-filter-items', {
-        detail: {
-          fetch: fetchedEvents
-        },
-        bubbles: true,
-        cancelable: true,
-        composed: true
-      }))
+      const dispatchListEvent = (eventName, detailObject) => {
+         this.dispatchEvent(new CustomEvent(this.getAttribute(eventName) || eventName, {
+             detail: detailObject,
+             bubbles: true,
+             cancelable: true,
+             composed: true
+           }));
+      }
+     
+      const fetchedEvents = fetchEvents();
+      dispatchListEvent('list-events', { fetch: fetchedEvents });
+      dispatchListEvent('list-filter-items', { fetch: fetchedEvents });
     }
 
-    this.displayListCompanies = (event) => {
+    this.displayListCompanies = () => {
       const filterList = this.root.getElementsByTagName('o-steps-filter-list')
       const listCompanies = filterList[0].shadowRoot.getElementById('list-companies')
       listCompanies.classList.toggle('hidden')
     }
 
-    this.displayListLocations = (event) => {
+    this.displayListLocations = () => {
       const filterList = this.root.getElementsByTagName('o-steps-filter-list')
       const listCompanies = filterList[0].shadowRoot.getElementById('list-locations')
       listCompanies.classList.toggle('hidden')
