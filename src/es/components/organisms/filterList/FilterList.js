@@ -23,9 +23,57 @@ export default class FilterList extends Shadow() {
     this.companiesLoaded = false
     this.locationsLoaded = false
 
-    this.selectListener = (event) => {
+
+
+    this.clickListener = (event) => {
       event.preventDefault()
-      console.log(event, event.detail)
+      let company = ''
+      let location = ''
+      const elementId = event.target.id
+      const listId = event.target.parentElement.parentElement.id
+      console.log(event, event.detail, elementId, listId)
+
+      if (listId === "list-companies") {
+        company = elementId
+      }
+      if (listId === "list-locations") {
+        location = elementId
+      }
+      
+      if (this.hasAttribute('disabled')) {
+        event.preventDefault()
+        return
+      }
+
+      if (this.getAttribute('request-event-name')) {
+        this.dispatchEvent(
+          new CustomEvent(this.getAttribute('request-event-name'), {
+            detail: {
+              company,
+              location
+            },
+            bubbles: true,
+            cancelable: true,
+            composed: true
+          })
+        )
+      }
+
+      this.answerEventListener = async (event) => {
+        event.detail.fetch.then(data => {
+          console.log('data:', data)
+        })
+      }
+
+      this.closeEventListener = (event) => {
+        this.dispatchEvent(
+          new CustomEvent(this.getAttribute('request-event-name'), {
+            bubbles: true,
+            cancelable: true,
+            composed: true
+          })
+        )
+      }
     }
   }
 
@@ -41,8 +89,6 @@ export default class FilterList extends Shadow() {
       this.answerEventListener
     )
 
-    this.addEventListener("click", this.selectListener)
-
     this.dispatchEvent(
       new CustomEvent(this.getAttribute('request-event-name'), {
         bubbles: true,
@@ -57,8 +103,6 @@ export default class FilterList extends Shadow() {
       this.getAttribute('answer-event-name') || 'answer-event-name',
       this.answerEventListener
     )
-
-    this.removeEventListener("click", this.selectListener)
   }
 
   /**
@@ -98,31 +142,33 @@ export default class FilterList extends Shadow() {
 
   renderHTML(data) {
     const createList = (data, id, attributeClass) => {
-      let ul = document.createElement('ul');
-      ul.setAttribute('id', id);
-      ul.setAttribute('class', attributeClass + ' hidden');
+      let ul = document.createElement('ul')
+      ul.setAttribute('id', id)
+      ul.setAttribute('class', attributeClass + ' hidden')
 
       data.forEach(item => {
-        const li = document.createElement('li');
-        const button = document.createElement('a-button');
+        const li = document.createElement('li')
+        const button = document.createElement('a-button')
+        button.setAttribute('id', item)
+        button.addEventListener('click', this.clickListener)
         button.setAttribute('namespace','button-category-')
-        button.textContent = item;
-        li.appendChild(button);
-        ul.appendChild(li);
-      });
+        button.textContent = item
+        li.appendChild(button)
+        ul.appendChild(li)
+      })
 
-      return ul;
-    };
+      return ul
+    }
 
-    let companies = createList(data.companies, 'list-companies', 'list-items');
-    let locations = createList(data.locations, 'list-locations', 'list-items');
+    let companies = createList(data.companies, 'list-companies', 'list-items')
+    let locations = createList(data.locations, 'list-locations', 'list-items')
 
-    const filterList = document.createElement('div');
-    filterList.setAttribute('class', 'filter-list');
-    filterList.appendChild(companies);
-    filterList.appendChild(locations);
+    const filterList = document.createElement('div')
+    filterList.setAttribute('class', 'filter-list')
+    filterList.appendChild(companies)
+    filterList.appendChild(locations)
 
-    this.html = '';
-    this.html = filterList;
+    this.html = ''
+    this.html = filterList
   }
 }
