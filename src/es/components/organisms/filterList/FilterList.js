@@ -1,6 +1,12 @@
 // @ts-check
 import { Shadow } from '../../web-components-toolbox/src/es/components/prototypes/Shadow.js'
 
+// import(
+//   '../../web-components-toolbox/src/es/components/atoms/button/Button.js'
+//   // @ts-ignore
+// ).then((module) => customElements.define('a-button', module.default))
+
+
 /**
  * FilterList
  * An example at: src/es/components/pages/Spielplan.html
@@ -27,6 +33,8 @@ export default class FilterList extends Shadow() {
       event.preventDefault()
       console.log(event, event.detail)
     }
+
+    
   }
 
   connectedCallback () {
@@ -101,6 +109,12 @@ export default class FilterList extends Shadow() {
       :host .list-items.open {
         display: flex
       }
+      :host .hidden {
+        display: none;
+      }
+      :host.visible {
+        display: block;
+      }
     `
   }
 
@@ -108,11 +122,12 @@ export default class FilterList extends Shadow() {
     const createList = (data, id, attributeClass) => {
       let ul = document.createElement('ul');
       ul.setAttribute('id', id);
-      ul.setAttribute('class', attributeClass);
+      ul.setAttribute('class', attributeClass + ' hidden');
 
       data.forEach(item => {
         const li = document.createElement('li');
         const button = document.createElement('a-button');
+        button.setAttribute('namespace','button-category-')
         button.textContent = item;
         li.appendChild(button);
         ul.appendChild(li);

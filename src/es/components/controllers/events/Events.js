@@ -123,6 +123,18 @@ export default class Events extends Shadow() {
       }))
     }
 
+    this.displayListCompanies = (event) => {
+      const filterList = this.root.getElementsByTagName('o-steps-filter-list')
+      const listCompanies = filterList[0].shadowRoot.getElementById('list-companies')
+      listCompanies.classList.toggle('hidden')
+    }
+
+    this.displayListLocations = (event) => {
+      const filterList = this.root.getElementsByTagName('o-steps-filter-list')
+      const listCompanies = filterList[0].shadowRoot.getElementById('list-locations')
+      listCompanies.classList.toggle('hidden')
+    }
+
     // inform about the url which would result on this filter
     this.requestHrefEventListener = event => {
       if (event.detail && event.detail.resolve) event.detail.resolve(this.setTag(event.detail.tags.join(';'), event.detail.pushHistory).href)
@@ -136,14 +148,16 @@ export default class Events extends Shadow() {
 
   connectedCallback () {
     this.addEventListener(this.getAttribute('request-list-events') || 'request-list-events', this.requestListEventsListener)
-    this.addEventListener(this.getAttribute('request-list-filter-items') || 'request-list-filter-items', this.requestListEventsListener)
+    this.addEventListener(this.getAttribute('request-list-companies') || 'request-list-companies', this.displayListCompanies)
+    this.addEventListener(this.getAttribute('request-list-locations') || 'request-list-locations', this.displayListLocations)
     this.addEventListener('request-href-' + (this.getAttribute('request-list-events') || 'request-list-events'), this.requestHrefEventListener)
     if (!this.hasAttribute('no-popstate')) self.addEventListener('popstate', this.updatePopState)
   }
 
   disconnectedCallback () {
     this.removeEventListener(this.getAttribute('request-list-events') || 'request-list-events', this.requestListEventsListener)
-    this.removeEventListener(this.getAttribute('request-list-filter-items') || 'request-list-filter-items', this.requestListEventsListener)
+    this.removeEventListener(this.getAttribute('request-list-companies') || 'request-list-companies', this.displayListCompanies)
+    this.removeEventListener(this.getAttribute('request-list-locations') || 'request-list-locations', this.displayListLocations)
     this.removeEventListener('request-href-' + (this.getAttribute('request-list-events') || 'request-list-events'), this.requestHrefEventListener)
     if (!this.hasAttribute('no-popstate')) self.removeEventListener('popstate', this.updatePopState)
   }
