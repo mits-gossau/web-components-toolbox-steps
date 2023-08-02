@@ -1,12 +1,6 @@
 // @ts-check
 import { Shadow } from '../../web-components-toolbox/src/es/components/prototypes/Shadow.js'
 
-// import(
-//   '../../web-components-toolbox/src/es/components/atoms/button/Button.js'
-//   // @ts-ignore
-// ).then((module) => customElements.define('a-button', module.default))
-
-
 /**
  * FilterList
  * An example at: src/es/components/pages/Spielplan.html
@@ -50,20 +44,6 @@ export default class FilterList extends Shadow() {
     )
 
     this.addEventListener("click", this.selectListener)
-
-
-
-    // document.body.addEventListener(
-    //   this.getAttribute('answer-event-name') || 'answer-event-name',
-    //   this.answerEventNameListener
-    // )
-
-    // this.addEventListener(this.getAttribute('request-list-filter-items') || 'request-list-filter-items', () => {
-    //   console.log('Compagnien clicked!')
-    //   // this.shadowRoot.getElementById('list-companies')?.classList.toggle('open')
-    // })
-
-
 
     this.dispatchEvent(
       new CustomEvent(this.getAttribute('request-event-name'), {
