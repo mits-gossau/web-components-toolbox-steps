@@ -32,11 +32,11 @@ export default class FilterList extends Shadow() {
     )
   }
 
-  answerEventListener(event) {
+  answerEventListener (event) {
     event.detail.fetch.then((data) => this.renderHTML(data)) 
   }
 
-  clickListener(event) {
+  clickListener (event) {
     event.preventDefault()
     const elementId = event.target.id
     const listId = event.target.parentElement.parentElement.id
@@ -92,7 +92,7 @@ export default class FilterList extends Shadow() {
         items.map((item) =>
           this.createHTMLElement('li', {},
             [
-              this.createHTMLElement('a-button',
+              this.createHTMLElement('a-button', // TODO: create a-steps-button
                 {
                   id: item,
                   namespace: 'button-category-',
