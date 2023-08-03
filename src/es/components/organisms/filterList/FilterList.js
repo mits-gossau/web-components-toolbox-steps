@@ -1,88 +1,15 @@
 // @ts-check
 import { Shadow } from '../../web-components-toolbox/src/es/components/prototypes/Shadow.js'
 
-/**
- * FilterList
- * An example at: src/es/components/pages/Spielplan.html
- *
- * @export
- * @class FilterList
- * @type {CustomElementConstructor}
- */
-
 export default class FilterList extends Shadow() {
   constructor (options = {}, ...args) {
     super({ importMetaUrl: import.meta.url, ...options }, ...args)
-    this.companies = []
-    this.locations = []
-
-    this.answerEventListener = (event) => {
-      event.detail.fetch.then((data) => this.renderHTML(data)) 
-    }
-
-    this.companiesLoaded = false
-    this.locationsLoaded = false
-
-
-
-    this.clickListener = (event) => {
-      event.preventDefault()
-      let company = ''
-      let location = ''
-      const elementId = event.target.id
-      const listId = event.target.parentElement.parentElement.id
-      console.log(event, event.detail, elementId, listId)
-
-      if (listId === "list-companies") {
-        company = elementId
-      }
-      if (listId === "list-locations") {
-        location = elementId
-      }
-      
-      if (this.hasAttribute('disabled')) {
-        event.preventDefault()
-        return
-      }
-
-      if (this.getAttribute('request-event-name')) {
-        this.dispatchEvent(
-          new CustomEvent(this.getAttribute('request-event-name'), {
-            detail: {
-              company,
-              location
-            },
-            bubbles: true,
-            cancelable: true,
-            composed: true
-          })
-        )
-      }
-
-      this.answerEventListener = async (event) => {
-        event.detail.fetch.then(data => {
-          console.log('data:', data)
-        })
-      }
-
-      this.closeEventListener = (event) => {
-        this.dispatchEvent(
-          new CustomEvent(this.getAttribute('request-event-name'), {
-            bubbles: true,
-            cancelable: true,
-            composed: true
-          })
-        )
-      }
-    }
+    this.answerEventListener = this.answerEventListener.bind(this)
+    this.clickListener = this.clickListener.bind(this)
   }
 
   connectedCallback () {
     if (this.shouldRenderCSS()) this.renderCSS()
-
-    if (this.companiesLoaded && this.locationsLoaded) {
-      this.renderHTML()
-    }
 
     document.body.addEventListener(
       this.getAttribute('answer-event-name') || 'answer-event-name',
@@ -105,11 +32,36 @@ export default class FilterList extends Shadow() {
     )
   }
 
-  /**
-   * evaluates if a render is necessary
-   *
-   * @return {boolean}
-   */
+  answerEventListener(event) {
+    event.detail.fetch.then((data) => this.renderHTML(data)) 
+  }
+
+  clickListener(event) {
+    event.preventDefault()
+    const elementId = event.target.id
+    const listId = event.target.parentElement.parentElement.id
+    console.log(event, event.detail, elementId, listId)
+    
+    const company = listId === "list-companies" ? elementId : ''
+    const location = listId === "list-locations" ? elementId : ''
+
+    if (this.hasAttribute('disabled')) {
+      event.preventDefault()
+      return
+    }
+
+    if (this.getAttribute('request-event-name')) {
+      this.dispatchEvent(
+        new CustomEvent(this.getAttribute('request-event-name'), {
+          bubbles: true,
+          cancelable: true,
+          composed: true,
+          detail: { company, location }
+        })
+      )
+    }
+  }
+
   shouldRenderCSS () {
     return !this.root.querySelector(
       `:host > style[_css], ${this.tagName} > style[_css]`
@@ -133,34 +85,55 @@ export default class FilterList extends Shadow() {
   }
 
   renderHTML(data) {
-    const createList = (data, id, attributeClass) => {
-      let ul = document.createElement('ul')
-      ul.setAttribute('id', id)
-      ul.setAttribute('class', attributeClass + ' hidden')
+    const createList = (items, id, className) =>
+      this.createHTMLElement(
+        'ul',
+        { id, class: `${className} hidden` },
+        items.map((item) =>
+          this.createHTMLElement('li', {},
+            [
+              this.createHTMLElement('a-button',
+                {
+                  id: item,
+                  namespace: 'button-category-',
+                  onClick: this.clickListener
+                },
+                [item]
+              )
+            ]
+          )
+        )
+      );
 
-      data.forEach(item => {
-        const li = document.createElement('li')
-        const button = document.createElement('a-steps-button')
-        button.setAttribute('id', item)
-        button.addEventListener('click', this.clickListener)
-        button.setAttribute('namespace','button-category-')
-        button.textContent = item
-        li.appendChild(button)
-        ul.appendChild(li)
-      })
+    const companies = createList(data.companies, 'list-companies', 'list-items');
+    const locations = createList(data.locations, 'list-locations', 'list-items');
 
-      return ul
-    }
+    const filterList = this.createHTMLElement(
+      'div', { class: 'filter-list' }, [companies, locations]
+    )
 
-    let companies = createList(data.companies, 'list-companies', 'list-items')
-    let locations = createList(data.locations, 'list-locations', 'list-items')
+    this.html = filterList;
+  }
 
-    const filterList = document.createElement('div')
-    filterList.setAttribute('class', 'filter-list')
-    filterList.appendChild(companies)
-    filterList.appendChild(locations)
+  createHTMLElement(tag, attributes = {}, children = []) {
+    const element = document.createElement(tag);
 
-    this.html = ''
-    this.html = filterList
+    Object.keys(attributes).forEach((key) => {
+      if (key === 'onClick') {
+        element.addEventListener('click', attributes[key]);
+      } else {
+        element.setAttribute(key, attributes[key]);
+      }
+    });
+
+    children.forEach((child) => {
+      if (typeof child !== 'string') {
+        element.appendChild(child);
+      } else {
+        element.textContent = child;
+      }
+    });
+
+    return element;
   }
 }
