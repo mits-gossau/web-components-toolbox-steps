@@ -116,20 +116,13 @@ export default class Events extends Shadow() {
       dispatchListEvent('list-filter-items', { fetch: fetchedEvents });
     }
 
-    this.displayFilter = (elementId) => {
+    const displayFilter = (elementId) => {
         const filterList = this.root.getElementsByTagName('o-steps-filter-list')
         const listElement = filterList[0].shadowRoot.getElementById(elementId)
         listElement.classList.toggle('hidden')
     }
-    
-    this.displayFilterCompanies = () => {
-        this.displayFilter('list-companies')
-    }
-    
-    this.displayFilterLocations = () => {
-        this.displayFilter('list-locations')
-    }
-   
+    this.displayFilterCompanies = () => displayFilter('list-companies')
+    this.displayFilterLocations = () => displayFilter('list-locations')
 
     // inform about the url which would result on this filter
     this.requestHrefEventListener = event => {
