@@ -118,8 +118,6 @@ export default class FilterList extends Shadow() {
 
   renderCSS () {
     this.css = /* css */ `
-      :host .filter-list {  
-      }
       :host .list-items {
         list-style: none;
         margin: 1.25rem 0;
@@ -128,14 +126,8 @@ export default class FilterList extends Shadow() {
         flex-direction: row;
         flex-wrap: wrap;
       }
-      :host .list-items.open {
-        display: flex
-      }
       :host .hidden {
         display: none;
-      }
-      :host.visible {
-        display: block;
       }
     `
   }
@@ -148,7 +140,7 @@ export default class FilterList extends Shadow() {
 
       data.forEach(item => {
         const li = document.createElement('li')
-        const button = document.createElement('a-button')
+        const button = document.createElement('a-steps-button')
         button.setAttribute('id', item)
         button.addEventListener('click', this.clickListener)
         button.setAttribute('namespace','button-category-')

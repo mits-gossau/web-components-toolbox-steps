@@ -200,6 +200,8 @@ export default class Button extends Hover() {
         border: var(--border-width-hover, var(--border-width, 0px)) solid var(--border-color-hover, var(--border-color, #FFFFFF));
         color: var(--color-hover, var(--color, #FFFFFF));
         opacity: var(--opacity-hover, var(--opacity, 1));
+        font-weight: var(--font-weight-hover, var(--font-weight, 400));
+        text-decoration: var(--text-decoration-hover, var(--text-decoration, none));
       }
       ${this.buttonTagName}:active, :host ${this.buttonTagName}.active {
         background-color: var(--background-color-active, var(--background-color-hover, var(--background-color, #803300)));
