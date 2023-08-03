@@ -116,17 +116,20 @@ export default class Events extends Shadow() {
       dispatchListEvent('list-filter-items', { fetch: fetchedEvents });
     }
 
-    this.displayListCompanies = () => {
-      const filterList = this.root.getElementsByTagName('o-steps-filter-list')
-      const listCompanies = filterList[0].shadowRoot.getElementById('list-companies')
-      listCompanies.classList.toggle('hidden')
+    this.displayFilter = (elementId) => {
+        const filterList = this.root.getElementsByTagName('o-steps-filter-list')
+        const listElement = filterList[0].shadowRoot.getElementById(elementId)
+        listElement.classList.toggle('hidden')
     }
-
-    this.displayListLocations = () => {
-      const filterList = this.root.getElementsByTagName('o-steps-filter-list')
-      const listCompanies = filterList[0].shadowRoot.getElementById('list-locations')
-      listCompanies.classList.toggle('hidden')
+    
+    this.displayFilterCompanies = () => {
+        this.displayFilter('list-companies')
     }
+    
+    this.displayFilterLocations = () => {
+        this.displayFilter('list-locations')
+    }
+   
 
     // inform about the url which would result on this filter
     this.requestHrefEventListener = event => {
@@ -141,16 +144,16 @@ export default class Events extends Shadow() {
 
   connectedCallback () {
     this.addEventListener(this.getAttribute('request-list-events') || 'request-list-events', this.requestListEventsListener)
-    this.addEventListener(this.getAttribute('request-list-companies') || 'request-list-companies', this.displayListCompanies)
-    this.addEventListener(this.getAttribute('request-list-locations') || 'request-list-locations', this.displayListLocations)
+    this.addEventListener(this.getAttribute('request-list-companies') || 'request-list-companies', this.displayFilterCompanies)
+    this.addEventListener(this.getAttribute('request-list-locations') || 'request-list-locations', this.displayFilterLocations)
     this.addEventListener('request-href-' + (this.getAttribute('request-list-events') || 'request-list-events'), this.requestHrefEventListener)
     if (!this.hasAttribute('no-popstate')) self.addEventListener('popstate', this.updatePopState)
   }
 
   disconnectedCallback () {
     this.removeEventListener(this.getAttribute('request-list-events') || 'request-list-events', this.requestListEventsListener)
-    this.removeEventListener(this.getAttribute('request-list-companies') || 'request-list-companies', this.displayListCompanies)
-    this.removeEventListener(this.getAttribute('request-list-locations') || 'request-list-locations', this.displayListLocations)
+    this.removeEventListener(this.getAttribute('request-list-companies') || 'request-list-companies', this.displayFilterCompanies)
+    this.removeEventListener(this.getAttribute('request-list-locations') || 'request-list-locations', this.displayFilterLocations)
     this.removeEventListener('request-href-' + (this.getAttribute('request-list-events') || 'request-list-events'), this.requestHrefEventListener)
     if (!this.hasAttribute('no-popstate')) self.removeEventListener('popstate', this.updatePopState)
   }
