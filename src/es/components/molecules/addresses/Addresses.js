@@ -73,7 +73,7 @@ export default class Addresses extends Shadow() {
         <address class="address-item">
           <p>${address.theatercity}</p>
           <h2>${address.theatername}</h2>
-          <p>Adresse<br />
+          <p>${address.theaterstreet}<br />
           <a href="tel:${address.theaterphone}">${address.theaterphone}</a><br />
           <strong><a href="${address.theaterurl}" target="_blank">${address.theaterurl}</a></strong><br />
           </p>
