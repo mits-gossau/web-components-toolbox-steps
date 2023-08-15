@@ -41,6 +41,7 @@
   --steps-color-blue-lighter: #c6b7fa;
 
   --background-color: var(--steps-color-light-grey);
+  --background-gradient: linear-gradient(180deg, var(--steps-color-blue) 0%, var(--steps-color-white) 33%);
   --color: var(--steps-color-black);
   --a-color: var(--steps-color-black);
   --color-hover: var(--steps-color-grey);
@@ -62,6 +63,7 @@
 
   /* font sizes  */
   --steps-h-font-size: clamp(32px, 5vw, 50px);
+  --steps-h-font-size-small: clamp(16px, 2.5vw, 25px);
   --h1-font-size: var(--steps-h-font-size);
   --h2-font-size: var(--steps-h-font-size);
   --h3-font-size: var(--steps-h-font-size);
