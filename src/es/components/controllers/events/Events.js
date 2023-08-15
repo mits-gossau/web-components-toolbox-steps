@@ -28,38 +28,102 @@ export default class Events extends Shadow() {
 
     this.abortController = null
     this.requestListEventsListener = async event => {
-      console.log('hooooooooi!', event.detail)
       if (this.abortController) this.abortController.abort()
       this.abortController = new AbortController()
       // TODO: event.detail.pushHistory if yes this.setTag()
+
       const fetchOptions = {
         method: 'GET',
         signal: this.abortController.signal
       }
-      const endpoint = this.getAttribute('endpoint') + '?' + 'tags=' + event.detail.tags
-      /* this.dispatchEvent(new CustomEvent(this.getAttribute('list-events') || 'list-events', {
-        detail: {
-          fetch: (this._fetch || (this._fetch = fetch(endpoint, fetchOptions))).then(response => {
-            if (response.status >= 200 && response.status <= 299) {
-              // TODO: Filter Stuff here
-              return response.json()
-            }
+      const endpoint = this.getAttribute('endpoint')
+
+      const fetchEvents = async () => {
+        try {
+          const response = await fetch(endpoint, fetchOptions)
+
+          if(!response.ok) {
             throw new Error(response.statusText)
+          }
+          
+          let { events, translations } = await response.json()
+
+          // Get the min and max date of events
+          const eventDates = events.map(event => event.eventDate)
+          const dateObjects = eventDates.map(dateString => {
+            const dateParts = dateString.split('.')
+            const timeParts = dateParts[2].split(' ')
+            const day = parseInt(dateParts[0])
+            const month = parseInt(dateParts[1]) - 1
+            const year = parseInt(timeParts[0])
+            const eventTime = timeParts[1]
+            const [hours, minutes, seconds] = eventTime.split(':').map(Number)
+            
+            return new Date(year, month, day, hours, minutes, seconds)
           })
-        },
-        bubbles: true,
-        cancelable: true,
-        composed: true
-      })) */
-      this.dispatchEvent(new CustomEvent(this.getAttribute('list-events') || 'list-events', {
-        detail: {
-          test: 'hooooooi'
-        },
-        bubbles: true,
-        cancelable: true,
-        composed: true
-      }))
+          const dateTimestamps = dateObjects.map(date => date.getTime())
+          const minTimestamp = Math.min(...dateTimestamps)
+          const maxTimestamp = Math.max(...dateTimestamps)
+          
+          const minDate = new Date(minTimestamp)
+          const maxDate = new Date(maxTimestamp)
+
+          const formatDate = (date) => {
+            const formattedYear = date.toLocaleString('de-CH', { year: 'numeric' })
+            const formattedMonth = date.toLocaleString('de-CH', { month: '2-digit' })
+            const formattedDay = date.toLocaleString('de-CH', { day: '2-digit' })
+            return formattedYear + '-' + formattedMonth + '-' + formattedDay
+          }
+
+          const formattedMinDate = formatDate(minDate)
+          const formattedMaxDate = formatDate(maxDate)
+
+          const companies = events.map(event => event.company).sort()
+          const locations = events.map(event => event.location).sort()
+
+          // Filter events by selected date
+          if (event.detail?.date) {
+            events = events.filter(eventArray => eventArray.eventDate.includes(event.detail.date))
+          }
+          
+          return {
+            events,
+            translations,
+            min: formattedMinDate,
+            max: formattedMaxDate,
+            companies,
+            locations
+            //days: [1,2,3,4,8,9], months, years
+          }
+
+        } catch (error) {
+          console.error(error)
+          return []
+        }
+      }
+
+      const dispatchListEvent = (eventName, detailObject) => {
+         this.dispatchEvent(new CustomEvent(this.getAttribute(eventName) || eventName, {
+             detail: detailObject,
+             bubbles: true,
+             cancelable: true,
+             composed: true
+           }));
+      }
+     
+      const fetchedEvents = fetchEvents();
+      dispatchListEvent('list-events', { fetch: fetchedEvents });
+      dispatchListEvent('list-filter-items', { fetch: fetchedEvents });
     }
+
+    const displayFilter = (elementId) => {
+        const filterList = this.root.getElementsByTagName('o-steps-filter-list')
+        const listElement = filterList[0].shadowRoot.getElementById(elementId)
+        listElement.classList.toggle('hidden')
+    }
+    this.displayFilterCompanies = () => displayFilter('list-companies')
+    this.displayFilterLocations = () => displayFilter('list-locations')
+
     // inform about the url which would result on this filter
     this.requestHrefEventListener = event => {
       if (event.detail && event.detail.resolve) event.detail.resolve(this.setTag(event.detail.tags.join(';'), event.detail.pushHistory).href)
@@ -73,12 +137,16 @@ export default class Events extends Shadow() {
 
   connectedCallback () {
     this.addEventListener(this.getAttribute('request-list-events') || 'request-list-events', this.requestListEventsListener)
+    this.addEventListener(this.getAttribute('request-list-companies') || 'request-list-companies', this.displayFilterCompanies)
+    this.addEventListener(this.getAttribute('request-list-locations') || 'request-list-locations', this.displayFilterLocations)
     this.addEventListener('request-href-' + (this.getAttribute('request-list-events') || 'request-list-events'), this.requestHrefEventListener)
     if (!this.hasAttribute('no-popstate')) self.addEventListener('popstate', this.updatePopState)
   }
 
   disconnectedCallback () {
     this.removeEventListener(this.getAttribute('request-list-events') || 'request-list-events', this.requestListEventsListener)
+    this.removeEventListener(this.getAttribute('request-list-companies') || 'request-list-companies', this.displayFilterCompanies)
+    this.removeEventListener(this.getAttribute('request-list-locations') || 'request-list-locations', this.displayFilterLocations)
     this.removeEventListener('request-href-' + (this.getAttribute('request-list-events') || 'request-list-events'), this.requestHrefEventListener)
     if (!this.hasAttribute('no-popstate')) self.removeEventListener('popstate', this.updatePopState)
   }

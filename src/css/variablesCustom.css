@@ -85,6 +85,11 @@
   --border-radius: 2.5rem;
   --button-secondary-border-radius: var(--border-radius);
   --button-secondary-border-radius-mobile: var(--border-radius);
+  --date-select-secondary-border-radius: var(--border-radius);
+  --filter-accordion-secondary-border-radius: var(--border-radius);
+
+  /* date select */
+  --date-select-secondary-padding: 4px 12px;
 
   /* content */
   --ul-list-style: none;
@@ -127,6 +132,13 @@
   /* content dark */
   --content-dark-h1-color: var(--steps-color-red);
   --content-dark-align-items: normal;
+
+  /* button category */
+  --button-category-background-color-hover-custom: transparent;
+  --button-category-color-hover-custom: var(--color);
+  --button-category-font-weight-hover-custom: 600;
+  --button-category-background-color-active-custom: var(--button-category-background-color-hover-custom);
+  --button-category-color-active-custom: var(--button-category-color-hover-custom);
 }
 
 .l-outer {

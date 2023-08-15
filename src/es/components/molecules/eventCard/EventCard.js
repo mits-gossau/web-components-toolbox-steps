@@ -1,5 +1,10 @@
 // @ts-check
 import { Shadow } from '../../web-components-toolbox/src/es/components/prototypes/Shadow.js'
+import(
+  '../../web-components-toolbox/src/es/components/atoms/button/Button.js'
+  // @ts-ignore
+).then((module) => customElements.define('a-button', module.default))
+
 
 /**
  * EventCard
@@ -178,17 +183,9 @@ export default class EventCard extends Shadow() {
     const [hours, minutes, seconds] = eventTime.split(':').map(Number)
     const eventTimestamp = new Date(year, month, day, hours, minutes, seconds)
 
-    const weekDay = eventTimestamp.toLocaleDateString('de-CH', {
-      weekday: 'long'
-    })
-    const dateShort = eventTimestamp.toLocaleDateString('de-CH', {
-      day: 'numeric',
-      month: 'numeric'
-    })
-    const time = eventTimestamp.toLocaleTimeString('de-CH', {
-      hour: '2-digit',
-      minute: '2-digit'
-    })
+    const weekDay = eventTimestamp.toLocaleDateString('de-CH', { weekday: 'long' })
+    const dateShort = eventTimestamp.toLocaleDateString('de-CH', { day: 'numeric', month: 'numeric' })
+    const time = eventTimestamp.toLocaleTimeString('de-CH', { hour: '2-digit', minute: '2-digit' })
 
     // icons
     const generateIconHTML = (iconsArray) => {
@@ -196,6 +193,7 @@ export default class EventCard extends Shadow() {
       for (const icon of iconsArray) {
         icons += `<img src="${icon}" width="24" height="24" />`
       }
+
       return icons
     }
 
@@ -207,14 +205,9 @@ export default class EventCard extends Shadow() {
     const detailsUrl = this.event.companyDetailPageUrl
 
     // buttons
-    const buttonTickets = `<a-button namespace="button-secondary-" onclick="window.open('${ticketsUrl}')">${this.getAttribute(
-      'textButtonTickets'
-    )} &#8594;</a-button>`
-    const buttonSoldOut = `<a-button namespace="button-secondary-" onclick="window.open('${ticketsUrl}')">${this.getAttribute(
-      'textSoldOut'
-    )}</a-button>`
-    const buttonCta =
-      this.event.soldOut === 'True' ? buttonSoldOut : buttonTickets
+    const buttonTickets = `<a-button namespace="button-secondary-" onclick="window.open('${ticketsUrl}')">${this.getAttribute('textButtonTickets')} &#8594;</a-button>`
+    const buttonSoldOut = `<a-button namespace="button-secondary-" onclick="window.open('${ticketsUrl}')">${this.getAttribute('textSoldOut')}</a-button>`
+    const buttonCta = this.event.soldOut === 'True' ? buttonSoldOut : buttonTickets
 
     const eventInfoHtml = /* html */ `
       <div class="event-info">
