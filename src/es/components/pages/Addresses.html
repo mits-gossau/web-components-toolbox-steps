@@ -3,77 +3,7 @@
         :host {
             background: var(--background-gradient);
         }
-
-        :host .title {
-            margin-bottom: 4rem;
-        }
     </style>
-    <h1 class="title">Theateradressen</h1>
-    <div class="addresses">
-        <style>
-            :host .addresses {
-                display: flex;
-                flex-wrap: wrap;
-            }
-
-            :host .address-item {
-                width: 50%;
-                margin-bottom: 2rem;
-            }
-
-            @media (max-width: 768px) {
-                :host .address-item {
-                    width: 100%;
-                }
-            }
-        </style>
-        <address class="address-item">
-            <p>Ort</p>
-            <h2>Theatername</h2>
-            <p>Adresse<br />
-            <a href="tel:+41 62 834 80 40">+41 62 834 80 40</a><br />
-            <strong><a href="https://" target="_blank">beispiel-seite.ch</a></strong><br />
-            </p>
-        </address>
-        <address class="address-item">
-            <p>Ort</p>
-            <h2>Theatername</h2>
-            <p>Adresse<br />
-            <a href="tel:+41 62 834 80 40">+41 62 834 80 40</a><br />
-            <strong><a href="https://" target="_blank">beispiel-seite.ch</a></strong><br />
-            </p>
-        </address>
-        <address class="address-item">
-            <p>Ort</p>
-            <h2>Theatername</h2>
-            <p>Adresse<br />
-            <a href="tel:+41 62 834 80 40">+41 62 834 80 40</a><br />
-            <strong><a href="https://" target="_blank">beispiel-seite.ch</a></strong><br />
-            </p>
-        </address>
-        <address class="address-item">
-            <p>Ort</p>
-            <h2>Theatername</h2>
-            <p>Adresse<br />
-            <a href="tel:+41 62 834 80 40">+41 62 834 80 40</a><br />
-            <strong><a href="https://" target="_blank">beispiel-seite.ch</a></strong><br />
-            </p>
-        </address>
-        <address class="address-item">
-            <p>Ort</p>
-            <h2>Theatername</h2>
-            <p>Adresse<br />
-            <a href="tel:+41 62 834 80 40">+41 62 834 80 40</a><br />
-            <strong><a href="https://" target="_blank">beispiel-seite.ch</a></strong><br />
-            </p>
-        </address>
-        <address class="address-item">
-            <p>Ort</p>
-            <h2>Theatername</h2>
-            <p>Adresse<br />
-            <a href="tel:+41 62 834 80 40">+41 62 834 80 40</a><br />
-            <strong><a href="https://" target="_blank">beispiel-seite.ch</a></strong><br />
-            </p>
-        </address>
-    </div>
+    <a-steps-heading tag="h1" type="h1" text="Theateradressen"></a-steps-heading>
+    <m-steps-addresses api-url="http://localhost:3000/src/es/components/molecules/addresses/_data/addresses.json"></m-steps-addresses>
 </div>
