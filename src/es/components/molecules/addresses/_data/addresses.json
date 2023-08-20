@@ -4,29 +4,40 @@
             "theatername": "Theater St. Gallen, Schauspielhaus",
             "theatercity": "St. Gallen",
             "theaterstreet": "Theaterweg 3",
-            "theaterphone": "071 111 11 11",
-            "theaterurl": "https://www.theater.sg.ch"
+            "theaterphone": "+41 71 111 11 11",
+            "theaterurl": "https://www.theater.sg.ch",
+            "theaterurltitle": "theater.sg.ch",
+            "theaterInformationIcons": [
+                "/src/img/icons/icon-rollstuhlgaengig.svg",
+                "/src/img/icons/icon-hoerbenachteiligung.svg"
+            ]
         },
         {
             "theatername": "Schauspielhaus Zürich",
             "theatercity": "Zürich",
             "theaterstreet": "Opernallee 12",
-            "theaterphone": "058 444 44 44",
-            "theaterurl": "https://www.schauspielhaus.ch/"
+            "theaterphone": "+41 58 444 44 44",
+            "theaterurl": "https://www.schauspielhaus.ch/",
+            "theaterurltitle": "theater.sg.ch",
+            "theaterInformationIcons": [
+                "/src/img/icons/icon-rollstuhlgaengig.svg"
+            ]
         },
         {
             "theatername": "Theater St. Gallen, Schauspielhaus",
             "theatercity": "St. Gallen",
             "theaterstreet": "Theaterweg 3",
-            "theaterphone": "071 111 11 11",
-            "theaterurl": "https://www.theater.sg.ch"
+            "theaterphone": "+41 71 111 11 11",
+            "theaterurl": "https://www.theater.sg.ch",
+            "theaterurltitle": "theater.sg.ch"
         },
         {
             "theatername": "Schauspielhaus Zürich",
             "theatercity": "Zürich",
             "theaterstreet": "Opernallee 12",
-            "theaterphone": "058 444 44 44",
-            "theaterurl": "https://www.schauspielhaus.ch/"
+            "theaterphone": "+41 58 444 44 44",
+            "theaterurl": "https://www.schauspielhaus.ch/",
+            "theaterurltitle": "theater.sg.ch"
         }
     ]
 }

@@ -25,6 +25,10 @@
 	font-display: swap;
 }
 
+body {
+  background: var(--background-gradient);
+}
+
 :root {
   /* colors */
   --steps-color-black: #000000;
@@ -40,7 +44,7 @@
   --steps-color-blue-light: #8c6ff6;
   --steps-color-blue-lighter: #c6b7fa;
 
-  --background-color: var(--steps-color-light-grey);
+  --background-color: transparent;
   --background-gradient: linear-gradient(180deg, var(--steps-color-blue) 0%, var(--steps-color-white) 33%);
   --color: var(--steps-color-black);
   --a-color: var(--steps-color-black);
@@ -50,6 +54,7 @@
   --color-tertiary: var(--steps-color-blue);
   --button-quaternary-color-custom: var(--steps-color-black);
 
+  --header-nav-right-a-menu-icon-background-color-custom: var(--steps-color-white);
   --footer-default-invert-svg-color-custom: var(--steps-color-black);
   --navigation-default-color-custom: var(--steps-color-white);
   --footer-default-invert-color-custom: var(--steps-color-white);
