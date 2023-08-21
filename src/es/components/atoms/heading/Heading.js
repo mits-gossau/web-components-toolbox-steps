@@ -26,11 +26,11 @@ export default class Heading extends Shadow() {
      * @type {Heading}
      */
     this.heading = {
-        tag: 'h1',
-        type: 'h1',
-        text: 'I am a default heading',
-        className: '',
-        isSmall: false
+      tag: 'h1',
+      type: 'h1',
+      text: 'I am a default heading',
+      className: '',
+      isSmall: false
     }
   }
 
@@ -38,11 +38,11 @@ export default class Heading extends Shadow() {
     if (this.shouldRenderCSS()) this.renderCSS()
 
     this.heading = {
-        tag: this.getAttribute('tag') || this.heading.tag,
-        type: this.getAttribute('type') || this.heading.type,
-        text: this.getAttribute('text') || this.heading.text,
-        className: this.getAttribute('className'),
-        isSmall: this.getAttribute('isSmall') || false
+      tag: this.getAttribute('tag') || this.heading.tag,
+      type: this.getAttribute('type') || this.heading.type,
+      text: this.getAttribute('text') || this.heading.text,
+      className: this.getAttribute('className'),
+      isSmall: this.getAttribute('isSmall') || false
     }
 
     if (this.shouldRenderHTML()) this.renderHTML()
@@ -63,7 +63,7 @@ export default class Heading extends Shadow() {
  * @return {boolean}
  */
   shouldRenderHTML () {
-    return !this.root.querySelector('.heading');
+    return !this.root.querySelector('.heading')
   }
 
   renderCSS () {
@@ -95,7 +95,7 @@ export default class Heading extends Shadow() {
 
   renderHTML () {
     this.html = /* html */ `
-        <${this.heading.tag} class="heading heading--${this.heading.type}${this.heading.className ? ` ${this.heading.className}` : ''}${this.heading.isSmall ? ` heading--small` : ''}">
+        <${this.heading.tag} class="heading heading--${this.heading.type}${this.heading.className ? ` ${this.heading.className}` : ''}${this.heading.isSmall ? ' heading--small' : ''}">
             ${this.heading.text}
         </${this.heading.tag}>
     `

@@ -1,170 +1,170 @@
-<c-steps-events
-  endpoint="../../organisms/eventList/example.json"
-  >
-  <div style="padding: 40px 20px">
-    <header>
-      <h1>Spielplan</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
-      </p>
-    </header>
+<a-steps-container>
+  <c-steps-events
+    endpoint="../../organisms/eventList/example.json"
+    >
+      <header>
+        <h1>Spielplan</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.
+        </p>
+      </header>
 
-    <section>
-      <style>
-        :host ul.list-legend {
-          padding-left: 0;
-        }
-
-        :host ul.list-legend li img[src$="svg"] {
-          position: relative;
-          top: -2px;
-          margin-right: 2px;
-          width: 24px;
-          height: 24px;
-        }
-      </style>
-      <ul class="list-legend">
-        <li>
-          <img src="../../../../img/icons/icon-uebertitel.svg" width="24" height="24" />
-          Deskriptive &Uuml;bertitel
-        </li>
-        <li>
-          <img src="../../../../img/icons/icon-einfuehrung.svg" width="24" height="24" />
-          Einf&uuml;hrung
-        </li>
-        <li>
-          <img src="../../../../img/icons/icon-nachbesprechung.svg" width="24" height="24" />
-          Nachbesprechung
-        </li>
-        <li>
-          <img src="../../../../img/icons/icon-familien.svg" width="24" height="24" />
-          F&uuml;r die ganze Familie
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <style>
-        :host .filter-buttons {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-        }
-
-        @media only screen and (min-width: 768px) {
-          :host .filter-buttons {
-            flex-direction: row;
+      <section>
+        <style>
+          :host ul.list-legend {
+            padding-left: 0;
           }
-        }
 
-        :host a-date-select,
-        :host a-steps-button:not(:last-child) {
-          margin-right: 1.25rem;
-          margin-bottom: 1.25rem;
-        }
+          :host ul.list-legend li img[src$="svg"] {
+            position: relative;
+            top: -2px;
+            margin-right: 2px;
+            width: 24px;
+            height: 24px;
+          }
+        </style>
+        <ul class="list-legend">
+          <li>
+            <img src="../../../../img/icons/icon-uebertitel.svg" width="24" height="24" />
+            Deskriptive &Uuml;bertitel
+          </li>
+          <li>
+            <img src="../../../../img/icons/icon-einfuehrung.svg" width="24" height="24" />
+            Einf&uuml;hrung
+          </li>
+          <li>
+            <img src="../../../../img/icons/icon-nachbesprechung.svg" width="24" height="24" />
+            Nachbesprechung
+          </li>
+          <li>
+            <img src="../../../../img/icons/icon-familien.svg" width="24" height="24" />
+            F&uuml;r die ganze Familie
+          </li>
+        </ul>
+      </section>
 
-        @media only screen and (min-width: 768px) {
+      <section>
+        <style>
+          :host .filter-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+          }
+
+          @media only screen and (min-width: 768px) {
+            :host .filter-buttons {
+              flex-direction: row;
+            }
+          }
+
           :host a-date-select,
           :host a-steps-button:not(:last-child) {
-            margin-bottom: 0;
+            margin-right: 1.25rem;
+            margin-bottom: 1.25rem;
           }
-        }
 
-        :host .filter-items {
-          margin: 0.625rem 0;
-        }
+          @media only screen and (min-width: 768px) {
+            :host a-date-select,
+            :host a-steps-button:not(:last-child) {
+              margin-bottom: 0;
+            }
+          }
 
-        :host .filter-items ul {
-          padding-left: 0;
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-        }
+          :host .filter-items {
+            margin: 0.625rem 0;
+          }
 
-        :host .filter-items a {
-          text-decoration: none;
-          font-family: var(--font-family);
-          display: inline-flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: space-between;
-          margin: 0 1.25rem 0 0;
-          padding: 0.625rem 0;
-        }
+          :host .filter-items ul {
+            padding-left: 0;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+          }
 
-        :host .filter-items a::before {
-          display: block;
-          content: attr(data-text);
-          font-family: var(--font-family-bold);
-          font-weight: normal;
-          height: 0;
-          overflow: hidden;
-          visibility: hidden;
-          margin: 0 1px;
-        }
+          :host .filter-items a {
+            text-decoration: none;
+            font-family: var(--font-family);
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 1.25rem 0 0;
+            padding: 0.625rem 0;
+          }
 
-        :host .filter-items a:hover {
-          color: var(--steps-color-black);
-          font-family: var(--font-family-bold);
-          font-weight: normal;
-        }
-      </style>
+          :host .filter-items a::before {
+            display: block;
+            content: attr(data-text);
+            font-family: var(--font-family-bold);
+            font-weight: normal;
+            height: 0;
+            overflow: hidden;
+            visibility: hidden;
+            margin: 0 1px;
+          }
 
-      <div class="filter-buttons">
-        <a-date-select 
-          namespace="date-select-secondary-" 
-          placeholder="Datum auswählen" 
-          calendarIndicator=" → 📅"
-          closeTooltip="Zurücksetzen" 
-          locale="de-CH" 
-          answer-event-name="list-events"
-          request-event-name="request-list-events"
-        ></a-date-select>
+          :host .filter-items a:hover {
+            color: var(--steps-color-black);
+            font-family: var(--font-family-bold);
+            font-weight: normal;
+          }
+        </style>
 
-        <a-steps-button 
-          label="Compagnien" 
-          id="filter-button-companies" 
-          namespace="button-secondary-"
-          answer-event-name="list-events"
-          request-event-name="request-list-companies"
-        >
-          <span class='icon-right'>
-            <span class="arrow-right">→</span>
-            <span class="arrow-bottom">↓</span>
-          </span>
-        </a-steps-button>
+        <div class="filter-buttons">
+          <a-date-select 
+            namespace="date-select-secondary-" 
+            placeholder="Datum auswählen" 
+            calendarIndicator=" → 📅"
+            closeTooltip="Zurücksetzen" 
+            locale="de-CH" 
+            answer-event-name="list-events"
+            request-event-name="request-list-events"
+          ></a-date-select>
 
-        <a-steps-button 
-          label="Ort" 
-          id="filter-button-locations" 
-          namespace="button-secondary-"
-          answer-event-name="list-events"
-          request-event-name="request-list-locations"
-        >
-          <span class='icon-right'>
-            <span class="arrow-right">→</span>
-            <span class="arrow-bottom">↓</span>
-          </span>
-        </a-steps-button>
+          <a-steps-button 
+            label="Compagnien" 
+            id="filter-button-companies" 
+            namespace="button-secondary-"
+            answer-event-name="list-events"
+            request-event-name="request-list-companies"
+          >
+            <span class='icon-right'>
+              <span class="arrow-right">→</span>
+              <span class="arrow-bottom">↓</span>
+            </span>
+          </a-steps-button>
 
-        <script src="../atoms/button/Button.js" type="module"></script>
-      </div>
+          <a-steps-button 
+            label="Ort" 
+            id="filter-button-locations" 
+            namespace="button-secondary-"
+            answer-event-name="list-events"
+            request-event-name="request-list-locations"
+          >
+            <span class='icon-right'>
+              <span class="arrow-right">→</span>
+              <span class="arrow-bottom">↓</span>
+            </span>
+          </a-steps-button>
 
-      <o-steps-filter-list 
-        answer-event-name="list-filter-items" 
-        request-event-name="request-list-filter-items"
-      ></o-steps-filter-list>
-      <script src="../organisms/filterList/FilterList.js" type="module"></script>
+          <script src="../atoms/button/Button.js" type="module"></script>
+        </div>
 
-    </section>
+        <o-steps-filter-list 
+          answer-event-name="list-filter-items" 
+          request-event-name="request-list-filter-items"
+        ></o-steps-filter-list>
+        <script src="../organisms/filterList/FilterList.js" type="module"></script>
 
-    <o-steps-event-list 
-      answer-event-name="list-events" 
-      request-event-name="request-list-events"
-    ></o-steps-event-list>
-    <script src="../organisms/eventList/EventList.js" type="module"></script>
-  </div>
-</c-steps-events>
+      </section>
+
+      <o-steps-event-list 
+        answer-event-name="list-events" 
+        request-event-name="request-list-events"
+      ></o-steps-event-list>
+      <script src="../organisms/eventList/EventList.js" type="module"></script>
+  </c-steps-events>
+</a-steps-container>

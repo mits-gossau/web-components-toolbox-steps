@@ -37,7 +37,7 @@ export default class EventList extends Shadow() {
     }
 
     this.answerEventNameListener = (event) => {
-      event.detail.fetch.then((data) => this.renderHTML(data)) 
+      event.detail.fetch.then((data) => this.renderHTML(data))
     }
 
     this.eventsLoaded = false
@@ -61,7 +61,7 @@ export default class EventList extends Shadow() {
       this.answerEventNameListener
     )
 
-    this.addEventListener("click", this.selectListener)
+    this.addEventListener('click', this.selectListener)
 
     this.dispatchEvent(
       new CustomEvent(this.getAttribute('request-event-name'), {
@@ -70,7 +70,6 @@ export default class EventList extends Shadow() {
         composed: true
       })
     )
-    
   }
 
   disconnectedCallback () {
@@ -79,7 +78,7 @@ export default class EventList extends Shadow() {
       this.answerEventNameListener
     )
 
-    this.removeEventListener("click", this.selectListener)
+    this.removeEventListener('click', this.selectListener)
   }
 
   /**
@@ -150,12 +149,12 @@ export default class EventList extends Shadow() {
         ></m-steps-event-card>`
       })
       .join('')
-    
+
     const noEventsHtml = eventHtml.length ? '' : /* html */ `
       <div class="no-events">
           <p>${data.translations.noEvents}</p>
       </div>`
-    
+
     this.html = ''
     this.html = /* html */ `
       <div class="event-list">

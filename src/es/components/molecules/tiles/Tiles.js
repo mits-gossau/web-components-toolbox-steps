@@ -42,12 +42,19 @@ export default class Tiles extends Shadow() {
 
       :host .tiles__tile {
         width: 48%;
-        height: 350px;
-        margin-right: 1rem;
+        height: 350px;        
         margin-bottom: 1rem;
         position: relative;
         overflow: hidden;
         color: var(--steps-color-white);
+      }
+
+      :host .tiles__tile:nth-child(odd) {
+        margin-right: 1rem;
+      }
+
+      :host .tiles__tile:nth-child(even) {
+        margin-right: 0;
       }
 
       :host .tiles__title {

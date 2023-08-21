@@ -33,7 +33,7 @@ export default class FilterList extends Shadow() {
   }
 
   answerEventListener (event) {
-    event.detail.fetch.then((data) => this.renderHTML(data)) 
+    event.detail.fetch.then((data) => this.renderHTML(data))
   }
 
   clickListener (event) {
@@ -41,9 +41,9 @@ export default class FilterList extends Shadow() {
     const elementId = event.target.id
     const listId = event.target.parentElement.parentElement.id
     console.log(event, event.detail, elementId, listId)
-    
-    const company = listId === "list-companies" ? elementId : ''
-    const location = listId === "list-locations" ? elementId : ''
+
+    const company = listId === 'list-companies' ? elementId : ''
+    const location = listId === 'list-locations' ? elementId : ''
 
     if (this.hasAttribute('disabled')) {
       event.preventDefault()
@@ -84,7 +84,7 @@ export default class FilterList extends Shadow() {
     `
   }
 
-  renderHTML(data) {
+  renderHTML (data) {
     const createList = (items, id, className) =>
       this.createHTMLElement(
         'ul',
@@ -103,37 +103,37 @@ export default class FilterList extends Shadow() {
             ]
           )
         )
-      );
+      )
 
-    const companies = createList(data.companies, 'list-companies', 'list-items');
-    const locations = createList(data.locations, 'list-locations', 'list-items');
+    const companies = createList(data.companies, 'list-companies', 'list-items')
+    const locations = createList(data.locations, 'list-locations', 'list-items')
 
     const filterList = this.createHTMLElement(
       'div', { class: 'filter-list' }, [companies, locations]
     )
 
-    this.html = filterList;
+    this.html = filterList
   }
 
-  createHTMLElement(tag, attributes = {}, children = []) {
-    const element = document.createElement(tag);
+  createHTMLElement (tag, attributes = {}, children = []) {
+    const element = document.createElement(tag)
 
     Object.keys(attributes).forEach((key) => {
       if (key === 'onClick') {
-        element.addEventListener('click', attributes[key]);
+        element.addEventListener('click', attributes[key])
       } else {
-        element.setAttribute(key, attributes[key]);
+        element.setAttribute(key, attributes[key])
       }
-    });
+    })
 
     children.forEach((child) => {
       if (typeof child !== 'string') {
-        element.appendChild(child);
+        element.appendChild(child)
       } else {
-        element.textContent = child;
+        element.textContent = child
       }
-    });
+    })
 
-    return element;
+    return element
   }
 }

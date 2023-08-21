@@ -5,7 +5,6 @@ import(
   // @ts-ignore
 ).then((module) => customElements.define('a-button', module.default))
 
-
 /**
  * EventCard
  * An example at: src/es/components/pages/Event.html

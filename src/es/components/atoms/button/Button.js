@@ -365,29 +365,29 @@ export default class Button extends Hover() {
     * @return {Promise<void>}
     */
   renderHTML () {
-    const { buttonTagName, labelText, downloadIcon } = this;
-  
-    const hrefAttr = buttonTagName === 'a' ? `href="${this.getAttribute('href')}" target="${this.getAttribute('target') || '_self'}" ${this.hasAttribute('rel') ? `rel="${this.getAttribute('rel')}"` : ''}` : '';
-    const typeAttr = `type="${this.getAttribute('type') || 'button'}"`;
-    const labelSpan = `<span id="label"${!labelText ? ' class="hide"' : ''}>${labelText || ''}</span>`;
-  
+    const { buttonTagName, labelText, downloadIcon } = this
+
+    const hrefAttr = buttonTagName === 'a' ? `href="${this.getAttribute('href')}" target="${this.getAttribute('target') || '_self'}" ${this.hasAttribute('rel') ? `rel="${this.getAttribute('rel')}"` : ''}` : ''
+    const typeAttr = `type="${this.getAttribute('type') || 'button'}"`
+    const labelSpan = `<span id="label"${!labelText ? ' class="hide"' : ''}>${labelText || ''}</span>`
+
     this.html = /* html */`
       <${buttonTagName} ${hrefAttr} ${typeAttr}>${labelSpan}</${buttonTagName}>
-    `;
-  
+    `
+
     if (this.getAttribute('namespace') === 'button-download-') {
-      this.button.prepend(downloadIcon);
+      this.button.prepend(downloadIcon)
     }
-  
-    const iconLeft = this.root.querySelector('.icon-left');
-    const iconRight = this.root.querySelector('.icon-right');
-    const iconBottom = this.root.querySelector('.icon-bottom');
-  
-    if (iconLeft) this.button.prepend(iconLeft);
-    if (iconRight) this.button.append(iconRight);
-    if (iconBottom) this.button.append(iconBottom);
-  
-    return Promise.resolve();
+
+    const iconLeft = this.root.querySelector('.icon-left')
+    const iconRight = this.root.querySelector('.icon-right')
+    const iconBottom = this.root.querySelector('.icon-bottom')
+
+    if (iconLeft) this.button.prepend(iconLeft)
+    if (iconRight) this.button.append(iconRight)
+    if (iconBottom) this.button.append(iconBottom)
+
+    return Promise.resolve()
   }
 
   /**

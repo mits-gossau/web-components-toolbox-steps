@@ -12,23 +12,23 @@ import { Shadow } from '../../web-components-toolbox/src/es/components/prototype
 
 export default class Addresses extends Shadow() {
   constructor (options = {}, ...args) {
-    super({ importMetaUrl: import.meta.url, ...options }, ...args);
+    super({ importMetaUrl: import.meta.url, ...options }, ...args)
   }
 
   connectedCallback () {
-    this.apiUrl = this.getAttribute('api-url');
-    this.loadData();
-    if (this.shouldRenderCSS()) this.renderCSS();
+    this.apiUrl = this.getAttribute('api-url')
+    this.loadData()
+    if (this.shouldRenderCSS()) this.renderCSS()
   }
 
   /**
    * load addresses from api
    */
-  async loadData() {
-    const response = await fetch(this.apiUrl);
-    const result = await response.json();
-    const addresses = result.addresses;
-    this.renderHTML(addresses);
+  async loadData () {
+    const response = await fetch(this.apiUrl)
+    const result = await response.json()
+    const addresses = result.addresses
+    this.renderHTML(addresses)
   }
 
   /**
@@ -37,7 +37,7 @@ export default class Addresses extends Shadow() {
    * @return {boolean}
    */
   shouldRenderCSS () {
-    return !this.root.querySelector(`:host > style[_css], ${this.tagName} > style[_css]`);
+    return !this.root.querySelector(`:host > style[_css], ${this.tagName} > style[_css]`)
   }
 
   renderCSS () {
@@ -89,11 +89,11 @@ export default class Addresses extends Shadow() {
 
   /**
    * Loop through loaded addresses and concat markup
-   * 
-   * @param {*} addresses 
+   *
+   * @param {*} addresses
    */
   renderHTML (addresses) {
-    let addressesMarkup = '';
+    let addressesMarkup = ''
     addresses.forEach(address => {
       let newAddress = /* html */`
         <address class="address-item">
@@ -108,32 +108,32 @@ export default class Addresses extends Shadow() {
             : ''
           }
         </address>        
-      `;
+      `
 
-      addressesMarkup = addressesMarkup.concat(' ', newAddress);
-      newAddress = '';
-    });
+      addressesMarkup = addressesMarkup.concat(' ', newAddress)
+      newAddress = ''
+    })
 
-    this.html = addressesMarkup;
+    this.html = addressesMarkup
   }
 
   /**
    * Loop icons and collect markup
-   * 
-   * @param {*} icons 
+   *
+   * @param {*} icons
    * @returns iconMarkup
    */
   collectIcons (icons) {
-    let iconMarkup = '';
+    let iconMarkup = ''
     icons.forEach(icon => {
       let newIcon = /* html */`
         <img src="${icon}" width="24" height="24">
-      `;
+      `
 
-      iconMarkup = iconMarkup.concat(' ', newIcon);
+      iconMarkup = iconMarkup.concat(' ', newIcon)
       newIcon = ''
-    });
+    })
 
-    return iconMarkup;
+    return iconMarkup
   }
 }

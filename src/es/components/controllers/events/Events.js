@@ -42,10 +42,10 @@ export default class Events extends Shadow() {
         try {
           const response = await fetch(endpoint, fetchOptions)
 
-          if(!response.ok) {
+          if (!response.ok) {
             throw new Error(response.statusText)
           }
-          
+
           let { events, translations } = await response.json()
 
           // Get the min and max date of events
@@ -58,13 +58,13 @@ export default class Events extends Shadow() {
             const year = parseInt(timeParts[0])
             const eventTime = timeParts[1]
             const [hours, minutes, seconds] = eventTime.split(':').map(Number)
-            
+
             return new Date(year, month, day, hours, minutes, seconds)
           })
           const dateTimestamps = dateObjects.map(date => date.getTime())
           const minTimestamp = Math.min(...dateTimestamps)
           const maxTimestamp = Math.max(...dateTimestamps)
-          
+
           const minDate = new Date(minTimestamp)
           const maxDate = new Date(maxTimestamp)
 
@@ -85,7 +85,7 @@ export default class Events extends Shadow() {
           if (event.detail?.date) {
             events = events.filter(eventArray => eventArray.eventDate.includes(event.detail.date))
           }
-          
+
           return {
             events,
             translations,
@@ -93,9 +93,8 @@ export default class Events extends Shadow() {
             max: formattedMaxDate,
             companies,
             locations
-            //days: [1,2,3,4,8,9], months, years
+            // days: [1,2,3,4,8,9], months, years
           }
-
         } catch (error) {
           console.error(error)
           return []
@@ -103,23 +102,23 @@ export default class Events extends Shadow() {
       }
 
       const dispatchListEvent = (eventName, detailObject) => {
-         this.dispatchEvent(new CustomEvent(this.getAttribute(eventName) || eventName, {
-             detail: detailObject,
-             bubbles: true,
-             cancelable: true,
-             composed: true
-           }));
+        this.dispatchEvent(new CustomEvent(this.getAttribute(eventName) || eventName, {
+          detail: detailObject,
+          bubbles: true,
+          cancelable: true,
+          composed: true
+        }))
       }
-     
-      const fetchedEvents = fetchEvents();
-      dispatchListEvent('list-events', { fetch: fetchedEvents });
-      dispatchListEvent('list-filter-items', { fetch: fetchedEvents });
+
+      const fetchedEvents = fetchEvents()
+      dispatchListEvent('list-events', { fetch: fetchedEvents })
+      dispatchListEvent('list-filter-items', { fetch: fetchedEvents })
     }
 
     const displayFilter = (elementId) => {
-        const filterList = this.root.getElementsByTagName('o-steps-filter-list')
-        const listElement = filterList[0].shadowRoot.getElementById(elementId)
-        listElement.classList.toggle('hidden')
+      const filterList = this.root.getElementsByTagName('o-steps-filter-list')
+      const listElement = filterList[0].shadowRoot.getElementById(elementId)
+      listElement.classList.toggle('hidden')
     }
     this.displayFilterCompanies = () => displayFilter('list-companies')
     this.displayFilterLocations = () => displayFilter('list-locations')

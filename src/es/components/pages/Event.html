@@ -1,17 +1,23 @@
-<div style="width: 90vw; margin: 0 auto 40px; border-bottom: 1px solid var(--steps-color-black);">
-    <m-steps-event-card 
-        choreographer="Botis Seva"
-        company="Far From The Norm (GBR)"
-        companyDetailPageUrl="https://migros.ch"
-        eventDate="08.10.2024 17:10:81"
-        eventInformationIcons='["/src/img/icons/icon-uebertitel.svg","/src/img/icons/icon-einfuehrung.svg","/src/img/icons/icon-nachbesprechung.svg","/src/img/icons/icon-familien.svg"]'
-        location="Neuchatel"
-        presaleUrl="https://migros.ch"
-        production="BLKDOG"
-        soldOut="false"
-        theater="Théatre du Passage, ADN"
-        theaterInformationIcons='["/src/img/icons/icon-hoerbenachteiligung.svg","/src/img/icons/icon-rollstuhlgaengig.svg"]'
-    ></m-steps-event-card>
-</div>
+<a-steps-container>
+    <div style="border-bottom: 1px solid var(--steps-color-black);">
+        <m-steps-event-card 
+            choreographer="Botis Seva"
+            company="Far From The Norm (GBR)"
+            companyDetailPageUrl="https://migros.ch"
+            eventDate="08.10.2024 17:10:81"
+            eventInformationIcons='["/src/img/icons/icon-uebertitel.svg","/src/img/icons/icon-einfuehrung.svg","/src/img/icons/icon-nachbesprechung.svg","/src/img/icons/icon-familien.svg"]'
+            location="Neuchatel"
+            presaleUrl="https://migros.ch"
+            production="BLKDOG"
+            soldOut="false"
+            theater="Théatre du Passage, ADN"
+            theaterInformationIcons='["/src/img/icons/icon-hoerbenachteiligung.svg","/src/img/icons/icon-rollstuhlgaengig.svg"]'
+            textButtonTickets="Tickets"
+            textLinkDetails="Details"
+            textSoldOut="Sold Out"
+            textTimeSuffix="Uhr"
+        ></m-steps-event-card>
+    </div>
+</a-steps-container>
 
 <script src="../molecules/eventCard/EventCard.js" type="module"></script>
