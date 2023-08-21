@@ -53,9 +53,14 @@ export default class Stage extends Shadow() {
       }
 
       :host .stage__content {
-        z-index: 30;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        z-index: 30;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
 
       :host .stage__content h2 {
