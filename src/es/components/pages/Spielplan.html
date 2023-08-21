@@ -2,6 +2,7 @@
   <c-steps-events
     endpoint="../../organisms/eventList/example.json"
     >
+    <div style="padding: 40px 20px">
       <header>
         <h1>Spielplan</h1>
         <p>
@@ -16,11 +17,12 @@
         <style>
           :host ul.list-legend {
             padding-left: 0;
+            list-style: none;
           }
-
+          :host ul.list-legend li {
+            display: flex;
+          }
           :host ul.list-legend li img[src$="svg"] {
-            position: relative;
-            top: -2px;
             margin-right: 2px;
             width: 24px;
             height: 24px;
@@ -166,5 +168,6 @@
         request-event-name="request-list-events"
       ></o-steps-event-list>
       <script src="../organisms/eventList/EventList.js" type="module"></script>
+    </div>
   </c-steps-events>
 </a-steps-container>
