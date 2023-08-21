@@ -71,7 +71,7 @@ export default class Heading extends Shadow() {
         :host .heading {
             font-size: var(--steps-h-font-size);
             margin: 0;
-            padding-bottom: 2rem;
+            padding-bottom: 1rem;
             font-family: "HelveticaNowText";
         }
 
@@ -89,6 +89,7 @@ export default class Heading extends Shadow() {
 
         :host .heading--small {
             font-size: var(--steps-h-font-size-small);
+            padding-bottom: 0.5rem;
         }
     `
   }
