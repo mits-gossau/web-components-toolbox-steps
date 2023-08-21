@@ -45,7 +45,7 @@ body {
   --steps-color-blue-lighter: #c6b7fa;
 
   --background-color: transparent;
-  --background-gradient: linear-gradient(180deg, var(--steps-color-blue) 0%, var(--steps-color-white) 33%);
+  --background-gradient: linear-gradient(180deg, var(--steps-color-blue) 0%, var(--steps-color-white) 400px);
   --color: var(--steps-color-black);
   --a-color: var(--steps-color-black);
   --color-hover: var(--steps-color-grey);
