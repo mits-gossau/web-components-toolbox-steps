@@ -72,7 +72,6 @@ export default class Heading extends Shadow() {
             font-size: var(--steps-h-font-size);
             margin: 0;
             padding-bottom: 1rem;
-            font-family: "HelveticaNowText";
         }
 
         :host .heading--h1 {
