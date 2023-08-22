@@ -23,7 +23,7 @@ export default class Container extends Shadow() {
      * @type {Container}
      */
     this.container = {
-      maxWidth: '800px',
+      maxWidth: '960px',
       padding: '20px',
     }
   }
@@ -53,6 +53,7 @@ export default class Container extends Shadow() {
         :host {
             max-width: var(--steps-container-max-width, ${this.container.maxWidth});
             padding: var(--steps-container-padding, ${this.container.padding});
+            padding-top: 3rem;
         }
     `
   }
