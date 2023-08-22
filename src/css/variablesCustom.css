@@ -135,7 +135,7 @@ body {
   --navigation-default-a-link-content-spacing-no-scroll-custom: 0.5rem;
 
   /* content dark */
-  --content-dark-h1-color: var(--steps-color-red);
+  --content-dark-h2-color: var(--steps-color-red);
   --content-dark-align-items: normal;
 
   /* button category */
