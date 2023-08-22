@@ -10,20 +10,32 @@
 
 /* custom steps fonts */
 @font-face{
-	font-family:"HelveticaNowText";
-	src:url("https://cdn.migros.ch/ch.migros/static/fonts/helvetica-now/HelveticaNowTextW05-Regular.woff2") format("woff2"),url("https://cdn.migros.ch/ch.migros/static/fonts/helvetica-now/HelveticaNowTextW05-Regular.woff") format("woff");
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
+  font-family:"PPMonumentExtended";
+  src:url("/assets/fonts/PPMonumentExtended-Regular.woff") format("woff"),
+      url("/assets/fonts/PPMonumentExtended-Regular.woff2") format("woff2"),
+      url("/assets/fonts/PPMonumentExtended-Regular.ttf") format("ttf"),
+      url("/assets/fonts/PPMonumentExtended-Regular.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
- 
 @font-face{
-	font-family:"HelveticaNowTextBold";
-	src:url("https://cdn.migros.ch/ch.migros/static/fonts/helvetica-now/HelveticaNowTextW05-Bold.woff2") format("woff2"),url("https://cdn.migros.ch/ch.migros/static/fonts/helvetica-now/HelveticaNowTextW05-Bold.woff") format("woff");
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
+  font-family:"NeueAugenblickMedium";
+  src:url("/assets/fonts/6445146/6401e781-2d8c-4d62-ac8d-b245b15dd7c4.woff2") format("woff2"),
+      url("/assets/fonts/6445146/1bf8c15c-8f26-4df0-977f-d08a96254ce1.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
+@font-face{
+  font-family:"NeueAugenblickBold";
+  src:url("/assets/fonts/6445185/a8febf1e-42e1-400d-b0fa-3f59eccbf33c.woff2") format("woff2"),
+      url("/assets/fonts/6445185/cfd5c4f2-6341-461c-8956-077248226f8c.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 body {
   background: var(--background-gradient);
@@ -62,9 +74,10 @@ body {
   --button-primary-color-custom: var(--steps-color-white);
 
   /* font family */
-  --font-family-bold: HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
+  --font-family-bold: NeueAugenblickBold, NeueAugenblickMedium, Helvetica, Arial, sans-serif;
   --font-family-secondary: var(--font-family-bold);
-  --font-family: HelveticaNowText, Helvetica, Arial, sans-serif;
+  --font-family: NeueAugenblickMedium, Helvetica, Arial, sans-serif;
+  --h-font-family: PPMonumentExtended, Helvetica, Arial, sans-serif;
 
   /* font sizes  */
   --steps-h-font-size: clamp(32px, 5vw, 50px);
