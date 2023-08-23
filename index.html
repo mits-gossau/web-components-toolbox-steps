@@ -16,20 +16,21 @@
     <h3>Pages</h3>
     <div id="pages"></div>
     <script>
+      const homeQuery = 'rootFolder=src&css=./src/css/variablesCustom.css&header=./src/es/components/organisms/header/top-home-/top-home-.html&logo=./src/es/components/atoms/logo/default-/default-.html&nav=./src/es/components/molecules/navigation/default-/default-.html&footer=./src/es/components/organisms/footer/default-/default-.html'
       const pageQuery = 'rootFolder=src&css=./src/css/variablesCustom.css&header=./src/es/components/organisms/header/nav-right-/nav-right-.html&logo=./src/es/components/atoms/logo/default-/default-.html&nav=./src/es/components/molecules/navigation/default-/default-.html&footer=./src/es/components/organisms/footer/default-/default-.html'
       document
         .querySelector('#pages')
         .innerHTML =/* HTML */
         `
       <ul>
-        <li><a href="./src/es/components/web-components-toolbox/docs/Template.html?${pageQuery}&content=./src/es/components/pages/Addresses.html">Addresses</a></li>
-        <li><a href="./src/es/components/web-components-toolbox/docs/Template.html?${pageQuery}&content=./src/es/components/pages/Event.html">Einzelne Veranstaltung</a></li>
-        <li><a href="./src/es/components/web-components-toolbox/docs/Template.html?rootFolder=src&css=./src/css/variablesCustom.css&content=./src/es/components/pages/Home.html">Home</a></li>
-        <li><a href="./src/es/components/web-components-toolbox/docs/Template.html?${pageQuery}&content=./src/es/components/pages/Inklusion.html">Inklusion</a></li>
-        <li><a href="./src/es/components/web-components-toolbox/docs/Template.html?${pageQuery}&content=./src/es/components/pages/News.html">News</a></li>
-        <li><a href="./src/es/components/web-components-toolbox/docs/Template.html?${pageQuery}&content=./src/es/components/pages/Program.html">Programm</a></li>
-        <li><a href="./src/es/components/web-components-toolbox/docs/Template.html?${pageQuery}&content=./src/es/components/pages/Spielplan.html">Spielplan</a></li>
-        <li><a href="./src/es/components/web-components-toolbox/docs/Template.html?${pageQuery}&content=./src/es/components/pages/Text.html">Text</a></li>
+        <li><a href="./src/docs/Template.html?${pageQuery}&content=./src/es/components/pages/Addresses.html">Addresses</a></li>
+        <li><a href="./src/docs/Template.html?${pageQuery}&content=./src/es/components/pages/Event.html">Einzelne Veranstaltung</a></li>
+        <li><a href="./src/docs/Template.html?${homeQuery}&content=./src/es/components/pages/Home.html">Home</a></li>
+        <li><a href="./src/docs/Template.html?${pageQuery}&content=./src/es/components/pages/Inklusion.html">Inklusion</a></li>
+        <li><a href="./src/docs/Template.html?${pageQuery}&content=./src/es/components/pages/News.html">News</a></li>
+        <li><a href="./src/docs/Template.html?${pageQuery}&content=./src/es/components/pages/Program.html">Programm</a></li>
+        <li><a href="./src/docs/Template.html?${pageQuery}&content=./src/es/components/pages/Spielplan.html">Spielplan</a></li>
+        <li><a href="./src/docs/Template.html?${pageQuery}&content=./src/es/components/pages/Text.html">Text</a></li>
       </ul>
     `
     </script>
