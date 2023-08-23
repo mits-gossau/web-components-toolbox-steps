@@ -48,7 +48,7 @@ export default class Container extends Shadow() {
 
   renderCSS () {
     this.css = /* css */`
-        @import url("../es/components/web-components-toolbox/src/css/style.css");
+        @import url("../../web-components-toolbox/src/css/style.css");
 
         :host {
             max-width: var(--steps-container-max-width, ${this.container.maxWidth});
