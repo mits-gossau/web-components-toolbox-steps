@@ -41,12 +41,10 @@ body {
   background: var(--background-gradient);
 }
 
-/* Reset header  */
-body p-general {
-  grid-template-rows: none !important;
-}
-
 :root {
+  /* reset */
+  --header-height: 0;
+
   /* colors */
   --steps-color-black: #000000;
   --steps-color-white: #ffffff;
