@@ -36,11 +36,6 @@
   font-display: swap;
 }
 
-
-body {
-  background: var(--background-gradient);
-}
-
 :root {
   /* reset */
   --header-height: 0;
@@ -75,6 +70,10 @@ body {
   --footer-default-invert-color-custom: var(--steps-color-white);
   --footer-default-invert-svg-color-custom: var(--steps-color-white);
   --button-primary-color-custom: var(--steps-color-white);
+
+  --h1-color: var(--steps-color-black);
+  --h2-color: var(--steps-color-blue);
+  --h3-color: var(--steps-color-white);
 
   /* font family */
   --font-family-bold: NeueAugenblickBold, NeueAugenblickMedium, Helvetica, Arial, sans-serif;
@@ -160,6 +159,10 @@ body {
   --button-category-font-weight-hover-custom: 600;
   --button-category-background-color-active-custom: var(--button-category-background-color-hover-custom);
   --button-category-color-active-custom: var(--button-category-color-hover-custom);
+}
+
+body {
+  background: var(--background-gradient);
 }
 
 .l-outer {
