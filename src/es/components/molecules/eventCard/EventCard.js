@@ -90,7 +90,7 @@ export default class EventCard extends Shadow() {
         --button-secondary-width: 100%;
         --button-secondary-font-size: 1rem;
       }
-      :host .event-sold-out {
+      :host .event-grey-out {
         color: var(--steps-color-grey-sold-out);
       }
       :host .event-card {
@@ -147,7 +147,7 @@ export default class EventCard extends Shadow() {
         color: var(--steps-color-black);
         padding-top: var(--button-secondary-padding) ;
       }
-      :host .event-sold-out .sold-out {
+      :host .event-grey-out .sold-out {
         color: var(--steps-color-black);
       }
       :host .sold-out {
@@ -178,6 +178,13 @@ export default class EventCard extends Shadow() {
 
   renderHTML () {
     // date and time
+    const currentDate = new Date()
+    const parts = this.event.eventDate.split(' ')
+    const partDate = parts[0].split('.')
+    const partTime = parts[1].split(':')
+    const formattedDate = `${partDate[2]}-${('0' + partDate[1]).slice(-2)}-${('0' + partDate[0]).slice(-2)}T${('0' + partTime[0]).slice(-2)}:${('0' + partTime[1]).slice(-2)}`
+    const parsedDate = new Date(formattedDate)
+
     const dateString = this.event.eventDate
     const dateParts = dateString.split('.')
     const timeParts = dateParts[2].split(' ')
@@ -242,7 +249,7 @@ export default class EventCard extends Shadow() {
     `
 
     this.html = /* html */ `
-      <div class="${this.event.soldOut === 'True' ? 'event-card event-sold-out' : 'event-card'}">
+      <div class="${this.event.soldOut === 'True' || parsedDate < currentDate ? 'event-card event-grey-out' : 'event-card'}">
         <div class="event-date">
           <p>${weekDay}<br /><span>${dateShort}</span></p>
         </div>
