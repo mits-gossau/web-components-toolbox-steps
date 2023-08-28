@@ -56,9 +56,7 @@ export default class Events extends Shadow() {
               const partTime = parts[1].split(":");
               const formattedDate = `${partDate[2]}-${('0' + partDate[1]).slice(-2)}-${('0' + partDate[0]).slice(-2)}T${('0' +partTime[0]).slice(-2)}:${('0' + partTime[1]).slice(-2)}`;
               event.formattedDate = formattedDate;
-              console.log({formattedDate})
               event.parsedDate = new Date(formattedDate);
-              console.log(new Date(formattedDate))
             }
 
             events.sort((a, b) => a.parsedDate - b.parsedDate);
