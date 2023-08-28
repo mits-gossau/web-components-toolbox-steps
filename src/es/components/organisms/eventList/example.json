@@ -1,864 +1,856 @@
 {
   "events": [
     {
-      "choreographer": "Henrietta Marsh",
-      "company": "Tingles",
-      "companyDetailPageUrl": "https://zenolux.bi",
-      "eventDate": "23.08.2024 19:09:28",
-      "eventInformationIcons": [
-        "/src/img/icons/icon-uebertitel.svg",
-        "/src/img/icons/icon-einfuehrung.svg",
-        "/src/img/icons/icon-nachbesprechung.svg",
-        "/src/img/icons/icon-familien.svg"
-      ],
-      "location": "Grahamtown",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-step",
-      "production": "Officia minim dolore officia ad sunt occaecat.",
-      "soldOut": "True",
-      "theater": "Qui ipsum laboris quis do ad consequat id et commodo officia reprehenderit enim.",
+      "location": "Genève ",
+      "theater": "Comédie de Genève",
       "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ]
-    },
-    {
-      "choreographer": "Malone Valentine",
-      "company": "Intrawear",
-      "companyDetailPageUrl": "https://zenthall.democrat",
-      "eventDate": "09.09.2024 04:10:16",
-      "eventInformationIcons": [
-        "/src/img/icons/icon-uebertitel.svg",
-        "/src/img/icons/icon-einfuehrung.svg",
-        "/src/img/icons/icon-nachbesprechung.svg",
-        "/src/img/icons/icon-familien.svg"
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
+        "/media/srnn4bjq/icon-hoerbenachteiligung.svg"
       ],
-      "location": "Blue",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-step",
-      "production": "Consectetur non Lorem commodo sint.",
+      "company": "Compagnie Sam·Hester (CH) ",
+      "companyDetailPageUrl": null,
+      "production": "Kantik",
+      "choreographer": "Perrine Valli",
+      "eventName": "CompagnieSam·Hester_0425_Genève",
+      "eventDate": "25.4.2024 20:0:0",
       "soldOut": "False",
-      "theater": "Deserunt nisi est adipisicing mollit sit commodo fugiat Lorem et adipisicing tempor cupidatat.",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ]
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
     },
     {
-      "choreographer": "Cardenas Stanley",
-      "company": "Zialactic",
-      "companyDetailPageUrl": "https://ultrasure.se",
-      "eventDate": "30.08.2024 20:09:88",
-      "eventInformationIcons": [
-        "/src/img/icons/icon-uebertitel.svg",
-        "/src/img/icons/icon-einfuehrung.svg",
-        "/src/img/icons/icon-nachbesprechung.svg",
-        "/src/img/icons/icon-familien.svg"
-      ],
-      "location": "Brewster",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-step",
-      "production": "Sunt deserunt adipisicing nulla ullamco cupidatat ipsum ut id ut amet quis.",
-      "soldOut": "True",
-      "theater": "Velit veniam ullamco exercitation veniam tempor mollit ut in excepteur dolore ut in exercitation dolore.",
+      "location": "St. Gallen ",
+      "theater": "Theater St. Gallen, Lokremise ",
       "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ]
-    },
-    {
-      "choreographer": "Janet Curry",
-      "company": "Qualitex",
-      "companyDetailPageUrl": "https://velos.nec",
-      "eventDate": "08.09.2024 19:10:60",
-      "eventInformationIcons": [
-        "/src/img/icons/icon-uebertitel.svg",
-        "/src/img/icons/icon-einfuehrung.svg",
-        "/src/img/icons/icon-nachbesprechung.svg",
-        "/src/img/icons/icon-familien.svg"
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
       ],
-      "location": "Cochranville",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-step",
-      "production": "Officia adipisicing non sint non ex cupidatat culpa eu magna aliquip et veniam proident aliqua.",
-      "soldOut": "True",
-      "theater": "Consequat ipsum incididunt in excepteur duis ut magna labore magna duis aliquip aliquip.",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ]
-    },
-    {
-      "choreographer": "Terrie Hinton",
-      "company": "Exodoc",
-      "companyDetailPageUrl": "https://teraprene.capital",
-      "eventDate": "14.09.2024 00:10:47",
-      "eventInformationIcons": [
-        "/src/img/icons/icon-uebertitel.svg",
-        "/src/img/icons/icon-einfuehrung.svg",
-        "/src/img/icons/icon-nachbesprechung.svg",
-        "/src/img/icons/icon-familien.svg"
-      ],
-      "location": "Snowville",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-step",
-      "production": "Irure deserunt dolor enim id pariatur do irure exercitation ut ea amet.",
+      "company": "Cie. Arts Mouvementés for Families (CH)",
+      "companyDetailPageUrl": null,
+      "production": "Die Flüstertüten – Cabaret des Bauchredens",
+      "choreographer": "Yasmine Hugonnet",
+      "eventName": "Cie.ArtsM_Families_0428_St.Gallen",
+      "eventDate": "28.4.2024 14:0:0",
       "soldOut": "False",
-      "theater": "Nisi labore labore in aliqua adipisicing aute excepteur dolor commodo.",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
+      "presaleUrl": null,
+      "eventInformationIcons": [
+        "/media/oe1ncuvl/icon-uebertitel.svg",
+        "/media/mkbfwfq1/icon-familien.svg"
       ]
     },
     {
-      "choreographer": "Hall Cash",
-      "company": "Digial",
-      "companyDetailPageUrl": "https://plutorque.rehab",
-      "eventDate": "01.09.2024 14:10:62",
-      "eventInformationIcons": [
-        "/src/img/icons/icon-uebertitel.svg",
-        "/src/img/icons/icon-einfuehrung.svg",
-        "/src/img/icons/icon-nachbesprechung.svg",
-        "/src/img/icons/icon-familien.svg"
+      "location": "Moutier ",
+      "theater": "Aula de Chantemerle",
+      "theaterInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
       ],
-      "location": "Dante",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-step",
-      "production": "Reprehenderit commodo exercitation fugiat eiusmod adipisicing eu aliquip irure incididunt.",
+      "company": "Anton Lachky Company (BEL)",
+      "companyDetailPageUrl": "/programm/cie-arts-mouvementés",
+      "production": "Die Anderen",
+      "choreographer": "Anton Lachky",
+      "eventName": "AntonLachkyCompany_0428_Moutier",
+      "eventDate": "28.4.2024 0:0:0",
       "soldOut": "False",
-      "theater": "Do consectetur nostrud cupidatat sit nisi magna laborum aute.",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ]
+      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-steps",
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
     },
     {
-      "choreographer": "Mattie Brooks",
-      "company": "Retrack",
-      "companyDetailPageUrl": "https://comveyor.gb",
-      "eventDate": "22.08.2024 11:09:60",
-      "eventInformationIcons": [
-        "/src/img/icons/icon-uebertitel.svg",
-        "/src/img/icons/icon-einfuehrung.svg",
-        "/src/img/icons/icon-nachbesprechung.svg",
-        "/src/img/icons/icon-familien.svg"
-      ],
-      "location": "Bison",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-step",
-      "production": "Anim eu ea fugiat ullamco quis eiusmod esse exercitation ut.",
-      "soldOut": "True",
-      "theater": "Sunt magna excepteur dolore qui.",
+      "location": "St. Gallen ",
+      "theater": "Theater St. Gallen, Lokremise ",
       "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ]
-    },
-    {
-      "choreographer": "Carissa Hardin",
-      "company": "Nebulean",
-      "companyDetailPageUrl": "https://brainquil.co",
-      "eventDate": "13.09.2024 18:10:05",
-      "eventInformationIcons": [
-        "/src/img/icons/icon-uebertitel.svg",
-        "/src/img/icons/icon-einfuehrung.svg",
-        "/src/img/icons/icon-nachbesprechung.svg",
-        "/src/img/icons/icon-familien.svg"
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
       ],
-      "location": "Santel",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-step",
-      "production": "Enim reprehenderit adipisicing non magna ullamco dolore commodo.",
+      "company": "Cie. Arts Mouvementés for Families (CH)",
+      "companyDetailPageUrl": null,
+      "production": "Die Flüstertüten – Cabaret des Bauchredens",
+      "choreographer": "Yasmine Hugonnet",
+      "eventName": "Cie.ArtsM_Families_0429_St.Gallen",
+      "eventDate": "29.4.2024 10:0:0",
       "soldOut": "False",
-      "theater": "Exercitation ex magna ea ex nulla deserunt.",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
+      "presaleUrl": null,
+      "eventInformationIcons": [
+        "/media/mkbfwfq1/icon-familien.svg",
+        "/media/oe1ncuvl/icon-uebertitel.svg"
       ]
     },
     {
-      "choreographer": "Nona Miles",
-      "company": "Talendula",
-      "companyDetailPageUrl": "https://comtext.kred",
-      "eventDate": "13.09.2024 22:10:80",
-      "eventInformationIcons": [
-        "/src/img/icons/icon-uebertitel.svg",
-        "/src/img/icons/icon-einfuehrung.svg",
-        "/src/img/icons/icon-nachbesprechung.svg",
-        "/src/img/icons/icon-familien.svg"
-      ],
-      "location": "Genoa",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-step",
-      "production": "Aute exercitation commodo consequat nulla excepteur non occaecat consequat amet deserunt ullamco ex pariatur quis.",
-      "soldOut": "True",
-      "theater": "Excepteur id est tempor sit et officia ad sit amet officia labore.",
+      "location": "Basel",
+      "theater": "Kaserne Basel",
       "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ]
-    },
-    {
-      "choreographer": "Geneva Cline",
-      "company": "Plasto",
-      "companyDetailPageUrl": "https://bisba.solutions",
-      "eventDate": "25.08.2024 08:09:19",
-      "eventInformationIcons": [
-        "/src/img/icons/icon-uebertitel.svg",
-        "/src/img/icons/icon-einfuehrung.svg",
-        "/src/img/icons/icon-nachbesprechung.svg",
-        "/src/img/icons/icon-familien.svg"
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
       ],
-      "location": "Norris",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-step",
-      "production": "Labore dolor laborum laborum elit ut commodo excepteur fugiat tempor.",
-      "soldOut": "True",
-      "theater": "Enim et ut aliquip id laboris aute commodo ad non culpa mollit.",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ]
-    },
-    {
-      "choreographer": "Sloan Murray",
-      "company": "Quotezart",
-      "companyDetailPageUrl": "https://netplax.il",
-      "eventDate": "21.08.2024 02:09:94",
-      "eventInformationIcons": [
-        "/src/img/icons/icon-uebertitel.svg",
-        "/src/img/icons/icon-einfuehrung.svg",
-        "/src/img/icons/icon-nachbesprechung.svg",
-        "/src/img/icons/icon-familien.svg"
-      ],
-      "location": "Oretta",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-step",
-      "production": "Irure exercitation qui ullamco quis aliqua esse.",
-      "soldOut": "True",
-      "theater": "Mollit reprehenderit consectetur pariatur est ipsum magna do nisi sint occaecat enim dolore sint.",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ]
-    },
-    {
-      "choreographer": "Johanna Mcgee",
-      "company": "Xiix",
-      "companyDetailPageUrl": "https://zoarere.casa",
-      "eventDate": "11.09.2024 23:10:32",
-      "eventInformationIcons": [
-        "/src/img/icons/icon-uebertitel.svg",
-        "/src/img/icons/icon-einfuehrung.svg",
-        "/src/img/icons/icon-nachbesprechung.svg",
-        "/src/img/icons/icon-familien.svg"
-      ],
-      "location": "Tetherow",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-step",
-      "production": "Aliqua velit excepteur sint sunt pariatur sint consequat.",
+      "company": "Cie. Arts Mouvementés (CH)",
+      "companyDetailPageUrl": null,
+      "production": "Les Porte-Voix – Cabaret Ventriloque",
+      "choreographer": "Yasmine Hugonnet",
+      "eventName": "Cie.ArtsMouvementés_0507_Basel",
+      "eventDate": "7.5.2024 0:0:0",
       "soldOut": "False",
-      "theater": "Minim ea non enim do elit mollit ut in.",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
+      "presaleUrl": null,
+      "eventInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
       ]
     },
     {
-      "choreographer": "Robles Mclean",
-      "company": "Splinx",
-      "companyDetailPageUrl": "https://prowaste.bw",
-      "eventDate": "01.09.2024 18:10:38",
-      "eventInformationIcons": [
-        "/src/img/icons/icon-uebertitel.svg",
-        "/src/img/icons/icon-einfuehrung.svg",
-        "/src/img/icons/icon-nachbesprechung.svg",
-        "/src/img/icons/icon-familien.svg"
+      "location": "Biel/Bienne ",
+      "theater": "Nebia ",
+      "theaterInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
+        "/media/srnn4bjq/icon-hoerbenachteiligung.svg"
       ],
-      "location": "Belmont",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-step",
-      "production": "Duis elit Lorem laborum laboris.",
+      "company": "Far From The Norm (GBR)",
+      "companyDetailPageUrl": null,
+      "production": "BLKDOG",
+      "choreographer": "Botis Seva",
+      "eventName": "FarFromTheNorm_0502_Biel",
+      "eventDate": "2.5.2023 20:0:0",
       "soldOut": "False",
-      "theater": "Commodo amet laborum occaecat sit sint ad nulla Lorem eiusmod officia veniam.",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+    },
+    {
+      "location": "Sierre ",
+      "theater": "Théâtre Les Halles",
       "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+      ],
+      "company": "Marc Brew Company | Eastman (GBR | BEL)",
+      "companyDetailPageUrl": null,
+      "production": "An Accident ",
+      "choreographer": "Marc Brew, Sidi Larbi Cherkaoui",
+      "eventName": "MarcBrewCompany|Eastman_0504_Sierre",
+      "eventDate": "4.5.2023 19:0:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+    },
+    {
+      "location": "Basel",
+      "theater": "Kaserne Basel",
+      "theaterInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+      ],
+      "company": "Cie. Arts Mouvementés (CH)",
+      "companyDetailPageUrl": null,
+      "production": "Les Porte-Voix – Cabaret Ventriloque",
+      "choreographer": "Yasmine Hugonnet",
+      "eventName": "Cie.ArtsMouvementés_0508_Basel",
+      "eventDate": "8.5.2023 0:0:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
       ]
     },
     {
-      "choreographer": "Kimberly Jacobson",
-      "company": "Minga",
-      "companyDetailPageUrl": "https://xsports.ch",
-      "eventDate": "05.09.2024 10:10:24",
-      "eventInformationIcons": [
-        "/src/img/icons/icon-uebertitel.svg",
-        "/src/img/icons/icon-einfuehrung.svg",
-        "/src/img/icons/icon-nachbesprechung.svg",
-        "/src/img/icons/icon-familien.svg"
+      "location": "Luzern",
+      "theater": "Südpol ",
+      "theaterInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
       ],
-      "location": "Worton",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-step",
-      "production": "Nisi tempor irure duis ullamco voluptate.",
+      "company": "Cie. Arts Mouvementés for Families (CH)",
+      "companyDetailPageUrl": null,
+      "production": "Die Flüstertüten – Cabaret des Bauchredens",
+      "choreographer": "Yasmine Hugonnet",
+      "eventName": "Cie.ArtsM_Families_0512_14:00_Luzern",
+      "eventDate": "12.5.2023 14:0:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+      ]
+    },
+    {
+      "location": "Lugano",
+      "theater": "LAC Lugano Arte e Cultura",
+      "theaterInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
+        "/media/srnn4bjq/icon-hoerbenachteiligung.svg"
+      ],
+      "company": "Cie. Arts Mouvementés (CH)",
+      "companyDetailPageUrl": null,
+      "production": "Les Porte-Voix – Cabaret Ventriloque",
+      "choreographer": "Yasmine Hugonnet",
+      "eventName": "Cie.ArtsMouvementés_0514_Lugano",
+      "eventDate": "14.5.2023 20:30:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+    },
+    {
+      "location": "Zürich",
+      "theater": "Schauspielhaus Schiffbau",
+      "theaterInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+      ],
+      "company": "Cie. Arts Mouvementés for Families (CH)",
+      "companyDetailPageUrl": null,
+      "production": "Die Flüstertüten – Cabaret des Bauchredens",
+      "choreographer": "Yasmine Hugonnet",
+      "eventName": "Cie.ArtsM_Families_0517_Zürich",
+      "eventDate": "17.5.2024 17:30:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+      ]
+    },
+    {
+      "location": "Zürich",
+      "theater": "Schauspielhaus Schiffbau",
+      "theaterInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+      ],
+      "company": "Cie. Arts Mouvementés for Families (CH)",
+      "companyDetailPageUrl": null,
+      "production": "Die Flüstertüten – Cabaret des Bauchredens",
+      "choreographer": "Yasmine Hugonnet",
+      "eventName": "Cie.ArtsM_Families_0518_Zürich",
+      "eventDate": "18.5.2024 14:0:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+    },
+    {
+      "location": "Schaffhausen",
+      "theater": "Stadttheater Schaffhausen ",
+      "theaterInformationIcons": [
+        "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+      ],
+      "company": "Anton Lachky Company (BEL)",
+      "companyDetailPageUrl": "/programm/cie-arts-mouvementés",
+      "production": "Die Anderen",
+      "choreographer": "Anton Lachky",
+      "eventName": "AntonLachkyCompany_0502_Schaffhausen",
+      "eventDate": "2.5.2023 19:30:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+    },
+    {
+      "location": "Steckborn",
+      "theater": "Phönix Theater",
+      "theaterInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+      ],
+      "company": "Anton Lachky Company (BEL)",
+      "companyDetailPageUrl": "/programm/cie-arts-mouvementés",
+      "production": "Die Anderen",
+      "choreographer": "Anton Lachky",
+      "eventName": "AntonLachkyCompany_0504_Steckborn",
+      "eventDate": "4.5.2023 19:30:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+    },
+    {
+      "location": "Aarau ",
+      "theater": "Bühne Aarau, Alte Reithalle ",
+      "theaterInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+      ],
+      "company": "Anton Lachky Company (BEL)",
+      "companyDetailPageUrl": "/programm/cie-arts-mouvementés",
+      "production": "Die Anderen",
+      "choreographer": "Anton Lachky",
+      "eventName": "AntonLachkyCompany_0508_Aarau",
+      "eventDate": "8.5.2024 19:0:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+    },
+    {
+      "location": "Poschiavo",
+      "theater": "Palestre scuole comunali",
+      "theaterInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+      ],
+      "company": "Anton Lachky Company (BEL)",
+      "companyDetailPageUrl": "/programm/cie-arts-mouvementés",
+      "production": "Die Anderen",
+      "choreographer": "Anton Lachky",
+      "eventName": "AntonLachkyCompany_0510_Poschiavo",
+      "eventDate": "10.5.2024 20:30:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+    },
+    {
+      "location": "Poschiavo",
+      "theater": "Palestre scuole comunali",
+      "theaterInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+      ],
+      "company": "Anton Lachky Company (BEL)",
+      "companyDetailPageUrl": "/programm/cie-arts-mouvementés",
+      "production": "Die Anderen",
+      "choreographer": "Anton Lachky",
+      "eventName": "AntonLachkyCompany_0511_Poschivao",
+      "eventDate": "11.5.2024 17:0:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+    },
+    {
+      "location": "Solothurn ",
+      "theater": "Stadttheater Solothurn ",
+      "theaterInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+      ],
+      "company": "Anton Lachky Company (BEL)",
+      "companyDetailPageUrl": "/programm/cie-arts-mouvementés",
+      "production": "Die Anderen",
+      "choreographer": "Anton Lachky",
+      "eventName": "AntonLachkyCompany_0514_Solothurn",
+      "eventDate": "14.5.2024 19:30:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+    },
+    {
+      "location": "Bellinzona ",
+      "theater": "Teatro Sociale ",
+      "theaterInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+      ],
+      "company": "Anton Lachky Company (BEL)",
+      "companyDetailPageUrl": "/programm/cie-arts-mouvementés",
+      "production": "Die Anderen",
+      "choreographer": "Anton Lachky",
+      "eventName": "AntonLachkyCompany_0516_Bellinzona",
+      "eventDate": "16.5.2024 20:45:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+    },
+    {
+      "location": "Vals ",
+      "theater": "Zentrum Glüs",
+      "theaterInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+      ],
+      "company": "Anton Lachky Company (BEL)",
+      "companyDetailPageUrl": "/programm/cie-arts-mouvementés",
+      "production": "Die Anderen",
+      "choreographer": "Anton Lachky",
+      "eventName": "AntonLachkyCompany_0518_Vals",
+      "eventDate": "18.5.2024 20:0:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+    },
+    {
+      "location": "St. Gallen ",
+      "theater": "Theater St. Gallen, Lokremise ",
+      "theaterInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+      ],
+      "company": "Anton Lachky Company (BEL)",
+      "companyDetailPageUrl": "/programm/cie-arts-mouvementés",
+      "production": "Die Anderen",
+      "choreographer": "Anton Lachky",
+      "eventName": "AntonLachkyCompany_0519_St.Gallen",
+      "eventDate": "19.5.2024 20:0:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+    },
+    {
+      "location": "Genève ",
+      "theater": "Comédie de Genève",
+      "theaterInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
+        "/media/srnn4bjq/icon-hoerbenachteiligung.svg"
+      ],
+      "company": "Compagnie Sam·Hester (CH) ",
+      "companyDetailPageUrl": null,
+      "production": "Kantik",
+      "choreographer": "Perrine Valli",
+      "eventName": "CompagnieSam·Hester_0427_Genève",
+      "eventDate": "27.4.2024 19:30:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+    },
+    {
+      "location": "Genève ",
+      "theater": "Comédie de Genève",
+      "theaterInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
+        "/media/srnn4bjq/icon-hoerbenachteiligung.svg"
+      ],
+      "company": "Compagnie Sam·Hester (CH) ",
+      "companyDetailPageUrl": null,
+      "production": "Kantik",
+      "choreographer": "Perrine Valli",
+      "eventName": "CompagnieSam·Hester_0428_Genève",
+      "eventDate": "28.4.2024 15:30:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+    },
+    {
+      "location": "Nyon",
+      "theater": "Usine à Gaz",
+      "theaterInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+      ],
+      "company": "Compagnie Sam·Hester (CH) ",
+      "companyDetailPageUrl": null,
+      "production": "Kantik",
+      "choreographer": "Perrine Valli",
+      "eventName": "CompagnieSam·Hester_0503_Nyon",
+      "eventDate": "3.5.2024 0:0:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+    },
+    {
+      "location": "Biel/Bienne ",
+      "theater": "Nebia ",
+      "theaterInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
+        "/media/srnn4bjq/icon-hoerbenachteiligung.svg"
+      ],
+      "company": "Compagnie Sam·Hester (CH) ",
+      "companyDetailPageUrl": null,
+      "production": "Kantik",
+      "choreographer": "Perrine Valli",
+      "eventName": "CompagnieSam·Hester_0505_Biel",
+      "eventDate": "5.5.2024 0:0:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+    },
+    {
+      "location": "Fribourg",
+      "theater": "Equilibre",
+      "theaterInformationIcons": [
+        "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+      ],
+      "company": "Far From The Norm (GBR)",
+      "companyDetailPageUrl": null,
+      "production": "BLKDOG",
+      "choreographer": "Botis Seva",
+      "eventName": "FarFromTheNorm_0505_Fribourg",
+      "eventDate": "5.5.2024 17:0:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+    },
+    {
+      "location": "Baden",
+      "theater": "Kurtheater Baden ",
+      "theaterInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+      ],
+      "company": "Far From The Norm (GBR)",
+      "companyDetailPageUrl": null,
+      "production": "BLKDOG",
+      "choreographer": "Botis Seva",
+      "eventName": "FarFromTheNorm_0507_Baden",
+      "eventDate": "7.5.2024 19:30:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+    },
+    {
+      "location": "Bern",
+      "theater": "Dampfzentrale Bern",
+      "theaterInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+      ],
+      "company": "Far From The Norm (GBR)",
+      "companyDetailPageUrl": null,
+      "production": "BLKDOG",
+      "choreographer": "Botis Seva",
+      "eventName": "FarFromTheNorm_0511_Bern",
+      "eventDate": "11.5.2024 0:0:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+    },
+    {
+      "location": "Vernier ",
+      "theater": "Salle du Lignon",
+      "theaterInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+      ],
+      "company": "Far From The Norm (GBR)",
+      "companyDetailPageUrl": null,
+      "production": "BLKDOG",
+      "choreographer": "Botis Seva",
+      "eventName": "FarFromTheNorm_0514_Vernier",
+      "eventDate": "14.5.2024 20:0:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+    },
+    {
+      "location": "Lugano",
+      "theater": "LAC Lugano Arte e Cultura",
+      "theaterInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
+        "/media/srnn4bjq/icon-hoerbenachteiligung.svg"
+      ],
+      "company": "Kidd Pivot (CAN)",
+      "companyDetailPageUrl": null,
+      "production": "New Work ",
+      "choreographer": "Crystal Pite, Jonathon Young",
+      "eventName": "KiddPivot_0428_Lugano",
+      "eventDate": "28.4.2024 18:0:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+    },
+    {
+      "location": "Zürich",
+      "theater": "Theater 11",
+      "theaterInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+      ],
+      "company": "Kidd Pivot (CAN)",
+      "companyDetailPageUrl": null,
+      "production": "New Work ",
+      "choreographer": "Crystal Pite, Jonathon Young",
+      "eventName": "KiddPivot_0503_Zürich",
+      "eventDate": "3.5.2024 20:0:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+    },
+    {
+      "location": "Sierre ",
+      "theater": "Théâtre Les Halles",
+      "theaterInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+      ],
+      "company": "Marc Brew Company | Eastman (GBR | BEL)",
+      "companyDetailPageUrl": null,
+      "production": "An Accident ",
+      "choreographer": "Marc Brew, Sidi Larbi Cherkaoui",
+      "eventName": "MarcBrewCompany|Eastman_0505_Sierre",
+      "eventDate": "5.5.2024 17:0:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+    },
+    {
+      "location": "La Tour-de-Trême",
+      "theater": "Salle CO2",
+      "theaterInformationIcons": [
+        "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+      ],
+      "company": "Marc Brew Company | Eastman (GBR | BEL)",
+      "companyDetailPageUrl": null,
+      "production": "An Accident ",
+      "choreographer": "Marc Brew, Sidi Larbi Cherkaoui",
+      "eventName": "MarcBrewCompany|Eastman_0510_LaTour-de-Trême",
+      "eventDate": "10.5.2024 20:0:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+    },
+    {
+      "location": "Basel",
+      "theater": "Kaserne Basel",
+      "theaterInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+      ],
+      "company": "Marc Brew Company | Eastman (GBR | BEL)",
+      "companyDetailPageUrl": null,
+      "production": "An Accident ",
+      "choreographer": "Marc Brew, Sidi Larbi Cherkaoui",
+      "eventName": "MarcBrewCompany|Eastman_0516_Basel",
+      "eventDate": "16.5.2024 0:0:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+    },
+    {
+      "location": "Basel",
+      "theater": "Kaserne Basel",
+      "theaterInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+      ],
+      "company": "Marc Brew Company | Eastman (GBR | BEL)",
+      "companyDetailPageUrl": null,
+      "production": "An Accident ",
+      "choreographer": "Marc Brew, Sidi Larbi Cherkaoui",
+      "eventName": "MarcBrewCompany|Eastman_0517_Basel",
+      "eventDate": "17.5.2024 0:0:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+    },
+    {
+      "location": "Zürich",
+      "theater": "Gessnerallee",
+      "theaterInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
+        "/media/srnn4bjq/icon-hoerbenachteiligung.svg"
+      ],
+      "company": "Mette Ingvartsen (DNK)",
+      "companyDetailPageUrl": null,
+      "production": "The Dancing Public",
+      "choreographer": "",
+      "eventName": "MetteIngvartsen_0426_Zürich",
+      "eventDate": "26.4.2024 20:0:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+    },
+    {
+      "location": "Zürich",
+      "theater": "Gessnerallee",
+      "theaterInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
+        "/media/srnn4bjq/icon-hoerbenachteiligung.svg"
+      ],
+      "company": "Mette Ingvartsen (DNK)",
+      "companyDetailPageUrl": null,
+      "production": "The Dancing Public",
+      "choreographer": "",
+      "eventName": "MetteIngvartsen_0427_Zürich",
+      "eventDate": "27.4.2024 20:0:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+    },
+    {
+      "location": "Bern",
+      "theater": "Dampfzentrale Bern",
+      "theaterInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+      ],
+      "company": "Mette Ingvartsen (DNK)",
+      "companyDetailPageUrl": null,
+      "production": "The Dancing Public",
+      "choreographer": "",
+      "eventName": "MetteIngvartsen_0502_Bern",
+      "eventDate": "2.5.2024 0:0:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+    },
+    {
+      "location": "Luzern",
+      "theater": "Luzerner Theater ",
+      "theaterInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+      ],
+      "company": "Saburo Teshigawara, Rihoko Sato (JPN)",
+      "companyDetailPageUrl": null,
+      "production": "Tristan and Isolde ",
+      "choreographer": "Saburo Teshigawara",
+      "eventName": "SaburoTeshigawara,RihokoSato_0504_Luzern",
+      "eventDate": "4.5.2024 20:0:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+    },
+    {
+      "location": "Bern",
+      "theater": "Dampfzentrale Bern",
+      "theaterInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+      ],
+      "company": "Saburo Teshigawara, Rihoko Sato (JPN)",
+      "companyDetailPageUrl": null,
+      "production": "Tristan and Isolde ",
+      "choreographer": "Saburo Teshigawara",
+      "eventName": "SaburoTeshigawara,RihokoSato_0507_Bern",
+      "eventDate": "7.5.2024 0:0:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+    },
+    {
+      "location": "Chiasso",
+      "theater": "Cinema Teatro ",
+      "theaterInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+      ],
+      "company": "Saburo Teshigawara, Rihoko Sato (JPN)",
+      "companyDetailPageUrl": null,
+      "production": "Tristan and Isolde ",
+      "choreographer": "Saburo Teshigawara",
+      "eventName": "SaburoTeshigawara,RihokoSato_0512_Chiasso",
+      "eventDate": "12.5.2024 0:0:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+    },
+    {
+      "location": "Basel",
+      "theater": "Theater Basel Schauspielhaus",
+      "theaterInformationIcons": [
+        "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+      ],
+      "company": "Saburo Teshigawara, Rihoko Sato (JPN)",
+      "companyDetailPageUrl": null,
+      "production": "Tristan and Isolde ",
+      "choreographer": "Saburo Teshigawara",
+      "eventName": "SaburoTeshigawara,RihokoSato_0516_Basel",
+      "eventDate": "16.5.2024 0:0:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+    },
+    {
+      "location": "Baden",
+      "theater": "Kurtheater Baden ",
+      "theaterInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+      ],
+      "company": "Winter Guests (NOR)",
+      "companyDetailPageUrl": null,
+      "production": "Story, story, die.",
+      "choreographer": "Alan Lucien Øyen ",
+      "eventName": "winterguests_0424_Baden",
+      "eventDate": "24.4.2024 19:30:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+    },
+    {
+      "location": "Chur ",
+      "theater": "Theater Chur ",
+      "theaterInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+      ],
+      "company": "Winter Guests (NOR)",
+      "companyDetailPageUrl": null,
+      "production": "Story, story, die.",
+      "choreographer": "Alan Lucien Øyen ",
+      "eventName": "winterguests_0429_Chur",
+      "eventDate": "29.4.2024 0:0:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+    },
+    {
+      "location": "Zug",
+      "theater": "Theater Casino Zug ",
+      "theaterInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
+        "/media/srnn4bjq/icon-hoerbenachteiligung.svg"
+      ],
+      "company": "Winter Guests (NOR)",
+      "companyDetailPageUrl": null,
+      "production": "Story, story, die.",
+      "choreographer": "Alan Lucien Øyen ",
+      "eventName": "winterguests_0502_Zug",
+      "eventDate": "2.5.2024 0:0:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+    },
+    {
+      "location": "Vevey ",
+      "theater": "Le Reflet",
+      "theaterInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
+        "/media/srnn4bjq/icon-hoerbenachteiligung.svg"
+      ],
+      "company": "Winter Guests (NOR)",
+      "companyDetailPageUrl": null,
+      "production": "Story, story, die.",
+      "choreographer": "Alan Lucien Øyen ",
+      "eventName": "winterguests_0504_Vevey",
+      "eventDate": "4.5.2024 0:0:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+    },
+    {
+      "location": "Bern",
+      "theater": "Bühnen Bern, Vidmar 1",
+      "theaterInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+      ],
+      "company": "Winter Guests (NOR)",
+      "companyDetailPageUrl": null,
+      "production": "Story, story, die.",
+      "choreographer": "Alan Lucien Øyen ",
+      "eventName": "winterguests_0509_Bern",
+      "eventDate": "9.5.2024 0:0:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+    },
+    {
+      "location": "St. Gallen ",
+      "theater": "Theater St. Gallen, Grosse Bühne ",
+      "theaterInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+      ],
+      "company": "Winter Guests (NOR)",
+      "companyDetailPageUrl": null,
+      "production": "Story, story, die.",
+      "choreographer": "Alan Lucien Øyen ",
+      "eventName": "winterguests_0511_St.Gallen",
+      "eventDate": "11.5.2024 0:0:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+    },
+    {
+      "location": "Neuchâtel ",
+      "theater": "Théâtre du Passage",
+      "theaterInformationIcons": [
+        "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+      ],
+      "company": "Winter Guests (NOR)",
+      "companyDetailPageUrl": null,
+      "production": "Story, story, die.",
+      "choreographer": "Alan Lucien Øyen ",
+      "eventName": "winterguests_0516_Neuchâtel",
+      "eventDate": "16.5.2024 20:0:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+    },
+    {
+      "location": "Genève ",
+      "theater": "Comédie de Genève",
+      "theaterInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
+        "/media/srnn4bjq/icon-hoerbenachteiligung.svg"
+      ],
+      "company": "Compagnie Sam·Hester (CH) ",
+      "companyDetailPageUrl": null,
+      "production": "Kantik",
+      "choreographer": "Perrine Valli",
+      "eventName": "CompagnieSam·Hester_0426_Genève",
+      "eventDate": "26.4.2024 20:30:0",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+    },
+    {
+      "location": "Luzern",
+      "theater": "Südpol ",
+      "theaterInformationIcons": [
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+      ],
+      "company": "Cie. Arts Mouvementés for Families (CH)",
+      "companyDetailPageUrl": null,
+      "production": "Die Flüstertüten – Cabaret des Bauchredens",
+      "choreographer": "Yasmine Hugonnet",
+      "eventName": "Cie.ArtsM_Families_0512_Luzern",
+      "eventDate": "12.5.2024 10:0:0",
       "soldOut": "True",
-      "theater": "Mollit irure deserunt dolore et qui proident.",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ]
-    },
-    {
-      "choreographer": "Summer Trevino",
-      "company": "Sustenza",
-      "companyDetailPageUrl": "https://circum.ss",
-      "eventDate": "09.09.2024 05:10:25",
+      "presaleUrl": null,
       "eventInformationIcons": [
-        "/src/img/icons/icon-uebertitel.svg",
-        "/src/img/icons/icon-einfuehrung.svg",
-        "/src/img/icons/icon-nachbesprechung.svg",
-        "/src/img/icons/icon-familien.svg"
-      ],
-      "location": "Kula",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-step",
-      "production": "Incididunt tempor fugiat excepteur ut.",
-      "soldOut": "True",
-      "theater": "Excepteur irure elit dolore incididunt enim fugiat cillum nostrud consequat cupidatat consectetur consectetur.",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ]
-    },
-    {
-      "choreographer": "Allie Kidd",
-      "company": "Comtours",
-      "companyDetailPageUrl": "https://ersum.zw",
-      "eventDate": "01.09.2024 00:10:74",
-      "eventInformationIcons": [
-        "/src/img/icons/icon-uebertitel.svg",
-        "/src/img/icons/icon-einfuehrung.svg",
-        "/src/img/icons/icon-nachbesprechung.svg",
-        "/src/img/icons/icon-familien.svg"
-      ],
-      "location": "Ryderwood",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-step",
-      "production": "In labore dolor anim aute.",
-      "soldOut": "True",
-      "theater": "Non proident laborum et proident ex excepteur magna ut duis irure magna adipisicing.",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ]
-    },
-    {
-      "choreographer": "Booker Sargent",
-      "company": "Magmina",
-      "companyDetailPageUrl": "https://quility.surf",
-      "eventDate": "21.08.2024 23:09:19",
-      "eventInformationIcons": [
-        "/src/img/icons/icon-uebertitel.svg",
-        "/src/img/icons/icon-einfuehrung.svg",
-        "/src/img/icons/icon-nachbesprechung.svg",
-        "/src/img/icons/icon-familien.svg"
-      ],
-      "location": "Caroleen",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-step",
-      "production": "Deserunt esse mollit commodo dolore ipsum magna ex cillum consectetur eiusmod esse.",
-      "soldOut": "True",
-      "theater": "Ea adipisicing minim ad eu et pariatur veniam ea id adipisicing.",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ]
-    },
-    {
-      "choreographer": "Cooper Guerra",
-      "company": "Twiggery",
-      "companyDetailPageUrl": "https://snacktion.mt",
-      "eventDate": "04.09.2024 12:10:85",
-      "eventInformationIcons": [
-        "/src/img/icons/icon-uebertitel.svg",
-        "/src/img/icons/icon-einfuehrung.svg",
-        "/src/img/icons/icon-nachbesprechung.svg",
-        "/src/img/icons/icon-familien.svg"
-      ],
-      "location": "Lund",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-step",
-      "production": "Sit dolor officia ea laboris elit elit eu mollit officia quis.",
-      "soldOut": "False",
-      "theater": "Ut labore cupidatat dolore quis labore proident enim ad irure pariatur eu.",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ]
-    },
-    {
-      "choreographer": "Kara Cooper",
-      "company": "Comfirm",
-      "companyDetailPageUrl": "https://portalis.mg",
-      "eventDate": "16.08.2024 01:09:38",
-      "eventInformationIcons": [
-        "/src/img/icons/icon-uebertitel.svg",
-        "/src/img/icons/icon-einfuehrung.svg",
-        "/src/img/icons/icon-nachbesprechung.svg",
-        "/src/img/icons/icon-familien.svg"
-      ],
-      "location": "Loyalhanna",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-step",
-      "production": "Esse sint consequat eu minim.",
-      "soldOut": "False",
-      "theater": "Cupidatat nostrud cupidatat cupidatat consequat minim amet eu labore quis anim.",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ]
-    },
-    {
-      "choreographer": "Jenifer Scott",
-      "company": "Colaire",
-      "companyDetailPageUrl": "https://moreganic.me",
-      "eventDate": "14.09.2024 22:10:59",
-      "eventInformationIcons": [
-        "/src/img/icons/icon-uebertitel.svg",
-        "/src/img/icons/icon-einfuehrung.svg",
-        "/src/img/icons/icon-nachbesprechung.svg",
-        "/src/img/icons/icon-familien.svg"
-      ],
-      "location": "Condon",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-step",
-      "production": "Adipisicing deserunt occaecat aute amet tempor voluptate.",
-      "soldOut": "True",
-      "theater": "Magna irure sint aliquip veniam non anim nisi velit cillum.",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ]
-    },
-    {
-      "choreographer": "Maynard Estes",
-      "company": "Xleen",
-      "companyDetailPageUrl": "https://cofine.ga",
-      "eventDate": "13.09.2024 10:10:68",
-      "eventInformationIcons": [
-        "/src/img/icons/icon-uebertitel.svg",
-        "/src/img/icons/icon-einfuehrung.svg",
-        "/src/img/icons/icon-nachbesprechung.svg",
-        "/src/img/icons/icon-familien.svg"
-      ],
-      "location": "Tivoli",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-step",
-      "production": "Quis deserunt ad ea laborum velit qui tempor anim esse laborum.",
-      "soldOut": "True",
-      "theater": "Velit minim consectetur nulla ea do nulla aliqua culpa aliqua incididunt sint sit incididunt ut.",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ]
-    },
-    {
-      "choreographer": "Montoya Zimmerman",
-      "company": "Chorizon",
-      "companyDetailPageUrl": "https://exosis.us",
-      "eventDate": "23.08.2024 06:09:53",
-      "eventInformationIcons": [
-        "/src/img/icons/icon-uebertitel.svg",
-        "/src/img/icons/icon-einfuehrung.svg",
-        "/src/img/icons/icon-nachbesprechung.svg",
-        "/src/img/icons/icon-familien.svg"
-      ],
-      "location": "Herbster",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-step",
-      "production": "Ex ipsum veniam consequat do id pariatur voluptate.",
-      "soldOut": "True",
-      "theater": "Laborum fugiat irure est ad veniam ea mollit duis adipisicing incididunt irure.",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ]
-    },
-    {
-      "choreographer": "Cora Burt",
-      "company": "Kenegy",
-      "companyDetailPageUrl": "https://liquidoc.shoes",
-      "eventDate": "14.09.2024 10:10:57",
-      "eventInformationIcons": [
-        "/src/img/icons/icon-uebertitel.svg",
-        "/src/img/icons/icon-einfuehrung.svg",
-        "/src/img/icons/icon-nachbesprechung.svg",
-        "/src/img/icons/icon-familien.svg"
-      ],
-      "location": "Century",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-step",
-      "production": "Aliquip labore in sint amet cupidatat Lorem nulla incididunt proident quis.",
-      "soldOut": "False",
-      "theater": "Aliquip deserunt ex laborum cupidatat anim adipisicing occaecat laborum elit aute qui incididunt exercitation.",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ]
-    },
-    {
-      "choreographer": "Mariana Murphy",
-      "company": "Cogentry",
-      "companyDetailPageUrl": "https://zoxy.pizza",
-      "eventDate": "25.08.2024 12:09:03",
-      "eventInformationIcons": [
-        "/src/img/icons/icon-uebertitel.svg",
-        "/src/img/icons/icon-einfuehrung.svg",
-        "/src/img/icons/icon-nachbesprechung.svg",
-        "/src/img/icons/icon-familien.svg"
-      ],
-      "location": "Belgreen",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-step",
-      "production": "Aute eu aliquip quis in deserunt commodo irure voluptate.",
-      "soldOut": "True",
-      "theater": "Velit consectetur laboris ex proident ea commodo aute reprehenderit proident mollit aliquip sit eiusmod.",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ]
-    },
-    {
-      "choreographer": "Franklin Reyes",
-      "company": "Overplex",
-      "companyDetailPageUrl": "https://enomen.youtube",
-      "eventDate": "21.08.2024 19:09:46",
-      "eventInformationIcons": [
-        "/src/img/icons/icon-uebertitel.svg",
-        "/src/img/icons/icon-einfuehrung.svg",
-        "/src/img/icons/icon-nachbesprechung.svg",
-        "/src/img/icons/icon-familien.svg"
-      ],
-      "location": "Dunlo",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-step",
-      "production": "Irure elit ullamco proident anim.",
-      "soldOut": "True",
-      "theater": "Quis tempor nisi nisi aute.",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ]
-    },
-    {
-      "choreographer": "Angelica Blanchard",
-      "company": "Ceprene",
-      "companyDetailPageUrl": "https://geekwagon.gal",
-      "eventDate": "09.09.2024 19:10:16",
-      "eventInformationIcons": [
-        "/src/img/icons/icon-uebertitel.svg",
-        "/src/img/icons/icon-einfuehrung.svg",
-        "/src/img/icons/icon-nachbesprechung.svg",
-        "/src/img/icons/icon-familien.svg"
-      ],
-      "location": "Golconda",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-step",
-      "production": "Et laboris adipisicing culpa et aute sint proident.",
-      "soldOut": "True",
-      "theater": "Magna pariatur in officia consectetur dolore.",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ]
-    },
-    {
-      "choreographer": "Beck Johnson",
-      "company": "Emergent",
-      "companyDetailPageUrl": "https://quizka.consulting",
-      "eventDate": "13.09.2024 03:10:36",
-      "eventInformationIcons": [
-        "/src/img/icons/icon-uebertitel.svg",
-        "/src/img/icons/icon-einfuehrung.svg",
-        "/src/img/icons/icon-nachbesprechung.svg",
-        "/src/img/icons/icon-familien.svg"
-      ],
-      "location": "Macdona",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-step",
-      "production": "Aliquip nulla non eiusmod pariatur exercitation.",
-      "soldOut": "False",
-      "theater": "Ea duis eu occaecat ex commodo.",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ]
-    },
-    {
-      "choreographer": "Margie Cunningham",
-      "company": "Zeam",
-      "companyDetailPageUrl": "https://vertide.trading",
-      "eventDate": "20.08.2024 13:09:34",
-      "eventInformationIcons": [
-        "/src/img/icons/icon-uebertitel.svg",
-        "/src/img/icons/icon-einfuehrung.svg",
-        "/src/img/icons/icon-nachbesprechung.svg",
-        "/src/img/icons/icon-familien.svg"
-      ],
-      "location": "Utting",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-step",
-      "production": "Anim aute incididunt sunt aute velit adipisicing.",
-      "soldOut": "True",
-      "theater": "Officia veniam veniam ipsum culpa et sunt in excepteur.",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ]
-    },
-    {
-      "choreographer": "Robertson Golden",
-      "company": "Orbean",
-      "companyDetailPageUrl": "https://vidto.bz",
-      "eventDate": "28.08.2024 11:09:94",
-      "eventInformationIcons": [
-        "/src/img/icons/icon-uebertitel.svg",
-        "/src/img/icons/icon-einfuehrung.svg",
-        "/src/img/icons/icon-nachbesprechung.svg",
-        "/src/img/icons/icon-familien.svg"
-      ],
-      "location": "Jacksonwald",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-step",
-      "production": "Id duis anim proident veniam tempor ex ex cupidatat nulla.",
-      "soldOut": "False",
-      "theater": "Labore ex nulla deserunt dolor pariatur.",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ]
-    },
-    {
-      "choreographer": "Tamera Fernandez",
-      "company": "Netbook",
-      "companyDetailPageUrl": "https://emtrak.mc",
-      "eventDate": "17.08.2024 21:09:52",
-      "eventInformationIcons": [
-        "/src/img/icons/icon-uebertitel.svg",
-        "/src/img/icons/icon-einfuehrung.svg",
-        "/src/img/icons/icon-nachbesprechung.svg",
-        "/src/img/icons/icon-familien.svg"
-      ],
-      "location": "Walland",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-step",
-      "production": "Sint sunt veniam nisi excepteur amet cupidatat incididunt dolore amet ad sit aliquip.",
-      "soldOut": "False",
-      "theater": "Sit minim exercitation ea magna sit tempor minim cillum cupidatat.",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ]
-    },
-    {
-      "choreographer": "Tricia Wilcox",
-      "company": "Bluplanet",
-      "companyDetailPageUrl": "https://ovolo.hotmail",
-      "eventDate": "25.08.2024 08:09:13",
-      "eventInformationIcons": [
-        "/src/img/icons/icon-uebertitel.svg",
-        "/src/img/icons/icon-einfuehrung.svg",
-        "/src/img/icons/icon-nachbesprechung.svg",
-        "/src/img/icons/icon-familien.svg"
-      ],
-      "location": "Henrietta",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-step",
-      "production": "Deserunt labore dolor duis sint sunt esse nisi cupidatat do tempor.",
-      "soldOut": "True",
-      "theater": "Aute id in nulla ullamco incididunt.",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ]
-    },
-    {
-      "choreographer": "Abigail Romero",
-      "company": "Zentury",
-      "companyDetailPageUrl": "https://klugger.tw",
-      "eventDate": "08.09.2024 17:10:81",
-      "eventInformationIcons": [
-        "/src/img/icons/icon-uebertitel.svg",
-        "/src/img/icons/icon-einfuehrung.svg",
-        "/src/img/icons/icon-nachbesprechung.svg",
-        "/src/img/icons/icon-familien.svg"
-      ],
-      "location": "Collins",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-step",
-      "production": "Id laboris non dolor esse veniam enim proident deserunt laborum nulla fugiat.",
-      "soldOut": "False",
-      "theater": "Ad in velit non in ad enim ea occaecat.",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ]
-    },
-    {
-      "choreographer": "Padilla Ramsey",
-      "company": "Exozent",
-      "companyDetailPageUrl": "https://sensate.osaka",
-      "eventDate": "28.08.2024 19:09:74",
-      "eventInformationIcons": [
-        "/src/img/icons/icon-uebertitel.svg",
-        "/src/img/icons/icon-einfuehrung.svg",
-        "/src/img/icons/icon-nachbesprechung.svg",
-        "/src/img/icons/icon-familien.svg"
-      ],
-      "location": "Avoca",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-step",
-      "production": "Ipsum fugiat ex aliqua culpa non ipsum voluptate.",
-      "soldOut": "False",
-      "theater": "Consequat dolor ipsum qui adipisicing id excepteur.",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ]
-    },
-    {
-      "choreographer": "Marva Pickett",
-      "company": "Endicil",
-      "companyDetailPageUrl": "https://silodyne.education",
-      "eventDate": "20.08.2024 17:09:23",
-      "eventInformationIcons": [
-        "/src/img/icons/icon-uebertitel.svg",
-        "/src/img/icons/icon-einfuehrung.svg",
-        "/src/img/icons/icon-nachbesprechung.svg",
-        "/src/img/icons/icon-familien.svg"
-      ],
-      "location": "Springdale",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-step",
-      "production": "Dolor amet aliqua veniam do aute culpa officia occaecat nulla qui officia non ad.",
-      "soldOut": "False",
-      "theater": "Do nostrud irure velit magna voluptate cupidatat anim sit laboris sunt.",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ]
-    },
-    {
-      "choreographer": "Wolfe Gaines",
-      "company": "Parleynet",
-      "companyDetailPageUrl": "https://zentime.okinawa",
-      "eventDate": "11.09.2024 21:10:45",
-      "eventInformationIcons": [
-        "/src/img/icons/icon-uebertitel.svg",
-        "/src/img/icons/icon-einfuehrung.svg",
-        "/src/img/icons/icon-nachbesprechung.svg",
-        "/src/img/icons/icon-familien.svg"
-      ],
-      "location": "Grapeview",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-step",
-      "production": "Do deserunt ipsum qui enim.",
-      "soldOut": "False",
-      "theater": "Excepteur culpa irure dolor in commodo.",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ]
-    },
-    {
-      "choreographer": "Hopper Mejia",
-      "company": "Hopeli",
-      "companyDetailPageUrl": "https://rockabye.bio",
-      "eventDate": "27.08.2024 15:09:10",
-      "eventInformationIcons": [
-        "/src/img/icons/icon-uebertitel.svg",
-        "/src/img/icons/icon-einfuehrung.svg",
-        "/src/img/icons/icon-nachbesprechung.svg",
-        "/src/img/icons/icon-familien.svg"
-      ],
-      "location": "Sperryville",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-step",
-      "production": "Est fugiat amet enim consectetur amet duis Lorem ullamco proident eiusmod tempor eu ipsum ullamco.",
-      "soldOut": "False",
-      "theater": "Occaecat ad eiusmod irure dolor id.",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ]
-    },
-    {
-      "choreographer": "Cox Tanner",
-      "company": "Krag",
-      "companyDetailPageUrl": "https://inear.madrid",
-      "eventDate": "25.08.2024 10:09:36",
-      "eventInformationIcons": [
-        "/src/img/icons/icon-uebertitel.svg",
-        "/src/img/icons/icon-einfuehrung.svg",
-        "/src/img/icons/icon-nachbesprechung.svg",
-        "/src/img/icons/icon-familien.svg"
-      ],
-      "location": "Sehili",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-step",
-      "production": "Non proident deserunt id eu consectetur cillum.",
-      "soldOut": "True",
-      "theater": "Cillum laborum minim tempor eu laborum adipisicing non ex exercitation mollit anim ullamco.",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ]
-    },
-    {
-      "choreographer": "Baldwin Jenkins",
-      "company": "Aquafire",
-      "companyDetailPageUrl": "https://dancerity.ag",
-      "eventDate": "25.08.2024 11:09:94",
-      "eventInformationIcons": [
-        "/src/img/icons/icon-uebertitel.svg",
-        "/src/img/icons/icon-einfuehrung.svg",
-        "/src/img/icons/icon-nachbesprechung.svg",
-        "/src/img/icons/icon-familien.svg"
-      ],
-      "location": "Edinburg",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-step",
-      "production": "Veniam tempor laboris aliquip veniam in deserunt.",
-      "soldOut": "False",
-      "theater": "Adipisicing sit officia minim velit ipsum est excepteur mollit eu nostrud.",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ]
-    },
-    {
-      "choreographer": "Ines Martinez",
-      "company": "Sloganaut",
-      "companyDetailPageUrl": "https://anacho.directory",
-      "eventDate": "14.09.2024 00:10:84",
-      "eventInformationIcons": [
-        "/src/img/icons/icon-uebertitel.svg",
-        "/src/img/icons/icon-einfuehrung.svg",
-        "/src/img/icons/icon-nachbesprechung.svg",
-        "/src/img/icons/icon-familien.svg"
-      ],
-      "location": "Roulette",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-step",
-      "production": "Nisi exercitation qui occaecat dolore do consequat reprehenderit occaecat ipsum excepteur laborum ut voluptate labore.",
-      "soldOut": "False",
-      "theater": "Incididunt aliqua amet duis ut.",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ]
-    },
-    {
-      "choreographer": "Mays Salazar",
-      "company": "Cemention",
-      "companyDetailPageUrl": "https://zillacom.lawyer",
-      "eventDate": "07.09.2024 03:10:81",
-      "eventInformationIcons": [
-        "/src/img/icons/icon-uebertitel.svg",
-        "/src/img/icons/icon-einfuehrung.svg",
-        "/src/img/icons/icon-nachbesprechung.svg",
-        "/src/img/icons/icon-familien.svg"
-      ],
-      "location": "Roosevelt",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-step",
-      "production": "Esse nulla tempor exercitation duis.",
-      "soldOut": "True",
-      "theater": "Laborum exercitation labore sit dolor nisi ea id veniam reprehenderit officia cillum laborum velit labore.",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ]
-    },
-    {
-      "choreographer": "Shepard Padilla",
-      "company": "Magnafone",
-      "companyDetailPageUrl": "https://twiist.pro",
-      "eventDate": "21.08.2024 09:09:80",
-      "eventInformationIcons": [
-        "/src/img/icons/icon-uebertitel.svg",
-        "/src/img/icons/icon-einfuehrung.svg",
-        "/src/img/icons/icon-nachbesprechung.svg",
-        "/src/img/icons/icon-familien.svg"
-      ],
-      "location": "Floriston",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-step",
-      "production": "Eiusmod aliquip occaecat consequat nisi fugiat id aute ad labore cupidatat mollit commodo ad.",
-      "soldOut": "False",
-      "theater": "Fugiat eu et magna veniam dolor eu occaecat voluptate.",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
+        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
+        "/media/mkbfwfq1/icon-familien.svg",
+        "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+        "/media/f5qfb3cw/icon-nachbesprechung.svg",
+        "/media/oe1ncuvl/icon-uebertitel.svg"
       ]
     }
   ],
@@ -866,7 +858,6 @@
     "buttonTickets": "Tickets",
     "linkDetails": "Mehr Details",
     "soldOut": "ausverkauft",
-    "timeSuffix": "Uhr",
-    "noEvents": "- keine Veranstaltungen -"
+    "timeSuffix": "Uhr"
   }
 }
