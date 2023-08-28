@@ -90,6 +90,9 @@ export default class EventCard extends Shadow() {
         --button-secondary-width: 100%;
         --button-secondary-font-size: 1rem;
       }
+      :host .event-sold-out {
+        color: var(--steps-color-grey-sold-out);
+      }
       :host .event-card {
         border-top: 1px solid var(--steps-color-black);
         padding: 1.25rem 0;
@@ -143,6 +146,12 @@ export default class EventCard extends Shadow() {
       :host .event-cta a {
         color: var(--steps-color-black);
         padding-top: var(--button-secondary-padding) ;
+      }
+      :host .event-sold-out .sold-out {
+        color: var(--steps-color-black);
+      }
+      :host .sold-out {
+        text-transform: capitalize;
       }
       
       @media only screen and (min-width: 768px)  {
@@ -202,11 +211,11 @@ export default class EventCard extends Shadow() {
 
     // buttons
     const buttonTickets = `<a-button namespace="button-secondary-" onclick="window.open('${ticketsUrl}')">${this.getAttribute('textButtonTickets')} &#8594;</a-button>`
-    const buttonSoldOut = `<a-button namespace="button-secondary-" onclick="window.open('${ticketsUrl}')">${this.getAttribute('textSoldOut')}</a-button>`
+    const buttonSoldOut = `<span class="sold-out">${this.getAttribute('textSoldOut')}</span>`
     const buttonCta = this.event.soldOut === 'True' ? buttonSoldOut : buttonTickets
 
     const eventInfoHtml = /* html */ `
-      <div class="event-info">
+      <div class="event-info" >
         <p>
           <strong>${this.event.company}</strong><br />
           <span>${this.event.production}<br />${this.event.choreographer}</span>
@@ -233,7 +242,7 @@ export default class EventCard extends Shadow() {
     `
 
     this.html = /* html */ `
-      <div class="event-card">
+      <div class="${this.event.soldOut === 'True' ? 'event-card event-sold-out' : 'event-card'}">
         <div class="event-date">
           <p>${weekDay}<br /><span>${dateShort}</span></p>
         </div>
