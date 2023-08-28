@@ -103,7 +103,7 @@ export default class EventCard extends Shadow() {
       }
       :host .event-date {
         white-space: nowrap;
-        min-width: 28vw;
+        width: 120px;
       }
       :host .event-date p {
         font-size: var(--event-date-font-size);
@@ -148,9 +148,6 @@ export default class EventCard extends Shadow() {
       @media only screen and (min-width: 768px)  {
         :host .event-card { 
           gap: 2rem;
-        }
-        :host .event-date {
-          min-width: 10vw;
         }
         :host .event-info {
           flex-direction: row;
