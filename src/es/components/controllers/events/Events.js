@@ -61,7 +61,6 @@ export default class Events extends Shadow() {
               event.parsedDate = new Date(formattedDate)
             }
 
-            // events.sort((a, b) => a.parsedDate - b.parsedDate)
             events.sort((a, b) => {
               // If both events are in the future or both events are in the past, sort them by date.
               if ((a.parsedDate >= currentDate && b.parsedDate >= currentDate) || (a.parsedDate < currentDate && b.parsedDate < currentDate)) {
