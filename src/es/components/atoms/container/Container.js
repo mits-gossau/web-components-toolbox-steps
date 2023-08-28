@@ -17,14 +17,14 @@ export default class Container extends Shadow() {
      * Represents an heading.
      * @typedef {object} Container
      * @property {string} maxWidth - maximal width
-     * @property {string} padding - padding 
+     * @property {string} padding - padding
      */
     /**
      * @type {Container}
      */
     this.container = {
       maxWidth: '960px',
-      padding: '20px',
+      padding: '20px'
     }
   }
 

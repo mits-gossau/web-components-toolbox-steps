@@ -49,27 +49,45 @@ export default class Events extends Shadow() {
           let { events, translations } = await response.json()
 
           // Sort events by date
-          function convertAndSortDates(events) {
+          function convertAndSortDates (events) {
+            const currentDate = new Date()
+
             for (const event of events) {
-              const parts = event.eventDate.split(" ");
-              const partDate = parts[0].split(".");
-              const partTime = parts[1].split(":");
-              const formattedDate = `${partDate[2]}-${('0' + partDate[1]).slice(-2)}-${('0' + partDate[0]).slice(-2)}T${('0' +partTime[0]).slice(-2)}:${('0' + partTime[1]).slice(-2)}`;
-              event.formattedDate = formattedDate;
-              event.parsedDate = new Date(formattedDate);
+              const parts = event.eventDate.split(' ')
+              const partDate = parts[0].split('.')
+              const partTime = parts[1].split(':')
+              const formattedDate = `${partDate[2]}-${('0' + partDate[1]).slice(-2)}-${('0' + partDate[0]).slice(-2)}T${('0' + partTime[0]).slice(-2)}:${('0' + partTime[1]).slice(-2)}`
+              event.formattedDate = formattedDate
+              event.parsedDate = new Date(formattedDate)
             }
 
-            events.sort((a, b) => a.parsedDate - b.parsedDate);
-          
+            // events.sort((a, b) => a.parsedDate - b.parsedDate)
+            events.sort((a, b) => {
+              // If both events are in the future or both events are in the past, sort them by date.
+              if ((a.parsedDate >= currentDate && b.parsedDate >= currentDate) || (a.parsedDate < currentDate && b.parsedDate < currentDate)) {
+                return a.parsedDate - b.parsedDate
+              }
+              
+              // If the first event is in the past and the second is in the future, place the first event after the second.
+              if (a.parsedDate < currentDate && b.parsedDate >= currentDate) {
+                return 1
+              }
+              
+              // If the first event is in the future and the second is in the past, place the first event before the second.
+              if (a.parsedDate >= currentDate && b.parsedDate < currentDate) {
+                return -1
+              }
+            });
+
             for (const event of events) {
-              delete event.formattedDate;
-              delete event.parsedDate;
+              delete event.formattedDate
+              delete event.parsedDate
             }
-          
-            return events;
+
+            return events
           }
 
-          events = convertAndSortDates(events);
+          events = convertAndSortDates(events)
 
           // Get the min and max date of events
           const eventDates = events.map(event => event.eventDate)
