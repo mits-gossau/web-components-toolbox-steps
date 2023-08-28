@@ -48,6 +48,29 @@ export default class Events extends Shadow() {
 
           let { events, translations } = await response.json()
 
+          // Sort events by date
+          function convertAndSortDates(events) {
+            for (const event of events) {
+              const parts = event.eventDate.split(" ");
+              const partDate = parts[0].split(".");
+              const partTime = parts[1].split(":");
+              const formattedDate = `${partDate[2]}-${partDate[1]}-${partDate[0]}T${partTime[0]}:${partTime[1]}`;
+              event.formattedDate = formattedDate;
+              event.parsedDate = new Date(formattedDate);
+            }
+
+            events.sort((a, b) => a.parsedDate - b.parsedDate);
+          
+            for (const event of events) {
+              delete event.formattedDate;
+              delete event.parsedDate;
+            }
+          
+            return events;
+          }
+
+          events = convertAndSortDates(events);
+
           // Get the min and max date of events
           const eventDates = events.map(event => event.eventDate)
           const dateObjects = eventDates.map(dateString => {
