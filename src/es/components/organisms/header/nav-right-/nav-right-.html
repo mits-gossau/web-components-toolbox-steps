@@ -8,8 +8,12 @@
             margin-right: 10px;
         }
         :host > header > m-navigation {
+            animation: closeRight .0s ease-in !important;
             top: 0 !important;
             height: 100vh !important;
+        }
+        :host > header.open > m-navigation {
+            animation: openRight .0s ease-out !important;
         }
     </style>
 </o-header>
