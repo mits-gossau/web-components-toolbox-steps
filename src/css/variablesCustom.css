@@ -76,11 +76,14 @@
   --h2-color: var(--steps-color-blue);
   --h3-color: var(--steps-color-white);
 
+  --color-hover: var(--steps-color-black);
+
   /* font family */
   --font-family-bold: NeueAugenblickBold, NeueAugenblickMedium, Helvetica, Arial, sans-serif;
   --font-family-secondary: var(--font-family-bold);
   --font-family: NeueAugenblickMedium, Helvetica, Arial, sans-serif;
   --h-font-family: PPMonumentExtended, Helvetica, Arial, sans-serif;
+  --navigation-default-font-family-custom: var( --h-font-family);
 
   /* font sizes  */
   --steps-h-font-size: clamp(32px, 5vw, 50px);
@@ -145,10 +148,13 @@
   --logo-default-img-margin-mobile: -10px 0 0 -10px;
 
   /* navigation */
+  --a-link-font-size-custom: 2rem;
   --navigation-default-color-custom: var(--steps-color-black);
   --navigation-default-a-link-text-align-mobile-custom: center;
   --navigation-default-arrow-display: none;
   --navigation-default-a-link-content-spacing-no-scroll-custom: 0.5rem;
+  --navigation-default-a-link-font-size-no-scroll-mobile-custom: 2rem;
+  --navigation-default-a-link-content-spacing-custom-no-scroll: 0.5rem;
 
   /* content dark */
   --content-dark-h2-color: var(--steps-color-red);
@@ -164,6 +170,7 @@
 
 body {
   background: var(--background-gradient);
+  overflow-y: scroll;
 }
 
 .l-outer {

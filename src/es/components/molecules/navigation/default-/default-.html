@@ -8,11 +8,13 @@
   no-scroll
 >
     <style>
+        :host {
+            background: var(--steps-color-blue) !important;
+            background: linear-gradient(180deg, var(--steps-color-blue) 0%, var(--steps-color-white) 400px) !important;
+        }
         :host > nav {
             height: 100% !important;
             padding-top: 80px;
-            background: var(--steps-color-blue) !important;
-            background: linear-gradient(180deg, var(--steps-color-blue) 0%, var(--steps-color-white) 33%) !important;
         }
         :host > nav > ul.open li.open > a-link {
             --navigation-default-a-link-content-spacing-no-scroll: var(--navigation-default-a-link-font-size-no-scroll-mobile,var(--a-link-font-size-no-scroll-mobile)) 0;
@@ -23,7 +25,7 @@
             height: 24px;
             width: 24px;
             position: absolute;
-            left: calc(50% - 90px);
+            left: calc(50% - 132px);
             color: var(--navigation-default-color-hover);
         }
     </style>
