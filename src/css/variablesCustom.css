@@ -85,6 +85,9 @@
   --p-font-family: var(--font-family);
   --h-font-family: PPMonumentExtended, Helvetica, Arial, sans-serif;
   --navigation-default-font-family-custom: var( --h-font-family);
+  --wrapper-teaser-h1-font-family: var(--h-font-family);
+  --wrapper-teaser-h2-font-family: var(--h-font-family);
+  --wrapper-teaser-h3-font-family: var(--h-font-family);
 
   /* font sizes  */
   --steps-h-font-size: clamp(32px, 5vw, 50px);
@@ -92,6 +95,9 @@
   --h1-font-size: var(--steps-h-font-size);
   --h2-font-size: var(--steps-h-font-size);
   --h3-font-size: var(--steps-h-font-size);
+  --wrapper-teaser-h1-font-size: var(--steps-h-font-size);
+  --wrapper-teaser-h2-font-size: var(--steps-h-font-size-small);
+  --wrapper-teaser-h3-font-size: var(--steps-h-font-size-small);
 
   /* font weights */
   --a-font-weight: bold;
