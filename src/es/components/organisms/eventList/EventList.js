@@ -127,8 +127,8 @@ export default class EventList extends Shadow() {
           theater,
           theaterInformationIcons
         } = event
-        const eventIcons = JSON.stringify(eventInformationIcons)
-        const theaterIcons = JSON.stringify(theaterInformationIcons)
+        const eventIcons = JSON.stringify(eventInformationIcons || [])
+        const theaterIcons = JSON.stringify(theaterInformationIcons || [])
 
         return /* html */ `<m-steps-event-card 
           choreographer="${choreographer}"

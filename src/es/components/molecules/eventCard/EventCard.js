@@ -223,6 +223,8 @@ export default class EventCard extends Shadow() {
     const buttonTickets = `<a-button namespace="button-secondary-" onclick="window.open('${ticketsUrl}')">${this.getAttribute('textButtonTickets')} &#8594;</a-button>`
     const buttonSoldOut = `<span class="sold-out">${this.getAttribute('textSoldOut')}</span>`
     const buttonCta = this.event.soldOut === 'True' ? buttonSoldOut : buttonTickets
+    const eventIconsHTML = eventIcons ? `<span class="legend-icons">${eventIcons}</span>` : ``
+    const theaterIconsHTML = theaterIcons ? `<span class="legend-icons">${theaterIcons}</span>` : ``
 
     const eventInfoHtml = /* html */ `
       <div class="event-info" >
@@ -237,12 +239,8 @@ export default class EventCard extends Shadow() {
         <p>
           ${time} ${this.getAttribute('textTimeSuffix')}<br />
           <br />
-          <span class="legend-icons">
-            ${eventIcons}
-          </span>
-          <span class="legend-icons">
-            ${theaterIcons}
-          </span>
+          ${eventIconsHTML}
+          ${theaterIconsHTML}
         </p>
         <p class="event-cta">
           ${buttonCta}
