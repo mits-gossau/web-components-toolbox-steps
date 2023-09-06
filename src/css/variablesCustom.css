@@ -177,27 +177,3 @@ body {
 .l-outer {
   padding-bottom: 2rem;
 }
-
-:root .heading {
-  font-family: var(--h-font-family);
-  font-size: var(--steps-h-font-size);
-  margin: 0;
-  padding-bottom: 1rem;
-}
-
-.heading--h1 {
-  color: var(--steps-color-black);
-}
-
-.heading--h2 {
-  color: var(--steps-color-blue);
-}
-
-.heading--h3 {
-  color: var(--steps-color-white);
-}
-
-.heading--small {
-  font-size: var(--steps-h-font-size-small);
-  padding-bottom: 0.5rem;
-}
