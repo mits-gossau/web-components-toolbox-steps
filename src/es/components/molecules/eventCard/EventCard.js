@@ -131,6 +131,9 @@ export default class EventCard extends Shadow() {
         margin-right: 1.25rem;
         white-space: nowrap;
       }
+      :host .legend-icons img {
+        margin-right: 0.375rem;
+      }
       :host .event-cta {
         display: flex;
         flex-direction: column;
