@@ -56,7 +56,7 @@ export default class Stage extends Shadow() {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        z-index: 30;
+        z-index: 2000;
         position: absolute;
         top: 50%;
         left: 50%;
