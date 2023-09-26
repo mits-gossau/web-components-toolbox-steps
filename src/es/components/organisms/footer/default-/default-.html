@@ -1,40 +1,63 @@
 <o-footer namespace="footer-default-">
+    <style>
+        :host .invert {
+            padding-top: 160px;
+        }
 
+        :host .invert .copyright {
+            font-size: 22px;
+        }
+    </style>
     <div class="invert">
-        <o-wrapper namespace="footer-default-" class="font-size-tiny-desktop">
-            <div class=footer-links-row>
-                <h4>
-                    <strong>Steps</strong>
-                </h4>
+        <o-wrapper namespace="footer-default-">
+            <style>
+                :host .footer-links-row--first {
+                    width: 35% !important;
+                }
+
+                :host .footer__text {
+                    padding-top: 20px;
+                    padding-left: 68px;
+                }
+
+                :host .footer__text a {
+                    color: rgb(255, 102, 0);
+                }
+            </style>
+            <div class="footer-links-row footer-links-row--first">
+                <a-logo target=_blank rel=noopener namespace="logo-default-" namespace-fallback src="../../../../../../src/img/logo/kulturprozent.svg" href="/"></a-logo>
+                <p class="footer__text">m4music ist ein Projekt des Migros-Kulturprozent, Teil des gesellschaftlichen Engagements der Migros-Gruppe: <a href="https://www.migros-engagement.ch/de" target="_blank">migros-engagement.ch</a></p>              
+            </div>
+            <div class="footer-links-row">
                 <ul>
                     <li>
-                        <a href="#">Lorem</a>
+                        <a href="#">News</a>
                     </li>
                     <li>
-                        <a href="#">Ipsum</a>
+                        <a href="#">Programm</a>
+                    </li>
+                    <li>
+                        <a href="#">Spielplan</a>
+                    </li>
+                    <li>
+                        <a href="#">Specials</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-links-row">
+                <ul>
+                    <li>
+                        <a href="#">Ticketinfo</a>
+                    </li>
+                    <li>
+                        <a href="#">Service</a>
+                    </li>
+                    <li>
+                        <a href="#">Über uns</a>
                     </li>
                 </ul>
             </div>
             <div class=footer-links-row>
-                <h4>
-                    <strong>Rechtliches</strong>
-                </h4>
-                <ul>
-                    <li>
-                        <a href="#">Datenschutzerklärung</a>
-                    </li>
-                    <li>
-                        <a href="#">Allgemeine Geschäftsbendingungen</a>
-                    </li>
-                    <li>
-                        <a href="#">Lorem Ipsum</a>
-                    </li>
-                </ul>
-            </div>
-            <div class=footer-links-row>
-                <h4>
-                    <strong>Folge uns!</strong>
-                </h4>
                 <div>
                     <ul class=social-links>
                         <li>
@@ -78,17 +101,20 @@
                 </div>
             </div>
         </o-wrapper>
-
     </div>
-    <div class="invert orange">
-        <div class="footer-links font-size-tiny-desktop">
+    <div class="invert">
+        <div class="footer-links">
             <ul>
                 <li>
                     <a href="#" target="">Impressum</a>
                 </li>
+                <li>
+                    <a href="#">Datenschutzerklärung</a>
+                </li>
+                <li>
+                    <a href="#">Allgemeine Geschäftsbendingungen</a>
+                </li>
                 <li>&copy; 2023 Steps</li>
-                
-      
             </ul>
             <!-- live-server bug workaround: https://github.com/ritwickdey/vscode-live-server/issues/684 - don't use this empty comment in production!!! -->
             <!--
@@ -106,3 +132,46 @@
         </div>
     </div>
 </o-footer>
+
+
+<!-- <o-steps-footer>
+    <footer>
+        <section class="o-steps-footer__row">
+            <div class="o-steps-footer__column">
+                <a-picture
+                    loading="eager"
+                    tabindex="0"
+                    loaded-bad-quality="true"
+                    loaded="true"
+                    namespace="picture-teaser-"
+                >
+                    <picture>
+                        <source media="(min-width:768px)" data-srcset="http://via.placeholder.com/270x60" srcset="http://via.placeholder.com/270x60">
+                        <img data-src="http://via.placeholder.com/270x60" decoding="sync" loading="eager" src="http://via.placeholder.com/270x60">
+                    </picture>
+                </a-picture>
+                <p class="o-steps-footer__text">
+                    m4music ist ein Projekt des Migros-Kulturprozent, Teil des gesellschaftlichen Engagements der Migros-Gruppe: <a class="o-steps-footer__link" href="https://www.migros-engagement.ch/de" target="_blank">migros-engagement.ch</a>
+                </p>
+            </div>
+            <div class="o-steps-footer__column">
+                <ul class="o-steps-footer__links">
+                    <li>
+                        <a href="#">Link 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Link 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Link 3</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="o-steps-footer__column"></div>
+        </section>
+        <section class="o-steps-footer__row">
+            <div class="o-steps-footer__column"></div>
+            <div class="o-steps-footer__column"></div>
+        </section>
+    </footer>
+</o-steps-footer> -->

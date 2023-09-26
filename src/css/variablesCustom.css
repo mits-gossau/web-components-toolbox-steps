@@ -173,7 +173,21 @@
   --button-category-font-weight-hover-custom: 600;
   --button-category-background-color-active-custom: var(--button-category-background-color-hover-custom);
   --button-category-color-active-custom: var(--button-category-color-hover-custom);
-}
+
+  /* footer */
+  --footer-default-boarder-right: none;
+  --footer-default-padding: 20px 0 0 92px;
+  --footer-default-padding-first-child: 0;
+  --footer-default-a-font-size: 20px;
+  --footer-default-a-margin: 0 0 10px;
+  --footer-default-any-a-display: inline-block;
+  --footer-default-any-2-width: 20%;
+  --footer-default-any-3-width: 20%;
+  --footer-default-any-4-width: 20%;
+  --footer-default-p-font-size: 22px;
+  --footer-default-invert-a-color-hover-custom: var(--steps-color-red);
+  --footer-default-invert-color: var(--steps-color-red);
+  --footer-default-invert-svg-color-hover: var(--steps-color-red);
 
 body {
   background: var(--background-gradient);
