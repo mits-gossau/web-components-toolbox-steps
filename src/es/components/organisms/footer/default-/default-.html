@@ -7,6 +7,21 @@
         :host .invert .copyright {
             font-size: 22px;
         }
+
+        @media (max-width: 768px) {
+            :host {
+                padding-bottom: 60px;
+                background-color: var(--steps-color-black);
+            }
+
+            :host .invert {
+                padding-top: 80px;
+            }
+
+            :host .invert .footer-links li {
+                text-align: center;
+            }
+        }
     </style>
     <div class="invert">
         <o-wrapper namespace="footer-default-">
@@ -22,6 +37,24 @@
 
                 :host .footer__text a {
                     color: rgb(255, 102, 0);
+                }
+
+                @media (max-width: 768px) {
+                    :host .footer-links-row--first {
+                        width: 100% !important;
+                    }
+
+                    :host .footer-links-row {
+                        padding-left: 0 !important;
+                    }
+
+                    :host .footer-links-row li {
+                        text-align: center;
+                    }
+
+                    :host .social-links {
+                        justify-content: center;
+                    }
                 }
             </style>
             <div class="footer-links-row footer-links-row--first">

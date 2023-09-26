@@ -188,6 +188,7 @@
   --footer-default-invert-a-color-hover-custom: var(--steps-color-red);
   --footer-default-invert-color: var(--steps-color-red);
   --footer-default-invert-svg-color-hover: var(--steps-color-red);
+  --footer-default-padding-last-child-mobile: 20px 0 0;
 }
 
 body {
