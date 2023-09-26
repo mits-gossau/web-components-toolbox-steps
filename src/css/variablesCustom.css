@@ -191,6 +191,11 @@
   --footer-default-padding-last-child-mobile: 20px 0 0;
   --footer-default-p-font-size-mobile: 18px;
   --footer-default-a-font-size-mobile: 18px;
+  --footer-default-invert-background-color-custom: var(--steps-color-blue);
+
+
+  --content-dark-a-color: var(--steps-color-white);
+  --content-dark-a-color-hover: var(--steps-color-red);
 }
 
 body {
