@@ -1,29 +1,29 @@
 <o-footer namespace="footer-default-" no-details-mobile>
     <style>
         :host .invert {
-            padding-top: 160px;
+            padding-top: var(--footer-invert-padding-top, 160px);
         }
 
         :host .invert .copyright {
-            font-size: 22px;
+            font-size: var(--footer-invert-copyright-font-size, 22px);
         }
 
         :host .invert:last-child {
-            padding-bottom: 100px;
+            padding-bottom: var(--footer-invert-last-child-padding-bottom, 100px);
         }
 
         @media (max-width: 768px) {
             :host {
-                padding-bottom: 60px;
+                padding-bottom: var(--footer-padding-bottom-mobile, 60px);
                 background-color: var(--steps-color-blue);
             }
 
             :host .invert {
-                padding-top: 60px;
+                padding-top: var(--footer-invert-padding-top-mobile, 60px);
             }
 
             :host .invert:last-child {
-                padding-bottom: 20px;
+                padding-bottom: var(--footer-invert-last-child-padding-bottom-mobile, 20px);
             }
 
             :host .invert .footer-links li {
@@ -35,12 +35,12 @@
         <o-wrapper namespace="footer-default-">
             <style>
                 :host .footer-links-row--first {
-                    width: 35% !important;
+                    width: var(--footer-link-row--first, 35%) !important;
                 }
 
                 :host .footer__text {
-                    padding-top: 20px;
-                    padding-left: 68px;
+                    padding-top: var(--footer--text-padding-top, 20px);
+                    padding-left: var(--footer--text-padding-left, 68px);
                 }
 
                 :host .footer__text a {
@@ -53,11 +53,11 @@
 
                 @media (max-width: 768px) {
                     :host .footer-links-row--first {
-                        width: 100% !important;
+                        width: var(--footer-links-row--first-width-mobile, 100%) !important;
                     }
 
                     :host .footer-links-row {
-                        padding-left: 0 !important;
+                        padding-left: var(--footer-links-row-padding-left-mobile, 0) !important;
                     }
 
                     :host .footer-links-row li {
@@ -70,7 +70,7 @@
 
                     :host .footer__text {
                         text-align: center;
-                        padding: 20px 10px 20px;
+                        padding: var(--footer--text-padding-mobile, 20px 10px 20px);
                     }
                 }
             </style>
@@ -93,29 +93,13 @@
             <div class="footer-links-row">
                 <ul>
                     <li>
-                        <a href="#">News</a>
+                        <a href="#">Presse</a>
                     </li>
                     <li>
-                        <a href="#">Programm</a>
+                        <a href="#">Newsletter</a>
                     </li>
                     <li>
-                        <a href="#">Spielplan</a>
-                    </li>
-                    <li>
-                        <a href="#">Specials</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-links-row">
-                <ul>
-                    <li>
-                        <a href="#">Ticketinfo</a>
-                    </li>
-                    <li>
-                        <a href="#">Service</a>
-                    </li>
-                    <li>
-                        <a href="#">Über uns</a>
+                        <a href="#">Kontakt</a>
                     </li>
                 </ul>
             </div>
