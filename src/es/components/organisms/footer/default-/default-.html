@@ -1,4 +1,4 @@
-<o-footer namespace="footer-default-">
+<o-footer namespace="footer-default-" no-details-mobile>
     <style>
         :host .invert {
             padding-top: 160px;
@@ -15,7 +15,7 @@
             }
 
             :host .invert {
-                padding-top: 80px;
+                padding-top: 60px;
             }
 
             :host .invert .footer-links li {
@@ -59,10 +59,23 @@
                     :host .social-links {
                         justify-content: center;
                     }
+
+                    :host .footer__text {
+                        text-align: center;
+                        padding: 20px 10px 20px;
+                    }
                 }
             </style>
             <div class="footer-links-row footer-links-row--first">
-                <a-logo target=_blank rel=noopener namespace="logo-default-" namespace-fallback src="../../../../../../src/img/logo/kulturprozent.svg" href="/"></a-logo>
+                <a-logo target=_blank rel=noopener namespace="logo-default-" namespace-fallback src="../../../../../../src/img/logo/kulturprozent.svg" href="/">
+                    <style>
+                        @media (max-width: 768px) {
+                            :host {
+                                justify-content: center !important;
+                            }
+                        }
+                    </style>
+                </a-logo>
                 <p class="footer__text">m4music ist ein Projekt des Migros-Kulturprozent, Teil des gesellschaftlichen Engagements der Migros-Gruppe: <a href="https://www.migros-engagement.ch/de" target="_blank">migros-engagement.ch</a></p>              
             </div>
             <div class="footer-links-row">
