@@ -12,6 +12,15 @@
             padding-bottom: var(--footer-invert-last-child-padding-bottom, 100px);
         }
 
+        :host .footer-links--no-underline a,
+        :host .footer-links--no-underline a:hover {
+            text-decoration: var(--footer-default-a-text-decoration, none);
+        }
+
+        :host .footer-links .active {
+            color: var(--steps-color-red);
+        }
+
         @media (max-width: 768px) {
             :host {
                 padding-bottom: var(--footer-padding-bottom-mobile, 60px);
@@ -103,8 +112,9 @@
                     </li>
                 </ul>
             </div>
-            <div class=footer-links-row>
+            <div class="footer-links-row">
                 <div>
+                    <h4>Folge uns!</h4>
                     <ul class=social-links>
                         <li>
                             <a href="#">
@@ -149,7 +159,7 @@
         </o-wrapper>
     </div>
     <div class="invert">
-        <div class="footer-links">
+        <div class="footer-links footer-links--no-underline">
             <ul>
                 <li>
                     <a href="#" target="">Impressum</a>
@@ -161,7 +171,7 @@
                     <a href="#">Allgemeine Geschäftsbendingungen</a>
                 </li>
                 <li>
-                    <a href="#">DE</a>
+                    <a class="active" href="#">DE</a>
                 </li>
                 <li>
                     <a href="#">FR</a>
