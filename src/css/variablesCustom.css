@@ -192,6 +192,9 @@
   --footer-default-p-font-size-mobile: 18px;
   --footer-default-a-font-size-mobile: 18px;
   --footer-default-invert-background-color-custom: var(--steps-color-blue);
+  --footer-default-a-font-weight: normal;
+  --footer-default-h4-font-size: 14px;
+  --footer-default-h4-padding: 0 0 5px 0;
 
   --content-dark-a-color: var(--steps-color-white);
   --content-dark-a-color-hover: var(--steps-color-red);
