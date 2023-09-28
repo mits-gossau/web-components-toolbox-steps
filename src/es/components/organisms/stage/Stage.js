@@ -34,6 +34,7 @@ export default class Stage extends Shadow() {
         position: relative;
         --content-spacing: 0;
         padding-bottom: var(--component-spacing);
+        z-index: 999;
       }
 
       :host .stage__overlay {
