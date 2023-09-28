@@ -205,6 +205,10 @@ body {
   overflow-y: scroll;
 }
 
+body.no-gradient {
+    background: none;
+}
+
 .l-outer {
   padding-bottom: 2rem;
 }
