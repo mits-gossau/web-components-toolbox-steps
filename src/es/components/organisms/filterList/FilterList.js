@@ -104,9 +104,13 @@ export default class FilterList extends Shadow() {
           )
         )
       )
+    
+    /* Remove duplicate items */
+    let cleanedCompanies = Array.from(new Set(data.companies))
+    let cleanedLocations = Array.from(new Set(data.locations))
 
-    const companies = createList(data.companies, 'list-companies', 'list-items')
-    const locations = createList(data.locations, 'list-locations', 'list-items')
+    const companies = createList(cleanedCompanies, 'list-companies', 'list-items')
+    const locations = createList(cleanedLocations, 'list-locations', 'list-items')
 
     const filterList = this.createHTMLElement(
       'div', { class: 'filter-list' }, [companies, locations]

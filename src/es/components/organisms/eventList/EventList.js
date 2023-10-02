@@ -56,6 +56,8 @@ export default class EventList extends Shadow() {
       this.renderHTML()
     }
 
+    this.expiredTitle = this.getAttribute('expired-title') || 'Abgelaufene Events'
+
     document.body.addEventListener(
       this.getAttribute('answer-event-name') || 'answer-event-name',
       this.answerEventNameListener
@@ -112,43 +114,32 @@ export default class EventList extends Shadow() {
   }
 
   renderHTML (data) {
-    const eventHtml = data.events
-      .map((event) => {
-        const {
-          choreographer,
-          company,
-          companyDetailPageUrl,
-          eventDate,
-          eventInformationIcons,
-          location,
-          presaleUrl,
-          production,
-          soldOut,
-          theater,
-          theaterInformationIcons
-        } = event
-        const eventIcons = JSON.stringify(eventInformationIcons || [])
-        const theaterIcons = JSON.stringify(theaterInformationIcons || [])
+    /* Split active and expired events */
+    const currentDate = new Date()
+    let activeEvents = []
+    let expiredEvents = []
 
-        return /* html */ `<m-steps-event-card 
-          choreographer="${choreographer}"
-          company="${company}"
-          companyDetailPageUrl="${companyDetailPageUrl}"
-          eventDate="${eventDate}"
-          eventInformationIcons='${eventIcons}'
-          location="${location}"
-          presaleUrl="${presaleUrl}"
-          production="${production}"
-          soldOut="${soldOut}"
-          theater="${theater}"
-          theaterInformationIcons='${theaterIcons}'
-          textButtonTickets="${data.translations.buttonTickets}"
-          textLinkDetails="${data.translations.linkDetails}"
-          textSoldOut="${data.translations.soldOut}"
-          textTimeSuffix="${data.translations.timeSuffix}"
-        ></m-steps-event-card>`
-      })
-      .join('')
+    data.events.forEach((event) => {
+      const parsedDate = this.parseDate(event.eventDate);
+
+      if (parsedDate > currentDate) {
+        activeEvents.push(event)
+      } else {
+        expiredEvents.push(event)
+      }
+    })
+
+    const activeEventHtml = this.collectMarkup(activeEvents, data.translations)
+      
+    this.headingHtml = /* html */ `
+      <h2 class="heading heading--h2">${this.expiredTitle}</h2>
+    `
+
+    const expiredEventHtml = this.collectMarkup(expiredEvents, data.translations)
+    
+    /* Concat active events, heading and expired events */
+    let concatMarkup = ''
+    let eventHtml = concatMarkup.concat(activeEventHtml, this.headingHtml, expiredEventHtml)  
 
     const noEventsHtml = eventHtml.length ? '' : /* html */ `
       <div class="no-events">
@@ -161,5 +152,102 @@ export default class EventList extends Shadow() {
         ${eventHtml}${noEventsHtml}
       </div>
     `
+  }
+
+  /**
+   * Create markup for active and expired events
+   * @param {*} list 
+   * @param {*} translations 
+   * @returns events list
+   */
+  collectMarkup(list, translations) {
+    return list.map((event) => {
+      const {
+        choreographer,
+        company,
+        companyDetailPageUrl,
+        eventDate,
+        eventInformationIcons,
+        location,
+        presaleUrl,
+        production,
+        soldOut,
+        theater,
+        theaterInformationIcons
+      } = event
+      const eventIcons = JSON.stringify(eventInformationIcons || [])
+      const theaterIcons = JSON.stringify(theaterInformationIcons || [])
+
+      return /* html */ `<m-steps-event-card 
+        choreographer="${choreographer}"
+        company="${company}"
+        companyDetailPageUrl="${companyDetailPageUrl}"
+        eventDate="${eventDate}"
+        eventInformationIcons='${eventIcons}'
+        location="${location}"
+        presaleUrl="${presaleUrl}"
+        production="${production}"
+        soldOut="${soldOut}"
+        theater="${theater}"
+        theaterInformationIcons='${theaterIcons}'
+        textButtonTickets="${translations.buttonTickets}"
+        textLinkDetails="${translations.linkDetails}"
+        textSoldOut="${translations.soldOut}"
+        textTimeSuffix="${translations.timeSuffix}"
+      ></m-steps-event-card>`
+    })
+    .join('')
+  }
+
+  /**
+   * Filter list expired only or active events
+   * @param {*} events 
+   * @returns filtered list by expired state
+   */
+  handleExpiredState(events) {
+    const currentDate = new Date()
+
+    if (this.expiredList) {
+      let expiredEvents = []
+      events.forEach((event) => {
+        const parsedDate = this.parseDate(event.eventDate);
+
+        if (parsedDate < currentDate) {
+          expiredEvents.push(event)
+        }
+      })
+
+      events = expiredEvents
+
+      return expiredEvents
+    } else {
+      let activeEvents = []
+      events.forEach((event) => {
+        const parsedDate = this.parseDate(event.eventDate);
+
+        if (parsedDate >= currentDate) {
+          activeEvents.push(event)
+        }
+      })
+
+      events = activeEvents
+
+      return activeEvents
+    }
+  }
+
+  /**
+   * Parse date format to be able to compare
+   * @param {*} date 
+   * @returns parsed date
+   */
+  parseDate(date) {
+    const parts = date.split(' ')
+    const partDate = parts[0].split('.')
+    const partTime = parts[1].split(':')
+    const formattedDate = `${partDate[2]}-${('0' + partDate[1]).slice(-2)}-${('0' + partDate[0]).slice(-2)}T${('0' + partTime[0]).slice(-2)}:${('0' + partTime[1]).slice(-2)}`
+    const parsedDate = new Date(formattedDate)
+
+    return parsedDate;
   }
 }
