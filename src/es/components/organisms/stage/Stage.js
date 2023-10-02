@@ -70,6 +70,7 @@ export default class Stage extends Shadow() {
         color: var(--steps-color-white);
         text-align: center;
         margin: 0;
+        font-family: var(--h-font-family);
       }
 
       :host .stage__content span {
@@ -78,6 +79,7 @@ export default class Stage extends Shadow() {
         color: var(--steps-color-white);
         text-align: center;
         display: inline-block;
+        font-family: var(--h-font-family);
       }
 
       :host .stage__content span + a-button {
