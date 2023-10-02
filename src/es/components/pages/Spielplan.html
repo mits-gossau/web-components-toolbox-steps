@@ -62,14 +62,14 @@
           }
         }
 
-        :host a-date-select,
+        :host a-flatpickr,
         :host a-steps-button:not(:last-child) {
           margin-right: 1.25rem;
           margin-bottom: 1.25rem;
         }
 
         @media only screen and (min-width: 768px) {
-          :host a-date-select,
+          :host a-flatpickr,
           :host a-steps-button:not(:last-child) {
             margin-bottom: 0;
           }
@@ -116,7 +116,7 @@
       </style>
 
       <div class="filter-buttons">
-        <a-date-select 
+        <!-- <a-date-select 
           namespace="date-select-secondary-" 
           placeholder="Datum auswählen" 
           calendarIndicator=" → 📅"
@@ -124,7 +124,8 @@
           locale="de-CH" 
           answer-event-name="list-events"
           request-event-name="request-list-events"
-        ></a-date-select>
+        ></a-date-select> -->
+        <a-flatpickr></a-flatpickr>
 
         <a-steps-button 
           label="Compagnien" 
