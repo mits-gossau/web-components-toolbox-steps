@@ -23,6 +23,13 @@ export default class FilterList extends Shadow() {
         composed: true
       })
     )
+
+    const cleanFilterButton = this.root.querySelector('#filter-button-companies');
+    console.log(cleanFilterButton)
+
+    cleanFilterButton.addEventListener('click', () => {
+      console.log('clean filter!');
+    })
   }
 
   disconnectedCallback () {
@@ -50,7 +57,7 @@ export default class FilterList extends Shadow() {
       return
     }
 
-    if (this.getAttribute('request-event-name')) {
+    /*if (this.getAttribute('request-event-name')) {
       this.dispatchEvent(
         new CustomEvent(this.getAttribute('request-event-name'), {
           bubbles: true,
@@ -59,7 +66,16 @@ export default class FilterList extends Shadow() {
           detail: { company, location }
         })
       )
-    }
+    }*/
+
+    this.dispatchEvent(
+      new CustomEvent('filter-events', {
+        bubbles: true,
+        cancelable: true,
+        composed: true,
+        detail: { elementId }
+      })
+    )
   }
 
   shouldRenderCSS () {

@@ -158,6 +158,15 @@ export default class Events extends Shadow() {
     const displayFilter = (elementId) => {
       const filterList = this.root.getElementsByTagName('o-steps-filter-list')
       const listElement = filterList[0].shadowRoot.getElementById(elementId)
+      const listCompanies = filterList[0].shadowRoot.getElementById('list-companies')
+      const listLocations = filterList[0].shadowRoot.getElementById('list-locations')
+
+      if (!listCompanies.classList.contains('hidden')) {
+        listCompanies.classList.add('hidden')
+      } else if (!listLocations.classList.contains('hidden')) {
+        listLocations.classList.add('hidden')
+      }
+
       listElement.classList.toggle('hidden')
     }
     this.displayFilterCompanies = () => displayFilter('list-companies')

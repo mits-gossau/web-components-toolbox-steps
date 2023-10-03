@@ -125,7 +125,15 @@
           answer-event-name="list-events"
           request-event-name="request-list-events"
         ></a-date-select> -->
-        <a-flatpickr></a-flatpickr>
+        <a-flatpickr>
+          <style>
+            a-flatpickr div {
+              border: 2px solid black;
+              border-radius: 2.5rem;
+              padding: 4px 12px;
+            }
+          </style>
+        </a-flatpickr>
 
         <a-steps-button 
           label="Compagnien" 
@@ -151,6 +159,13 @@
             <span class="arrow-right">→</span>
             <span class="arrow-bottom">↓</span>
           </span>
+        </a-steps-button>
+
+        <a-steps-button 
+          label="Filter Zurücksetzen" 
+          id="filter-clean" 
+          namespace="button-secondary-"
+        >
         </a-steps-button>
 
         <script src="../atoms/button/Button.js" type="module"></script>

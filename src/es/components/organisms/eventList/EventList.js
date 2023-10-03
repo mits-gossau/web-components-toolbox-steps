@@ -37,7 +37,10 @@ export default class EventList extends Shadow() {
     }
 
     this.answerEventNameListener = (event) => {
-      event.detail.fetch.then((data) => this.renderHTML(data))
+      event.detail.fetch.then((data) => {
+        this.events = data
+        this.renderHTML(data.events, data.translations)
+      })
     }
 
     this.eventsLoaded = false
@@ -47,6 +50,10 @@ export default class EventList extends Shadow() {
       // event.preventDefault()
       // console.log(event, event.detail)
     }
+
+    document.addEventListener('filter-events', (event) => {
+      this.filterCompagnies(event);
+    });
   }
 
   connectedCallback () {
@@ -113,13 +120,13 @@ export default class EventList extends Shadow() {
     `
   }
 
-  renderHTML (data) {
+  renderHTML (data, translations) {
     /* Split active and expired events */
     const currentDate = new Date()
     let activeEvents = []
     let expiredEvents = []
 
-    data.events.forEach((event) => {
+    data.forEach((event) => {
       const parsedDate = this.parseDate(event.eventDate);
 
       if (parsedDate > currentDate) {
@@ -129,13 +136,13 @@ export default class EventList extends Shadow() {
       }
     })
 
-    const activeEventHtml = this.collectMarkup(activeEvents, data.translations)
-      
+    const activeEventHtml = this.collectMarkup(activeEvents, translations)
+    
     this.headingHtml = /* html */ `
-      <h2 class="heading heading--h2">${this.expiredTitle}</h2>
+      <h2 class="heading heading--h2 heading--expired">${this.expiredTitle}</h2>
     `
 
-    const expiredEventHtml = this.collectMarkup(expiredEvents, data.translations)
+    const expiredEventHtml = this.collectMarkup(expiredEvents, translations)
     
     /* Concat active events, heading and expired events */
     let concatMarkup = ''
@@ -178,7 +185,7 @@ export default class EventList extends Shadow() {
       const eventIcons = JSON.stringify(eventInformationIcons || [])
       const theaterIcons = JSON.stringify(theaterInformationIcons || [])
 
-      return /* html */ `<m-steps-event-card 
+      return `<m-steps-event-card 
         choreographer="${choreographer}"
         company="${company}"
         companyDetailPageUrl="${companyDetailPageUrl}"
@@ -249,5 +256,11 @@ export default class EventList extends Shadow() {
     const parsedDate = new Date(formattedDate)
 
     return parsedDate;
+  }
+
+  filterCompagnies(event) {
+    const filtered = this.events.events.filter((item) => (item.company == event.detail.elementId) || (item.location == event.detail.elementId));
+    this.events.events = filtered
+    this.renderHTML(this.events.events, this.events.translations);
   }
 }
