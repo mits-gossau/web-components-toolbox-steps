@@ -102,6 +102,10 @@ export default class Addresses extends Shadow() {
           <p class="address-street">${address.theaterstreet}<br />
           <a class="address-phone" href="tel:${address.theaterphone}">${address.theaterphone}</a><br />
           <strong><a class="address-link" href="${address.theaterurl}" target="_blank">${address.theaterurltitle} →</a></strong><br />
+          ${address.accessibilityurl
+            ? `<strong><a class="address-link" href="${address.accessibilityurl}" target="_blank">${address.accessibilityurltitle} →</a></strong><br />`
+            : ''
+          }          
           </p>
           ${address.theaterInformationIcons
             ? `<p><span class="address-icons">${this.collectIcons(address.theaterInformationIcons)}</span></p>`
