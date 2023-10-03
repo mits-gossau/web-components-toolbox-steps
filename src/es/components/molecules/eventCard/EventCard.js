@@ -93,6 +93,11 @@ export default class EventCard extends Shadow() {
       :host .event-grey-out {
         color: var(--steps-color-grey-sold-out);
       }
+      :host .event-grey-out .event-cta a-button {
+        pointer-events: none;
+        background: var(--steps-color-white);;
+        opacity: 0.3;
+      }
       :host .event-card {
         border-top: 1px solid var(--steps-color-black);
         padding: 1.25rem 0;
