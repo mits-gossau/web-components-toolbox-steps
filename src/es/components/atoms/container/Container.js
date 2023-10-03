@@ -23,7 +23,7 @@ export default class Container extends Shadow() {
      * @type {Container}
      */
     this.container = {
-      maxWidth: '960px',
+      maxWidth: '1200px',
       padding: '20px'
     }
   }
