@@ -7,6 +7,8 @@
             "theaterphone": "+41 71 111 11 11",
             "theaterurl": "https://www.theater.sg.ch",
             "theaterurltitle": "theater.sg.ch",
+            "accessibilityurl": "#",
+            "accessibilityurltitle": "Accessibility URL",
             "theaterInformationIcons": [
                 "/src/img/icons/icon-rollstuhlgaengig.svg",
                 "/src/img/icons/icon-hoerbenachteiligung.svg"
@@ -19,6 +21,8 @@
             "theaterphone": "+41 58 444 44 44",
             "theaterurl": "https://www.schauspielhaus.ch/",
             "theaterurltitle": "theater.sg.ch",
+            "accessibilityurl": "#",
+            "accessibilityurltitle": "Accessibility URL",
             "theaterInformationIcons": [
                 "/src/img/icons/icon-rollstuhlgaengig.svg"
             ]
