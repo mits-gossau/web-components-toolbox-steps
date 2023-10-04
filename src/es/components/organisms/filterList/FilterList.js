@@ -23,13 +23,6 @@ export default class FilterList extends Shadow() {
         composed: true
       })
     )
-
-    const cleanFilterButton = this.root.querySelector('#filter-button-companies');
-    console.log(cleanFilterButton)
-
-    cleanFilterButton.addEventListener('click', () => {
-      console.log('clean filter!');
-    })
   }
 
   disconnectedCallback () {
