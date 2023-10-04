@@ -4,8 +4,8 @@
       "location": "Genève ",
       "theater": "Comédie de Genève",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-        "/media/srnn4bjq/icon-hoerbenachteiligung.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg",
+        "/src/img/icons/icon-hoerbenachteiligung.svg"
       ],
       "company": "Compagnie Sam·Hester (CH) ",
       "companyDetailPageUrl": null,
@@ -15,13 +15,13 @@
       "eventDate": "25.4.2024 20:0:0",
       "soldOut": "False",
       "presaleUrl": null,
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "St. Gallen ",
       "theater": "Theater St. Gallen, Lokremise ",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ],
       "company": "Cie. Arts Mouvementés for Families (CH)",
       "companyDetailPageUrl": null,
@@ -32,15 +32,15 @@
       "soldOut": "False",
       "presaleUrl": null,
       "eventInformationIcons": [
-        "/media/oe1ncuvl/icon-uebertitel.svg",
-        "/media/mkbfwfq1/icon-familien.svg"
+        "/src/img/icons/icon-uebertitel.svg",
+        "/src/img/icons/icon-familien.svg"
       ]
     },
     {
       "location": "Moutier ",
       "theater": "Aula de Chantemerle",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ],
       "company": "Anton Lachky Company (BEL)",
       "companyDetailPageUrl": "/programm/cie-arts-mouvementés",
@@ -50,13 +50,13 @@
       "eventDate": "28.4.2024 0:0:0",
       "soldOut": "False",
       "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-steps",
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "St. Gallen ",
       "theater": "Theater St. Gallen, Lokremise ",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ],
       "company": "Cie. Arts Mouvementés for Families (CH)",
       "companyDetailPageUrl": null,
@@ -67,15 +67,15 @@
       "soldOut": "False",
       "presaleUrl": null,
       "eventInformationIcons": [
-        "/media/mkbfwfq1/icon-familien.svg",
-        "/media/oe1ncuvl/icon-uebertitel.svg"
+        "/src/img/icons/icon-familien.svg",
+        "/src/img/icons/icon-uebertitel.svg"
       ]
     },
     {
       "location": "Basel",
       "theater": "Kaserne Basel",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ],
       "company": "Cie. Arts Mouvementés (CH)",
       "companyDetailPageUrl": null,
@@ -86,15 +86,15 @@
       "soldOut": "False",
       "presaleUrl": null,
       "eventInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ]
     },
     {
       "location": "Biel/Bienne ",
       "theater": "Nebia ",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-        "/media/srnn4bjq/icon-hoerbenachteiligung.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg",
+        "/src/img/icons/icon-hoerbenachteiligung.svg"
       ],
       "company": "Far From The Norm (GBR)",
       "companyDetailPageUrl": null,
@@ -104,13 +104,13 @@
       "eventDate": "2.5.2023 20:0:0",
       "soldOut": "False",
       "presaleUrl": null,
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "Sierre ",
       "theater": "Théâtre Les Halles",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ],
       "company": "Marc Brew Company | Eastman (GBR | BEL)",
       "companyDetailPageUrl": null,
@@ -120,13 +120,13 @@
       "eventDate": "4.5.2023 19:0:0",
       "soldOut": "True",
       "presaleUrl": null,
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "Basel",
       "theater": "Kaserne Basel",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ],
       "company": "Cie. Arts Mouvementés (CH)",
       "companyDetailPageUrl": null,
@@ -137,14 +137,14 @@
       "soldOut": "False",
       "presaleUrl": null,
       "eventInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ]
     },
     {
       "location": "Luzern",
       "theater": "Südpol ",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ],
       "company": "Cie. Arts Mouvementés for Families (CH)",
       "companyDetailPageUrl": null,
@@ -155,15 +155,15 @@
       "soldOut": "False",
       "presaleUrl": null,
       "eventInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ]
     },
     {
       "location": "Lugano",
       "theater": "LAC Lugano Arte e Cultura",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-        "/media/srnn4bjq/icon-hoerbenachteiligung.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg",
+        "/src/img/icons/icon-hoerbenachteiligung.svg"
       ],
       "company": "Cie. Arts Mouvementés (CH)",
       "companyDetailPageUrl": null,
@@ -173,13 +173,13 @@
       "eventDate": "14.5.2023 20:30:0",
       "soldOut": "False",
       "presaleUrl": null,
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "Zürich",
       "theater": "Schauspielhaus Schiffbau",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ],
       "company": "Cie. Arts Mouvementés for Families (CH)",
       "companyDetailPageUrl": null,
@@ -190,14 +190,14 @@
       "soldOut": "False",
       "presaleUrl": null,
       "eventInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ]
     },
     {
       "location": "Zürich",
       "theater": "Schauspielhaus Schiffbau",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ],
       "company": "Cie. Arts Mouvementés for Families (CH)",
       "companyDetailPageUrl": null,
@@ -207,14 +207,14 @@
       "eventDate": "18.5.2024 14:0:0",
       "soldOut": "False",
       "presaleUrl": null,
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "Schaffhausen",
       "theater": "Stadttheater Schaffhausen ",
       "theaterInformationIcons": [
-        "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-hoerbenachteiligung.svg",
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ],
       "company": "Anton Lachky Company (BEL)",
       "companyDetailPageUrl": "/programm/cie-arts-mouvementés",
@@ -224,13 +224,13 @@
       "eventDate": "2.5.2023 19:30:0",
       "soldOut": "False",
       "presaleUrl": null,
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "Steckborn",
       "theater": "Phönix Theater",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ],
       "company": "Anton Lachky Company (BEL)",
       "companyDetailPageUrl": "/programm/cie-arts-mouvementés",
@@ -240,13 +240,13 @@
       "eventDate": "4.5.2023 19:30:0",
       "soldOut": "False",
       "presaleUrl": null,
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "Aarau ",
       "theater": "Bühne Aarau, Alte Reithalle ",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ],
       "company": "Anton Lachky Company (BEL)",
       "companyDetailPageUrl": "/programm/cie-arts-mouvementés",
@@ -256,13 +256,13 @@
       "eventDate": "8.5.2024 19:0:0",
       "soldOut": "False",
       "presaleUrl": null,
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "Poschiavo",
       "theater": "Palestre scuole comunali",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ],
       "company": "Anton Lachky Company (BEL)",
       "companyDetailPageUrl": "/programm/cie-arts-mouvementés",
@@ -272,13 +272,13 @@
       "eventDate": "10.5.2024 20:30:0",
       "soldOut": "False",
       "presaleUrl": null,
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "Poschiavo",
       "theater": "Palestre scuole comunali",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ],
       "company": "Anton Lachky Company (BEL)",
       "companyDetailPageUrl": "/programm/cie-arts-mouvementés",
@@ -288,13 +288,13 @@
       "eventDate": "11.5.2024 17:0:0",
       "soldOut": "False",
       "presaleUrl": null,
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "Solothurn ",
       "theater": "Stadttheater Solothurn ",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ],
       "company": "Anton Lachky Company (BEL)",
       "companyDetailPageUrl": "/programm/cie-arts-mouvementés",
@@ -304,13 +304,13 @@
       "eventDate": "14.5.2024 19:30:0",
       "soldOut": "False",
       "presaleUrl": null,
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "Bellinzona ",
       "theater": "Teatro Sociale ",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ],
       "company": "Anton Lachky Company (BEL)",
       "companyDetailPageUrl": "/programm/cie-arts-mouvementés",
@@ -320,13 +320,13 @@
       "eventDate": "16.5.2024 20:45:0",
       "soldOut": "False",
       "presaleUrl": null,
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "Vals ",
       "theater": "Zentrum Glüs",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ],
       "company": "Anton Lachky Company (BEL)",
       "companyDetailPageUrl": "/programm/cie-arts-mouvementés",
@@ -336,13 +336,13 @@
       "eventDate": "18.5.2024 20:0:0",
       "soldOut": "False",
       "presaleUrl": null,
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "St. Gallen ",
       "theater": "Theater St. Gallen, Lokremise ",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ],
       "company": "Anton Lachky Company (BEL)",
       "companyDetailPageUrl": "/programm/cie-arts-mouvementés",
@@ -352,14 +352,14 @@
       "eventDate": "19.5.2024 20:0:0",
       "soldOut": "False",
       "presaleUrl": null,
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "Genève ",
       "theater": "Comédie de Genève",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-        "/media/srnn4bjq/icon-hoerbenachteiligung.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg",
+        "/src/img/icons/icon-hoerbenachteiligung.svg"
       ],
       "company": "Compagnie Sam·Hester (CH) ",
       "companyDetailPageUrl": null,
@@ -369,14 +369,14 @@
       "eventDate": "27.4.2024 19:30:0",
       "soldOut": "False",
       "presaleUrl": null,
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "Genève ",
       "theater": "Comédie de Genève",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-        "/media/srnn4bjq/icon-hoerbenachteiligung.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg",
+        "/src/img/icons/icon-hoerbenachteiligung.svg"
       ],
       "company": "Compagnie Sam·Hester (CH) ",
       "companyDetailPageUrl": null,
@@ -386,13 +386,13 @@
       "eventDate": "28.4.2024 15:30:0",
       "soldOut": "False",
       "presaleUrl": null,
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "Nyon",
       "theater": "Usine à Gaz",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ],
       "company": "Compagnie Sam·Hester (CH) ",
       "companyDetailPageUrl": null,
@@ -402,14 +402,14 @@
       "eventDate": "3.5.2024 0:0:0",
       "soldOut": "False",
       "presaleUrl": null,
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "Biel/Bienne ",
       "theater": "Nebia ",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-        "/media/srnn4bjq/icon-hoerbenachteiligung.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg",
+        "/src/img/icons/icon-hoerbenachteiligung.svg"
       ],
       "company": "Compagnie Sam·Hester (CH) ",
       "companyDetailPageUrl": null,
@@ -419,14 +419,14 @@
       "eventDate": "5.5.2024 0:0:0",
       "soldOut": "False",
       "presaleUrl": null,
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "Fribourg",
       "theater": "Equilibre",
       "theaterInformationIcons": [
-        "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-hoerbenachteiligung.svg",
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ],
       "company": "Far From The Norm (GBR)",
       "companyDetailPageUrl": null,
@@ -436,13 +436,13 @@
       "eventDate": "5.5.2024 17:0:0",
       "soldOut": "False",
       "presaleUrl": null,
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "Baden",
       "theater": "Kurtheater Baden ",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ],
       "company": "Far From The Norm (GBR)",
       "companyDetailPageUrl": null,
@@ -452,13 +452,13 @@
       "eventDate": "7.5.2024 19:30:0",
       "soldOut": "False",
       "presaleUrl": null,
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "Bern",
       "theater": "Dampfzentrale Bern",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ],
       "company": "Far From The Norm (GBR)",
       "companyDetailPageUrl": null,
@@ -468,13 +468,13 @@
       "eventDate": "11.5.2024 0:0:0",
       "soldOut": "False",
       "presaleUrl": null,
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "Vernier ",
       "theater": "Salle du Lignon",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ],
       "company": "Far From The Norm (GBR)",
       "companyDetailPageUrl": null,
@@ -484,14 +484,14 @@
       "eventDate": "14.5.2024 20:0:0",
       "soldOut": "False",
       "presaleUrl": null,
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "Lugano",
       "theater": "LAC Lugano Arte e Cultura",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-        "/media/srnn4bjq/icon-hoerbenachteiligung.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg",
+        "/src/img/icons/icon-hoerbenachteiligung.svg"
       ],
       "company": "Kidd Pivot (CAN)",
       "companyDetailPageUrl": null,
@@ -501,13 +501,13 @@
       "eventDate": "28.4.2024 18:0:0",
       "soldOut": "False",
       "presaleUrl": null,
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "Zürich",
       "theater": "Theater 11",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ],
       "company": "Kidd Pivot (CAN)",
       "companyDetailPageUrl": null,
@@ -517,13 +517,13 @@
       "eventDate": "3.5.2024 20:0:0",
       "soldOut": "False",
       "presaleUrl": null,
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "Sierre ",
       "theater": "Théâtre Les Halles",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ],
       "company": "Marc Brew Company | Eastman (GBR | BEL)",
       "companyDetailPageUrl": null,
@@ -533,14 +533,14 @@
       "eventDate": "5.5.2024 17:0:0",
       "soldOut": "False",
       "presaleUrl": null,
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "La Tour-de-Trême",
       "theater": "Salle CO2",
       "theaterInformationIcons": [
-        "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-hoerbenachteiligung.svg",
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ],
       "company": "Marc Brew Company | Eastman (GBR | BEL)",
       "companyDetailPageUrl": null,
@@ -550,13 +550,13 @@
       "eventDate": "10.5.2024 20:0:0",
       "soldOut": "False",
       "presaleUrl": null,
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "Basel",
       "theater": "Kaserne Basel",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ],
       "company": "Marc Brew Company | Eastman (GBR | BEL)",
       "companyDetailPageUrl": null,
@@ -566,13 +566,13 @@
       "eventDate": "16.5.2024 0:0:0",
       "soldOut": "False",
       "presaleUrl": null,
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "Basel",
       "theater": "Kaserne Basel",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ],
       "company": "Marc Brew Company | Eastman (GBR | BEL)",
       "companyDetailPageUrl": null,
@@ -582,14 +582,14 @@
       "eventDate": "17.5.2024 0:0:0",
       "soldOut": "False",
       "presaleUrl": null,
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "Zürich",
       "theater": "Gessnerallee",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-        "/media/srnn4bjq/icon-hoerbenachteiligung.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg",
+        "/src/img/icons/icon-hoerbenachteiligung.svg"
       ],
       "company": "Mette Ingvartsen (DNK)",
       "companyDetailPageUrl": null,
@@ -599,14 +599,14 @@
       "eventDate": "26.4.2024 20:0:0",
       "soldOut": "False",
       "presaleUrl": null,
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "Zürich",
       "theater": "Gessnerallee",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-        "/media/srnn4bjq/icon-hoerbenachteiligung.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg",
+        "/src/img/icons/icon-hoerbenachteiligung.svg"
       ],
       "company": "Mette Ingvartsen (DNK)",
       "companyDetailPageUrl": null,
@@ -616,13 +616,13 @@
       "eventDate": "27.4.2024 20:0:0",
       "soldOut": "False",
       "presaleUrl": null,
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "Bern",
       "theater": "Dampfzentrale Bern",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ],
       "company": "Mette Ingvartsen (DNK)",
       "companyDetailPageUrl": null,
@@ -632,13 +632,13 @@
       "eventDate": "2.5.2024 0:0:0",
       "soldOut": "False",
       "presaleUrl": null,
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "Luzern",
       "theater": "Luzerner Theater ",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ],
       "company": "Saburo Teshigawara, Rihoko Sato (JPN)",
       "companyDetailPageUrl": null,
@@ -648,13 +648,13 @@
       "eventDate": "4.5.2024 20:0:0",
       "soldOut": "False",
       "presaleUrl": null,
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "Bern",
       "theater": "Dampfzentrale Bern",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ],
       "company": "Saburo Teshigawara, Rihoko Sato (JPN)",
       "companyDetailPageUrl": null,
@@ -664,13 +664,13 @@
       "eventDate": "7.5.2024 0:0:0",
       "soldOut": "False",
       "presaleUrl": null,
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "Chiasso",
       "theater": "Cinema Teatro ",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ],
       "company": "Saburo Teshigawara, Rihoko Sato (JPN)",
       "companyDetailPageUrl": null,
@@ -680,14 +680,14 @@
       "eventDate": "12.5.2024 0:0:0",
       "soldOut": "False",
       "presaleUrl": null,
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "Basel",
       "theater": "Theater Basel Schauspielhaus",
       "theaterInformationIcons": [
-        "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-hoerbenachteiligung.svg",
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ],
       "company": "Saburo Teshigawara, Rihoko Sato (JPN)",
       "companyDetailPageUrl": null,
@@ -697,13 +697,13 @@
       "eventDate": "16.5.2024 0:0:0",
       "soldOut": "False",
       "presaleUrl": null,
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "Baden",
       "theater": "Kurtheater Baden ",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ],
       "company": "Winter Guests (NOR)",
       "companyDetailPageUrl": null,
@@ -719,7 +719,7 @@
       "location": "Chur ",
       "theater": "Theater Chur ",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ],
       "company": "Winter Guests (NOR)",
       "companyDetailPageUrl": null,
@@ -729,14 +729,14 @@
       "eventDate": "29.4.2024 0:0:0",
       "soldOut": "False",
       "presaleUrl": null,
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "Zug",
       "theater": "Theater Casino Zug ",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-        "/media/srnn4bjq/icon-hoerbenachteiligung.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg",
+        "/src/img/icons/icon-hoerbenachteiligung.svg"
       ],
       "company": "Winter Guests (NOR)",
       "companyDetailPageUrl": null,
@@ -746,14 +746,14 @@
       "eventDate": "2.5.2024 0:0:0",
       "soldOut": "False",
       "presaleUrl": null,
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "Vevey ",
       "theater": "Le Reflet",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-        "/media/srnn4bjq/icon-hoerbenachteiligung.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg",
+        "/src/img/icons/icon-hoerbenachteiligung.svg"
       ],
       "company": "Winter Guests (NOR)",
       "companyDetailPageUrl": null,
@@ -763,13 +763,13 @@
       "eventDate": "4.5.2024 0:0:0",
       "soldOut": "False",
       "presaleUrl": null,
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "Bern",
       "theater": "Bühnen Bern, Vidmar 1",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ],
       "company": "Winter Guests (NOR)",
       "companyDetailPageUrl": null,
@@ -779,13 +779,13 @@
       "eventDate": "9.5.2024 0:0:0",
       "soldOut": "False",
       "presaleUrl": null,
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "St. Gallen ",
       "theater": "Theater St. Gallen, Grosse Bühne ",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ],
       "company": "Winter Guests (NOR)",
       "companyDetailPageUrl": null,
@@ -795,14 +795,14 @@
       "eventDate": "11.5.2024 0:0:0",
       "soldOut": "False",
       "presaleUrl": null,
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "Neuchâtel ",
       "theater": "Théâtre du Passage",
       "theaterInformationIcons": [
-        "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-hoerbenachteiligung.svg",
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ],
       "company": "Winter Guests (NOR)",
       "companyDetailPageUrl": null,
@@ -812,14 +812,14 @@
       "eventDate": "16.5.2024 20:0:0",
       "soldOut": "False",
       "presaleUrl": null,
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "Genève ",
       "theater": "Comédie de Genève",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-        "/media/srnn4bjq/icon-hoerbenachteiligung.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg",
+        "/src/img/icons/icon-hoerbenachteiligung.svg"
       ],
       "company": "Compagnie Sam·Hester (CH) ",
       "companyDetailPageUrl": null,
@@ -829,13 +829,13 @@
       "eventDate": "26.4.2024 20:30:0",
       "soldOut": "False",
       "presaleUrl": null,
-      "eventInformationIcons": ["/media/mkbfwfq1/icon-familien.svg"]
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
     {
       "location": "Luzern",
       "theater": "Südpol ",
       "theaterInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg"
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
       ],
       "company": "Cie. Arts Mouvementés for Families (CH)",
       "companyDetailPageUrl": null,
@@ -846,11 +846,11 @@
       "soldOut": "True",
       "presaleUrl": null,
       "eventInformationIcons": [
-        "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-        "/media/mkbfwfq1/icon-familien.svg",
-        "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+        "/src/img/icons/icon-rollstuhlgaengig.svg",
+        "/src/img/icons/icon-familien.svg",
+        "/src/img/icons/icon-hoerbenachteiligung.svg",
         "/media/f5qfb3cw/icon-nachbesprechung.svg",
-        "/media/oe1ncuvl/icon-uebertitel.svg"
+        "/src/img/icons/icon-uebertitel.svg"
       ]
     }
   ],
