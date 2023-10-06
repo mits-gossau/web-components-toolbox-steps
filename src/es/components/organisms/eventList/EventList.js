@@ -18,7 +18,6 @@ import(
 export default class EventList extends Shadow() {
   constructor (options = {}, ...args) {
     super({ importMetaUrl: import.meta.url, ...options }, ...args)
-    this.events = []
     /**
      * @typedef {Object} Translations
      * @property {string} buttonTickets - The translation for the "Tickets" button.
@@ -38,7 +37,6 @@ export default class EventList extends Shadow() {
 
     this.answerEventNameListener = (event) => {
       event.detail.fetch.then((data) => {
-        this.events = data
         this.renderHTML(data.events, data.translations)
       })
     }

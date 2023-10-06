@@ -125,7 +125,7 @@
           answer-event-name="list-events"
           request-event-name="request-list-events"
         ></a-date-select> -->
-        <a-flatpickr>
+        <a-flatpickr request-event-name="request-list-events" filter-type="eventDate">
           <style>
             a-flatpickr div {
               border: 2px solid black;
@@ -138,9 +138,10 @@
         <a-steps-button 
           label="Compagnien" 
           id="filter-button-companies" 
+          tag="companies"
           namespace="button-secondary-"
           answer-event-name="list-events"
-          request-event-name="request-list-companies"
+          request-event-name="request-list-filter-items"
         >
           <span class='icon-right'>
             <span class="arrow-right">→</span>
@@ -149,11 +150,12 @@
         </a-steps-button>
 
         <a-steps-button 
-          label="Ort" 
-          id="filter-button-locations" 
+          label="Ort"
+          id="filter-button-locations"
+          tag="locations"
           namespace="button-secondary-"
           answer-event-name="list-events"
-          request-event-name="request-list-locations"
+          request-event-name="request-list-filter-items"
         >
           <span class='icon-right'>
             <span class="arrow-right">→</span>
@@ -173,7 +175,6 @@
 
       <o-steps-filter-list 
         answer-event-name="list-filter-items" 
-        request-event-name="request-list-filter-items"
       ></o-steps-filter-list>
       <script src="../organisms/filterList/FilterList.js" type="module"></script>
 

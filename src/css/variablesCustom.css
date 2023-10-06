@@ -199,7 +199,8 @@
   --content-dark-a-color: var(--steps-color-white);
   --content-dark-a-color-hover: var(--steps-color-red);
 
-  --header-nav-right-a-menu-icon-border-radius: 0; /* SILVAN */
+  --header-nav-right-a-menu-icon-border-radius-custom: 0;
+  --content-dark-gap: 1.25rem;
 
   --content-dark-h2-font-size: 40px;
   --content-dark-h2-line-height: 45px;
