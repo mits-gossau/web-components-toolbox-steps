@@ -139,11 +139,20 @@
   --button-steps-border-radius: 5.0rem;
   --button-steps-border-width: 0.1rem;
   --button-steps-border-color: var(--steps-color-white);
-  --button-steps-padding: 1.2rem 2.8rem 1.2rem 1.6rem;
+  --button-steps-padding: 6px 24px;
   --button-steps-font-size: 1.2rem;
   --button-steps-font-size-mobile: 1.6rem;
   --button-steps-color: var(--steps-color-white);
   --button-steps-background-color-hover: transparent;
+  --button-steps-spielplan-color: var(--steps-color-black);
+  --button-steps-spielplan-border-color: var(--steps-color-black);
+  --button-steps-spielplan-border-width: 1px;
+  --button-steps-spielplan-border-radius: 2.5rem;
+  --button-steps-spielplan-padding: 6px 24px;
+  --button-steps-spielplan-background-color-hover: transparent;
+  --button-steps-filter-padding: 6px 24px;
+  --button-steps-filter-background-color-hover: transparent;
+  --button-steps-filter-color-hover: var(--steps-color-black);
 
   /* header */
   --header-nav-right-a-logo-top-mobile-custom: 2em;

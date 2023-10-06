@@ -53,7 +53,7 @@ export default class FilterList extends Shadow() {
     this.html = /* html */`
       <ul class="list-items">
         ${Array.from(new Set(data.items)).map(name => /* html */`
-          <li><a-button filter-type="${data.filterType}" namespace="button-category-" tag="${name}" request-event-name="request-list-events">${name}</a-button></li>
+          <li><a-button filter-type="${data.filterType}" namespace="button-steps-filter-" tag="${name}" request-event-name="request-list-events">${name}</a-button></li>
         `)}
       <ul>
     `
