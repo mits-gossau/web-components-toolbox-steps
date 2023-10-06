@@ -125,12 +125,12 @@
           answer-event-name="list-events"
           request-event-name="request-list-events"
         ></a-date-select> -->
-        <a-flatpickr>
+        <a-flatpickr request-event-name="request-list-events" filter-type="eventDate">
           <style>
             a-flatpickr div {
-              border: 2px solid black;
+              border: 1px solid black;
               border-radius: 2.5rem;
-              padding: 4px 12px;
+              padding: 6px 24px;
             }
           </style>
         </a-flatpickr>
@@ -138,9 +138,10 @@
         <a-steps-button 
           label="Compagnien" 
           id="filter-button-companies" 
-          namespace="button-secondary-"
+          tag="companies"
+          namespace="button-steps-spielplan-"
           answer-event-name="list-events"
-          request-event-name="request-list-companies"
+          request-event-name="request-list-filter-items"
         >
           <span class='icon-right'>
             <span class="arrow-right">→</span>
@@ -149,11 +150,12 @@
         </a-steps-button>
 
         <a-steps-button 
-          label="Ort" 
-          id="filter-button-locations" 
-          namespace="button-secondary-"
+          label="Ort"
+          id="filter-button-locations"
+          tag="locations"
+          namespace="button-steps-spielplan-"
           answer-event-name="list-events"
-          request-event-name="request-list-locations"
+          request-event-name="request-list-filter-items"
         >
           <span class='icon-right'>
             <span class="arrow-right">→</span>
@@ -164,7 +166,7 @@
         <a-steps-button 
           label="Filter Zurücksetzen" 
           id="filter-clean" 
-          namespace="button-secondary-"
+          namespace="button-steps-spielplan-"
         >
         </a-steps-button>
 
@@ -173,7 +175,6 @@
 
       <o-steps-filter-list 
         answer-event-name="list-filter-items" 
-        request-event-name="request-list-filter-items"
       ></o-steps-filter-list>
       <script src="../organisms/filterList/FilterList.js" type="module"></script>
 

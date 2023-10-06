@@ -56,7 +56,7 @@
   --steps-color-blue-lighter: #c6b7fa;
 
   --background-color: transparent;
-  --background-gradient: linear-gradient(180deg, var(--steps-color-blue) 0%, var(--steps-color-white) 400px);
+  --background-gradient: linear-gradient(180deg, var(--steps-color-blue) 0%, var(--steps-color-white) 200px);
   --color: var(--steps-color-black);
   --a-color: var(--steps-color-black);
   --color-hover: var(--steps-color-grey);
@@ -137,13 +137,22 @@
 
   /* stage button */
   --button-steps-border-radius: 5.0rem;
-  --button-steps-border-width: 0.2rem;
+  --button-steps-border-width: 0.1rem;
   --button-steps-border-color: var(--steps-color-white);
-  --button-steps-padding: 1.2rem 2.8rem 1.2rem 1.6rem;
+  --button-steps-padding: 6px 24px;
   --button-steps-font-size: 1.2rem;
   --button-steps-font-size-mobile: 1.6rem;
   --button-steps-color: var(--steps-color-white);
   --button-steps-background-color-hover: transparent;
+  --button-steps-spielplan-color: var(--steps-color-black);
+  --button-steps-spielplan-border-color: var(--steps-color-black);
+  --button-steps-spielplan-border-width: 1px;
+  --button-steps-spielplan-border-radius: 2.5rem;
+  --button-steps-spielplan-padding: 6px 24px;
+  --button-steps-spielplan-background-color-hover: transparent;
+  --button-steps-filter-padding: 6px 24px;
+  --button-steps-filter-background-color-hover: transparent;
+  --button-steps-filter-color-hover: var(--steps-color-black);
 
   /* header */
   --header-nav-right-a-logo-top-mobile-custom: 2em;
@@ -198,6 +207,29 @@
 
   --content-dark-a-color: var(--steps-color-white);
   --content-dark-a-color-hover: var(--steps-color-red);
+
+  --header-nav-right-a-menu-icon-border-radius-custom: 0;
+  --content-dark-gap: 2rem;
+  --gap-custom: 2rem;
+  --wrapper-reverse-gap: 2rem;
+
+  --content-dark-h2-font-size: 40px;
+  --content-dark-h2-line-height: 45px;
+  --content-dark-h2-font-size-mobile: 30px;
+  --content-dark-h2-line-height-mobile: 35px;
+  --content-dark-margin-first-child-mobile: 0 0 16px 0;
+
+  --content-dark-p-font-size: 16px;
+  --content-dark-p-line-height: 20px;
+  --content-dark-p-font-size-mobile: 16px;
+  --content-dark-p-line-height-mobile: 20px;
+  --p-font-size: 16px;
+  --p-line-height: 20px;
+  --p-font-size-mobile: 16px;
+  --p-line-height-mobile: 20px;
+
+  --wrapper-reverse-flex-direction-mobile: column-reverse;
+  --navigation-default-a-link-font-size-mobile-custom: 1.1429rem;
 }
 
 body {

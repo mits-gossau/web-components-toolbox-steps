@@ -39,7 +39,7 @@ export default class Stage extends Shadow() {
 
       :host .stage__overlay {
         background-color: var(--steps-color-black);
-        opacity: 0.5;
+        opacity: 0.1;
         z-index: 20;
         position: absolute;
         height: 100vh;
@@ -62,6 +62,7 @@ export default class Stage extends Shadow() {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        width: 100%;
       }
 
       :host .stage__content h2 {
@@ -89,7 +90,7 @@ export default class Stage extends Shadow() {
       @media (max-width: 768px) {
         :host .stage__content h2,
         :host .stage__content span {
-          font-size: 2.4rem;
+          font-size: 2rem;
         }
 
         :host .stage__content span + a-button {

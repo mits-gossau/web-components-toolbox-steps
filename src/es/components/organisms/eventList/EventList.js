@@ -18,7 +18,6 @@ import(
 export default class EventList extends Shadow() {
   constructor (options = {}, ...args) {
     super({ importMetaUrl: import.meta.url, ...options }, ...args)
-    this.events = []
     /**
      * @typedef {Object} Translations
      * @property {string} buttonTickets - The translation for the "Tickets" button.
@@ -38,7 +37,6 @@ export default class EventList extends Shadow() {
 
     this.answerEventNameListener = (event) => {
       event.detail.fetch.then((data) => {
-        this.events = data
         this.renderHTML(data.events, data.translations)
       })
     }
@@ -50,10 +48,6 @@ export default class EventList extends Shadow() {
       // event.preventDefault()
       // console.log(event, event.detail)
     }
-
-    document.addEventListener('filter-events', (event) => {
-      this.filterCompagnies(event);
-    });
   }
 
   connectedCallback () {
@@ -256,11 +250,5 @@ export default class EventList extends Shadow() {
     const parsedDate = new Date(formattedDate)
 
     return parsedDate;
-  }
-
-  filterCompagnies(event) {
-    const filtered = this.events.events.filter((item) => (item.company == event.detail.elementId) || (item.location == event.detail.elementId));
-    this.events.events = filtered
-    this.renderHTML(this.events.events, this.events.translations);
   }
 }

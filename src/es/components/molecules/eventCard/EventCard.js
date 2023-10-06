@@ -131,8 +131,13 @@ export default class EventCard extends Shadow() {
         flex-shrink: 0;
         hyphens: auto;
       }
+      :host .event-info p {
+        line-height: 18px;
+      }
+
       :host .legend-icons {
         display: inline-block;
+        margin-top: 0.5rem;
         margin-right: 1.25rem;
         white-space: nowrap;
       }
@@ -141,14 +146,15 @@ export default class EventCard extends Shadow() {
       }
       :host .event-cta {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
         gap: 1.25rem;
         padding: 1.25rem 0;
         font-size: 1rem;
       }
       :host .event-cta a-button {
-        width: 100%;
         white-space: nowrap;
       }
       :host .event-cta a {
@@ -176,9 +182,13 @@ export default class EventCard extends Shadow() {
         :host .event-info > *:not(:first-child) {
           flex-basis: 20%;
         }
+        :host .event-info p {
+          line-height: 20px;
+        }
         :host .event-cta {
-          align-items: center;
+          flex-direction: column;
           padding: 0;
+          gap: 0.5rem;
         }
       }
     `
@@ -225,7 +235,7 @@ export default class EventCard extends Shadow() {
     const detailsUrl = this.event.companyDetailPageUrl
 
     // buttons
-    const buttonTickets = `<a-button namespace="button-secondary-" onclick="window.open('${ticketsUrl}')">${this.getAttribute('textButtonTickets')} &#8594;</a-button>`
+    const buttonTickets = `<a-button namespace="button-steps-spielplan-" onclick="window.open('${ticketsUrl}')">${this.getAttribute('textButtonTickets')} &#8594;</a-button>`
     const buttonSoldOut = `<span class="sold-out">${this.getAttribute('textSoldOut')}</span>`
     const buttonCta = this.event.soldOut === 'True' ? buttonSoldOut : buttonTickets
     const eventIconsHTML = eventIcons ? `<span class="legend-icons">${eventIcons}</span>` : ``
@@ -234,7 +244,10 @@ export default class EventCard extends Shadow() {
     const eventInfoHtml = /* html */ `
       <div class="event-info" >
         <p>
-          <strong>${this.event.company}</strong><br />
+          ${this.event.company
+            ? `<strong>${this.event.company}</strong><br />`
+            : ''
+          }   
           <span>${this.event.production}<br />${this.event.choreographer}</span>
         </p>
         <p>
@@ -243,7 +256,6 @@ export default class EventCard extends Shadow() {
         </p>
         <p>
           ${time} ${this.getAttribute('textTimeSuffix')}<br />
-          <br />
           ${eventIconsHTML}
           ${theaterIconsHTML}
         </p>
