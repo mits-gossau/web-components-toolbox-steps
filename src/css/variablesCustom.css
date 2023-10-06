@@ -211,6 +211,12 @@
   --content-dark-p-line-height: 20px;
   --content-dark-p-font-size-mobile: 16px;
   --content-dark-p-line-height-mobile: 20px;
+  --p-font-size: 16px;
+  --p-line-height: 20px;
+  --p-font-size-mobile: 16px;
+  --p-line-height-mobile: 20px;
+
+  --wrapper-reverse-flex-direction-mobile: column-reverse;
 }
 
 body {
