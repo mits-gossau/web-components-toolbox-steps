@@ -69,9 +69,11 @@ export default class Heading extends Shadow() {
   renderCSS () {
     this.css = /* css */`
         :host .heading {
-            font-size: var(--steps-h-font-size);
+            font-size: 40px;
+            line-height: 45px;
             margin: 0;
-            padding-bottom: 1rem;
+            padding-bottom: 1rem !important;
+            font-family: PPMonumentExtended, Helvetica, Arial, sans-serif;
         }
 
         :host .heading--h1 {
@@ -89,6 +91,13 @@ export default class Heading extends Shadow() {
         :host .heading--small {
             font-size: var(--steps-h-font-size-small);
             padding-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+          :host .heading {
+            font-size: 40px;
+            line-height: 35px;
+          }
         }
     `
   }

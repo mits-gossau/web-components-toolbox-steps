@@ -42,7 +42,6 @@ export default class Tiles extends Shadow() {
 
       :host .tiles__tile {
         width: 48%;
-        height: 350px;        
         margin-bottom: 1rem;
         position: relative;
         overflow: hidden;
@@ -62,6 +61,8 @@ export default class Tiles extends Shadow() {
         top: 0.5rem;
         left: 2rem;
         width: 250px;
+        font-family: var(--h-font-family);
+        font-size: 30px;
       }
 
       @media (max-width: 768px) {
