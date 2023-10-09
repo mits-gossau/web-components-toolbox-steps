@@ -36,9 +36,12 @@ export default class EventList extends Shadow() {
     }
 
     this.answerEventNameListener = (event) => {
-      event.detail.fetch.then((data) => {
-        this.renderHTML(data.events, data.translations)
-      })
+      event.detail.fetch.then(
+        /** @param {import('../../controllers/events/Events.js').ListEvents} data */
+        data => {
+          this.renderHTML(data.events, data.translations)
+        }
+      )
     }
 
     this.eventsLoaded = false
