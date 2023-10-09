@@ -26,14 +26,17 @@ export default class Events extends Shadow() {
       ...options
     }, ...args)
 
+    this.resetButton = this.root.querySelector('.filter-button-hidden');
+
     this.requestListEventsListener = event => {
-      console.log('requestListEventsListener', event, this.fetch);
       this.dispatchEvent(new CustomEvent('list-events', {
         detail: {
           fetch: this.fetch.then(result => ({
             events: event.detail
               ? result.events.filter(resultEvent => {
                 const filterType = event.detail?.this.getAttribute('filter-type')
+                // show reset button
+                this.resetButton.classList.remove('filter-button-hidden');
                 // TODO: match Flatpickr tags: ["2023-10-10"] with eventDate:("24.4.2024 19:30:0")
                 //if (filterType === 'eventDate' && typeof event.detail.tags[0] ===  'string') event.detail.tags[0] = new Date(...(event.detail.tags[0].replace(/\s.*/, '').split('.').reverse().map((date, i) => i === 1 ? Number(date)-1 : date)))
                 return resultEvent?.[filterType] === event.detail.tags[0]
@@ -70,6 +73,27 @@ export default class Events extends Shadow() {
       }))
     }
 
+    /**
+     * Reset filtered list
+     * @param {*} event 
+     */
+    this.requestListResetEventsListener = event => {
+      this.dispatchEvent(new CustomEvent('list-events', {
+        detail: {
+          fetch: this.fetch.then(result => ({
+            events: result.events,
+            translations: result.translations
+          }))
+        },
+        bubbles: true,
+        cancelable: true,
+        composed: true
+      }))
+
+      // hide reset button
+      this.resetButton.classList.add('filter-button-hidden');
+    }
+
     // inform about the url which would result on this filter
     /*
     this.requestHrefEventListener = event => {
@@ -88,6 +112,7 @@ export default class Events extends Shadow() {
   connectedCallback () {
     this.addEventListener('request-list-events', this.requestListEventsListener)
     this.addEventListener('request-list-filter-items', this.requestListFilterItemsEventsListener)
+    this.addEventListener('request-list-reset', this.requestListResetEventsListener)
     /*
     this.addEventListener('request-href-' + 'request-list-events', this.requestHrefEventListener)
     if (!this.hasAttribute('no-popstate')) self.addEventListener('popstate', this.updatePopState)
@@ -97,6 +122,7 @@ export default class Events extends Shadow() {
   disconnectedCallback () {
     this.removeEventListener('request-list-events', this.requestListEventsListener)
     this.removeEventListener('request-list-filter-items', this.requestListFilterItemsEventsListener)
+    this.removeEventListener('request-list-reset', this.requestListResetEventsListener)
     /*
     this.removeEventListener('request-href-' + 'request-list-events', this.requestHrefEventListener)
     if (!this.hasAttribute('no-popstate')) self.removeEventListener('popstate', this.updatePopState)

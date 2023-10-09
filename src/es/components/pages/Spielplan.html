@@ -56,6 +56,10 @@
           align-items: flex-start;
         }
 
+        :host .filter-buttons .filter-button-hidden {
+          display: none;
+        }
+
         @media only screen and (min-width: 768px) {
           :host .filter-buttons {
             flex-direction: row;
@@ -165,8 +169,10 @@
 
         <a-steps-button 
           label="Filter Zurücksetzen" 
-          id="filter-clean" 
+          id="filter-clean"
+          class="filter-button-hidden"
           namespace="button-steps-spielplan-"
+          request-event-name="request-list-reset"
         >
         </a-steps-button>
 
