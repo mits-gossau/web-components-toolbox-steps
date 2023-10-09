@@ -1,93 +1,22 @@
 {
   "events": [
     {
-      "location": "Genève ",
-      "theater": "Comédie de Genève",
+      "location": "Schaffhausen",
+      "theater": "Stadttheater Schaffhausen ",
       "theaterInformationIcons": [
-        "/src/img/icons/icon-rollstuhlgaengig.svg",
-        "/src/img/icons/icon-hoerbenachteiligung.svg"
-      ],
-      "company": "Compagnie Sam·Hester (CH) ",
-      "companyDetailPageUrl": null,
-      "production": "Kantik",
-      "choreographer": "Perrine Valli",
-      "eventName": "CompagnieSam·Hester_0425_Genève",
-      "eventDate": "25.4.2024 20:0:0",
-      "soldOut": "False",
-      "presaleUrl": null,
-      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
-    },
-    {
-      "location": "St. Gallen ",
-      "theater": "Theater St. Gallen, Lokremise ",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ],
-      "company": "Cie. Arts Mouvementés for Families (CH)",
-      "companyDetailPageUrl": null,
-      "production": "Die Flüstertüten – Cabaret des Bauchredens",
-      "choreographer": "Yasmine Hugonnet",
-      "eventName": "Cie.ArtsM_Families_0428_St.Gallen",
-      "eventDate": "28.4.2024 14:0:0",
-      "soldOut": "False",
-      "presaleUrl": null,
-      "eventInformationIcons": [
-        "/src/img/icons/icon-uebertitel.svg",
-        "/src/img/icons/icon-familien.svg"
-      ]
-    },
-    {
-      "location": "Moutier ",
-      "theater": "Aula de Chantemerle",
-      "theaterInformationIcons": [
+        "/src/img/icons/icon-hoerbenachteiligung.svg",
         "/src/img/icons/icon-rollstuhlgaengig.svg"
       ],
       "company": "Anton Lachky Company (BEL)",
       "companyDetailPageUrl": "/programm/cie-arts-mouvementés",
       "production": "Die Anderen",
       "choreographer": "Anton Lachky",
-      "eventName": "AntonLachkyCompany_0428_Moutier",
-      "eventDate": "28.4.2024 0:0:0",
+      "eventName": "AntonLachkyCompany_0502_Schaffhausen",
+      "eventDate": "02.05.2023",
+      "eventTime": "19:30",
       "soldOut": "False",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-steps",
+      "presaleUrl": null,
       "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
-    },
-    {
-      "location": "St. Gallen ",
-      "theater": "Theater St. Gallen, Lokremise ",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ],
-      "company": "Cie. Arts Mouvementés for Families (CH)",
-      "companyDetailPageUrl": null,
-      "production": "Die Flüstertüten – Cabaret des Bauchredens",
-      "choreographer": "Yasmine Hugonnet",
-      "eventName": "Cie.ArtsM_Families_0429_St.Gallen",
-      "eventDate": "29.4.2024 10:0:0",
-      "soldOut": "False",
-      "presaleUrl": null,
-      "eventInformationIcons": [
-        "/src/img/icons/icon-familien.svg",
-        "/src/img/icons/icon-uebertitel.svg"
-      ]
-    },
-    {
-      "location": "Basel",
-      "theater": "Kaserne Basel",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ],
-      "company": "Cie. Arts Mouvementés (CH)",
-      "companyDetailPageUrl": null,
-      "production": "Les Porte-Voix – Cabaret Ventriloque",
-      "choreographer": "Yasmine Hugonnet",
-      "eventName": "Cie.ArtsMouvementés_0507_Basel",
-      "eventDate": "7.5.2024 0:0:0",
-      "soldOut": "False",
-      "presaleUrl": null,
-      "eventInformationIcons": [
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ]
     },
     {
       "location": "Biel/Bienne ",
@@ -101,7 +30,8 @@
       "production": "BLKDOG",
       "choreographer": "Botis Seva",
       "eventName": "FarFromTheNorm_0502_Biel",
-      "eventDate": "2.5.2023 20:0:0",
+      "eventDate": "02.05.2023",
+      "eventTime": "20:00",
       "soldOut": "False",
       "presaleUrl": null,
       "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
@@ -117,8 +47,26 @@
       "production": "An Accident ",
       "choreographer": "Marc Brew, Sidi Larbi Cherkaoui",
       "eventName": "MarcBrewCompany|Eastman_0504_Sierre",
-      "eventDate": "4.5.2023 19:0:0",
+      "eventDate": "04.05.2023",
+      "eventTime": "19:00",
       "soldOut": "True",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
+    },
+    {
+      "location": "Steckborn",
+      "theater": "Phönix Theater",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
+      ],
+      "company": "Anton Lachky Company (BEL)",
+      "companyDetailPageUrl": "/programm/cie-arts-mouvementés",
+      "production": "Die Anderen",
+      "choreographer": "Anton Lachky",
+      "eventName": "AntonLachkyCompany_0504_Steckborn",
+      "eventDate": "04.05.2023",
+      "eventTime": "19:30",
+      "soldOut": "False",
       "presaleUrl": null,
       "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
     },
@@ -133,7 +81,8 @@
       "production": "Les Porte-Voix – Cabaret Ventriloque",
       "choreographer": "Yasmine Hugonnet",
       "eventName": "Cie.ArtsMouvementés_0508_Basel",
-      "eventDate": "8.5.2023 0:0:0",
+      "eventDate": "08.05.2023",
+      "eventTime": "00:00",
       "soldOut": "False",
       "presaleUrl": null,
       "eventInformationIcons": [
@@ -151,7 +100,8 @@
       "production": "Die Flüstertüten – Cabaret des Bauchredens",
       "choreographer": "Yasmine Hugonnet",
       "eventName": "Cie.ArtsM_Families_0512_14:00_Luzern",
-      "eventDate": "12.5.2023 14:0:0",
+      "eventDate": "12.05.2023",
+      "eventTime": "14:00",
       "soldOut": "False",
       "presaleUrl": null,
       "eventInformationIcons": [
@@ -170,7 +120,733 @@
       "production": "Les Porte-Voix – Cabaret Ventriloque",
       "choreographer": "Yasmine Hugonnet",
       "eventName": "Cie.ArtsMouvementés_0514_Lugano",
-      "eventDate": "14.5.2023 20:30:0",
+      "eventDate": "14.05.2023",
+      "eventTime": "20:30",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
+    },
+    {
+      "location": "Baden",
+      "theater": "Kurtheater Baden ",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
+      ],
+      "company": "Winter Guests (NOR)",
+      "companyDetailPageUrl": null,
+      "production": "Story, story, die.",
+      "choreographer": "Alan Lucien Øyen ",
+      "eventName": "winterguests_0424_Baden",
+      "eventDate": "24.04.2024",
+      "eventTime": "19:30",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": null
+    },
+    {
+      "location": "Genève ",
+      "theater": "Comédie de Genève",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-rollstuhlgaengig.svg",
+        "/src/img/icons/icon-hoerbenachteiligung.svg"
+      ],
+      "company": "Compagnie Sam·Hester (CH) ",
+      "companyDetailPageUrl": null,
+      "production": "Kantik",
+      "choreographer": "Perrine Valli",
+      "eventName": "CompagnieSam·Hester_0425_Genève",
+      "eventDate": "25.04.2024",
+      "eventTime": "20:00",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
+    },
+    {
+      "location": "Zürich",
+      "theater": "Gessnerallee",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-rollstuhlgaengig.svg",
+        "/src/img/icons/icon-hoerbenachteiligung.svg"
+      ],
+      "company": "Mette Ingvartsen (DNK)",
+      "companyDetailPageUrl": null,
+      "production": "The Dancing Public",
+      "choreographer": "",
+      "eventName": "MetteIngvartsen_0426_Zürich",
+      "eventDate": "26.04.2024",
+      "eventTime": "20:00",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
+    },
+    {
+      "location": "Genève ",
+      "theater": "Comédie de Genève",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-rollstuhlgaengig.svg",
+        "/src/img/icons/icon-hoerbenachteiligung.svg"
+      ],
+      "company": "Compagnie Sam·Hester (CH) ",
+      "companyDetailPageUrl": null,
+      "production": "Kantik",
+      "choreographer": "Perrine Valli",
+      "eventName": "CompagnieSam·Hester_0426_Genève",
+      "eventDate": "26.04.2024",
+      "eventTime": "20:30",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
+    },
+    {
+      "location": "Genève ",
+      "theater": "Comédie de Genève",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-rollstuhlgaengig.svg",
+        "/src/img/icons/icon-hoerbenachteiligung.svg"
+      ],
+      "company": "Compagnie Sam·Hester (CH) ",
+      "companyDetailPageUrl": null,
+      "production": "Kantik",
+      "choreographer": "Perrine Valli",
+      "eventName": "CompagnieSam·Hester_0427_Genève",
+      "eventDate": "27.04.2024",
+      "eventTime": "19:30",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
+    },
+    {
+      "location": "Zürich",
+      "theater": "Gessnerallee",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-rollstuhlgaengig.svg",
+        "/src/img/icons/icon-hoerbenachteiligung.svg"
+      ],
+      "company": "Mette Ingvartsen (DNK)",
+      "companyDetailPageUrl": null,
+      "production": "The Dancing Public",
+      "choreographer": "",
+      "eventName": "MetteIngvartsen_0427_Zürich",
+      "eventDate": "27.04.2024",
+      "eventTime": "20:00",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
+    },
+    {
+      "location": "Moutier ",
+      "theater": "Aula de Chantemerle",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
+      ],
+      "company": "Anton Lachky Company (BEL)",
+      "companyDetailPageUrl": "/programm/cie-arts-mouvementés",
+      "production": "Die Anderen",
+      "choreographer": "Anton Lachky",
+      "eventName": "AntonLachkyCompany_0428_Moutier",
+      "eventDate": "28.04.2024",
+      "eventTime": "00:00",
+      "soldOut": "False",
+      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-steps",
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
+    },
+    {
+      "location": "St. Gallen ",
+      "theater": "Theater St. Gallen, Lokremise ",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
+      ],
+      "company": "Cie. Arts Mouvementés for Families (CH)",
+      "companyDetailPageUrl": null,
+      "production": "Die Flüstertüten – Cabaret des Bauchredens",
+      "choreographer": "Yasmine Hugonnet",
+      "eventName": "Cie.ArtsM_Families_0428_St.Gallen",
+      "eventDate": "28.04.2024",
+      "eventTime": "14:00",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": [
+        "/src/img/icons/icon-uebertitel.svg",
+        "/src/img/icons/icon-familien.svg"
+      ]
+    },
+    {
+      "location": "Genève ",
+      "theater": "Comédie de Genève",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-rollstuhlgaengig.svg",
+        "/src/img/icons/icon-hoerbenachteiligung.svg"
+      ],
+      "company": "Compagnie Sam·Hester (CH) ",
+      "companyDetailPageUrl": null,
+      "production": "Kantik",
+      "choreographer": "Perrine Valli",
+      "eventName": "CompagnieSam·Hester_0428_Genève",
+      "eventDate": "28.04.2024",
+      "eventTime": "15:30",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
+    },
+    {
+      "location": "Lugano",
+      "theater": "LAC Lugano Arte e Cultura",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-rollstuhlgaengig.svg",
+        "/src/img/icons/icon-hoerbenachteiligung.svg"
+      ],
+      "company": "Kidd Pivot (CAN)",
+      "companyDetailPageUrl": null,
+      "production": "New Work ",
+      "choreographer": "Crystal Pite, Jonathon Young",
+      "eventName": "KiddPivot_0428_Lugano",
+      "eventDate": "28.04.2024",
+      "eventTime": "18:00",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
+    },
+    {
+      "location": "Chur ",
+      "theater": "Theater Chur ",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
+      ],
+      "company": "Winter Guests (NOR)",
+      "companyDetailPageUrl": null,
+      "production": "Story, story, die.",
+      "choreographer": "Alan Lucien Øyen ",
+      "eventName": "winterguests_0429_Chur",
+      "eventDate": "29.04.2024",
+      "eventTime": "00:00",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
+    },
+    {
+      "location": "St. Gallen ",
+      "theater": "Theater St. Gallen, Lokremise ",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
+      ],
+      "company": "Cie. Arts Mouvementés for Families (CH)",
+      "companyDetailPageUrl": null,
+      "production": "Die Flüstertüten – Cabaret des Bauchredens",
+      "choreographer": "Yasmine Hugonnet",
+      "eventName": "Cie.ArtsM_Families_0429_St.Gallen",
+      "eventDate": "29.04.2024",
+      "eventTime": "10:00",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": [
+        "/src/img/icons/icon-familien.svg",
+        "/src/img/icons/icon-uebertitel.svg"
+      ]
+    },
+    {
+      "location": "Bern",
+      "theater": "Dampfzentrale Bern",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
+      ],
+      "company": "Mette Ingvartsen (DNK)",
+      "companyDetailPageUrl": null,
+      "production": "The Dancing Public",
+      "choreographer": "",
+      "eventName": "MetteIngvartsen_0502_Bern",
+      "eventDate": "02.05.2024",
+      "eventTime": "00:00",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
+    },
+    {
+      "location": "Zug",
+      "theater": "Theater Casino Zug ",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-rollstuhlgaengig.svg",
+        "/src/img/icons/icon-hoerbenachteiligung.svg"
+      ],
+      "company": "Winter Guests (NOR)",
+      "companyDetailPageUrl": null,
+      "production": "Story, story, die.",
+      "choreographer": "Alan Lucien Øyen ",
+      "eventName": "winterguests_0502_Zug",
+      "eventDate": "02.05.2024",
+      "eventTime": "00:00",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
+    },
+    {
+      "location": "Nyon",
+      "theater": "Usine à Gaz",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
+      ],
+      "company": "Compagnie Sam·Hester (CH) ",
+      "companyDetailPageUrl": null,
+      "production": "Kantik",
+      "choreographer": "Perrine Valli",
+      "eventName": "CompagnieSam·Hester_0503_Nyon",
+      "eventDate": "03.05.2024",
+      "eventTime": "00:00",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
+    },
+    {
+      "location": "Zürich",
+      "theater": "Theater 11",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
+      ],
+      "company": "Kidd Pivot (CAN)",
+      "companyDetailPageUrl": null,
+      "production": "New Work ",
+      "choreographer": "Crystal Pite, Jonathon Young",
+      "eventName": "KiddPivot_0503_Zürich",
+      "eventDate": "03.05.2024",
+      "eventTime": "20:00",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
+    },
+    {
+      "location": "Vevey ",
+      "theater": "Le Reflet",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-rollstuhlgaengig.svg",
+        "/src/img/icons/icon-hoerbenachteiligung.svg"
+      ],
+      "company": "Winter Guests (NOR)",
+      "companyDetailPageUrl": null,
+      "production": "Story, story, die.",
+      "choreographer": "Alan Lucien Øyen ",
+      "eventName": "winterguests_0504_Vevey",
+      "eventDate": "04.05.2024",
+      "eventTime": "00:00",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
+    },
+    {
+      "location": "Luzern",
+      "theater": "Luzerner Theater ",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
+      ],
+      "company": "Saburo Teshigawara, Rihoko Sato (JPN)",
+      "companyDetailPageUrl": null,
+      "production": "Tristan and Isolde ",
+      "choreographer": "Saburo Teshigawara",
+      "eventName": "SaburoTeshigawara,RihokoSato_0504_Luzern",
+      "eventDate": "04.05.2024",
+      "eventTime": "20:00",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
+    },
+    {
+      "location": "Biel/Bienne ",
+      "theater": "Nebia ",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-rollstuhlgaengig.svg",
+        "/src/img/icons/icon-hoerbenachteiligung.svg"
+      ],
+      "company": "Compagnie Sam·Hester (CH) ",
+      "companyDetailPageUrl": null,
+      "production": "Kantik",
+      "choreographer": "Perrine Valli",
+      "eventName": "CompagnieSam·Hester_0505_Biel",
+      "eventDate": "05.05.2024",
+      "eventTime": "00:00",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
+    },
+    {
+      "location": "Sierre ",
+      "theater": "Théâtre Les Halles",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
+      ],
+      "company": "Marc Brew Company | Eastman (GBR | BEL)",
+      "companyDetailPageUrl": null,
+      "production": "An Accident ",
+      "choreographer": "Marc Brew, Sidi Larbi Cherkaoui",
+      "eventName": "MarcBrewCompany|Eastman_0505_Sierre",
+      "eventDate": "05.05.2024",
+      "eventTime": "17:00",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
+    },
+    {
+      "location": "Fribourg",
+      "theater": "Equilibre",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-hoerbenachteiligung.svg",
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
+      ],
+      "company": "Far From The Norm (GBR)",
+      "companyDetailPageUrl": null,
+      "production": "BLKDOG",
+      "choreographer": "Botis Seva",
+      "eventName": "FarFromTheNorm_0505_Fribourg",
+      "eventDate": "05.05.2024",
+      "eventTime": "17:00",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
+    },
+    {
+      "location": "Basel",
+      "theater": "Kaserne Basel",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
+      ],
+      "company": "Cie. Arts Mouvementés (CH)",
+      "companyDetailPageUrl": null,
+      "production": "Les Porte-Voix – Cabaret Ventriloque",
+      "choreographer": "Yasmine Hugonnet",
+      "eventName": "Cie.ArtsMouvementés_0507_Basel",
+      "eventDate": "07.05.2024",
+      "eventTime": "00:00",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": [
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
+      ]
+    },
+    {
+      "location": "Bern",
+      "theater": "Dampfzentrale Bern",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
+      ],
+      "company": "Saburo Teshigawara, Rihoko Sato (JPN)",
+      "companyDetailPageUrl": null,
+      "production": "Tristan and Isolde ",
+      "choreographer": "Saburo Teshigawara",
+      "eventName": "SaburoTeshigawara,RihokoSato_0507_Bern",
+      "eventDate": "07.05.2024",
+      "eventTime": "00:00",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
+    },
+    {
+      "location": "Baden",
+      "theater": "Kurtheater Baden ",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
+      ],
+      "company": "Far From The Norm (GBR)",
+      "companyDetailPageUrl": null,
+      "production": "BLKDOG",
+      "choreographer": "Botis Seva",
+      "eventName": "FarFromTheNorm_0507_Baden",
+      "eventDate": "07.05.2024",
+      "eventTime": "19:30",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
+    },
+    {
+      "location": "Aarau ",
+      "theater": "Bühne Aarau, Alte Reithalle ",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
+      ],
+      "company": "Anton Lachky Company (BEL)",
+      "companyDetailPageUrl": "/programm/cie-arts-mouvementés",
+      "production": "Die Anderen",
+      "choreographer": "Anton Lachky",
+      "eventName": "AntonLachkyCompany_0508_Aarau",
+      "eventDate": "08.05.2024",
+      "eventTime": "19:00",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
+    },
+    {
+      "location": "Bern",
+      "theater": "Bühnen Bern, Vidmar 1",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
+      ],
+      "company": "Winter Guests (NOR)",
+      "companyDetailPageUrl": null,
+      "production": "Story, story, die.",
+      "choreographer": "Alan Lucien Øyen ",
+      "eventName": "winterguests_0509_Bern",
+      "eventDate": "09.05.2024",
+      "eventTime": "10:30",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
+    },
+    {
+      "location": "La Tour-de-Trême",
+      "theater": "Salle CO2",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-hoerbenachteiligung.svg",
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
+      ],
+      "company": "Marc Brew Company | Eastman (GBR | BEL)",
+      "companyDetailPageUrl": null,
+      "production": "An Accident ",
+      "choreographer": "Marc Brew, Sidi Larbi Cherkaoui",
+      "eventName": "MarcBrewCompany|Eastman_0510_LaTour-de-Trême",
+      "eventDate": "10.05.2024",
+      "eventTime": "20:00",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
+    },
+    {
+      "location": "Poschiavo",
+      "theater": "Palestre scuole comunali",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
+      ],
+      "company": "Anton Lachky Company (BEL)",
+      "companyDetailPageUrl": "/programm/cie-arts-mouvementés",
+      "production": "Die Anderen",
+      "choreographer": "Anton Lachky",
+      "eventName": "AntonLachkyCompany_0510_Poschiavo",
+      "eventDate": "10.05.2024",
+      "eventTime": "20:30",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
+    },
+    {
+      "location": "Poschiavo",
+      "theater": "Palestre scuole comunali",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
+      ],
+      "company": "Anton Lachky Company (BEL)",
+      "companyDetailPageUrl": "/programm/cie-arts-mouvementés",
+      "production": "Die Anderen",
+      "choreographer": "Anton Lachky",
+      "eventName": "AntonLachkyCompany_0510_Poschiavo",
+      "eventDate": "10.05.2024",
+      "eventTime": "20:30",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
+    },
+    {
+      "location": "Bern",
+      "theater": "Dampfzentrale Bern",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
+      ],
+      "company": "Far From The Norm (GBR)",
+      "companyDetailPageUrl": null,
+      "production": "BLKDOG",
+      "choreographer": "Botis Seva",
+      "eventName": "FarFromTheNorm_0511_Bern",
+      "eventDate": "11.05.2024",
+      "eventTime": "00:00",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
+    },
+    {
+      "location": "St. Gallen ",
+      "theater": "Theater St. Gallen, Grosse Bühne ",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
+      ],
+      "company": "Winter Guests (NOR)",
+      "companyDetailPageUrl": null,
+      "production": "Story, story, die.",
+      "choreographer": "Alan Lucien Øyen ",
+      "eventName": "winterguests_0511_St.Gallen",
+      "eventDate": "11.05.2024",
+      "eventTime": "00:00",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
+    },
+    {
+      "location": "Poschiavo",
+      "theater": "Palestre scuole comunali",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
+      ],
+      "company": "Anton Lachky Company (BEL)",
+      "companyDetailPageUrl": "/programm/cie-arts-mouvementés",
+      "production": "Die Anderen",
+      "choreographer": "Anton Lachky",
+      "eventName": "AntonLachkyCompany_0511_Poschivao",
+      "eventDate": "11.05.2024",
+      "eventTime": "17:00",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
+    },
+    {
+      "location": "Chiasso",
+      "theater": "Cinema Teatro ",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
+      ],
+      "company": "Saburo Teshigawara, Rihoko Sato (JPN)",
+      "companyDetailPageUrl": null,
+      "production": "Tristan and Isolde ",
+      "choreographer": "Saburo Teshigawara",
+      "eventName": "SaburoTeshigawara,RihokoSato_0512_Chiasso",
+      "eventDate": "12.05.2024",
+      "eventTime": "00:00",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
+    },
+    {
+      "location": "Luzern",
+      "theater": "Südpol ",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
+      ],
+      "company": "Cie. Arts Mouvementés for Families (CH)",
+      "companyDetailPageUrl": null,
+      "production": "Die Flüstertüten – Cabaret des Bauchredens",
+      "choreographer": "Yasmine Hugonnet",
+      "eventName": "Cie.ArtsM_Families_0512_Luzern",
+      "eventDate": "12.05.2024",
+      "eventTime": "10:00",
+      "soldOut": "True",
+      "presaleUrl": null,
+      "eventInformationIcons": [
+        "/src/img/icons/icon-rollstuhlgaengig.svg",
+        "/src/img/icons/icon-familien.svg",
+        "/src/img/icons/icon-hoerbenachteiligung.svg",
+        "/src/img/icons/icon-nachbesprechung.svg",
+        "/src/img/icons/icon-uebertitel.svg"
+      ]
+    },
+    {
+      "location": "Solothurn ",
+      "theater": "Stadttheater Solothurn ",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
+      ],
+      "company": "Anton Lachky Company (BEL)",
+      "companyDetailPageUrl": "/programm/cie-arts-mouvementés",
+      "production": "Die Anderen",
+      "choreographer": "Anton Lachky",
+      "eventName": "AntonLachkyCompany_0514_Solothurn",
+      "eventDate": "14.05.2024",
+      "eventTime": "19:30",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
+    },
+    {
+      "location": "Vernier ",
+      "theater": "Salle du Lignon",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
+      ],
+      "company": "Far From The Norm (GBR)",
+      "companyDetailPageUrl": null,
+      "production": "BLKDOG",
+      "choreographer": "Botis Seva",
+      "eventName": "FarFromTheNorm_0514_Vernier",
+      "eventDate": "14.05.2024",
+      "eventTime": "20:00",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
+    },
+    {
+      "location": "Basel",
+      "theater": "Kaserne Basel",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
+      ],
+      "company": "Marc Brew Company | Eastman (GBR | BEL)",
+      "companyDetailPageUrl": null,
+      "production": "An Accident ",
+      "choreographer": "Marc Brew, Sidi Larbi Cherkaoui",
+      "eventName": "MarcBrewCompany|Eastman_0516_Basel",
+      "eventDate": "16.05.2024",
+      "eventTime": "00:00",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
+    },
+    {
+      "location": "Basel",
+      "theater": "Theater Basel Schauspielhaus",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-hoerbenachteiligung.svg",
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
+      ],
+      "company": "Saburo Teshigawara, Rihoko Sato (JPN)",
+      "companyDetailPageUrl": null,
+      "production": "Tristan and Isolde ",
+      "choreographer": "Saburo Teshigawara",
+      "eventName": "SaburoTeshigawara,RihokoSato_0516_Basel",
+      "eventDate": "16.05.2024",
+      "eventTime": "00:00",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
+    },
+    {
+      "location": "Neuchâtel ",
+      "theater": "Théâtre du Passage",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-hoerbenachteiligung.svg",
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
+      ],
+      "company": "Winter Guests (NOR)",
+      "companyDetailPageUrl": null,
+      "production": "Story, story, die.",
+      "choreographer": "Alan Lucien Øyen ",
+      "eventName": "winterguests_0516_Neuchâtel",
+      "eventDate": "16.05.2024",
+      "eventTime": "20:00",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
+    },
+    {
+      "location": "Bellinzona ",
+      "theater": "Teatro Sociale ",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
+      ],
+      "company": "Anton Lachky Company (BEL)",
+      "companyDetailPageUrl": "/programm/cie-arts-mouvementés",
+      "production": "Die Anderen",
+      "choreographer": "Anton Lachky",
+      "eventName": "AntonLachkyCompany_0516_Bellinzona",
+      "eventDate": "16.05.2024",
+      "eventTime": "20:45",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
+    },
+    {
+      "location": "Basel",
+      "theater": "Kaserne Basel",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
+      ],
+      "company": "Marc Brew Company | Eastman (GBR | BEL)",
+      "companyDetailPageUrl": null,
+      "production": "An Accident ",
+      "choreographer": "Marc Brew, Sidi Larbi Cherkaoui",
+      "eventName": "MarcBrewCompany|Eastman_0517_Basel",
+      "eventDate": "17.05.2024",
+      "eventTime": "00:00",
       "soldOut": "False",
       "presaleUrl": null,
       "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
@@ -186,7 +862,8 @@
       "production": "Die Flüstertüten – Cabaret des Bauchredens",
       "choreographer": "Yasmine Hugonnet",
       "eventName": "Cie.ArtsM_Families_0517_Zürich",
-      "eventDate": "17.5.2024 17:30:0",
+      "eventDate": "17.05.2024",
+      "eventTime": "17:30",
       "soldOut": "False",
       "presaleUrl": null,
       "eventInformationIcons": [
@@ -204,120 +881,8 @@
       "production": "Die Flüstertüten – Cabaret des Bauchredens",
       "choreographer": "Yasmine Hugonnet",
       "eventName": "Cie.ArtsM_Families_0518_Zürich",
-      "eventDate": "18.5.2024 14:0:0",
-      "soldOut": "False",
-      "presaleUrl": null,
-      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
-    },
-    {
-      "location": "Schaffhausen",
-      "theater": "Stadttheater Schaffhausen ",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ],
-      "company": "Anton Lachky Company (BEL)",
-      "companyDetailPageUrl": "/programm/cie-arts-mouvementés",
-      "production": "Die Anderen",
-      "choreographer": "Anton Lachky",
-      "eventName": "AntonLachkyCompany_0502_Schaffhausen",
-      "eventDate": "2.5.2023 19:30:0",
-      "soldOut": "False",
-      "presaleUrl": null,
-      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
-    },
-    {
-      "location": "Steckborn",
-      "theater": "Phönix Theater",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ],
-      "company": "Anton Lachky Company (BEL)",
-      "companyDetailPageUrl": "/programm/cie-arts-mouvementés",
-      "production": "Die Anderen",
-      "choreographer": "Anton Lachky",
-      "eventName": "AntonLachkyCompany_0504_Steckborn",
-      "eventDate": "4.5.2023 19:30:0",
-      "soldOut": "False",
-      "presaleUrl": null,
-      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
-    },
-    {
-      "location": "Aarau ",
-      "theater": "Bühne Aarau, Alte Reithalle ",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ],
-      "company": "Anton Lachky Company (BEL)",
-      "companyDetailPageUrl": "/programm/cie-arts-mouvementés",
-      "production": "Die Anderen",
-      "choreographer": "Anton Lachky",
-      "eventName": "AntonLachkyCompany_0508_Aarau",
-      "eventDate": "8.5.2024 19:0:0",
-      "soldOut": "False",
-      "presaleUrl": null,
-      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
-    },
-    {
-      "location": "Poschiavo",
-      "theater": "Palestre scuole comunali",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ],
-      "company": "Anton Lachky Company (BEL)",
-      "companyDetailPageUrl": "/programm/cie-arts-mouvementés",
-      "production": "Die Anderen",
-      "choreographer": "Anton Lachky",
-      "eventName": "AntonLachkyCompany_0510_Poschiavo",
-      "eventDate": "10.5.2024 20:30:0",
-      "soldOut": "False",
-      "presaleUrl": null,
-      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
-    },
-    {
-      "location": "Poschiavo",
-      "theater": "Palestre scuole comunali",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ],
-      "company": "Anton Lachky Company (BEL)",
-      "companyDetailPageUrl": "/programm/cie-arts-mouvementés",
-      "production": "Die Anderen",
-      "choreographer": "Anton Lachky",
-      "eventName": "AntonLachkyCompany_0511_Poschivao",
-      "eventDate": "11.5.2024 17:0:0",
-      "soldOut": "False",
-      "presaleUrl": null,
-      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
-    },
-    {
-      "location": "Solothurn ",
-      "theater": "Stadttheater Solothurn ",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ],
-      "company": "Anton Lachky Company (BEL)",
-      "companyDetailPageUrl": "/programm/cie-arts-mouvementés",
-      "production": "Die Anderen",
-      "choreographer": "Anton Lachky",
-      "eventName": "AntonLachkyCompany_0514_Solothurn",
-      "eventDate": "14.5.2024 19:30:0",
-      "soldOut": "False",
-      "presaleUrl": null,
-      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
-    },
-    {
-      "location": "Bellinzona ",
-      "theater": "Teatro Sociale ",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ],
-      "company": "Anton Lachky Company (BEL)",
-      "companyDetailPageUrl": "/programm/cie-arts-mouvementés",
-      "production": "Die Anderen",
-      "choreographer": "Anton Lachky",
-      "eventName": "AntonLachkyCompany_0516_Bellinzona",
-      "eventDate": "16.5.2024 20:45:0",
+      "eventDate": "18.05.2024",
+      "eventTime": "14:00",
       "soldOut": "False",
       "presaleUrl": null,
       "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
@@ -333,7 +898,8 @@
       "production": "Die Anderen",
       "choreographer": "Anton Lachky",
       "eventName": "AntonLachkyCompany_0518_Vals",
-      "eventDate": "18.5.2024 20:0:0",
+      "eventDate": "18.05.2024",
+      "eventTime": "20:00",
       "soldOut": "False",
       "presaleUrl": null,
       "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
@@ -349,509 +915,11 @@
       "production": "Die Anderen",
       "choreographer": "Anton Lachky",
       "eventName": "AntonLachkyCompany_0519_St.Gallen",
-      "eventDate": "19.5.2024 20:0:0",
+      "eventDate": "19.05.2024",
+      "eventTime": "20:00",
       "soldOut": "False",
       "presaleUrl": null,
       "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
-    },
-    {
-      "location": "Genève ",
-      "theater": "Comédie de Genève",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-rollstuhlgaengig.svg",
-        "/src/img/icons/icon-hoerbenachteiligung.svg"
-      ],
-      "company": "Compagnie Sam·Hester (CH) ",
-      "companyDetailPageUrl": null,
-      "production": "Kantik",
-      "choreographer": "Perrine Valli",
-      "eventName": "CompagnieSam·Hester_0427_Genève",
-      "eventDate": "27.4.2024 19:30:0",
-      "soldOut": "False",
-      "presaleUrl": null,
-      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
-    },
-    {
-      "location": "Genève ",
-      "theater": "Comédie de Genève",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-rollstuhlgaengig.svg",
-        "/src/img/icons/icon-hoerbenachteiligung.svg"
-      ],
-      "company": "Compagnie Sam·Hester (CH) ",
-      "companyDetailPageUrl": null,
-      "production": "Kantik",
-      "choreographer": "Perrine Valli",
-      "eventName": "CompagnieSam·Hester_0428_Genève",
-      "eventDate": "28.4.2024 15:30:0",
-      "soldOut": "False",
-      "presaleUrl": null,
-      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
-    },
-    {
-      "location": "Nyon",
-      "theater": "Usine à Gaz",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ],
-      "company": "Compagnie Sam·Hester (CH) ",
-      "companyDetailPageUrl": null,
-      "production": "Kantik",
-      "choreographer": "Perrine Valli",
-      "eventName": "CompagnieSam·Hester_0503_Nyon",
-      "eventDate": "3.5.2024 0:0:0",
-      "soldOut": "False",
-      "presaleUrl": null,
-      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
-    },
-    {
-      "location": "Biel/Bienne ",
-      "theater": "Nebia ",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-rollstuhlgaengig.svg",
-        "/src/img/icons/icon-hoerbenachteiligung.svg"
-      ],
-      "company": "Compagnie Sam·Hester (CH) ",
-      "companyDetailPageUrl": null,
-      "production": "Kantik",
-      "choreographer": "Perrine Valli",
-      "eventName": "CompagnieSam·Hester_0505_Biel",
-      "eventDate": "5.5.2024 0:0:0",
-      "soldOut": "False",
-      "presaleUrl": null,
-      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
-    },
-    {
-      "location": "Fribourg",
-      "theater": "Equilibre",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ],
-      "company": "Far From The Norm (GBR)",
-      "companyDetailPageUrl": null,
-      "production": "BLKDOG",
-      "choreographer": "Botis Seva",
-      "eventName": "FarFromTheNorm_0505_Fribourg",
-      "eventDate": "5.5.2024 17:0:0",
-      "soldOut": "False",
-      "presaleUrl": null,
-      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
-    },
-    {
-      "location": "Baden",
-      "theater": "Kurtheater Baden ",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ],
-      "company": "Far From The Norm (GBR)",
-      "companyDetailPageUrl": null,
-      "production": "BLKDOG",
-      "choreographer": "Botis Seva",
-      "eventName": "FarFromTheNorm_0507_Baden",
-      "eventDate": "7.5.2024 19:30:0",
-      "soldOut": "False",
-      "presaleUrl": null,
-      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
-    },
-    {
-      "location": "Bern",
-      "theater": "Dampfzentrale Bern",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ],
-      "company": "Far From The Norm (GBR)",
-      "companyDetailPageUrl": null,
-      "production": "BLKDOG",
-      "choreographer": "Botis Seva",
-      "eventName": "FarFromTheNorm_0511_Bern",
-      "eventDate": "11.5.2024 0:0:0",
-      "soldOut": "False",
-      "presaleUrl": null,
-      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
-    },
-    {
-      "location": "Vernier ",
-      "theater": "Salle du Lignon",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ],
-      "company": "Far From The Norm (GBR)",
-      "companyDetailPageUrl": null,
-      "production": "BLKDOG",
-      "choreographer": "Botis Seva",
-      "eventName": "FarFromTheNorm_0514_Vernier",
-      "eventDate": "14.5.2024 20:0:0",
-      "soldOut": "False",
-      "presaleUrl": null,
-      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
-    },
-    {
-      "location": "Lugano",
-      "theater": "LAC Lugano Arte e Cultura",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-rollstuhlgaengig.svg",
-        "/src/img/icons/icon-hoerbenachteiligung.svg"
-      ],
-      "company": "Kidd Pivot (CAN)",
-      "companyDetailPageUrl": null,
-      "production": "New Work ",
-      "choreographer": "Crystal Pite, Jonathon Young",
-      "eventName": "KiddPivot_0428_Lugano",
-      "eventDate": "28.4.2024 18:0:0",
-      "soldOut": "False",
-      "presaleUrl": null,
-      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
-    },
-    {
-      "location": "Zürich",
-      "theater": "Theater 11",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ],
-      "company": "Kidd Pivot (CAN)",
-      "companyDetailPageUrl": null,
-      "production": "New Work ",
-      "choreographer": "Crystal Pite, Jonathon Young",
-      "eventName": "KiddPivot_0503_Zürich",
-      "eventDate": "3.5.2024 20:0:0",
-      "soldOut": "False",
-      "presaleUrl": null,
-      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
-    },
-    {
-      "location": "Sierre ",
-      "theater": "Théâtre Les Halles",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ],
-      "company": "Marc Brew Company | Eastman (GBR | BEL)",
-      "companyDetailPageUrl": null,
-      "production": "An Accident ",
-      "choreographer": "Marc Brew, Sidi Larbi Cherkaoui",
-      "eventName": "MarcBrewCompany|Eastman_0505_Sierre",
-      "eventDate": "5.5.2024 17:0:0",
-      "soldOut": "False",
-      "presaleUrl": null,
-      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
-    },
-    {
-      "location": "La Tour-de-Trême",
-      "theater": "Salle CO2",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ],
-      "company": "Marc Brew Company | Eastman (GBR | BEL)",
-      "companyDetailPageUrl": null,
-      "production": "An Accident ",
-      "choreographer": "Marc Brew, Sidi Larbi Cherkaoui",
-      "eventName": "MarcBrewCompany|Eastman_0510_LaTour-de-Trême",
-      "eventDate": "10.5.2024 20:0:0",
-      "soldOut": "False",
-      "presaleUrl": null,
-      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
-    },
-    {
-      "location": "Basel",
-      "theater": "Kaserne Basel",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ],
-      "company": "Marc Brew Company | Eastman (GBR | BEL)",
-      "companyDetailPageUrl": null,
-      "production": "An Accident ",
-      "choreographer": "Marc Brew, Sidi Larbi Cherkaoui",
-      "eventName": "MarcBrewCompany|Eastman_0516_Basel",
-      "eventDate": "16.5.2024 0:0:0",
-      "soldOut": "False",
-      "presaleUrl": null,
-      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
-    },
-    {
-      "location": "Basel",
-      "theater": "Kaserne Basel",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ],
-      "company": "Marc Brew Company | Eastman (GBR | BEL)",
-      "companyDetailPageUrl": null,
-      "production": "An Accident ",
-      "choreographer": "Marc Brew, Sidi Larbi Cherkaoui",
-      "eventName": "MarcBrewCompany|Eastman_0517_Basel",
-      "eventDate": "17.5.2024 0:0:0",
-      "soldOut": "False",
-      "presaleUrl": null,
-      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
-    },
-    {
-      "location": "Zürich",
-      "theater": "Gessnerallee",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-rollstuhlgaengig.svg",
-        "/src/img/icons/icon-hoerbenachteiligung.svg"
-      ],
-      "company": "Mette Ingvartsen (DNK)",
-      "companyDetailPageUrl": null,
-      "production": "The Dancing Public",
-      "choreographer": "",
-      "eventName": "MetteIngvartsen_0426_Zürich",
-      "eventDate": "26.4.2024 20:0:0",
-      "soldOut": "False",
-      "presaleUrl": null,
-      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
-    },
-    {
-      "location": "Zürich",
-      "theater": "Gessnerallee",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-rollstuhlgaengig.svg",
-        "/src/img/icons/icon-hoerbenachteiligung.svg"
-      ],
-      "company": "Mette Ingvartsen (DNK)",
-      "companyDetailPageUrl": null,
-      "production": "The Dancing Public",
-      "choreographer": "",
-      "eventName": "MetteIngvartsen_0427_Zürich",
-      "eventDate": "27.4.2024 20:0:0",
-      "soldOut": "False",
-      "presaleUrl": null,
-      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
-    },
-    {
-      "location": "Bern",
-      "theater": "Dampfzentrale Bern",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ],
-      "company": "Mette Ingvartsen (DNK)",
-      "companyDetailPageUrl": null,
-      "production": "The Dancing Public",
-      "choreographer": "",
-      "eventName": "MetteIngvartsen_0502_Bern",
-      "eventDate": "2.5.2024 0:0:0",
-      "soldOut": "False",
-      "presaleUrl": null,
-      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
-    },
-    {
-      "location": "Luzern",
-      "theater": "Luzerner Theater ",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ],
-      "company": "Saburo Teshigawara, Rihoko Sato (JPN)",
-      "companyDetailPageUrl": null,
-      "production": "Tristan and Isolde ",
-      "choreographer": "Saburo Teshigawara",
-      "eventName": "SaburoTeshigawara,RihokoSato_0504_Luzern",
-      "eventDate": "4.5.2024 20:0:0",
-      "soldOut": "False",
-      "presaleUrl": null,
-      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
-    },
-    {
-      "location": "Bern",
-      "theater": "Dampfzentrale Bern",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ],
-      "company": "Saburo Teshigawara, Rihoko Sato (JPN)",
-      "companyDetailPageUrl": null,
-      "production": "Tristan and Isolde ",
-      "choreographer": "Saburo Teshigawara",
-      "eventName": "SaburoTeshigawara,RihokoSato_0507_Bern",
-      "eventDate": "7.5.2024 0:0:0",
-      "soldOut": "False",
-      "presaleUrl": null,
-      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
-    },
-    {
-      "location": "Chiasso",
-      "theater": "Cinema Teatro ",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ],
-      "company": "Saburo Teshigawara, Rihoko Sato (JPN)",
-      "companyDetailPageUrl": null,
-      "production": "Tristan and Isolde ",
-      "choreographer": "Saburo Teshigawara",
-      "eventName": "SaburoTeshigawara,RihokoSato_0512_Chiasso",
-      "eventDate": "12.5.2024 0:0:0",
-      "soldOut": "False",
-      "presaleUrl": null,
-      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
-    },
-    {
-      "location": "Basel",
-      "theater": "Theater Basel Schauspielhaus",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ],
-      "company": "Saburo Teshigawara, Rihoko Sato (JPN)",
-      "companyDetailPageUrl": null,
-      "production": "Tristan and Isolde ",
-      "choreographer": "Saburo Teshigawara",
-      "eventName": "SaburoTeshigawara,RihokoSato_0516_Basel",
-      "eventDate": "16.5.2024 0:0:0",
-      "soldOut": "False",
-      "presaleUrl": null,
-      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
-    },
-    {
-      "location": "Baden",
-      "theater": "Kurtheater Baden ",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ],
-      "company": "Winter Guests (NOR)",
-      "companyDetailPageUrl": null,
-      "production": "Story, story, die.",
-      "choreographer": "Alan Lucien Øyen ",
-      "eventName": "winterguests_0424_Baden",
-      "eventDate": "24.4.2024 19:30:0",
-      "soldOut": "False",
-      "presaleUrl": null,
-      "eventInformationIcons": null
-    },
-    {
-      "location": "Chur ",
-      "theater": "Theater Chur ",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ],
-      "company": "Winter Guests (NOR)",
-      "companyDetailPageUrl": null,
-      "production": "Story, story, die.",
-      "choreographer": "Alan Lucien Øyen ",
-      "eventName": "winterguests_0429_Chur",
-      "eventDate": "29.4.2024 0:0:0",
-      "soldOut": "False",
-      "presaleUrl": null,
-      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
-    },
-    {
-      "location": "Zug",
-      "theater": "Theater Casino Zug ",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-rollstuhlgaengig.svg",
-        "/src/img/icons/icon-hoerbenachteiligung.svg"
-      ],
-      "company": "Winter Guests (NOR)",
-      "companyDetailPageUrl": null,
-      "production": "Story, story, die.",
-      "choreographer": "Alan Lucien Øyen ",
-      "eventName": "winterguests_0502_Zug",
-      "eventDate": "2.5.2024 0:0:0",
-      "soldOut": "False",
-      "presaleUrl": null,
-      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
-    },
-    {
-      "location": "Vevey ",
-      "theater": "Le Reflet",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-rollstuhlgaengig.svg",
-        "/src/img/icons/icon-hoerbenachteiligung.svg"
-      ],
-      "company": "Winter Guests (NOR)",
-      "companyDetailPageUrl": null,
-      "production": "Story, story, die.",
-      "choreographer": "Alan Lucien Øyen ",
-      "eventName": "winterguests_0504_Vevey",
-      "eventDate": "4.5.2024 0:0:0",
-      "soldOut": "False",
-      "presaleUrl": null,
-      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
-    },
-    {
-      "location": "Bern",
-      "theater": "Bühnen Bern, Vidmar 1",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ],
-      "company": "Winter Guests (NOR)",
-      "companyDetailPageUrl": null,
-      "production": "Story, story, die.",
-      "choreographer": "Alan Lucien Øyen ",
-      "eventName": "winterguests_0509_Bern",
-      "eventDate": "9.5.2024 0:0:0",
-      "soldOut": "False",
-      "presaleUrl": null,
-      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
-    },
-    {
-      "location": "St. Gallen ",
-      "theater": "Theater St. Gallen, Grosse Bühne ",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ],
-      "company": "Winter Guests (NOR)",
-      "companyDetailPageUrl": null,
-      "production": "Story, story, die.",
-      "choreographer": "Alan Lucien Øyen ",
-      "eventName": "winterguests_0511_St.Gallen",
-      "eventDate": "11.5.2024 0:0:0",
-      "soldOut": "False",
-      "presaleUrl": null,
-      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
-    },
-    {
-      "location": "Neuchâtel ",
-      "theater": "Théâtre du Passage",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ],
-      "company": "Winter Guests (NOR)",
-      "companyDetailPageUrl": null,
-      "production": "Story, story, die.",
-      "choreographer": "Alan Lucien Øyen ",
-      "eventName": "winterguests_0516_Neuchâtel",
-      "eventDate": "16.5.2024 20:0:0",
-      "soldOut": "False",
-      "presaleUrl": null,
-      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
-    },
-    {
-      "location": "Genève ",
-      "theater": "Comédie de Genève",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-rollstuhlgaengig.svg",
-        "/src/img/icons/icon-hoerbenachteiligung.svg"
-      ],
-      "company": "Compagnie Sam·Hester (CH) ",
-      "companyDetailPageUrl": null,
-      "production": "Kantik",
-      "choreographer": "Perrine Valli",
-      "eventName": "CompagnieSam·Hester_0426_Genève",
-      "eventDate": "26.4.2024 20:30:0",
-      "soldOut": "False",
-      "presaleUrl": null,
-      "eventInformationIcons": ["/src/img/icons/icon-familien.svg"]
-    },
-    {
-      "location": "Luzern",
-      "theater": "Südpol ",
-      "theaterInformationIcons": [
-        "/src/img/icons/icon-rollstuhlgaengig.svg"
-      ],
-      "company": "Cie. Arts Mouvementés for Families (CH)",
-      "companyDetailPageUrl": null,
-      "production": "Die Flüstertüten – Cabaret des Bauchredens",
-      "choreographer": "Yasmine Hugonnet",
-      "eventName": "Cie.ArtsM_Families_0512_Luzern",
-      "eventDate": "12.5.2024 10:0:0",
-      "soldOut": "True",
-      "presaleUrl": null,
-      "eventInformationIcons": [
-        "/src/img/icons/icon-rollstuhlgaengig.svg",
-        "/src/img/icons/icon-familien.svg",
-        "/src/img/icons/icon-hoerbenachteiligung.svg",
-        "/src/img/icons/icon-nachbesprechung.svg",
-        "/src/img/icons/icon-uebertitel.svg"
-      ]
     }
   ],
   "translations": {
