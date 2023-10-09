@@ -23,7 +23,8 @@ export default class EventCard extends Shadow() {
      * @property {string} choreographer - The choreographer of the event.
      * @property {string} company - The company associated with the event.
      * @property {string} companyDetailPageUrl - The URL of the company's detail page.
-     * @property {string} eventDate - The date and time of the event.
+     * @property {string} eventDate - The date of the event.
+     * @property {string} eventTime - The time of the event.
      * @property {string[]} eventInformationIcons - An array of URLs representing event information icons.
      * @property {string} location - The location of the event.
      * @property {string} presaleUrl - The URL for purchasing tickets in advance.
@@ -40,6 +41,7 @@ export default class EventCard extends Shadow() {
       company: '',
       companyDetailPageUrl: '',
       eventDate: '',
+      eventTime: '',
       eventInformationIcons: [],
       location: '',
       presaleUrl: '',
@@ -61,6 +63,7 @@ export default class EventCard extends Shadow() {
       company: this.getAttribute('company'),
       companyDetailPageUrl: this.getAttribute('companyDetailPageUrl'),
       eventDate: this.getAttribute('eventDate'),
+      eventTime: this.getAttribute('eventTime'),
       eventInformationIcons: JSON.parse(this.getAttribute('eventInformationIcons')),
       location: this.getAttribute('location'),
       presaleUrl: this.getAttribute('presaleUrl'),
@@ -195,27 +198,18 @@ export default class EventCard extends Shadow() {
   }
 
   renderHTML () {
-    // date and time
+    // parse date and time to matching format
     const currentDate = new Date()
-    const parts = this.event.eventDate.split(' ')
-    const partDate = parts[0].split('.')
-    const partTime = parts[1].split(':')
+    const partDate = this.event.eventDate.split('.')
+    const partTime = this.event.eventTime.split(':')
     const formattedDate = `${partDate[2]}-${('0' + partDate[1]).slice(-2)}-${('0' + partDate[0]).slice(-2)}T${('0' + partTime[0]).slice(-2)}:${('0' + partTime[1]).slice(-2)}`
     const parsedDate = new Date(formattedDate)
 
-    const dateString = this.event.eventDate
-    const dateParts = dateString.split('.')
-    const timeParts = dateParts[2].split(' ')
-    const day = parseInt(dateParts[0])
-    const month = parseInt(dateParts[1]) - 1
-    const year = parseInt(timeParts[0])
-    const eventTime = timeParts[1]
-    const [hours, minutes, seconds] = eventTime.split(':').map(Number)
-    const eventTimestamp = new Date(year, month, day, hours, minutes, seconds)
-
-    const weekDay = eventTimestamp.toLocaleDateString('de-CH', { weekday: 'long' })
-    const dateShort = eventTimestamp.toLocaleDateString('de-CH', { day: 'numeric', month: 'numeric' })
-    const time = eventTimestamp.toLocaleTimeString('de-CH', { hour: '2-digit', minute: '2-digit' })
+    // get weekday name by date
+    const date = new Date(parseInt(partDate[2]), parseInt(partDate[1]), parseInt(partDate[0]));
+    const weekday = date.toLocaleDateString('de-DE', {
+      weekday: 'long'
+    })
 
     // icons
     const generateIconHTML = (iconsArray) => {
@@ -242,7 +236,7 @@ export default class EventCard extends Shadow() {
     const theaterIconsHTML = theaterIcons ? `<span class="legend-icons">${theaterIcons}</span>` : ``
 
     const eventInfoHtml = /* html */ `
-      <div class="event-info" >
+      <div class="event-info">
         <p>
           ${this.event.company
             ? `<strong>${this.event.company}</strong><br />`
@@ -255,7 +249,7 @@ export default class EventCard extends Shadow() {
           <span>${this.event.theater}</span>
         </p>
         <p>
-          ${time} ${this.getAttribute('textTimeSuffix')}<br />
+          ${this.event.eventTime}<br />
           ${eventIconsHTML}
           ${theaterIconsHTML}
         </p>
@@ -269,7 +263,7 @@ export default class EventCard extends Shadow() {
     this.html = /* html */ `
       <div class="${this.event.soldOut === 'True' || parsedDate < currentDate ? 'event-card event-grey-out' : 'event-card'}">
         <div class="event-date">
-          <p>${weekDay}<br /><span>${dateShort}</span></p>
+          <p>${weekday}<br /><span>${this.event.eventDate.slice(0, -4)}</span></p>
         </div>
         ${eventInfoHtml}
       </div>

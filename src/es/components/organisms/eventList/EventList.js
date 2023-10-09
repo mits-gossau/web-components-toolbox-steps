@@ -46,11 +46,6 @@ export default class EventList extends Shadow() {
 
     this.eventsLoaded = false
     this.translationsLoaded = false
-
-    this.selectListener = (event) => {
-      // event.preventDefault()
-      // console.log(event, event.detail)
-    }
   }
 
   connectedCallback () {
@@ -124,7 +119,7 @@ export default class EventList extends Shadow() {
     let expiredEvents = []
 
     data.forEach((event) => {
-      const parsedDate = this.parseDate(event.eventDate);
+      const parsedDate = this.parseDate(event.eventDate, event.eventTime);
 
       if (parsedDate > currentDate) {
         activeEvents.push(event)
@@ -134,7 +129,7 @@ export default class EventList extends Shadow() {
     })
 
     const activeEventHtml = this.collectMarkup(activeEvents, translations)
-    
+
     this.headingHtml = /* html */ `
       <h2 class="heading heading--h2 heading--expired">${this.expiredTitle}</h2>
     `
@@ -171,6 +166,7 @@ export default class EventList extends Shadow() {
         company,
         companyDetailPageUrl,
         eventDate,
+        eventTime,
         eventInformationIcons,
         location,
         presaleUrl,
@@ -187,6 +183,7 @@ export default class EventList extends Shadow() {
         company="${company}"
         companyDetailPageUrl="${companyDetailPageUrl}"
         eventDate="${eventDate}"
+        eventTime="${eventTime}"
         eventInformationIcons='${eventIcons}'
         location="${location}"
         presaleUrl="${presaleUrl}"
@@ -204,51 +201,13 @@ export default class EventList extends Shadow() {
   }
 
   /**
-   * Filter list expired only or active events
-   * @param {*} events 
-   * @returns filtered list by expired state
-   */
-  handleExpiredState(events) {
-    const currentDate = new Date()
-
-    if (this.expiredList) {
-      let expiredEvents = []
-      events.forEach((event) => {
-        const parsedDate = this.parseDate(event.eventDate);
-
-        if (parsedDate < currentDate) {
-          expiredEvents.push(event)
-        }
-      })
-
-      events = expiredEvents
-
-      return expiredEvents
-    } else {
-      let activeEvents = []
-      events.forEach((event) => {
-        const parsedDate = this.parseDate(event.eventDate);
-
-        if (parsedDate >= currentDate) {
-          activeEvents.push(event)
-        }
-      })
-
-      events = activeEvents
-
-      return activeEvents
-    }
-  }
-
-  /**
    * Parse date format to be able to compare
    * @param {*} date 
    * @returns parsed date
    */
-  parseDate(date) {
-    const parts = date.split(' ')
-    const partDate = parts[0].split('.')
-    const partTime = parts[1].split(':')
+  parseDate(date, time) {
+    const partDate = date.split('.')
+    const partTime = time.split(':')
     const formattedDate = `${partDate[2]}-${('0' + partDate[1]).slice(-2)}-${('0' + partDate[0]).slice(-2)}T${('0' + partTime[0]).slice(-2)}:${('0' + partTime[1]).slice(-2)}`
     const parsedDate = new Date(formattedDate)
 
