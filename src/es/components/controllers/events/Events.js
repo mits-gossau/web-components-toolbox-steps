@@ -7,6 +7,49 @@
 /* global history */
 /* global self */
 
+/** @typedef {{
+  choreographer:string
+  company: string,
+  companyDetailPageUrl: string | null,
+  eventDate: string
+  eventInformationIcons: string | null,
+  eventName: string,
+  location: string,
+  presaleUrl: string | null,
+  production: string,
+  soldOut: string,
+  theater: string,
+  theaterInformationIcons: string[]
+}} Event */
+
+/** @typedef {{
+  events: Event[],
+  translations: Translations
+}} ListEvents */
+
+/** @typedef {{
+  buttonTickets: string,
+  linkDetails: string,
+  soldOut: string,
+  timeSuffix: string,
+}} Translations */
+
+/** @typedef {
+  {
+    items: Event[] | string[],
+    filterType: 'company' | 'location'
+  } | null
+} ListFilterItems */
+
+/** @typedef {{
+  companies: string[],
+  events: Event[],
+  locations: string[],
+  max: string,
+  min: string,
+  translations: Translations
+}} All */
+
 import { Shadow } from '../../web-components-toolbox/src/es/components/prototypes/Shadow.js'
 
 /**
@@ -54,18 +97,23 @@ export default class Events extends Shadow() {
     this.requestListFilterItemsEventsListener = event => {
       this.dispatchEvent(new CustomEvent('list-filter-items', {
         detail: {
-          fetch: this.fetch.then(result => event.detail.isActive
-            ? event.detail.tags.includes('companies')
-              ? {
-                items: result.companies,
-                filterType: 'company'
-              }
-              : {
-                items: result.locations,
-                filterType: 'location'
-              }
-            : []
-          )
+          fetch: this.fetch.then(
+            /**
+             * @param {All} result
+             * @return {ListFilterItems}
+             */
+            result => event.detail.isActive
+              ? event.detail.tags.includes('companies')
+                ? {
+                  items: result.companies,
+                  filterType: 'company'
+                }
+                : {
+                  items: result.locations,
+                  filterType: 'location'
+                }
+              : null
+            )
         },
         bubbles: true,
         cancelable: true,
@@ -75,7 +123,7 @@ export default class Events extends Shadow() {
 
     /**
      * Reset filtered list
-     * @param {*} event 
+     * @param {*} event
      */
     this.requestListResetEventsListener = event => {
       this.dispatchEvent(new CustomEvent('list-events', {
@@ -107,6 +155,9 @@ export default class Events extends Shadow() {
     this.removeEventListener('request-list-reset', this.requestListResetEventsListener)
   }
 
+  /**
+   * @return All
+   */
   get fetch () {
     return this._fetch || (this._fetch = fetch(this.getAttribute('endpoint'), {
       method: 'GET'

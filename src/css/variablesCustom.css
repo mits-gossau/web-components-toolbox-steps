@@ -230,6 +230,8 @@
 
   --wrapper-reverse-flex-direction-mobile: column-reverse;
   --navigation-default-a-link-font-size-mobile-custom: 1.1429rem;
+
+  --button-steps-filter-background-color-active: green;
 }
 
 body {

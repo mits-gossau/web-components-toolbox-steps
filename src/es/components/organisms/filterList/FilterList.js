@@ -23,7 +23,9 @@ export default class FilterList extends Shadow() {
   }
 
   answerEventListener = (event) => {
-    event.detail.fetch.then((data) => this.renderHTML(data))
+    event.detail.fetch.then(
+      /** @param {import('../../controllers/events/Events.js').ListFilterItems} data */
+      data => this.renderHTML(data))
   }
 
   shouldRenderCSS () {
@@ -48,12 +50,19 @@ export default class FilterList extends Shadow() {
     `
   }
 
+  /**
+   * @param {import('../../controllers/events/Events.js').ListFilterItems} data
+   */
   renderHTML (data) {
     this.html = ''
+    if (!data || !Array.isArray(data.items)) return
     this.html = /* html */`
       <ul class="list-items">
-        ${Array.from(new Set(data.items)).map(name => /* html */`
-          <li><a-button filter-type="${data.filterType}" namespace="button-steps-filter-" tag="${name}" request-event-name="request-list-events">${name}</a-button></li>
+        ${Array.from(new Set(
+          // @ts-ignore
+          data.items
+        )).map(name => /* html */`
+          <li><a-button filter-type="${data.filterType}" namespace="button-steps-filter-" tag="${name}" answer-event-name="list-events" active-detail-property-name="fetch:events:${data.filterType}" request-event-name="request-list-events">${name}</a-button></li>
         `)}
       <ul>
     `
