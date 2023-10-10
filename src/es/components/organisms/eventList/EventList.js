@@ -1,10 +1,5 @@
 // @ts-check
 import { Shadow } from '../../web-components-toolbox/src/es/components/prototypes/Shadow.js'
-// fetch modules / Shadow:Line 604
-import(
-  '../../molecules/eventCard/EventCard.js'
-  // @ts-ignore
-).then((module) => customElements.define('m-steps-event-card', module.default))
 
 /**
  * EventList
@@ -113,44 +108,51 @@ export default class EventList extends Shadow() {
   }
 
   renderHTML (data, translations) {
-    /* Split active and expired events */
-    const currentDate = new Date()
-    let activeEvents = []
-    let expiredEvents = []
-
-    data.forEach((event) => {
-      const parsedDate = this.parseDate(event.eventDate, event.eventTime);
-
-      if (parsedDate > currentDate) {
-        activeEvents.push(event)
-      } else {
-        expiredEvents.push(event)
+    this.fetchModules([
+      {
+        path: `${this.importMetaUrl}../../molecules/eventCard/EventCard.js`,
+        name: 'm-steps-event-card'
       }
+    ]).then(() => {
+      /* Split active and expired events */
+      const currentDate = new Date()
+      let activeEvents = []
+      let expiredEvents = []
+  
+      data.forEach((event) => {
+        const parsedDate = this.parseDate(event.eventDate, event.eventTime);
+  
+        if (parsedDate > currentDate) {
+          activeEvents.push(event)
+        } else {
+          expiredEvents.push(event)
+        }
+      })
+  
+      const activeEventHtml = this.collectMarkup(activeEvents, translations)
+  
+      this.headingHtml = /* html */ `
+        <h2 class="heading heading--h2 heading--expired">${this.expiredTitle}</h2>
+      `
+  
+      const expiredEventHtml = this.collectMarkup(expiredEvents, translations)
+      
+      /* Concat active events, heading and expired events */
+      let concatMarkup = ''
+      let eventHtml = concatMarkup.concat(activeEventHtml, this.headingHtml, expiredEventHtml)  
+  
+      const noEventsHtml = eventHtml.length ? '' : /* html */ `
+        <div class="no-events">
+            <p>${data.translations.noEvents}</p>
+        </div>`
+  
+      this.html = ''
+      this.html = /* html */ `
+        <div class="event-list">
+          ${eventHtml}${noEventsHtml}
+        </div>
+      `
     })
-
-    const activeEventHtml = this.collectMarkup(activeEvents, translations)
-
-    this.headingHtml = /* html */ `
-      <h2 class="heading heading--h2 heading--expired">${this.expiredTitle}</h2>
-    `
-
-    const expiredEventHtml = this.collectMarkup(expiredEvents, translations)
-    
-    /* Concat active events, heading and expired events */
-    let concatMarkup = ''
-    let eventHtml = concatMarkup.concat(activeEventHtml, this.headingHtml, expiredEventHtml)  
-
-    const noEventsHtml = eventHtml.length ? '' : /* html */ `
-      <div class="no-events">
-          <p>${data.translations.noEvents}</p>
-      </div>`
-
-    this.html = ''
-    this.html = /* html */ `
-      <div class="event-list">
-        ${eventHtml}${noEventsHtml}
-      </div>
-    `
   }
 
   /**

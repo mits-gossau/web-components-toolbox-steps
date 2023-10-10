@@ -1,9 +1,5 @@
 // @ts-check
 import { Shadow } from '../../web-components-toolbox/src/es/components/prototypes/Shadow.js'
-import(
-  '../../web-components-toolbox/src/es/components/atoms/button/Button.js'
-  // @ts-ignore
-).then((module) => customElements.define('a-button', module.default))
 
 /**
  * EventCard
@@ -198,75 +194,82 @@ export default class EventCard extends Shadow() {
   }
 
   renderHTML () {
-    // parse date and time to matching format
-    const currentDate = new Date()
-    const partDate = this.event.eventDate.split('.')
-    const partTime = this.event.eventTime.split(':')
-    const formattedDate = `${partDate[2]}-${('0' + partDate[1]).slice(-2)}-${('0' + partDate[0]).slice(-2)}T${('0' + partTime[0]).slice(-2)}:${('0' + partTime[1]).slice(-2)}`
-    const parsedDate = new Date(formattedDate)
-
-    // get weekday name by date
-    const date = new Date(parseInt(partDate[2]), parseInt(partDate[1]), parseInt(partDate[0]));
-    const weekday = date.toLocaleDateString('de-DE', {
-      weekday: 'long'
-    })
-
-    // icons
-    const generateIconHTML = (iconsArray) => {
-      let icons = ''
-      for (const icon of iconsArray) {
-        icons += `<img src="${icon}" width="24" height="24" />`
+    this.fetchModules([
+      {
+        path: `${this.importMetaUrl}../../web-components-toolbox/src/es/components/atoms/button/Button.js`,
+        name: 'a-button'
       }
-
-      return icons
-    }
-
-    const eventIcons = generateIconHTML(this.event.eventInformationIcons)
-    const theaterIcons = generateIconHTML(this.event.theaterInformationIcons)
-
-    // urls
-    const ticketsUrl = this.event.presaleUrl
-    const detailsUrl = this.event.companyDetailPageUrl
-
-    // buttons
-    const buttonTickets = `<a-button namespace="button-steps-spielplan-" onclick="window.open('${ticketsUrl}')">${this.getAttribute('textButtonTickets')} &#8594;</a-button>`
-    const buttonSoldOut = `<span class="sold-out">${this.getAttribute('textSoldOut')}</span>`
-    const buttonCta = this.event.soldOut === 'True' ? buttonSoldOut : buttonTickets
-    const eventIconsHTML = eventIcons ? `<span class="legend-icons">${eventIcons}</span>` : ``
-    const theaterIconsHTML = theaterIcons ? `<span class="legend-icons">${theaterIcons}</span>` : ``
-
-    const eventInfoHtml = /* html */ `
-      <div class="event-info">
-        <p>
-          ${this.event.company
-            ? `<strong>${this.event.company}</strong><br />`
-            : ''
-          }   
-          <span>${this.event.production}<br />${this.event.choreographer}</span>
-        </p>
-        <p>
-          <strong>${this.event.location}</strong><br />
-          <span>${this.event.theater}</span>
-        </p>
-        <p>
-          ${this.event.eventTime}<br />
-          ${eventIconsHTML}
-          ${theaterIconsHTML}
-        </p>
-        <p class="event-cta">
-          ${buttonCta}
-          <a href="${detailsUrl}">${this.getAttribute('textLinkDetails')}</a>
-        </p>
-      </div>
-    `
-
-    this.html = /* html */ `
-      <div class="${this.event.soldOut === 'True' || parsedDate < currentDate ? 'event-card event-grey-out' : 'event-card'}">
-        <div class="event-date">
-          <p>${weekday}<br /><span>${this.event.eventDate.slice(0, -4)}</span></p>
+    ]).then(() => {
+      // parse date and time to matching format
+      const currentDate = new Date()
+      const partDate = this.event.eventDate.split('.')
+      const partTime = this.event.eventTime.split(':')
+      const formattedDate = `${partDate[2]}-${('0' + partDate[1]).slice(-2)}-${('0' + partDate[0]).slice(-2)}T${('0' + partTime[0]).slice(-2)}:${('0' + partTime[1]).slice(-2)}`
+      const parsedDate = new Date(formattedDate)
+  
+      // get weekday name by date
+      const date = new Date(parseInt(partDate[2]), parseInt(partDate[1]), parseInt(partDate[0]));
+      const weekday = date.toLocaleDateString('de-DE', {
+        weekday: 'long'
+      })
+  
+      // icons
+      const generateIconHTML = (iconsArray) => {
+        let icons = ''
+        for (const icon of iconsArray) {
+          icons += `<img src="${icon}" width="24" height="24" />`
+        }
+  
+        return icons
+      }
+  
+      const eventIcons = generateIconHTML(this.event.eventInformationIcons)
+      const theaterIcons = generateIconHTML(this.event.theaterInformationIcons)
+  
+      // urls
+      const ticketsUrl = this.event.presaleUrl
+      const detailsUrl = this.event.companyDetailPageUrl
+  
+      // buttons
+      const buttonTickets = `<a-button namespace="button-steps-spielplan-" onclick="window.open('${ticketsUrl}')">${this.getAttribute('textButtonTickets')} &#8594;</a-button>`
+      const buttonSoldOut = `<span class="sold-out">${this.getAttribute('textSoldOut')}</span>`
+      const buttonCta = this.event.soldOut === 'True' ? buttonSoldOut : buttonTickets
+      const eventIconsHTML = eventIcons ? `<span class="legend-icons">${eventIcons}</span>` : ``
+      const theaterIconsHTML = theaterIcons ? `<span class="legend-icons">${theaterIcons}</span>` : ``
+  
+      const eventInfoHtml = /* html */ `
+        <div class="event-info">
+          <p>
+            ${this.event.company
+              ? `<strong>${this.event.company}</strong><br />`
+              : ''
+            }   
+            <span>${this.event.production}<br />${this.event.choreographer}</span>
+          </p>
+          <p>
+            <strong>${this.event.location}</strong><br />
+            <span>${this.event.theater}</span>
+          </p>
+          <p>
+            ${this.event.eventTime}<br />
+            ${eventIconsHTML}
+            ${theaterIconsHTML}
+          </p>
+          <p class="event-cta">
+            ${buttonCta}
+            <a href="${detailsUrl}">${this.getAttribute('textLinkDetails')}</a>
+          </p>
         </div>
-        ${eventInfoHtml}
-      </div>
-    `
+      `
+  
+      this.html = /* html */ `
+        <div class="${this.event.soldOut === 'True' || parsedDate < currentDate ? 'event-card event-grey-out' : 'event-card'}">
+          <div class="event-date">
+            <p>${weekday}<br /><span>${this.event.eventDate.slice(0, -4)}</span></p>
+          </div>
+          ${eventInfoHtml}
+        </div>
+      `
+    })
   }
 }

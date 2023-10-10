@@ -54,17 +54,23 @@ export default class FilterList extends Shadow() {
    * @param {import('../../controllers/events/Events.js').ListFilterItems} data
    */
   renderHTML (data) {
-    this.html = ''
-    if (!data || !Array.isArray(data.items)) return
-    this.html = /* html */`
-      <ul class="list-items">
-        ${Array.from(new Set(
-          // @ts-ignore
-          data.items
-        )).map(name => /* html */`
-          <li><a-button filter-type="${data.filterType}" namespace="button-steps-filter-" tag="${name}" answer-event-name="list-events" active-detail-property-name="fetch:events:${data.filterType}" request-event-name="request-list-events">${name}</a-button></li>
-        `)}
-      <ul>
-    `
+    if (!data || !Array.isArray(data.items)) {
+      return Array.from(this.root.querySelectorAll(`:host > *:not(style)`)).forEach(el => el.classList.add('hidden'))
+    }
+    let ul
+    if (ul = this.root.querySelector(`:host > *.${data.filterType}`)) {
+      ul.classList.remove('hidden')
+    } else {
+      this.html = /* html */`
+        <ul class="list-items ${data.filterType}">
+          ${Array.from(new Set(
+            // @ts-ignore
+            data.items
+            // @ts-ignore
+          )).reduce((accumulator, name) => /* html */`${accumulator}<li><a-button filter-type="${data.filterType}" namespace="button-steps-filter-" tag="${name}" answer-event-name="list-events" active-detail-property-name="fetch:filter:${data.filterType}" request-event-name="request-list-events">${name}</a-button></li>`, '')}
+        <ul>
+      `
+    }
+    this.root.querySelector(`:host > *:not(.${data.filterType}):not(style)`)?.classList.add('hidden')
   }
 }
