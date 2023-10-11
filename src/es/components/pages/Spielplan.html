@@ -129,7 +129,15 @@
           answer-event-name="list-events"
           request-event-name="request-list-events"
         ></a-date-select> -->
-        <a-flatpickr request-event-name="request-list-events" filter-type="eventDate">
+        <a-flatpickr
+          namespace="flatpickr-default-"
+          filter-type="date"
+          request-event-name="request-list-events"
+          reset-event-name="list-events"
+          reset-detail-property-name="fetch:filter:dateReset"
+          get-date-option-event-name="get-date-option"
+          set-date-event-name="set-date"
+        >
           <style>
             a-flatpickr div {
               border: 1px solid black;
@@ -144,7 +152,8 @@
           id="filter-button-companies" 
           tag="companies"
           namespace="button-steps-spielplan-"
-          answer-event-name="list-events"
+          answer-event-name="list-filter-items"
+          active-detail-property-name="fetch:filterTypePlural"
           request-event-name="request-list-filter-items"
         >
           <span class='icon-right'>
@@ -158,7 +167,8 @@
           id="filter-button-locations"
           tag="locations"
           namespace="button-steps-spielplan-"
-          answer-event-name="list-events"
+          answer-event-name="list-filter-items"
+          active-detail-property-name="fetch:filterTypePlural"
           request-event-name="request-list-filter-items"
         >
           <span class='icon-right'>
@@ -167,22 +177,22 @@
           </span>
         </a-steps-button>
 
-        <a-steps-button 
+        <a-button 
           label="Filter Zurücksetzen" 
           id="filter-clean"
-          class="filter-button-hidden"
-          namespace="button-steps-spielplan-"
-          request-event-name="request-list-reset"
+          namespace="button-steps-spielplan-reset-"
+          answer-event-name="list-events"
+          active-detail-property-name="fetch:filter:active"
+          tag="true"
+          request-event-name="request-list-events"
         >
-        </a-steps-button>
+        </a-button>
 
-        <script src="../atoms/button/Button.js" type="module"></script>
       </div>
 
       <o-steps-filter-list 
-        answer-event-name="list-filter-items" 
+        answer-event-name="list-filter-items"
       ></o-steps-filter-list>
-      <script src="../organisms/filterList/FilterList.js" type="module"></script>
 
     </section>
 
@@ -192,6 +202,5 @@
       expired-title="Abgelaufene Events"
     ></o-steps-event-list>
 
-    <script src="../organisms/eventList/EventList.js" type="module"></script>
   </c-steps-events>
 </a-steps-container>

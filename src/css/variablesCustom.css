@@ -150,7 +150,16 @@
   --button-steps-spielplan-border-radius: 2.5rem;
   --button-steps-spielplan-padding: 6px 24px;
   --button-steps-spielplan-background-color-hover: transparent;
+  --button-steps-spielplan-reset-color: var(--button-steps-spielplan-color);
+  --button-steps-spielplan-reset-border-color: var(--button-steps-spielplan-border-color);
+  --button-steps-spielplan-reset-border-width: var(--button-steps-spielplan-border-width);
+  --button-steps-spielplan-reset-border-radius: var(--button-steps-spielplan-border-radius);
+  --button-steps-spielplan-reset-padding: var(--button-steps-spielplan-padding);
+  --button-steps-spielplan-reset-background-color-hover: var(--button-steps-spielplan-background-color-hover);
+  --button-steps-spielplan-reset-visibility: hidden;
+  --button-steps-spielplan-reset-visibility-active: visible;
   --button-steps-filter-padding: 6px 24px;
+  --button-steps-filter-background-color-active: green;
   --button-steps-filter-background-color-hover: transparent;
   --button-steps-filter-color-hover: var(--steps-color-black);
 
@@ -231,7 +240,8 @@
   --wrapper-reverse-flex-direction-mobile: column-reverse;
   --navigation-default-a-link-font-size-mobile-custom: 1.1429rem;
 
-  --button-steps-filter-background-color-active: green;
+  --flatpickr-default-background-custom: darkgray;
+  --flatpickr-default-color-start-end-range-custom: white;
 }
 
 body {

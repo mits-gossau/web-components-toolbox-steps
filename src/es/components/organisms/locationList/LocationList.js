@@ -1,10 +1,5 @@
 // @ts-check
 import { Shadow } from '../../web-components-toolbox/src/es/components/prototypes/Shadow.js'
-// fetch modules / Shadow:Line 604
-import(
-  '../../molecules/eventCard/EventCard.js'
-  // @ts-ignore
-).then((module) => customElements.define('m-steps-event-card', module.default))
 
 /**
  * EventList
@@ -112,54 +107,61 @@ export default class EventList extends Shadow() {
   }
 
   renderHTML (data) {
-    const eventHtml = data.events
-      .map((event) => {
-        const {
-          choreographer,
-          company,
-          companyDetailPageUrl,
-          eventDate,
-          eventInformationIcons,
-          location,
-          presaleUrl,
-          production,
-          soldOut,
-          theater,
-          theaterInformationIcons
-        } = event
-        const eventIcons = JSON.stringify(eventInformationIcons)
-        const theaterIcons = JSON.stringify(theaterInformationIcons)
-
-        return /* html */ `<m-steps-event-card 
-          choreographer="${choreographer}"
-          company="${company}"
-          companyDetailPageUrl="${companyDetailPageUrl}"
-          eventDate="${eventDate}"
-          eventInformationIcons='${eventIcons}'
-          location="${location}"
-          presaleUrl="${presaleUrl}"
-          production="${production}"
-          soldOut="${soldOut}"
-          theater="${theater}"
-          theaterInformationIcons='${theaterIcons}'
-          textButtonTickets="${data.translations.buttonTickets}"
-          textLinkDetails="${data.translations.linkDetails}"
-          textSoldOut="${data.translations.soldOut}"
-          textTimeSuffix="${data.translations.timeSuffix}"
-        ></m-steps-event-card>`
-      })
-      .join('')
-
-    const noEventsHtml = eventHtml.length ? '' : /* html */ `
-      <div class="no-events">
-          <p>${data.translations.noEvents}</p>
-      </div>`
-
-    this.html = ''
-    this.html = /* html */ `
-      <div class="event-list">
-        ${eventHtml}${noEventsHtml}
-      </div>
-    `
+    this.fetchModules([
+      {
+        path: `${this.importMetaUrl}../../molecules/eventCard/EventCard.js`,
+        name: 'm-steps-event-card'
+      }
+    ]).then(() => {
+      const eventHtml = data.events
+        .map((event) => {
+          const {
+            choreographer,
+            company,
+            companyDetailPageUrl,
+            eventDate,
+            eventInformationIcons,
+            location,
+            presaleUrl,
+            production,
+            soldOut,
+            theater,
+            theaterInformationIcons
+          } = event
+          const eventIcons = JSON.stringify(eventInformationIcons)
+          const theaterIcons = JSON.stringify(theaterInformationIcons)
+  
+          return /* html */ `<m-steps-event-card 
+            choreographer="${choreographer}"
+            company="${company}"
+            companyDetailPageUrl="${companyDetailPageUrl}"
+            eventDate="${eventDate}"
+            eventInformationIcons='${eventIcons}'
+            location="${location}"
+            presaleUrl="${presaleUrl}"
+            production="${production}"
+            soldOut="${soldOut}"
+            theater="${theater}"
+            theaterInformationIcons='${theaterIcons}'
+            textButtonTickets="${data.translations.buttonTickets}"
+            textLinkDetails="${data.translations.linkDetails}"
+            textSoldOut="${data.translations.soldOut}"
+            textTimeSuffix="${data.translations.timeSuffix}"
+          ></m-steps-event-card>`
+        })
+        .join('')
+  
+      const noEventsHtml = eventHtml.length ? '' : /* html */ `
+        <div class="no-events">
+            <p>${data.translations.noEvents}</p>
+        </div>`
+  
+      this.html = ''
+      this.html = /* html */ `
+        <div class="event-list">
+          ${eventHtml}${noEventsHtml}
+        </div>
+      `
+    })
   }
 }
