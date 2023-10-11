@@ -95,8 +95,13 @@ export default class Heading extends Shadow() {
 
         @media (max-width: 768px) {
           :host .heading {
-            font-size: 40px;
+            font-size: 30px;
             line-height: 35px;
+          }
+
+          :host .heading--small {
+            font-size: 20px;
+            line-height: 25px;
           }
         }
     `

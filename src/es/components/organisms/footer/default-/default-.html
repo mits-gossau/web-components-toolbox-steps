@@ -48,20 +48,29 @@
         <o-wrapper namespace="footer-default-">
             <style>
                 :host .footer-links-row--first {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
                     width: var(--footer-link-row--first, 35%) !important;
                 }
 
                 :host .footer__text {
+                    font-size: 16px;
                     padding-top: var(--footer--text-padding-top, 20px);
                     padding-left: var(--footer--text-padding-left, 68px);
                 }
 
                 :host .footer__text a {
+                    font-size: 16px;
                     color: white;
                 }
 
                 :host ul li a:hover svg {
                     color: var(--steps-color-red) !important;
+                }
+
+                :host .footer-links-row--desktop {
+                    display: block;
                 }
 
                 @media (max-width: 768px) {
@@ -83,7 +92,7 @@
                     }
 
                     :host .footer__text {
-                        text-align: center;
+                        margin-left: 80px;
                         padding: var(--footer--text-padding-mobile, 20px 10px 20px);
                     }
                 }
