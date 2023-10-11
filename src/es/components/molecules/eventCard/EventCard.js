@@ -97,6 +97,9 @@ export default class EventCard extends Shadow() {
         background: var(--steps-color-white);;
         opacity: 0.3;
       }
+      :host .event-grey-out .legend-icons {
+        opacity: 0.3;
+      }
       :host .event-card {
         border-top: 1px solid var(--steps-color-black);
         padding: 1.25rem 0;
