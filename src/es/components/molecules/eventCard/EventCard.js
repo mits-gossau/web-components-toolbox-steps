@@ -56,7 +56,7 @@ export default class EventCard extends Shadow() {
     // properties
     this.event = {
       choreographer: this.getAttribute('choreographer'),
-      company: this.getAttribute('company'),
+      company: this.getAttribute('company') || '',
       companyDetailPageUrl: this.getAttribute('companyDetailPageUrl'),
       eventDate: this.getAttribute('eventDate'),
       eventTime: this.getAttribute('eventTime'),
@@ -239,16 +239,18 @@ export default class EventCard extends Shadow() {
       const buttonCta = this.event.soldOut === 'True' ? buttonSoldOut : buttonTickets
       const eventIconsHTML = eventIcons ? `<span class="legend-icons">${eventIcons}</span>` : ``
       const theaterIconsHTML = theaterIcons ? `<span class="legend-icons">${theaterIcons}</span>` : ``
-  
+      
+      console.log('ANDY', this.event.company);
       const eventInfoHtml = /* html */ `
         <div class="event-info">
-          ${this.event.company || this.event.company != undefined
-            ? `
+          ${this.event.company == ''
+            ? ''
+            : `
             <p>
               <strong>${this.event.company}</strong><br />
               <span>${this.event.production}<br />${this.event.choreographer}</span>
-            </p>`
-            : ''
+            </p>
+            `
           }
           <p>
             <strong>${this.event.location}</strong><br />
