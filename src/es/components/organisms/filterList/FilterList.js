@@ -67,7 +67,7 @@ export default class FilterList extends Shadow() {
             // @ts-ignore
             data.items
             // @ts-ignore
-          )).reduce((accumulator, name) => /* html */`${accumulator}<li><a-button filter-type="${data.filterType}" namespace="button-steps-filter-" tag="${name}" answer-event-name="list-events" active-detail-property-name="fetch:filter:${data.filterType}" request-event-name="request-list-events">${name}</a-button></li>`, '')}
+          )).reduce((accumulator, name) => /* html */`${accumulator}<li><a-button ${name === data.filterActive ? 'class="active"' : ''} filter-type="${data.filterType}" namespace="button-steps-filter-" tag="${name}" answer-event-name="list-events" active-detail-property-name="fetch:filter:${data.filterType}" request-event-name="request-list-events">${name}</a-button></li>`, '')}
         <ul>
       `
     }

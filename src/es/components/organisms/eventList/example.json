@@ -926,6 +926,7 @@
     "buttonTickets": "Tickets",
     "linkDetails": "Mehr Details",
     "soldOut": "ausverkauft",
-    "timeSuffix": "Uhr"
+    "timeSuffix": "Uhr",
+    "noEvents": "Keine Veranstaltung"
   }
 }

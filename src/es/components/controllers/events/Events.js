@@ -12,6 +12,7 @@
   company: string,
   companyDetailPageUrl: string | null,
   eventDate: string
+  dateObj?: Date,
   eventInformationIcons: string | null,
   eventName: string,
   location: string,
@@ -57,9 +58,32 @@
 import { Shadow } from '../../web-components-toolbox/src/es/components/prototypes/Shadow.js'
 
 /**
- * Events are retrieved via the corresponding endpoint as set as an attribute
+ * Events (Veranstaltungen)
  * As a controller, this component communicates exclusively through events
- * Example: https://www.alnatura.ch/rezepte
+ * Example: https://mits-gossau.github.io/web-components-toolbox-steps/src/es/components/web-components-toolbox/docs/Template.html?rootFolder=src&css=./src/css/variablesCustom.css&header=./src/es/components/organisms/header/nav-right-/nav-right-.html&logo=./src/es/components/atoms/logo/default-/default-.html&nav=./src/es/components/molecules/navigation/default-/default-.html&footer=./src/es/components/organisms/footer/default-/default-.html&content=./src/es/components/pages/Spielplan.html
+ * 
+ * The endpoint api call at the fetch getter, gets all events plus some translations
+ * These events get enriched with the properties companies, locations, dates, maxDate, minDate, which are used by the filters (buttons and flatpickr)
+ * buttons have two possible filter-type company or location
+ * 
+ * requestListEventsListener:
+ * Datepicker (Flatpickr) and buttons trigger the requestListEventListener on interaction, this returns the filtered event list in the event 'list-events'
+ * The dispatched event 'list-events' is listened by the buttons, which react accordingly with their active state
+ * The event list also reacts on 'list-events' and renders the filtered newly received events
+ * The filters are saved as parameters in the URL and get reused except the clear all button is pushed, which has the ID 'filter-clean'
+ * 
+ * requestHrefEventListener:
+ * Triggers this.setParameter to receive the resulting URL in case that filter-type with that fix value (tag), this is purely informal and triggers no URL/state change
+ * As a result, the Button.js can have an href on it's a-tag, for better SEO as well as "right click - open in new tab" feature
+ * 
+ * requestListFilterItemsEventsListener:
+ * There is a filter factory called FilterList, which requests the possible filters, this is supplied by the enriched fetch, also any url/state is supplied to set the active filters .active
+ * 
+ * getDateOptionEventsListener:
+ * Is used by the DatePicker (Flatpickr), to select the in url/state set range, min/maxDate
+ * 
+ * updatePopState:
+ * dispatches two events: 'list-events' and 'set-date' to mirror the browser history navigation
  *
  * @export
  * @class Events
@@ -73,19 +97,30 @@ export default class Events extends Shadow() {
       ...options
     }, ...args)
 
+    /** 
+     * calculated dates between min/max actual date expl.: 11.10.2023+—+26.10.2023 would be 11.10.2023 + 12.10.2023 + 13.10.20203 + ... + 26.10.2023
+     * @type {Map<string, Date[]>}
+     */
+    this.dateArrayMap = new Map()
+    // gets fed by get-date-option from the flatpickr, this here is just a default value
+    this.dateStrSeparator = ' — '
+
+    // dispatches 'list-events'
     this.requestListEventsListener = event => {
       this.dispatchEvent(new CustomEvent('list-events', {
         detail: {
           fetch: this.fetch.then(result => {
             let events
-            if (event.detail && event.detail.this && event.detail.this.getAttribute('filter-type') && event.detail.tags && event.detail.tags[0]) {
+            if (event && event.detail && event.detail.this && event.detail.this.getAttribute('filter-type') && event.detail.tags && event.detail.tags[0]) {
               this.setParameter(event.detail.this.getAttribute('filter-type'), event.detail.tags[0], event.detail.pushHistory, event.detail.isActive)
               events = this.filterEvents(result.events, this.getParameter('company'), this.getParameter('location'), this.getParameter('date'), event.detail?.dateStrSeparator)
-            } else {
+            } else if (event && event.detail && event.detail.this && event.detail.this.getAttribute('id') === 'filter-clean') {
               this.setParameter('company', null)
               this.setParameter('location', null)
               this.setParameter('date', null)
               events = result.events
+            } else {
+              events = this.filterEvents(result.events, this.getParameter('company'), this.getParameter('location'), this.getParameter('date'), event?.detail?.dateStrSeparator)
             }
             return {
               events,
@@ -106,6 +141,12 @@ export default class Events extends Shadow() {
       }))
     }
 
+    // resolves / inform about the url which would result on this filter
+    this.requestHrefEventListener = event => {
+      if (event.detail && event.detail.resolve) event.detail.resolve(this.setParameter(event.detail.this.getAttribute('filter-type'), event.detail.tags[0], event.detail.pushHistory).href)
+    }
+
+    // dispatches 'list-filter-items'
     this.requestListFilterItemsEventsListener = event => {
       this.dispatchEvent(new CustomEvent('list-filter-items', {
         detail: {
@@ -119,12 +160,14 @@ export default class Events extends Shadow() {
                 ? {
                   items: result.companies,
                   filterType: 'company',
-                  filterTypePlural: 'companies'
+                  filterTypePlural: 'companies',
+                  filterActive: this.getParameter('company')
                 }
                 : {
                   items: result.locations,
                   filterType: 'location',
-                  filterTypePlural: 'locations'
+                  filterTypePlural: 'locations',
+                  filterActive: this.getParameter('location')
                 }
               : {}
             )
@@ -135,71 +178,105 @@ export default class Events extends Shadow() {
       }))
     }
 
+    // resolves flatpickr settings
     this.getDateOptionEventsListener = event => {
       event.detail.resolve(this.fetch.then(result => {
+        if (event.detail.dateStrSeparator) this.dateStrSeparator = event.detail.dateStrSeparator
         // see all possible options: https://flatpickr.js.org/options/
+        let defaultDate = null
+        let dateStr
+        if ((dateStr = this.getParameter('date'))) defaultDate = dateStr.split(this.dateStrSeparator).map(date => this.deChDateToDateObj(date))
         return {
           maxDate: result.maxDate,
-          minDate: result.minDate
+          minDate: result.minDate,
+          defaultDate,
+          dateStr
         }
       }))
+    }
+
+    // dispatches 'list-events' + 'set-date'
+    this.updatePopState = event => {
+      for (const key in event.state) {
+          this.setParameter(key, event.state[key], false, true)
+      }
+      this.requestListEventsListener()
+      new Promise(resolve => this.getDateOptionEventsListener({detail: {resolve}})).then(data => {
+        // inform the Flatpickr through this event, since it does not listen to "list-events"
+        this.dispatchEvent(new CustomEvent('set-date', {
+          detail: data,
+          bubbles: true,
+          cancelable: true,
+          composed: true
+        }))
+      })
     }
   }
 
   connectedCallback () {
     this.addEventListener('request-list-events', this.requestListEventsListener)
+    this.addEventListener('request-href-' + (this.getAttribute('request-list-events') || 'request-list-events'), this.requestHrefEventListener)
     this.addEventListener('request-list-filter-items', this.requestListFilterItemsEventsListener)
     this.addEventListener('get-date-option', this.getDateOptionEventsListener)
+    if (!this.hasAttribute('no-popstate')) self.addEventListener('popstate', this.updatePopState)
   }
 
   disconnectedCallback () {
     this.removeEventListener('request-list-events', this.requestListEventsListener)
+    this.removeEventListener('request-href-' + (this.getAttribute('request-list-events') || 'request-list-events'), this.requestHrefEventListener)
     this.removeEventListener('request-list-filter-items', this.requestListFilterItemsEventsListener)
     this.removeEventListener('get-date-option', this.getDateOptionEventsListener)
+    if (!this.hasAttribute('no-popstate')) self.removeEventListener('popstate', this.updatePopState)
   }
 
   /**
    * FilterList generated buttons hold two relevant attributes: filter-type (company | location) & tag (string)
    * those attributes are received inside the request-list-events event details
+   * also the Flatpickr uses request-list-events
    *
    * @param {Event[]} events
    * @param {string | null} company
    * @param {string | null} location
    * @param {string | null} dates
-   * @param {string | null} [dateStrSeparator]
+   * @param {string | null} [dateStrSeparator = this.dateStrSeparator]
    * @return {Event[]}
    */
-  filterEvents (events, company, location, dates, dateStrSeparator = ' — ') {
-    const dateArray = []
-    if (dates && dateStrSeparator) {
+  filterEvents (events, company, location, dates, dateStrSeparator = this.dateStrSeparator) {
+    const dateArray = this.dateArrayMap.get(dates || '') || []
+    // generate all date objects between and including a start and end date
+    if (dates && dateStrSeparator && !dateArray.length) {
       const [minDate, maxDate] = dates.split(dateStrSeparator).map(date => this.deChDateToDateObj(date))
-      console.log('changed', {dateStrSeparator, dateArray, dates, minDate, maxDate});
       for(const currentDate = new Date(minDate); currentDate <= new Date(maxDate || minDate); currentDate.setDate(currentDate.getDate() + 1)){
         dateArray.push(new Date(currentDate))
       }
+      this.dateArrayMap.set(dates, dateArray)
     }
+    // filter accordingly... expl. if company set check for company, otherwise ignore and return true
     return events.filter(resultEvent => {
-      return (!company || resultEvent?.company === company) && (!location || resultEvent?.location === location) && (!dates || !dateArray || !dateArray.length || dateArray.map(date => this.dateObjToDeChDate(date)).includes(resultEvent?.eventDate))
+      return (!company || resultEvent?.company === company)
+        && (!location || resultEvent?.location === location)
+        && (!dateArray.length || dateArray.some(date => date.getTime() === resultEvent?.dateObj?.getTime()))
     })
   }
 
   /**
    * Set filterType in window.history
-   * @param {FilterType} filterType
+   * @param {FilterType | string} filterType
    * @param {string | null} tag
    * @param {boolean} [pushHistory = true]
    * @param {boolean} [isActive = true]
    * @return {URL}
    */
   setParameter (filterType, tag, pushHistory = true, isActive = true) {
+    // create/update an url object with key (filterType) and value (tag) if isActive otherwise remove that key form the url params
     const url = new URL(location.href, location.href.charAt(0) === '/' ? location.origin : location.href.charAt(0) === '.' ? this.importMetaUrl : undefined)
     if (tag && isActive) {
       url.searchParams.set(filterType, tag)
     } else {
       url.searchParams.delete(filterType)
     }
-    // TODO: handle popState Events
-    if (pushHistory) history.pushState({ ...history.state, tag }, document.title, url.href) // TODO: make sure the title reflects the setParameters
+    // update the url parameters in the actual url bar and history
+    if (pushHistory) history.pushState({ ...history.state, [filterType]: tag }, document.title, url.href) // TODO: make sure the title reflects the setParameters
     return url
   }
 
@@ -216,6 +293,8 @@ export default class Events extends Shadow() {
   }
 
   /**
+   * This fetch contains all needed data and is the only communication with the api endpoint
+   * 
    * @return {Promise<FetchAll>}
    */
   get fetch () {
@@ -229,6 +308,11 @@ export default class Events extends Shadow() {
       /** @type {{events:Event[], translations:Translations}} */
       let { events, translations } = await response.json()
 
+      /** @type {Event[]} */
+      events = events.map(event => {
+        event.dateObj = this.deChDateToDateObj(event.eventDate)
+        return event
+      })
       /** @type {string[]} */
       const companies = events.map(event => event.company).sort()
       /** @type {string[]} */
@@ -248,12 +332,9 @@ export default class Events extends Shadow() {
     }))
   }
 
+  // make 10.09.2024 to a date object by turning 2024 to year, 09 to month and 10 to day
   deChDateToDateObj (dateStr) {
     // @ts-ignore
     return new Date(...dateStr.split('.').reverse().map((date, i) => i === 1 ? Number(date)-1 : date))
-  }
-
-  dateObjToDeChDate (dateObj) {
-    return dateObj.toLocaleString('de-CH', {year: 'numeric', month: '2-digit', day: '2-digit'})
   }
 }

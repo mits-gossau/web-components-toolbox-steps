@@ -129,7 +129,15 @@
           answer-event-name="list-events"
           request-event-name="request-list-events"
         ></a-date-select> -->
-        <a-flatpickr request-event-name="request-list-events" filter-type="date" namespace="flatpickr-default-" reset-event-name="list-events" reset-detail-property-name="fetch:filter:dateReset" get-date-option-event-name="get-date-option">
+        <a-flatpickr
+          namespace="flatpickr-default-"
+          filter-type="date"
+          request-event-name="request-list-events"
+          reset-event-name="list-events"
+          reset-detail-property-name="fetch:filter:dateReset"
+          get-date-option-event-name="get-date-option"
+          set-date-event-name="set-date"
+        >
           <style>
             a-flatpickr div {
               border: 1px solid black;

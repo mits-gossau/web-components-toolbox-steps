@@ -130,12 +130,13 @@ export default class EventList extends Shadow() {
       })
   
       const activeEventHtml = this.collectMarkup(activeEvents, translations)
-  
-      this.headingHtml = /* html */ `
-        <h2 class="heading heading--h2 heading--expired">${this.expiredTitle}</h2>
-      `
-  
       const expiredEventHtml = this.collectMarkup(expiredEvents, translations)
+
+      this.headingHtml = expiredEventHtml.length
+        ? /* html */ `
+          <h2 class="heading heading--h2 heading--expired">${this.expiredTitle}</h2>
+        `
+        : ''
       
       /* Concat active events, heading and expired events */
       let concatMarkup = ''
@@ -143,7 +144,7 @@ export default class EventList extends Shadow() {
   
       const noEventsHtml = eventHtml.length ? '' : /* html */ `
         <div class="no-events">
-            <p>${data.translations.noEvents}</p>
+            <p>${translations.noEvents}</p>
         </div>`
   
       this.html = ''
