@@ -242,13 +242,14 @@ export default class EventCard extends Shadow() {
   
       const eventInfoHtml = /* html */ `
         <div class="event-info">
-          <p>
-            ${this.event.company
-              ? `<strong>${this.event.company}</strong><br />`
-              : ''
-            }   
-            <span>${this.event.production}<br />${this.event.choreographer}</span>
-          </p>
+          ${this.event.company
+            ? `
+            <p>
+              <strong>${this.event.company}</strong><br />
+              <span>${this.event.production}<br />${this.event.choreographer}</span>
+            </p>`
+            : ''
+          }
           <p>
             <strong>${this.event.location}</strong><br />
             <span>${this.event.theater}</span>
