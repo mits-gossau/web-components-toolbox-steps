@@ -157,8 +157,7 @@
   --button-steps-spielplan-reset-padding: var(--button-steps-spielplan-padding);
   --button-steps-spielplan-reset-background-color-active: var(--steps-color-black);
   --button-steps-spielplan-reset-background-color-hover: var(--button-steps-spielplan-background-color-hover);
-  --button-steps-spielplan-reset-visibility: hidden;
-  --button-steps-spielplan-reset-visibility-active: visible;
+  --button-steps-spielplan-reset-display: none;
   --button-steps-filter-padding: 6px 24px;
   --button-steps-filter-background-color-active: var(--steps-color-black);
   --button-steps-filter-color-active: var(--steps-color-white);
