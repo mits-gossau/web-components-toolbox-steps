@@ -84,7 +84,7 @@ export default class Stage extends Shadow() {
         font-family: var(--h-font-family);
       }
 
-      :host .stage__picture {
+      :host .stage__media {
         height: 100vh;
       }
 
