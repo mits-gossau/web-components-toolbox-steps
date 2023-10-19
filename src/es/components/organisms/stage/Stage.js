@@ -35,6 +35,7 @@ export default class Stage extends Shadow() {
         --content-spacing: 0;
         padding-bottom: var(--component-spacing);
         z-index: 999;
+        height: 100vh;
       }
 
       :host .stage__overlay {
@@ -81,6 +82,10 @@ export default class Stage extends Shadow() {
         text-align: center;
         display: inline-block;
         font-family: var(--h-font-family);
+      }
+
+      :host .stage__picture {
+        height: 100vh;
       }
 
       :host .stage__content span + a-button {
