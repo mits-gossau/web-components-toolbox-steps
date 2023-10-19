@@ -110,7 +110,7 @@
   --a-margin: 0;
 
   /* general spacing concept */
-  --component-spacing: 2rem;
+  --component-spacing: 3rem;
 
   /* border radius */
   --border-radius: 2.5rem;
@@ -150,7 +150,8 @@
   --button-steps-spielplan-border-radius: 2.5rem;
   --button-steps-spielplan-padding: 6px 24px;
   --button-steps-spielplan-background-color-hover: transparent;
-  --button-steps-spielplan-reset-color: var(--steps-color-white);
+  --button-steps-spielplan-reset-color-active: var(--steps-color-white);
+  --button-steps-spielplan-reset-color-hover: var(--steps-color-black);
   --button-steps-spielplan-reset-border-color: var(--button-steps-spielplan-border-color);
   --button-steps-spielplan-reset-border-width: var(--button-steps-spielplan-border-width);
   --button-steps-spielplan-reset-border-radius: var(--button-steps-spielplan-border-radius);
@@ -221,6 +222,7 @@
 
   --header-nav-right-a-menu-icon-border-radius-custom: 0;
   --content-dark-gap: 2rem;
+  --content-dark-gap-mobile: 1rem;
   --gap-custom: 2rem;
   --wrapper-reverse-gap: 2rem;
 
@@ -228,12 +230,12 @@
   --content-dark-h2-line-height: 45px;
   --content-dark-h2-font-size-mobile: 30px;
   --content-dark-h2-line-height-mobile: 35px;
-  --content-dark-margin-first-child-mobile: 0 0 16px 0;
+  --content-dark-margin-first-child-mobile: 0;
 
-  --content-dark-p-font-size: 16px;
-  --content-dark-p-line-height: 20px;
-  --content-dark-p-font-size-mobile: 16px;
-  --content-dark-p-line-height-mobile: 20px;
+  --content-dark-p-font-size: 17px;
+  --content-dark-p-line-height: 21px;
+  --content-dark-p-font-size-mobile: 17px;
+  --content-dark-p-line-height-mobile: 21px;
   --p-font-size: 16px;
   --p-line-height: 20px;
   --p-font-size-mobile: 16px;

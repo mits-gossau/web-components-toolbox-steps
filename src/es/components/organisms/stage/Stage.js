@@ -73,6 +73,7 @@ export default class Stage extends Shadow() {
         text-align: center;
         margin: 0;
         font-family: var(--h-font-family);
+        line-height: 50px;
       }
 
       :host .stage__content span {
@@ -82,6 +83,7 @@ export default class Stage extends Shadow() {
         text-align: center;
         display: inline-block;
         font-family: var(--h-font-family);
+        line-height: 50px;
       }
 
       :host .stage__media {
