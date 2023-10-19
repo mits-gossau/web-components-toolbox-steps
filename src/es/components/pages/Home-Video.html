@@ -1,0 +1,166 @@
+<o-body-style background-color=var(--steps-color-grey-dark)>
+  <o-steps-stage>
+    <div class="stage__media">
+        <a-video namespace="video-crop-" muted autoplay loop="true" video-load aspect-ratio="0.6">
+          <style>
+            :host video {
+              --video-crop-height: 100vh;
+              --video-crop-min-height: 100vh;
+            }
+          </style>
+          <source type="video/mp4" src="/src/video/home_mobile.mp4" />
+        </a-video>
+      </div>
+    </div>
+    <div class="stage__overlay"></div>
+    <div class="stage__content">
+      <h2>Save the Date!</h2>
+      <span>Next Steps:</span>
+      <span>24.4. - 19.5.2024</span>
+      <a-button
+        namespace="button-steps-"
+        href="#"
+        target="_self"
+        tabindex="0"
+        data-href="/spielplan"
+        role="link"
+        hover=""
+        class="stage__button"
+      >
+        <style>
+          :host a {
+            position: relative;
+          }
+
+          :host a svg {
+            position: absolute;
+            right: 1.5rem;
+            transition: right 0.3s ease-in-out;
+          }
+
+          :host a:hover svg {
+            right: 1rem;
+          }
+
+          @media (max-width: 768px) {
+            :host a {
+              padding: 4px 16px; /* mobile variable ? */
+            }
+
+            :host a span {
+              font-size: 16px;
+            }
+
+            :host a svg {
+              right: 2rem;
+            }
+
+            :host a:hover svg {
+              right: 1.5rem;
+            }
+          }
+        </style>
+        <a href="/spielplan" target="_self" type="button">
+          <span id="label">Jetzt Newsletter abonnieren</span>
+        </a>
+      </a-button>
+    </div>
+  </o-steps-stage>
+
+  <a-steps-container>
+
+    <o-wrapper namespace="content-dark-">
+      <style>
+        :host {
+          padding-bottom: var(--component-spacing);
+        } 
+        :host p {
+          color: var(--steps-color-white);
+        }
+      </style>
+      <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa ipsam molestias ad nulla itaque sint beatae quibusdam architecto magni, recusandae possimus non aut inventore omnis ipsum dolores modi sed! Nisi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa ipsam molestias ad nulla itaque sint beatae quibusdam architecto magni, recusandae possimus non aut inventore omnis ipsum dolores modi sed! Nisi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa ipsam molestias ad nulla itaque sint beatae quibusdam architecto magni, recusandae possimus non aut inventore omnis ipsum dolores modi sed! Nisi!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa ipsam molestias ad nulla itaque sint beatae quibusdam architecto magni, recusandae possimus non aut inventore omnis ipsum dolores modi sed! Nisi!</p>
+    </o-wrapper>
+
+    <o-wrapper namespace="content-dark-">
+      <style>
+        :host {
+          padding-bottom: var(--component-spacing);
+        } 
+        :host p {
+          color: var(--steps-color-white);
+        }
+      </style>
+      <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa ipsam molestias ad nulla itaque sint beatae quibusdam architecto magni, recusandae possimus non aut inventore omnis ipsum dolores modi sed! Nisi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa ipsam molestias ad nulla itaque sint beatae quibusdam architecto magni, recusandae possimus non aut inventore omnis ipsum dolores modi sed! Nisi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa ipsam molestias ad nulla itaque sint beatae quibusdam architecto magni, recusandae possimus non aut inventore omnis ipsum dolores modi sed! Nisi!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa ipsam molestias ad nulla itaque sint beatae quibusdam architecto magni, recusandae possimus non aut inventore omnis ipsum dolores modi sed! Nisi! <a rel="noopener" href="https://www.instagram.com/stepsfestival/" target="_blank">Instagram</a></p>
+    </o-wrapper>
+    
+    <m-steps-tiles>
+      <div class="tiles__wrapper">
+        <a href="#" class="tiles__tile">
+          <h2 class="tiles__title">Programm</h2>
+          <a-picture
+          loading="eager"
+          tabindex="0"
+          loaded-bad-quality="true"
+          loaded="true"
+          namespace="picture-cover-"
+          >
+            <picture>
+              <source media="(min-width:768px)" data-srcset="http://via.placeholder.com/350x350" srcset="http://via.placeholder.com/350x350">
+              <img data-src="http://via.placeholder.com/350x350" decoding="sync" loading="eager" src="http://via.placeholder.com/350x350">
+            </picture>
+          </a-picture>     
+        </a>
+        <a href="#" class="tiles__tile">
+          <h2 class="tiles__title">News</h2>
+          <a-picture
+          loading="eager"
+          tabindex="0"
+          loaded-bad-quality="true"
+          loaded="true"
+          namespace="picture-cover-"
+          >
+            <picture>
+              <source media="(min-width:768px)" data-srcset="http://via.placeholder.com/350x350" srcset="http://via.placeholder.com/350x350">
+              <img data-src="http://via.placeholder.com/350x350" decoding="sync" loading="eager" src="http://via.placeholder.com/350x350">
+            </picture>
+          </a-picture>     
+        </a>
+        <a href="#" class="tiles__tile">
+          <h2 class="tiles__title">Programm</h2>
+          <a-picture
+          loading="eager"
+          tabindex="0"
+          loaded-bad-quality="true"
+          loaded="true"
+          namespace="picture-cover-"
+          >
+            <picture>
+              <source media="(min-width:768px)" data-srcset="http://via.placeholder.com/350x350" srcset="http://via.placeholder.com/350x350">
+              <img data-src="http://via.placeholder.com/350x350" decoding="sync" loading="eager" src="http://via.placeholder.com/350x350">
+            </picture>
+          </a-picture>     
+        </a>
+        <a href="#" class="tiles__tile">
+          <h2 class="tiles__title">News</h2>
+          <a-picture
+          loading="eager"
+          tabindex="0"
+          loaded-bad-quality="true"
+          loaded="true"
+          namespace="picture-cover-"
+          >
+            <picture>
+              <source media="(min-width:768px)" data-srcset="http://via.placeholder.com/350x350" srcset="http://via.placeholder.com/350x350">
+              <img data-src="http://via.placeholder.com/350x350" decoding="sync" loading="eager" src="http://via.placeholder.com/350x350">
+            </picture>
+          </a-picture>     
+        </a>
+      </div>
+    </m-steps-tiles>
+
+  </a-steps-container>
+  
+</o-body-style>
+

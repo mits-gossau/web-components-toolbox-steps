@@ -1,6 +1,6 @@
 <o-body-style background-color=var(--steps-color-grey-dark)>
   <o-steps-stage>
-    <div class="stage__picture">
+    <div class="stage__media">
       <a-picture
         loading="eager"
         tabindex="0"
@@ -14,11 +14,16 @@
         </picture>
       </a-picture>
       	
-      <!-- <div>
-        <a-video namespace="video-crop-" muted autoplay loop="true" video-load aspect-ratio="0.6">
+        <!-- <a-video namespace="video-crop-" muted autoplay loop="true" video-load aspect-ratio="0.6">
+          <style>
+            :host video {
+              --video-crop-height: 100vh;
+              --video-crop-min-height: 100vh;
+            }
+          </style>
           <source type="video/mp4" src="/media/33tnuuiu/steps_testvideohome_9_16.mp4" />
-        </a-video>
-      </div> -->
+        </a-video> -->
+      </div>
     </div>
     <div class="stage__overlay"></div>
     <div class="stage__content">
