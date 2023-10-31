@@ -243,7 +243,7 @@ export default class EventCard extends Shadow() {
       console.log('ANDY', this.event.company);
       const eventInfoHtml = /* html */ `
         <div class="event-info">
-          ${this.event.company == '' || this.event.company == 'undefined'
+          ${this.event.company == 'undefined'
             ? ''
             : `
             <p>
@@ -263,10 +263,10 @@ export default class EventCard extends Shadow() {
           </p>
           <p class="event-cta">
             ${buttonCta}
-            ${this.event.company == '' || this.event.company == 'undefined'
-              ? ''
-              : `
-              <a href="${detailsUrl}">${this.getAttribute('textLinkDetails')}</a>
+            ${this.event.companyDetailPageUrl == 'undefined'
+                ? ''
+                : `
+                  <a href="${detailsUrl}">${this.getAttribute('textLinkDetails')}</a>
               `
             }
           </p>
