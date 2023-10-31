@@ -60,9 +60,11 @@ export default class Tiles extends Shadow() {
         position: absolute;
         top: 0.5rem;
         left: 2rem;
-        width: 250px;
+        width: auto;
         font-family: var(--h-font-family);
         font-size: 30px;
+        line-height: 35px;
+        padding-right: 10px;
       }
 
       @media (max-width: 768px) {

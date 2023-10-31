@@ -264,11 +264,11 @@ export default class EventCard extends Shadow() {
           <p class="event-cta">
             ${buttonCta}
             ${this.event.companyDetailPageUrl == 'undefined'
-              ? ''
-              : `
-                <a href="${detailsUrl}">${this.getAttribute('textLinkDetails')}</a>
-            `
-          }
+                ? ''
+                : `
+                  <a href="${detailsUrl}">${this.getAttribute('textLinkDetails')}</a>
+              `
+            }
           </p>
         </div>
       `
