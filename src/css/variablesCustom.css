@@ -199,7 +199,8 @@
   --footer-default-boarder-right: none;
   --footer-default-padding: 20px 0 0 92px;
   --footer-default-padding-first-child: 0;
-  --footer-default-a-font-size: 20px;
+  --footer-default-a-font-size: 17px;
+  --footer-default-line-height: 21px;
   --footer-default-a-margin: 0 0 10px;
   --footer-default-any-a-display: inline-block;
   --footer-default-any-2-width: 20%;
@@ -210,8 +211,9 @@
   --footer-default-invert-color: var(--steps-color-red);
   --footer-default-invert-svg-color-hover: var(--steps-color-red);
   --footer-default-padding-last-child-mobile: 20px 0 0;
-  --footer-default-p-font-size-mobile: 18px;
-  --footer-default-a-font-size-mobile: 18px;
+  --footer-default-p-font-size-mobile: 17px;
+  --footer-default-a-font-size-mobile: 17px;
+  --footer-default-line-height-mobile: 21px;
   --footer-default-invert-background-color-custom: var(--steps-color-blue);
   --footer-default-a-font-weight: normal;
   --footer-default-h4-font-size: 14px;

@@ -1,15 +1,17 @@
 <o-footer namespace="footer-default-" no-details-mobile>
     <style>
         :host .invert {
-            padding-top: var(--footer-invert-padding-top, 100px);
+            padding-top: var(--footer-invert-padding-top, 50px);
         }
 
         :host .invert .copyright {
-            font-size: var(--footer-invert-copyright-font-size, 22px);
+            font-size: var(--footer-invert-copyright-font-size, 17px);
+            line-height: var(--footer-invert-copyright-line-height, 21px);
         }
 
         :host .invert:last-child {
-            padding-bottom: var(--footer-invert-last-child-padding-bottom, 100px);
+            padding-top: var(--footer-invert-last-child-padding-top, 50px);
+            padding-bottom: var(--footer-invert-last-child-padding-bottom, 50px);
         }
 
         :host .footer-links--no-underline a,
@@ -36,6 +38,7 @@
             }
 
             :host .invert:last-child {
+                padding-top: var(--footer-invert-last-child-padding-top-mobile, 20px);
                 padding-bottom: var(--footer-invert-last-child-padding-bottom-mobile, 20px);
             }
 
@@ -55,13 +58,15 @@
                 }
 
                 :host .footer__text {
-                    font-size: 16px;
+                    font-size: 17px;
+                    line-height: 21px;
                     padding-top: var(--footer--text-padding-top, 20px);
                     padding-left: var(--footer--text-padding-left, 68px);
                 }
 
                 :host .footer__text a {
-                    font-size: 16px;
+                    font-size: 17px;
+                    line-height: 21px;
                     color: white;
                 }
 
