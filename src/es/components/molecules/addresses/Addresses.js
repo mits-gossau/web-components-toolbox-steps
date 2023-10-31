@@ -43,20 +43,31 @@ export default class Addresses extends Shadow() {
   renderCSS () {
     this.css = /* css */`
         :host {
-            padding-bottom: var(--component-spacing);
-            display: flex;
-            flex-wrap: wrap;
-            font-family: "HelveticaNowText";
+          padding: 3rem 0 var(--component-spacing);
+          display: flex;
+          flex-wrap: wrap;
+          font-family: "HelveticaNowText";
         }
         
         :host .address-item {
-            width: 50%;
-            margin-bottom: 2rem;
-            font-style: normal;
+          width: 50%;
+          margin-bottom: 2rem;
+          font-style: normal;
+        }
+
+        :host h2 {
+          font-family: PPMonumentExtended, Helvetica, Arial, sans-serif;
+          margin: 0;
+          font-size: var(--steps-h-font-size-small);
+          padding: 0.5rem 0 0.5rem;
+          line-height: 30px;
         }
 
         :host p {
           margin: 0;
+          font-size: 17px;
+          line-height: 21px;
+          font-family: "NeueAugenblickMedium";
         }
 
         :host .address-name {
@@ -71,7 +82,10 @@ export default class Addresses extends Shadow() {
 
         :host .address-link {
           color: var(--steps-color-black);
-          font-family: "HelveticaNowTextBold";
+          display: inline-block;
+          padding-top: 0.5rem;
+          font-weight: bold;
+          font-family: "NeueAugenblickBold";
         }
 
         :host .address-icons {
@@ -80,9 +94,18 @@ export default class Addresses extends Shadow() {
         }
 
         @media (max-width: 768px) {
-            :host .address-item {
-                width: 100%;
-            }
+          :host {
+            padding-top: 1.5rem;
+          }
+
+          :host h2 {
+            font-size: 20px;
+            line-height: 25px;
+          }
+
+          :host .address-item {
+              width: 100%;
+          }
         }
     `
   }
