@@ -131,7 +131,7 @@ export default class EventCard extends Shadow() {
       :host .event-info > * {
         flex-grow: 0;
         flex-shrink: 0;
-        hyphens: auto;
+        hyphens: none;
       }
       :host .event-info p {
         line-height: 18px;
