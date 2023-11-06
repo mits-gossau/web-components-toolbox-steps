@@ -257,7 +257,7 @@ export default class EventCard extends Shadow() {
             <span>${this.event.theater}</span>
           </p>
           <p>
-            ${this.event.eventTime}<br />
+            ${this.event.eventTime} ${this.getAttribute('textTimeSuffix')}<br />
             ${eventIconsHTML}
             ${theaterIconsHTML}
           </p>
