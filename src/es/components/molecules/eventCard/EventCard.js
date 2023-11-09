@@ -240,7 +240,6 @@ export default class EventCard extends Shadow() {
       const eventIconsHTML = eventIcons ? `<span class="legend-icons">${eventIcons}</span>` : ``
       const theaterIconsHTML = theaterIcons ? `<span class="legend-icons">${theaterIcons}</span>` : ``
       
-      console.log('ANDY', this.event.company);
       const eventInfoHtml = /* html */ `
         <div class="event-info">
           ${this.event.company == 'undefined'

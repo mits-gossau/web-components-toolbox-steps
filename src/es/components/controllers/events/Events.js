@@ -90,7 +90,7 @@ import { Shadow } from '../../web-components-toolbox/src/es/components/prototype
  * @type {CustomElementConstructor}
  */
 export default class Events extends Shadow() {
-  constructor (options = {}, ...args) {
+  constructor(options = {}, ...args) {
     super({
       importMetaUrl: import.meta.url,
       mode: 'false',
@@ -112,7 +112,17 @@ export default class Events extends Shadow() {
           fetch: this.fetch.then(result => {
             let events
             if (event && event.detail && event.detail.this && event.detail.this.getAttribute('filter-type') && event.detail.tags && event.detail.tags[0]) {
-              this.setParameter(event.detail.this.getAttribute('filter-type'), event.detail.tags[0], event.detail.pushHistory, event.detail.isActive)
+
+              let currentParam = this.getParameter(event.detail.this.getAttribute('filter-type')) ?? ""
+              let currentParamArray = currentParam.split(",").filter(cParam => cParam !== "")
+              
+              if (currentParamArray.some(cParam => cParam === event.detail.tags[0])) {
+                currentParamArray = currentParamArray.filter(cParam => cParam !== event.detail.tags[0])
+              }
+              else {
+                currentParamArray.push(event.detail.tags[0])
+              }
+              this.setParameter(event.detail.this.getAttribute('filter-type'), currentParamArray.join(), event.detail.pushHistory, true)
               events = this.filterEvents(result.events, this.getParameter('company'), this.getParameter('location'), this.getParameter('date'), event.detail?.dateStrSeparator)
             } else if (event && event.detail && event.detail.this && event.detail.this.getAttribute('id') === 'filter-clean') {
               this.setParameter('company', null)
@@ -148,6 +158,12 @@ export default class Events extends Shadow() {
 
     // dispatches 'list-filter-items'
     this.requestListFilterItemsEventsListener = event => {
+      let currentCompanyParam = this.getParameter("company") ?? ""
+      let currentLocationParam = this.getParameter("location") ?? ""
+
+      let currentCompanyParamArray = currentCompanyParam.split(",").filter(cParam => cParam !== "")
+      let currentLocationParamArray = currentLocationParam.split(",").filter(cParam => cParam !== "")
+
       this.dispatchEvent(new CustomEvent('list-filter-items', {
         detail: {
           fetch: this.fetch.then(
@@ -161,16 +177,16 @@ export default class Events extends Shadow() {
                   items: result.companies,
                   filterType: 'company',
                   filterTypePlural: 'companies',
-                  filterActive: this.getParameter('company')
+                  filterActive: currentCompanyParamArray
                 }
                 : {
                   items: result.locations,
                   filterType: 'location',
                   filterTypePlural: 'locations',
-                  filterActive: this.getParameter('location')
+                  filterActive: currentLocationParamArray
                 }
               : {}
-            )
+          )
         },
         bubbles: true,
         cancelable: true,
@@ -198,10 +214,10 @@ export default class Events extends Shadow() {
     // dispatches 'list-events' + 'set-date'
     this.updatePopState = event => {
       for (const key in event.state) {
-          this.setParameter(key, event.state[key], false, true)
+        this.setParameter(key, event.state[key], false, true)
       }
       this.requestListEventsListener()
-      new Promise(resolve => this.getDateOptionEventsListener({detail: {resolve}})).then(data => {
+      new Promise(resolve => this.getDateOptionEventsListener({ detail: { resolve } })).then(data => {
         // inform the Flatpickr through this event, since it does not listen to "list-events"
         this.dispatchEvent(new CustomEvent('set-date', {
           detail: data,
@@ -213,7 +229,7 @@ export default class Events extends Shadow() {
     }
   }
 
-  connectedCallback () {
+  connectedCallback() {
     this.addEventListener('request-list-events', this.requestListEventsListener)
     this.addEventListener('request-href-' + (this.getAttribute('request-list-events') || 'request-list-events'), this.requestHrefEventListener)
     this.addEventListener('request-list-filter-items', this.requestListFilterItemsEventsListener)
@@ -221,7 +237,7 @@ export default class Events extends Shadow() {
     if (!this.hasAttribute('no-popstate')) self.addEventListener('popstate', this.updatePopState)
   }
 
-  disconnectedCallback () {
+  disconnectedCallback() {
     this.removeEventListener('request-list-events', this.requestListEventsListener)
     this.removeEventListener('request-href-' + (this.getAttribute('request-list-events') || 'request-list-events'), this.requestHrefEventListener)
     this.removeEventListener('request-list-filter-items', this.requestListFilterItemsEventsListener)
@@ -241,20 +257,23 @@ export default class Events extends Shadow() {
    * @param {string | null} [dateStrSeparator = this.dateStrSeparator]
    * @return {Event[]}
    */
-  filterEvents (events, company, location, dates, dateStrSeparator = this.dateStrSeparator) {
+  filterEvents(events, company, location, dates, dateStrSeparator = this.dateStrSeparator) {
     const dateArray = this.dateArrayMap.get(dates || '') || []
+    let companyArray = company?.split(",")
+    let locationArray = location?.split(",")
+
     // generate all date objects between and including a start and end date
     if (dates && dateStrSeparator && !dateArray.length) {
       const [minDate, maxDate] = dates.split(dateStrSeparator).map(date => this.deChDateToDateObj(date))
-      for(const currentDate = new Date(minDate); currentDate <= new Date(maxDate || minDate); currentDate.setDate(currentDate.getDate() + 1)){
+      for (const currentDate = new Date(minDate); currentDate <= new Date(maxDate || minDate); currentDate.setDate(currentDate.getDate() + 1)) {
         dateArray.push(new Date(currentDate))
       }
       this.dateArrayMap.set(dates, dateArray)
     }
-    // filter accordingly... expl. if company set check for company, otherwise ignore and return true
+    // filter accordingly... expl. if company set check for company, otherwise ignore and return true // resultEvent?.company === company
     return events.filter(resultEvent => {
-      return (!company || resultEvent?.company === company)
-        && (!location || resultEvent?.location === location)
+      return (!companyArray || companyArray.some(company => company === resultEvent?.company))
+        && (!locationArray || locationArray.some(location => location === resultEvent?.location))
         && (!dateArray.length || dateArray.some(date => date.getTime() === resultEvent?.dateObj?.getTime()))
     })
   }
@@ -267,9 +286,10 @@ export default class Events extends Shadow() {
    * @param {boolean} [isActive = true]
    * @return {URL}
    */
-  setParameter (filterType, tag, pushHistory = true, isActive = true) {
+  setParameter(filterType, tag, pushHistory = true, isActive = true) {
     // create/update an url object with key (filterType) and value (tag) if isActive otherwise remove that key form the url params
     const url = new URL(location.href, location.href.charAt(0) === '/' ? location.origin : location.href.charAt(0) === '.' ? this.importMetaUrl : undefined)
+
     if (tag && isActive) {
       url.searchParams.set(filterType, tag)
     } else {
@@ -285,7 +305,7 @@ export default class Events extends Shadow() {
    * @param {FilterType} filterType
    * @return string | null
    */
-  getParameter (filterType) {
+  getParameter(filterType) {
     const urlParams = new URLSearchParams(location.search)
     const tag = urlParams.get(filterType)
     if (tag) return tag
@@ -297,7 +317,7 @@ export default class Events extends Shadow() {
    * 
    * @return {Promise<FetchAll>}
    */
-  get fetch () {
+  get fetch() {
     return this._fetch || (this._fetch = fetch(this.getAttribute('endpoint'), {
       method: 'GET'
     }).then(async response => {
@@ -314,7 +334,7 @@ export default class Events extends Shadow() {
         return event
       })
       /** @type {string[]} */
-      const companies = events.map(event => event.company).sort()
+      const companies = events.map(event => event.company.replace(","," -")).sort()
       /** @type {string[]} */
       const locations = events.map(event => event.location).sort()
       /** @type {string[]} */
@@ -333,8 +353,8 @@ export default class Events extends Shadow() {
   }
 
   // make 10.09.2024 to a date object by turning 2024 to year, 09 to month and 10 to day
-  deChDateToDateObj (dateStr) {
+  deChDateToDateObj(dateStr) {
     // @ts-ignore
-    return new Date(...dateStr.split('.').reverse().map((date, i) => i === 1 ? Number(date)-1 : date))
+    return new Date(...dateStr.split('.').reverse().map((date, i) => i === 1 ? Number(date) - 1 : date))
   }
 }
