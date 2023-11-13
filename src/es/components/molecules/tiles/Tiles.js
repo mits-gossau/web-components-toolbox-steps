@@ -72,7 +72,7 @@ export default class Tiles extends Shadow() {
         font-family: var(--h-font-family);
         font-size: 30px;
         line-height: 35px;
-        padding-right: 10px;
+        padding-right: 2rem;
         z-index: 10;
       }
 
