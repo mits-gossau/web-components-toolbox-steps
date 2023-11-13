@@ -98,6 +98,7 @@ export default class Stage extends Shadow() {
         :host .stage__content h2,
         :host .stage__content span {
           font-size: 2rem;
+          line-height: 32px;
         }
 
         :host .stage__content span + a-button {
