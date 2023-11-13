@@ -40,7 +40,6 @@ export default class EventList extends Shadow() {
 
     this.selectListener = (event) => {
       event.preventDefault()
-      console.log(event, event.detail)
     }
   }
 
