@@ -48,8 +48,16 @@ export default class Tiles extends Shadow() {
         color: var(--steps-color-white);
       }
 
+      :host .tiles__tile--full {
+        width: 100%;
+      }
+
       :host .tiles__tile:nth-child(odd) {
         margin-right: 2rem;
+      }
+
+      :host .tiles__tile--full:nth-child(odd) {
+        margin-right: 1rem;
       }
 
       :host .tiles__tile:nth-child(even) {
