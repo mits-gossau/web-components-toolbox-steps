@@ -151,20 +151,21 @@
   --button-steps-spielplan-padding: 6px 24px;
   --button-steps-spielplan-background-color-hover: transparent;
   --button-steps-spielplan-reset-color-active: var(--steps-color-white);
-  --button-steps-spielplan-reset-color-hover: var(--steps-color-black);
+  --button-steps-spielplan-reset-color-hover: var(--steps-color-white);
   --button-steps-spielplan-reset-border-color: var(--button-steps-spielplan-border-color);
   --button-steps-spielplan-reset-border-width: var(--button-steps-spielplan-border-width);
   --button-steps-spielplan-reset-border-radius: var(--button-steps-spielplan-border-radius);
   --button-steps-spielplan-reset-padding: var(--button-steps-spielplan-padding);
   --button-steps-spielplan-reset-background-color-active: var(--steps-color-black);
-  --button-steps-spielplan-reset-background-color-hover: var(--button-steps-spielplan-background-color-hover);
+  --button-steps-spielplan-reset-background-color-hover: var(--steps-color-black);
   --button-steps-spielplan-reset-display: none;
   --button-steps-filter-padding: 6px 24px;
   --button-steps-filter-background-color-active: var(--steps-color-black);
   --button-steps-filter-color-active: var(--steps-color-white);
   --button-steps-filter-border-radius: var(--button-steps-spielplan-border-radius);
-  --button-steps-filter-background-color-hover: transparent;
-  --button-steps-filter-color-hover: var(--steps-color-black);
+  --button-steps-filter-background-color-hover: var(--steps-color-black);;
+  --button-steps-filter-color-hover: var(--steps-color-white);
+  --button-steps-filter-background-color-hover-mobile: var(--steps-color-black);
 
   /* header */
   --header-nav-right-a-logo-top-mobile-custom: 2em;
