@@ -198,6 +198,7 @@ export default class EventList extends Shadow() {
         textLinkDetails="${translations.linkDetails}"
         textSoldOut="${translations.soldOut}"
         textTimeSuffix="${translations.timeSuffix}"
+        lang="${this.getAttribute('lang') || ''}"
       ></m-steps-event-card>`
     })
     .join('')

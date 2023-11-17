@@ -212,7 +212,7 @@ export default class EventCard extends Shadow() {
   
       // get weekday name by date
       const date = new Date(parseInt(partDate[2]), parseInt(partDate[1]), parseInt(partDate[0]));
-      const weekday = date.toLocaleDateString('de-DE', {
+      const weekday = date.toLocaleDateString(this.getAttribute('lang') || document.documentElement.getAttribute("lang") || 'de-DE', {
         weekday: 'long'
       })
   
