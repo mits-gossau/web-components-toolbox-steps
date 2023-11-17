@@ -78,6 +78,7 @@ export default class Heading extends Shadow() {
 
         :host .heading--h1 {
             color: var(--steps-color-black);
+            margin: 0 0 45px 0;
         }
 
         :host .heading--h2 {
@@ -94,15 +95,27 @@ export default class Heading extends Shadow() {
             line-height: 30px;
         }
 
+        :host .heading--margin-top {
+          margin: 35px 0;
+        }
+
         @media (max-width: 768px) {
           :host .heading {
             font-size: 30px;
             line-height: 35px;
           }
 
+          :host .heading--h1 {
+            margin: 0 0 35px 0;
+          }
+
           :host .heading--small {
             font-size: 20px;
             line-height: 25px;
+          }
+
+          :host .heading--margin-top {
+            margin: 25px 0;
           }
         }
     `
