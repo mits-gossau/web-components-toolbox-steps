@@ -10,9 +10,15 @@
             "accessibilityurl": "#",
             "accessibilityurltitle": "Accessibility URL",
             "theaterInformationIcons": [
-                "/src/img/icons/icon-rollstuhlgaengig.svg",
-                "/src/img/icons/icon-hoerbenachteiligung.svg"
-            ]
+                {
+                  "src": "/src/img/icons/icon-hoerbenachteiligung.svg",
+                  "alt": "Hörbenachteiligung"
+                },
+                {
+                  "src": "/src/img/icons/icon-rollstuhlgaengig.svg",
+                  "alt": "Rollstuhlgängig"
+                }
+              ]
         },
         {
             "theatername": "Schauspielhaus Zürich",
@@ -24,8 +30,11 @@
             "accessibilityurl": "#",
             "accessibilityurltitle": "Accessibility URL",
             "theaterInformationIcons": [
-                "/src/img/icons/icon-rollstuhlgaengig.svg"
-            ]
+                {
+                  "src": "/src/img/icons/icon-rollstuhlgaengig.svg",
+                  "alt": "Rollstuhlgängig"
+                }
+              ]
         },
         {
             "theatername": "Theater St. Gallen, Schauspielhaus",
