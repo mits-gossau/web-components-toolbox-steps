@@ -154,7 +154,7 @@ export default class Addresses extends Shadow() {
     let iconMarkup = ''
     icons.forEach(icon => {
       let newIcon = /* html */`
-        <img src="${icon}" width="24" height="24">
+        <img src="${icon.src}" alt="${icon.alt}" width="24" height="24">
       `
 
       iconMarkup = iconMarkup.concat(' ', newIcon)
