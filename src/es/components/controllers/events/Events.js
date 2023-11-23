@@ -158,6 +158,10 @@ export default class Events extends Shadow() {
 
     // dispatches 'list-filter-items'
     this.requestListFilterItemsEventsListener = event => {
+      // TODO IMPORTANT: To have this feature to be complete, we have to change this line in button.js
+      // change this line:  this.button.classList[tags === this.getAttribute('tag') || tags === this.getAttribute('tag-search') ? 'add' : 'remove']('active')
+      // to this line: this.button.classList[tags === this.getAttribute('tag') || tags === this.getAttribute('tag-search') || (typeof tags === 'string' && tags?.includes(this.getAttribute('tag'))) ? 'add' : 'remove']('active') 
+
       let currentCompanyParam = this.getParameter("company") ?? ""
       let currentLocationParam = this.getParameter("location") ?? ""
 
