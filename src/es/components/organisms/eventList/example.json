@@ -1,6 +1,26 @@
 {
   "events": [
     {
+      "location": "Baden",
+      "theater": "Kurtheater Baden ",
+      "theaterInformationIcons": [
+        {
+          "src": "/src/img/icons/icon-rollstuhlgaengig.svg",
+          "alt": "Rollstuhlgängig"
+        }
+      ],
+      "company": "Winter Guests (NOR)",
+      "companyDetailPageUrl": null,
+      "production": "Story, story, die.",
+      "choreographer": "Alan Lucien Øyen ",
+      "eventName": "winterguests_0424_Baden",
+      "eventDate": "24.04.2024",
+      "eventTime": "19:30",
+      "soldOut": "False",
+      "presaleUrl": null,
+      "eventInformationIcons": null
+    },
+    {
       "location": "Schaffhausen",
       "theater": "Stadttheater Schaffhausen ",
       "theaterInformationIcons": [
