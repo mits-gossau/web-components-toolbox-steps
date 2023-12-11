@@ -251,6 +251,7 @@
   --flatpickr-default-color-start-end-range-custom: white;
 
   --wrapper-teaser-a-font-weight: normal;
+  --wrapper-teaser-h2-font-size-mobile: 1.125rem;
 }
 
 body {
