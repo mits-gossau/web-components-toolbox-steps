@@ -249,6 +249,8 @@
 
   --flatpickr-default-background-custom: darkgray;
   --flatpickr-default-color-start-end-range-custom: white;
+
+  --wrapper-teaser-a-font-weight: normal;
 }
 
 body {
