@@ -74,6 +74,10 @@ export default class Container extends Shadow() {
         }
 
         @media only screen and (max-width: 767px) {
+          :host {
+            padding-bottom: 0;
+          }
+
           .spacer, .spacer-one, .spacer-two, .spacer-three, .spacer-four {
             margin: var(--spacer-margin-mobile, var(--spacer-margin, var(--content-spacing-mobile, var(--content-spacing)) auto)) !important;
           }
