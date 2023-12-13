@@ -94,6 +94,16 @@ export default class Stage extends Shadow() {
         margin-top: 2.0rem;
       }
 
+      :host .stage__sound {
+        bottom: var(--state-sound-bottom, 1em);
+        position: var(--state-sound-position, absolute);
+        right: var(--stage-sound-right, 3vw);
+      }
+
+      :host .sound-off>svg, .sound-on>svg {
+        height:var(--stage-sound-svg-height, 24px);
+      }
+
       @media (max-width: 768px) {
         :host .stage__content h2,
         :host .stage__content span {
