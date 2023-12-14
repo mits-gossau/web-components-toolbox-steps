@@ -17,6 +17,29 @@ export default class Stage extends Shadow() {
 
   connectedCallback () {
     if (this.shouldRenderCSS()) this.renderCSS()
+    this.soundOffBtn.addEventListener('click', this.soundOffEventListener)
+    this.soundOnBtn.addEventListener('click', this.soundOnEventListener)
+  }
+
+  disconnectedCallback () {
+    this.soundOffBtn.removeEventListener('click', this.soundOffEventListener)
+    this.soundOnBtn.removeEventListener('click', this.soundOnEventListener)
+  }
+
+  soundOffEventListener = (e) => {
+    this.video.muted = false
+    this.video.volume = 0.8
+    this.toggleSoundPlayerIcons('block', 'none')
+  }
+
+  soundOnEventListener = (e) => {
+    this.video.muted = true
+    this.toggleSoundPlayerIcons('none', 'block')
+  }
+
+  toggleSoundPlayerIcons (onBtnDisplay, offBtnDisplay) {
+    this.soundOnBtn.style.display = onBtnDisplay
+    this.soundOffBtn.style.display = offBtnDisplay
   }
 
   /**
@@ -98,10 +121,24 @@ export default class Stage extends Shadow() {
         bottom: var(--state-sound-bottom, 1em);
         position: var(--state-sound-position, absolute);
         right: var(--stage-sound-right, 3vw);
+        z-index: var(--stage-sound-z-index, 99);
+      }
+
+      :host .sound-off {
+        display:block;
+      }
+
+      :host .sound-on {
+        display:none;
+      }
+
+      :host .sound-off:hover, .sound-on:hover {
+        cursor: pointer;
       }
 
       :host .sound-off>svg, .sound-on>svg {
-        height:var(--stage-sound-svg-height, 24px);
+        width: var(--stage-sound-svg-height, 25px);
+        height: var(--stage-sound-svg-height, 25px);
       }
 
       @media (max-width: 768px) {
@@ -116,5 +153,17 @@ export default class Stage extends Shadow() {
         }
       }
     `
+  }
+
+  get soundOffBtn () {
+    return this.root.querySelector('.sound-off')
+  }
+
+  get soundOnBtn () {
+    return this.root.querySelector('.sound-on')
+  }
+
+  get video () {
+    return this.root.querySelector('a-video').root.querySelector('video')
   }
 }
