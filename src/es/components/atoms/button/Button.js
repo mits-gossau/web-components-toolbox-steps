@@ -33,8 +33,29 @@ export default class Button extends Hover() {
     } else {
       this.origInnerHTML = this.root.innerHTML
     }
+
+    window.document.onscroll = () => {
+      if (this.hasAttribute('scroll-to-top')) {
+        console.log(document.documentElement.scrollTop)
+        if (document.body.scrollTop > 10 || document.documentElement.scrollTop >= 10) {
+          this.button.style.display = 'block'
+        } else {
+          this.button.style.display = 'none'
+        }
+      }
+    }
+
     this.clickListener = event => {
       if (this.hasAttribute('disabled')) event.preventDefault()
+      //
+      if (this.hasAttribute('scroll-to-top')) {
+        const rootElement = document.documentElement
+        rootElement.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        })
+      }
+      //
       if (this.getAttribute('request-event-name')) {
         event.preventDefault()
         this.button.classList.toggle('active')
