@@ -211,6 +211,12 @@ export default class Events extends Shadow() {
         }))
       })
     }
+    // set Monday as first day in Datepickr
+    this.querySelector('a-flatpickr').setAttribute('options', JSON.stringify({
+      locale: {
+       "firstDayOfWeek": 1,
+      },
+    }))
   }
 
   connectedCallback () {
