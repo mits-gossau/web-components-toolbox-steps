@@ -97,6 +97,7 @@ export default class Events extends Shadow() {
       ...options
     }, ...args)
 
+    this.separator = '💩'
     /** 
      * calculated dates between min/max actual date expl.: 11.10.2023+—+26.10.2023 would be 11.10.2023 + 12.10.2023 + 13.10.20203 + ... + 26.10.2023
      * @type {Map<string, Date[]>}
@@ -126,8 +127,8 @@ export default class Events extends Shadow() {
               events,
               translations: result.translations,
               filter: {
-                company: this.getParameter('company'),
-                location: this.getParameter('location'),
+                company: this.getParameter('company')?.split(this.separator),
+                location: this.getParameter('location')?.split(this.separator),
                 date: this.getParameter('date'),
                 dateReset: !this.getParameter('date'),
                 active: String(!!(this.getParameter('company') || this.getParameter('location') || this.getParameter('date')))
@@ -253,8 +254,8 @@ export default class Events extends Shadow() {
     }
     // filter accordingly... expl. if company set check for company, otherwise ignore and return true
     return events.filter(resultEvent => {
-      return (!company || resultEvent?.company === company)
-        && (!location || resultEvent?.location === location)
+      return (!company || company.includes(resultEvent?.company))
+        && (!location || location.includes(resultEvent?.location))
         && (!dateArray.length || dateArray.some(date => date.getTime() === resultEvent?.dateObj?.getTime()))
     })
   }
@@ -270,10 +271,28 @@ export default class Events extends Shadow() {
   setParameter (filterType, tag, pushHistory = true, isActive = true) {
     // create/update an url object with key (filterType) and value (tag) if isActive otherwise remove that key form the url params
     const url = new URL(location.href, location.href.charAt(0) === '/' ? location.origin : location.href.charAt(0) === '.' ? this.importMetaUrl : undefined)
-    if (tag && isActive) {
-      url.searchParams.set(filterType, tag)
+
+    if (filterType === 'date') {
+      if (tag && isActive) {
+        url.searchParams.set(filterType, tag)
+      } else {
+        url.searchParams.delete(filterType)
+      }
     } else {
-      url.searchParams.delete(filterType)
+      // company and location support multiple selection
+      // @ts-ignore
+      const oldParameter = this.getParameter(filterType)
+      if (tag && isActive) {
+        url.searchParams.set(filterType, oldParameter ? `${oldParameter}${this.separator}${tag}` : tag)
+      } else {
+        const oldParameterArray = oldParameter?.split(this.separator) || []
+        if (oldParameterArray.length > 1 && tag !== null) {
+          oldParameterArray.splice(oldParameterArray.indexOf(tag), 1)
+          url.searchParams.set(filterType, oldParameterArray.join(this.separator))
+        } else {
+          url.searchParams.delete(filterType)
+        }
+      }
     }
     // update the url parameters in the actual url bar and history
     if (pushHistory) history.pushState({ ...history.state, [filterType]: tag }, document.title, url.href) // TODO: make sure the title reflects the setParameters
