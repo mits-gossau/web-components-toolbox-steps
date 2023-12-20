@@ -36,6 +36,9 @@ export default class FilterList extends Shadow() {
 
   renderCSS () {
     this.css = /* css */ `
+      :host {
+        --button-steps-filter-margin: 1px;
+      }
       :host .list-items {
         list-style: none;
         margin: 1.25rem 0;
