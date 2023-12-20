@@ -123,6 +123,26 @@ export default class Events extends Shadow() {
             } else {
               events = this.filterEvents(result.events, this.getParameter('company'), this.getParameter('location'), this.getParameter('date'), event?.detail?.dateStrSeparator)
             }
+            if (event.detail?.this?.getAttribute('filter-type')) this.dispatchEvent(new CustomEvent('list-filter-items', {
+              detail: {
+                fetch: Promise.resolve(event.detail.this.getAttribute('filter-type') === 'companies'
+                  ? {
+                    items: events.map(event => event.company).sort(),
+                    filterType: 'company',
+                    filterTypePlural: 'companies',
+                    filterActive: false
+                  }
+                  : {
+                    items: events.map(event => event.location).sort(),
+                    filterType: 'location',
+                    filterTypePlural: 'locations',
+                    filterActive: false
+                  })
+              },
+              bubbles: true,
+              cancelable: true,
+              composed: true
+            }))
             return {
               events,
               translations: result.translations,
