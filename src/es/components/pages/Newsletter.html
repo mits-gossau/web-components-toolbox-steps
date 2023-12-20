@@ -1,27 +1,62 @@
 <a-steps-container>
     <style>
         :host div+div {
-            margin-top: 4rem;
+            margin-top: 1rem;
         }
     </style>
     <div>
         <a-steps-heading tag="h2" type="h1" text="Newsletter"></a-steps-heading>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere ipsa est unde ut beatae eligendi modi iure
-            quia, esse soluta commodi eaque enim in quibusdam quod quae doloremque officia voluptatum. Amet cupiditate
-            enim eum, aperiam, nesciunt aut maxime cumque aliquam dicta dolores voluptate temporibus odit eligendi?
-            Consectetur, corrupti consequuntur? Possimus, beatae! Iure maiores sunt quasi accusamus, quos non ad aperiam
-            facere perspiciatis voluptas illum, eaque quibusdam possimus nam. Commodi nesciunt cupiditate maxime est? In
-            nulla cumque veritatis laboriosam similique rerum hic ab est earum. Dignissimos repudiandae sunt
-            accusantium, natus recusandae facilis dolor eligendi eius ad voluptatem assumenda explicabo asperiores
-            deserunt!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam distinctio similique inventore reiciendis
-            ratione consequuntur sunt optio eius dolores perferendis vel magnam error asperiores, numquam praesentium
-            quos nihil sint veniam eaque, ipsum incidunt maxime cum reprehenderit natus? Itaque facilis, corrupti
-            inventore harum ad, neque quam qui delectus quod iusto voluptas!</p>
+        <m-form>
+            <form id="form-form" method="post" action="https://www.xcampaign.ch/dispatcher/service">
+                <input type="hidden" name="g-recaptcha-response" value="">
+                <input type="hidden" name="ac" value="reg" />
+                <input type="hidden" name="clientCode" value="A0vF9xlYuNHyrbdzmH" />
+                <input type="hidden" name="doubleOptin" value="1" />
+                <input type="hidden" name="xp_sendBackParams" value="0" />
+                <input type="hidden" name="xclFormId" value="211206154525600536" />
+                <input type="hidden" name="rental_flag" value="0" />
+                <input id="item-1" type="hidden" name="spracheid" value="DE" />
+                <div class="form-group">
+                    <label for="item-2" class="required">E-Mail-Adresse</label>
+                    <input id="item-2" type="EMAIL" name="emailadresse" required />
+                </div>
+                <div class="form-group">
+                    <label for="item-3">Anrede</label>
+                    <select name="salutation">
+                        <option value="neutral">keine Anrede</option>
+                        <option value="ms">Frau</option>
+                        <option value="mr">Herr</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="item-4">Vorname</label>
+                    <input id="item-4" type="TEXT" name="Vorname" />
+                </div>
+                <div class="form-group">
+                    <label for="item-5">Nachname</label>
+                    <input id="item-5" type="TEXT" name="Nachname" />
+                </div>
+                <div class="form-group form-checkbox">
+                    <input id="item-6" type="CHECKBOX" name="Tanzschaffende" value="1" />
+                    <label for="item-6">Ich bin Tanzschaffende*r und w&uuml;rde gerne zus&auml;tzliche Mailings zu
+                        Angeboten
+                        von
+                        Steps erhalten (z.B. zu Tanzworkshops mit Steps-K&uuml;nstler*innen oder zu Netzwerktreffen im
+                        Rahmen des
+                        Festivals).</label>
+                </div>
+                <div class="form-group form-checkbox">
+                    <input id="item-7" type="CHECKBOX" name="profiling_allowed" value="1" required />
+                    <a href="https://www.migros.ch/de/datenschutz.html" target="_blank">Ich best&auml;tige hiermit, dass
+                        ich
+                        die
+                        Datenschutzbestimmungen gelesen und akzeptiert habe.</a>
+                </div>
+                <div class="btn-container">
+                    <button type="submit">Registrieren</button>
+                </div>
+            </form>
+        </m-form>
     </div>
-    <div>
-        <a-steps-heading tag="h2" type="h1" text="Lorem Ipsum"></a-steps-heading>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus suscipit quam ea ullam harum.
-            Doloribus, ea fugit. Exercitationem, mollitia animi!</p>
-    </div>
+
 </a-steps-container>
