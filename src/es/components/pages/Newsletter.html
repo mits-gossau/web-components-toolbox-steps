@@ -1,5 +1,31 @@
 <a-steps-container>
     <style>
+        :host {
+            --any-content-width: 55%;
+        }
+
+        :host .form-checkbox>label,
+        .form-checkbox>a {
+            display: inline-block;
+            margin-bottom: 0.5rem;
+            padding-left: 1rem;
+        }
+
+        :host .form-checkbox {
+            position: relative;
+            display: block;
+            padding-left: 1.25rem;
+        }
+
+        :host .form-group input[type="checkbox"] {
+            box-sizing: border-box;
+            padding: 0;
+            margin-right: 0.25rem;
+            position: absolute;
+            margin-top: 0.3rem;
+            margin-left: -1.25rem;
+        }
+
         :host div+div {
             margin-top: 1rem;
         }
@@ -53,7 +79,7 @@
                         Datenschutzbestimmungen gelesen und akzeptiert habe.</a>
                 </div>
                 <div class="btn-container">
-                    <button type="submit">Registrieren</button>
+                    <a-button namespace="button-steps-spielplan-" type="submit">Registrieren</a-button>
                 </div>
             </form>
         </m-form>
