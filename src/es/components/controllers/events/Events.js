@@ -290,7 +290,9 @@ export default class Events extends Shadow() {
       // @ts-ignore
       const oldParameter = this.getParameter(filterType)
       if (tag && isActive) {
-        url.searchParams.set(filterType, oldParameter ? `${oldParameter}${this.separator}${tag}` : tag)
+        if(!oldParameter?.includes(tag)) {
+          url.searchParams.set(filterType, oldParameter ? `${oldParameter}${this.separator}${tag}` : tag)
+        }
       } else {
         const oldParameterArray = oldParameter?.split(this.separator) || []
         if (oldParameterArray.length > 1 && tag !== null) {

@@ -75,5 +75,12 @@ export default class FilterList extends Shadow() {
       `
     }
     this.root.querySelector(`:host > *:not(.${data.filterType}):not(style)`)?.classList.add('hidden')
+    this.dispatchEvent(
+      new CustomEvent('request-list-events', {
+        bubbles: true,
+        cancelable: true,
+        composed: true
+      })
+    )
   }
 }
