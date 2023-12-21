@@ -107,9 +107,14 @@
                         padding: var(--footer--text-padding-mobile, 20px 25px 20px);
                     }
                 }
+                @media (max-width: 480px) {
+                    :host .footer__text {
+                        margin-left: 40px;
+                    }
+                }
             </style>
             <div class="footer-links-row footer-links-row--first">
-                <a-logo target=_blank rel=noopener namespace="logo-default-" namespace-fallback src="../../../../../../src/img/logo/kulturprozent.svg" href="/">
+                <a-logo target=_blank rel=noopener namespace="logo-default-" namespace-fallback src="../../../../../../src/img/logo/Logo_f.svg" href="/">
                     <style>
                         :host {
                             justify-content: flex-start !important;
@@ -120,11 +125,22 @@
                         :host img {
                             --logo-default-height: 100%;
                             --logo-default-width: 100%;
+                            --logo-default-img-margin-mobile: -10px 0 0 -27px;
                         }
 
                         @media (max-width: 768px) {
                             :host {
                                 justify-content: center !important;
+                            }
+
+                            :host img{
+                                --logo-default-img-margin-mobile: -10px 0 0 75px;
+                            }
+                        }
+
+                        @media (max-width: 480px) {
+                            :host img{
+                                --logo-default-img-margin-mobile: -10px 0 0 -5px;
                             }
                         }
                     </style>
