@@ -4,30 +4,44 @@
             --any-content-width: 55%;
         }
 
+        :host .form-checkbox {
+            display: block;
+            padding-left: 1.25rem;
+            position: relative;
+        }
+
         :host .form-checkbox>label,
-        .form-checkbox>a {
+        .form-checkbox>p {
             display: inline-block;
             margin-bottom: 0.5rem;
             padding-left: 1rem;
         }
 
-        :host .form-checkbox {
-            position: relative;
-            display: block;
-            padding-left: 1.25rem;
-        }
-
         :host .form-group input[type="checkbox"] {
             box-sizing: border-box;
-            padding: 0;
-            margin-right: 0.25rem;
-            position: absolute;
-            margin-top: 0.3rem;
             margin-left: -1.25rem;
+            margin-right: 0.25rem;
+            padding: 0;
+            position: absolute;
+        }
+
+        :host .radiobuttonlist>label {
+            padding-left: 0;
+            padding-right: 1em;
         }
 
         :host div+div {
             margin-top: 1rem;
+        }
+
+        :host button {
+            background: transparent;
+            border-radius: 2.5em;
+            border: 1px solid var(--steps-color-black);
+            font-family: inherit;
+            font-size: inherit;
+            line-height: 1.5em;
+            padding: 6px 24px;
         }
     </style>
     <div>
@@ -47,12 +61,16 @@
                     <input id="item-2" type="EMAIL" name="emailadresse" required />
                 </div>
                 <div class="form-group">
-                    <label for="item-3">Anrede</label>
-                    <select name="salutation">
-                        <option value="neutral">keine Anrede</option>
-                        <option value="ms">Frau</option>
-                        <option value="mr">Herr</option>
-                    </select>
+                    <label for="nosalutation">Anrede</label>
+                    <div class="radiobuttonlist" id="salutation">
+                        <input type="radio" value="neutral" name="salutation" id="nosalutation">
+                        <label for="nosalutation">keine Anrede</label>
+                        <input type="radio" value="mr" name="salutation" id="men">
+                        <label for="men">Herr</label>
+                        <input type="radio" value="ms" name="salutation" id="woman">
+                        <label for="woman">Frau</label>
+
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="item-4">Vorname</label>
@@ -72,14 +90,16 @@
                         Festivals).</label>
                 </div>
                 <div class="form-group form-checkbox">
-                    <input id="item-7" type="CHECKBOX" name="profiling_allowed" value="1" required />
-                    <a href="https://www.migros.ch/de/datenschutz.html" target="_blank">Ich best&auml;tige hiermit, dass
-                        ich
-                        die
-                        Datenschutzbestimmungen gelesen und akzeptiert habe.</a>
+                    <input type="checkbox" name="policy" id="policy" value="1" data-val="true"
+                        data-val-required="Bitte füllen Sie das Feld Policy aus" required>
+                    <label for="policy">
+                        <p>Ich bestätige hiermit, dass ich die <a rel="noopener"
+                                href="https://privacy.migros.ch/de.html" target="_blank">Datenschutzbestimmungen</a>
+                            gelesen und akzeptiert habe.</p>
+                    </label>
                 </div>
                 <div class="btn-container">
-                    <a-button namespace="button-steps-spielplan-" type="submit">Registrieren</a-button>
+                    <button type="submit">Registrieren</button>
                 </div>
             </form>
         </m-form>
