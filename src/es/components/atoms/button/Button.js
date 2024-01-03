@@ -36,7 +36,6 @@ export default class Button extends Hover() {
 
     window.document.onscroll = () => {
       if (this.hasAttribute('scroll-to-top')) {
-        console.log(document.documentElement.scrollTop)
         if (document.body.scrollTop > 10 || document.documentElement.scrollTop >= 10) {
           this.button.style.display = 'block'
         } else {
