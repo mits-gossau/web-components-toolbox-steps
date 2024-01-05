@@ -39,6 +39,7 @@
 :root {
   /* reset */
   --header-height: 0;
+  --overflow-x: hidden;
 
   /* colors */
   --steps-color-black: #000000;
