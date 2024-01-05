@@ -42,6 +42,12 @@
             font-size: inherit;
             line-height: 1.5em;
             padding: 6px 24px;
+            transition: var(--button-steps-filter-transition, background-color 0.3s ease-out, border-color 0.3s ease-out, color 0.3s ease-out);
+        }
+        :host button:hover {
+            background: var(--steps-color-black);
+            color: var(--steps-color-white);
+            cursor: pointer;
         }
     </style>
     <div>
