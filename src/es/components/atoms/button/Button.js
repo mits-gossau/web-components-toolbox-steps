@@ -223,20 +223,20 @@ export default class Button extends Hover() {
         font-weight: var(--font-weight-hover, var(--font-weight, 400));
         text-decoration: var(--text-decoration-hover, var(--text-decoration, none));
       }
-      ${this.buttonTagName}:active, :host ${this.buttonTagName}.active {
+      :host ${this.buttonTagName}.active {
         background-color: var(--background-color-active, var(--background-color-hover, var(--background-color, #803300)));
         color: var(--color-active, var(--color-hover, var(--color, #FFFFFF)));
       }
       ${this.buttonTagName} .arrow-right, :host ${this.buttonTagName} .arrow-right {
         display: inline-block;
       }
-      ${this.buttonTagName}:active .arrow-right, :host ${this.buttonTagName}.active .arrow-right {
+      :host ${this.buttonTagName}.active .arrow-right {
         display: none;
       }
       ${this.buttonTagName} .arrow-bottom, :host ${this.buttonTagName} .arrow-bottom {
         display: none;
       }
-      ${this.buttonTagName}:active .arrow-bottom, :host ${this.buttonTagName}.active .arrow-bottom {
+      :host ${this.buttonTagName}.active .arrow-bottom {
         display: inline-block;
       }
       :host ${this.buttonTagName}[disabled] {
