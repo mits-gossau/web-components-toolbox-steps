@@ -97,7 +97,7 @@ export default class Events extends Shadow() {
       ...options
     }, ...args)
 
-    this.separator = '❤️'
+    this.separator = '➕'
     /** 
      * calculated dates between min/max actual date expl.: 11.10.2023+—+26.10.2023 would be 11.10.2023 + 12.10.2023 + 13.10.20203 + ... + 26.10.2023
      * @type {Map<string, Date[]>}
