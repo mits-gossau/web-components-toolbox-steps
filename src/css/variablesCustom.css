@@ -221,6 +221,7 @@
   --footer-default-h4-font-size: 14px;
   --footer-default-h4-padding: 0 0 5px 0;
   --footer-default-justify-content-custom: flex-start;
+  --footer-default-footer-copyright-align-self-custom: start;
 
   --content-dark-a-color: var(--steps-color-white);
   --content-dark-a-color-hover: var(--steps-color-red);
