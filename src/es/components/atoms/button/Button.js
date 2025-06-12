@@ -135,7 +135,7 @@ export default class Button extends Hover() {
     } else {
       document.body.addEventListener(this.getAttribute('wc-config-load') || 'wc-config-load', this.wcConfigLoadListener, { once: true })
     }
-    this.connectedCallbackOnce = () => {}
+    this.connectedCallbackOnce = () => { }
   }
 
   disconnectedCallback () {
@@ -394,6 +394,12 @@ export default class Button extends Hover() {
     this.html = /* html */`
       <${buttonTagName} ${hrefAttr} ${typeAttr}>${labelSpan}</${buttonTagName}>
     `
+
+    // implemented based on jira ticket https://jira.migros.net/browse/MUTOBOTEAM-3188
+    if (this.hasAttribute('scroll-to-top')) {
+      this.button.role = 'button'
+      this.button.ariaLabel = 'Go to top of page'
+    }
 
     if (this.getAttribute('namespace') === 'button-download-') {
       this.button.prepend(downloadIcon)
