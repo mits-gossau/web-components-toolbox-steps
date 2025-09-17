@@ -48,8 +48,10 @@
   --steps-color-grey-sold-out: #ACACAC;
   --steps-color-grey: #6c6c6c;
   --steps-color-grey-dark: #1c181c;
+  --steps-color-green: #9ed7b3;
   --steps-color-red-dark: #bd0f15;
-  --steps-color-red: #f04249;
+  --steps-color-red-old: #f04249;
+  --steps-color-red: #ff004e;
   --steps-color-red-light: #f7a1a4;
   --steps-color-blue-dark: #260990;
   --steps-color-blue: #3d0fe5;
@@ -57,7 +59,8 @@
   --steps-color-blue-lighter: #c6b7fa;
 
   --background-color: transparent;
-  --background-gradient: linear-gradient(180deg, var(--steps-color-blue) 0%, var(--steps-color-white) 200px);
+  /* --background-gradient: linear-gradient(180deg, var(--steps-color-blue) 0%, var(--steps-color-white) 200px); */
+  --background-gradient: linear-gradient(180deg, var(--steps-color-green) 0%, var(--steps-color-white) 200px);
   --color: var(--steps-color-black);
   --a-color: var(--steps-color-black);
   --color-hover: var(--steps-color-grey);
@@ -69,12 +72,15 @@
   --header-nav-right-a-menu-icon-background-color-custom: var(--steps-color-white);
   --footer-default-invert-svg-color-custom: var(--steps-color-black);
   --navigation-default-color-custom: var(--steps-color-white);
-  --footer-default-invert-color-custom: var(--steps-color-white);
-  --footer-default-invert-svg-color-custom: var(--steps-color-white);
+  /* --footer-default-invert-color-custom: var(--steps-color-white); */
+  --footer-default-invert-color-custom: var(--steps-color-black);
+  /* --footer-default-invert-svg-color-custom: var(--steps-color-white); */
+  --footer-default-invert-svg-color-custom: var(--steps-color-black);
   --button-primary-color-custom: var(--steps-color-white);
 
   --h1-color: var(--steps-color-black);
-  --h2-color: var(--steps-color-blue);
+  /* --h2-color: var(--steps-color-blue); */
+  --h2-color: var(--steps-color-red);
   --h3-color: var(--steps-color-white);
 
   --color-hover: var(--steps-color-black);
@@ -216,7 +222,8 @@
   --footer-default-p-font-size-mobile: 17px;
   --footer-default-a-font-size-mobile: 17px;
   --footer-default-line-height-mobile: 21px;
-  --footer-default-invert-background-color-custom: var(--steps-color-blue);
+  /* --footer-default-invert-background-color-custom: var(--steps-color-blue); */
+  --footer-default-invert-background-color-custom: var(--steps-color-green);
   --footer-default-a-font-weight: normal;
   --footer-default-h4-font-size: 14px;
   --footer-default-h4-padding: 0 0 5px 0;

@@ -11,6 +11,7 @@ import { Shadow } from '../../web-components-toolbox/src/es/components/prototype
  */
 
 export default class Heading extends Shadow() {
+  // @ts-ignore
   constructor (options = {}, ...args) {
     super({ importMetaUrl: import.meta.url, ...options }, ...args)
     /**
@@ -82,7 +83,7 @@ export default class Heading extends Shadow() {
         }
 
         :host .heading--h2 {
-            color: var(--steps-color-blue);
+            color: var(--steps-color-red);
         }
 
         :host .heading--h3 {
