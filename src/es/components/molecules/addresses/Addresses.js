@@ -11,6 +11,7 @@ import { Shadow } from '../../web-components-toolbox/src/es/components/prototype
  */
 
 export default class Addresses extends Shadow() {
+  // @ts-ignore
   constructor (options = {}, ...args) {
     super({ importMetaUrl: import.meta.url, ...options }, ...args)
   }
@@ -71,7 +72,7 @@ export default class Addresses extends Shadow() {
         }
 
         :host .address-name {
-          color: var(--steps-color-blue);
+          color: var(--steps-color-red);
           margin: 0;
         }
 
@@ -117,6 +118,7 @@ export default class Addresses extends Shadow() {
    */
   renderHTML (addresses) {
     let addressesMarkup = ''
+    // @ts-ignore
     addresses.forEach(address => {
       let newAddress = /* html */`
         <address class="address-item">
@@ -152,6 +154,7 @@ export default class Addresses extends Shadow() {
    */
   collectIcons (icons) {
     let iconMarkup = ''
+    // @ts-ignore
     icons.forEach(icon => {
       let newIcon = /* html */`
         <img src="${icon.src}" alt="${icon.alt}" width="24" height="24">
