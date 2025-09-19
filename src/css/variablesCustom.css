@@ -193,7 +193,8 @@
   --navigation-default-a-link-content-spacing-custom-no-scroll: 0.5rem;
 
   /* content dark */
-  --content-dark-h2-color: var(--steps-color-red);
+  /* --content-dark-h2-color: var(--steps-color-red); */
+  --content-dark-h2-color: var(--steps-color-green);
   --content-dark-align-items: normal;
 
   /* button category */
