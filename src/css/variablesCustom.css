@@ -257,6 +257,9 @@
 
   --wrapper-teaser-a-font-weight: normal;
   --wrapper-teaser-h2-font-size-mobile: 1.125rem;
+
+  --logo-default-display: block;
+  --logo-default-pos-display: none;
 }
 
 body {
@@ -270,6 +273,8 @@ body.no-gradient {
 
 body.home-page {
   --header-nav-right-a-menu-icon-background-color-custom: var(--steps-color-white);
+  --logo-default-display: none;
+  --logo-default-pos-display: block;
 }
 
 .l-outer {
