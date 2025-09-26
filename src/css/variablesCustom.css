@@ -59,7 +59,6 @@
   --steps-color-blue-lighter: #c6b7fa;
 
   --background-color: transparent;
-  /* --background-gradient: linear-gradient(180deg, var(--steps-color-blue) 0%, var(--steps-color-white) 200px); */
   --background-gradient: linear-gradient(180deg, var(--steps-color-green) 0%, var(--steps-color-white) 200px);
   --color: var(--steps-color-black);
   --a-color: var(--steps-color-black);
@@ -69,17 +68,14 @@
   --color-tertiary: var(--steps-color-blue);
   --button-quaternary-color-custom: var(--steps-color-black);
 
-  --header-nav-right-a-menu-icon-background-color-custom: var(--steps-color-white);
+  --header-nav-right-a-menu-icon-background-color-custom: var(--steps-color-black);
   --footer-default-invert-svg-color-custom: var(--steps-color-black);
   --navigation-default-color-custom: var(--steps-color-white);
-  /* --footer-default-invert-color-custom: var(--steps-color-white); */
   --footer-default-invert-color-custom: var(--steps-color-black);
-  /* --footer-default-invert-svg-color-custom: var(--steps-color-white); */
   --footer-default-invert-svg-color-custom: var(--steps-color-black);
   --button-primary-color-custom: var(--steps-color-white);
 
   --h1-color: var(--steps-color-black);
-  /* --h2-color: var(--steps-color-blue); */
   --h2-color: var(--steps-color-red);
   --h3-color: var(--steps-color-white);
 
@@ -193,7 +189,6 @@
   --navigation-default-a-link-content-spacing-custom-no-scroll: 0.5rem;
 
   /* content dark */
-  /* --content-dark-h2-color: var(--steps-color-red); */
   --content-dark-h2-color: var(--steps-color-green);
   --content-dark-align-items: normal;
 
@@ -223,7 +218,6 @@
   --footer-default-p-font-size-mobile: 17px;
   --footer-default-a-font-size-mobile: 17px;
   --footer-default-line-height-mobile: 21px;
-  /* --footer-default-invert-background-color-custom: var(--steps-color-blue); */
   --footer-default-invert-background-color-custom: var(--steps-color-green);
   --footer-default-a-font-weight: normal;
   --footer-default-h4-font-size: 14px;
@@ -272,6 +266,10 @@ body {
 
 body.no-gradient {
     background: none;
+}
+
+body.home-page {
+  --header-nav-right-a-menu-icon-background-color-custom: var(--steps-color-white);
 }
 
 .l-outer {
