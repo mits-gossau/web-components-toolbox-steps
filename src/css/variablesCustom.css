@@ -68,7 +68,7 @@
   --color-tertiary: var(--steps-color-blue);
   --button-quaternary-color-custom: var(--steps-color-black);
 
-  --header-nav-right-a-menu-icon-background-color-custom: var(--steps-color-black);
+  --header-nav-right-a-menu-icon-background-color-custom: var(--steps-color-red);
   --footer-default-invert-svg-color-custom: var(--steps-color-black);
   --navigation-default-color-custom: var(--steps-color-white);
   --footer-default-invert-color-custom: var(--steps-color-black);
