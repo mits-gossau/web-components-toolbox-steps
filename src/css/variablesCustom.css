@@ -260,6 +260,8 @@
 
   --logo-default-display: block;
   --logo-default-pos-display: none;
+  --logo-default-a-height: 48px;
+  --logo-default-a-width: auto;
 }
 
 body {
@@ -272,7 +274,6 @@ body.no-gradient {
 }
 
 body.home-page {
-  --header-nav-right-a-menu-icon-background-color-custom: var(--steps-color-red);
   --logo-default-display: none;
   --logo-default-pos-display: block;
 }
