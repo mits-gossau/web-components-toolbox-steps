@@ -262,6 +262,10 @@
   --logo-default-pos-display: none;
   --logo-default-a-height: 48px;
   --logo-default-a-width: auto;
+
+  --logo-default-height-mobile: 48px;
+  --logo-default-width-mobile: auto;
+  --logo-default-img-margin-mobile: -10px 0 0 -97px;
 }
 
 body {
