@@ -258,14 +258,35 @@
   --wrapper-teaser-a-font-weight: normal;
   --wrapper-teaser-h2-font-size-mobile: 1.125rem;
 
-  --logo-default-display: block;
-  --logo-default-pos-display: none;
-  --logo-default-a-height: 48px;
-  --logo-default-a-width: auto;
-
+  --logo-default-height: 48px;
+  --logo-default-width: auto;
   --logo-default-height-mobile: 48px;
   --logo-default-width-mobile: auto;
-  --logo-default-img-margin-mobile: -10px 0 0 -97px;
+}
+
+html[lang="de"] {
+    --logo-default-img-margin: 0 0 0 1px;
+}
+
+@media only screen and (max-width: 1200px) {
+    html[lang="de"],
+    html[lang="fr"] {
+        --logo-default-img-margin-mobile: 0 0 0 23px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    html[lang="de"],
+    html[lang="fr"] {
+      --example-variable: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    html[lang="de"],
+    html[lang="fr"] {
+      --example-variable: none;
+    }
 }
 
 body {
@@ -275,11 +296,6 @@ body {
 
 body.no-gradient {
     background: none;
-}
-
-body.home-page {
-  --logo-default-display: none;
-  --logo-default-pos-display: block;
 }
 
 .l-outer {
