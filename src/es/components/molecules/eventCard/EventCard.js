@@ -25,6 +25,7 @@ export default class EventCard extends Shadow() {
      * @property {string} forFree - Indicates if the event is for free.
      * @property {string} location - The location of the event.
      * @property {string} presaleUrl - The URL for purchasing tickets in advance.
+     * @property {string} presaleUrlTitle - The title for the presale URL link.
      * @property {string} production - The production associated with the event.
      * @property {string} soldOut - Indicates if the event is sold out.
      * @property {string} theater - The theater where the event takes place.
@@ -43,6 +44,7 @@ export default class EventCard extends Shadow() {
       forFree: '',
       location: '',
       presaleUrl: '',
+      presaleUrlTitle: '',
       production: '',
       soldOut: '',
       theater: '',
@@ -66,6 +68,7 @@ export default class EventCard extends Shadow() {
       forFree: this.getAttribute('forFree'),
       location: this.getAttribute('location'),
       presaleUrl: this.getAttribute('presaleUrl'),
+      presaleUrlTitle: this.getAttribute('presaleUrlTitle') || 'Tickets',
       production: this.getAttribute('production'),
       soldOut: this.getAttribute('soldOut'),
       theater: this.getAttribute('theater'),
@@ -237,7 +240,7 @@ export default class EventCard extends Shadow() {
       const ticketsUrl = this.event.presaleUrl
       const detailsUrl = this.event.companyDetailPageUrl
       // buttons
-      const buttonTickets = `<a-button namespace="button-steps-spielplan-" onclick="window.open('${ticketsUrl}')">${this.getAttribute('textButtonTickets')} &#8594;</a-button>`
+      const buttonTickets = `<a-button namespace="button-steps-spielplan-" onclick="window.open('${ticketsUrl}')">${this.event.presaleUrlTitle} &#8594;</a-button>`
       const buttonSoldOut = `<span class="sold-out">${this.getAttribute('textSoldOut')}</span>`
       const buttonCta = this.event.soldOut === 'True' ? buttonSoldOut : buttonTickets
       const buttonForFree = `<span class="sold-out">${this.getAttribute('textForFree') || 'Gratis'}</span>`

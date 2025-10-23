@@ -122,6 +122,7 @@ export default class EventList extends Shadow() {
             eventInformationIcons,
             location,
             presaleUrl,
+            presaleUrlTitle,
             production,
             soldOut,
             theater,
@@ -138,6 +139,7 @@ export default class EventList extends Shadow() {
             eventInformationIcons='${eventIcons}'
             location="${location}"
             presaleUrl="${presaleUrl}"
+            presaleUrlTitle="${presaleUrlTitle}"
             production="${production}"
             soldOut="${soldOut}"
             theater="${theater}"
