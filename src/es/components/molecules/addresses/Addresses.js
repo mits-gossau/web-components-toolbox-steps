@@ -125,16 +125,16 @@ export default class Addresses extends Shadow() {
           <p class="address-city">${address.theatercity}</p>
           <h2 class="address-name">${address.theatername}</h2>
           <p class="address-street">${address.theaterstreet}<br />
-          <a class="address-phone" href="tel:${address.theaterphone}">${address.theaterphone}</a><br />
-          <strong><a class="address-link" href="${address.theaterurl}" target="_blank">${address.theaterurltitle} →</a></strong><br />
-          ${address.accessibilityurl
-            ? `<strong><a class="address-link" href="${address.accessibilityurl}" target="_blank">${address.accessibilityurltitle} →</a></strong><br />`
-            : ''
-          }       
-          ${address.optionalyurl
-            ? `<strong><a class="address-link" href="${address.optionalurl}" target="_blank">${address.optionalurltitle} →</a></strong><br />`
-            : 'nix'
-          }               
+            <a class="address-phone" href="tel:${address.theaterphone}">${address.theaterphone}</a><br />
+            <strong><a class="address-link" href="${address.theaterurl}" target="_blank">${address.theaterurltitle} →</a></strong><br />
+            ${address.accessibilityurl
+              ? `<strong><a class="address-link" href="${address.accessibilityurl}" target="_blank">${address.accessibilityurltitle} →</a></strong><br />`
+              : ''
+            }       
+            ${address.optionalyurl
+              ? `<strong><a class="address-link" href="${address.optionalurl}" target="_blank">${address.optionalurltitle} →</a></strong><br />`
+              : 'nix'
+            }               
           </p>
           ${address.theaterInformationIcons
             ? `<p><span class="address-icons">${this.collectIcons(address.theaterInformationIcons)}</span></p>`
