@@ -133,7 +133,7 @@ export default class Addresses extends Shadow() {
             }       
             ${address.optionalurl
               ? `<strong><a class="address-link" href="${address.optionalurl}" target="_blank">${address.optionalurltitle} →</a></strong><br />`
-              : 'nix'
+              : ''
             }               
           </p>
           ${address.theaterInformationIcons
