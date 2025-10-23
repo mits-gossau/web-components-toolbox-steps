@@ -18,6 +18,7 @@ export default class EventList extends Shadow() {
      * @property {string} buttonTickets - The translation for the "Tickets" button.
      * @property {string} linkDetails - The translation for the "Mehr Details" link.
      * @property {string} soldOut - The translation for the "ausverkauft" message indicating sold-out status.
+     * @property {string} forFree - The translation for the "gratis" message indicating for free status.
      * @property {string} timeSuffix - The translation for the suffix added to time values, e.g., "Uhr".
      */
     /**
@@ -27,6 +28,7 @@ export default class EventList extends Shadow() {
       buttonTickets: '',
       linkDetails: '',
       soldOut: '',
+      forFree: '',
       timeSuffix: ''
     }
 
@@ -116,19 +118,19 @@ export default class EventList extends Shadow() {
     ]).then(() => {
       /* Split active and expired events */
       const currentDate = new Date()
-      let activeEvents = []
-      let expiredEvents = []
-  
+      const activeEvents = []
+      const expiredEvents = []
+
       data.forEach((event) => {
-        const parsedDate = this.parseDate(event.eventDate, event.eventTime);
-  
+        const parsedDate = this.parseDate(event.eventDate, event.eventTime)
+
         if (parsedDate > currentDate) {
           activeEvents.push(event)
         } else {
           expiredEvents.push(event)
         }
       })
-  
+
       const activeEventHtml = this.collectMarkup(activeEvents, translations)
       const expiredEventHtml = this.collectMarkup(expiredEvents, translations)
 
@@ -137,16 +139,18 @@ export default class EventList extends Shadow() {
           <h2 class="heading heading--h2 heading--expired">${this.expiredTitle}</h2>
         `
         : ''
-      
+
       /* Concat active events, heading and expired events */
-      let concatMarkup = ''
-      let eventHtml = concatMarkup.concat(activeEventHtml, this.headingHtml, expiredEventHtml)  
-  
-      const noEventsHtml = eventHtml.length ? '' : /* html */ `
+      const concatMarkup = ''
+      const eventHtml = concatMarkup.concat(activeEventHtml, this.headingHtml, expiredEventHtml)
+
+      const noEventsHtml = eventHtml.length
+        ? ''
+        : /* html */ `
         <div class="no-events">
             <p>${translations.noEvents}</p>
         </div>`
-  
+
       this.html = ''
       this.html = /* html */ `
         <div class="event-list">
@@ -158,11 +162,11 @@ export default class EventList extends Shadow() {
 
   /**
    * Create markup for active and expired events
-   * @param {*} list 
-   * @param {*} translations 
+   * @param {*} list
+   * @param {*} translations
    * @returns events list
    */
-  collectMarkup(list, translations) {
+  collectMarkup (list, translations) {
     return list.map((event) => {
       const {
         choreographer,
@@ -171,6 +175,7 @@ export default class EventList extends Shadow() {
         eventDate,
         eventTime,
         eventInformationIcons,
+        forFree,
         location,
         presaleUrl,
         production,
@@ -192,29 +197,31 @@ export default class EventList extends Shadow() {
         presaleUrl="${presaleUrl}"
         production="${production}"
         soldOut="${soldOut}"
+        forFree="${forFree}"
         theater="${theater}"
         theaterInformationIcons='${theaterIcons}'
         textButtonTickets="${translations.buttonTickets}"
         textLinkDetails="${translations.linkDetails}"
         textSoldOut="${translations.soldOut}"
         textTimeSuffix="${translations.timeSuffix}"
+        textForFree="${translations.forFree}"
         lang="${this.getAttribute('lang') || ''}"
       ></m-steps-event-card>`
     })
-    .join('')
+      .join('')
   }
 
   /**
    * Parse date format to be able to compare
-   * @param {*} date 
+   * @param {*} date
    * @returns parsed date
    */
-  parseDate(date, time) {
+  parseDate (date, time) {
     const partDate = date.split('.')
     const partTime = time.split(':')
     const formattedDate = `${partDate[2]}-${('0' + partDate[1]).slice(-2)}-${('0' + partDate[0]).slice(-2)}T${('0' + partTime[0]).slice(-2)}:${('0' + partTime[1]).slice(-2)}`
     const parsedDate = new Date(formattedDate)
 
-    return parsedDate;
+    return parsedDate
   }
 }

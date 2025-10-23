@@ -22,6 +22,7 @@ export default class EventCard extends Shadow() {
      * @property {string} eventDate - The date of the event.
      * @property {string} eventTime - The time of the event.
      * @property {string[]} eventInformationIcons - An array of URLs representing event information icons.
+     * @property {string} forFree - Indicates if the event is for free.
      * @property {string} location - The location of the event.
      * @property {string} presaleUrl - The URL for purchasing tickets in advance.
      * @property {string} production - The production associated with the event.
@@ -39,6 +40,7 @@ export default class EventCard extends Shadow() {
       eventDate: '',
       eventTime: '',
       eventInformationIcons: [],
+      forFree: '',
       location: '',
       presaleUrl: '',
       production: '',
@@ -61,6 +63,7 @@ export default class EventCard extends Shadow() {
       eventDate: this.getAttribute('eventDate'),
       eventTime: this.getAttribute('eventTime'),
       eventInformationIcons: JSON.parse(this.getAttribute('eventInformationIcons')),
+      forFree: this.getAttribute('forFree'),
       location: this.getAttribute('location'),
       presaleUrl: this.getAttribute('presaleUrl'),
       production: this.getAttribute('production'),
@@ -209,49 +212,50 @@ export default class EventCard extends Shadow() {
       const partTime = this.event.eventTime.split(':')
       const formattedDate = `${partDate[2]}-${('0' + partDate[1]).slice(-2)}-${('0' + partDate[0]).slice(-2)}T${('0' + partTime[0]).slice(-2)}:${('0' + partTime[1]).slice(-2)}`
       const parsedDate = new Date(formattedDate)
-  
+
       // get weekday name by date
-      let lang = document.documentElement.getAttribute("lang");
+      const lang = document.documentElement.getAttribute('lang')
 
       const weekday = parsedDate.toLocaleDateString(lang === 'de' ? 'de-DE' : lang || 'de-DE', {
         weekday: 'long'
       })
-  
+
       // icons
       const generateIconHTML = (iconsArray) => {
         let icons = ''
         for (const icon of iconsArray) {
           icons += `<img src="${icon.src}" width="24" height="24" alt="${icon.alt}" />`
         }
-  
+
         return icons
       }
-  
+
       const eventIcons = generateIconHTML(this.event.eventInformationIcons)
       const theaterIcons = generateIconHTML(this.event.theaterInformationIcons)
-  
+
       // urls
       const ticketsUrl = this.event.presaleUrl
       const detailsUrl = this.event.companyDetailPageUrl
-  
       // buttons
       const buttonTickets = `<a-button namespace="button-steps-spielplan-" onclick="window.open('${ticketsUrl}')">${this.getAttribute('textButtonTickets')} &#8594;</a-button>`
       const buttonSoldOut = `<span class="sold-out">${this.getAttribute('textSoldOut')}</span>`
       const buttonCta = this.event.soldOut === 'True' ? buttonSoldOut : buttonTickets
-      const eventIconsHTML = eventIcons ? `<span class="legend-icons">${eventIcons}</span>` : ``
-      const theaterIconsHTML = theaterIcons ? `<span class="legend-icons">${theaterIcons}</span>` : ``
-      
+      const buttonForFree = `<span class="sold-out">${this.getAttribute('textForFree') || 'Gratis'}</span>`
+      const buttonCtaForFree = this.event.forFree === 'True' ? buttonForFree : ''
+      const eventIconsHTML = eventIcons ? `<span class="legend-icons">${eventIcons}</span>` : ''
+      const theaterIconsHTML = theaterIcons ? `<span class="legend-icons">${theaterIcons}</span>` : ''
+
       const eventInfoHtml = /* html */ `
         <div class="event-info">
-          ${this.event.company == 'undefined'
-            ? ''
-            : `
+          ${this.event.company === 'undefined'
+          ? ''
+          : `
             <p>
               <strong>${this.event.company}</strong><br />
               <span>${this.event.production}<br />${this.event.choreographer}</span>
             </p>
             `
-          }
+        }
           <p>
             <strong>${this.event.location}</strong><br />
             <span>${this.event.theater}</span>
@@ -262,17 +266,15 @@ export default class EventCard extends Shadow() {
             ${theaterIconsHTML}
           </p>
           <p class="event-cta">
-            ${buttonCta}
-            ${this.event.companyDetailPageUrl == 'undefined'
-                ? ''
-                : `
-                  <a href="${detailsUrl}">${this.getAttribute('textLinkDetails')}</a>
-              `
-            }
+            ${buttonCtaForFree !== '' ? buttonCtaForFree : buttonCta}
+            ${this.event.companyDetailPageUrl === 'undefined'
+          ? ''
+          : `<a href="${detailsUrl}">${this.getAttribute('textLinkDetails')}</a>`
+        }
           </p>
         </div>
       `
-  
+
       this.html = /* html */ `
         <div class="${this.event.soldOut === 'True' || parsedDate < currentDate ? 'event-card event-grey-out' : 'event-card'}">
           <div class="event-date">

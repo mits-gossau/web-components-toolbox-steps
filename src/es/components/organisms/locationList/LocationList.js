@@ -129,7 +129,7 @@ export default class EventList extends Shadow() {
           } = event
           const eventIcons = JSON.stringify(eventInformationIcons)
           const theaterIcons = JSON.stringify(theaterInformationIcons)
-  
+
           return /* html */ `<m-steps-event-card 
             choreographer="${choreographer}"
             company="${company}"
@@ -145,16 +145,17 @@ export default class EventList extends Shadow() {
             textButtonTickets="${data.translations.buttonTickets}"
             textLinkDetails="${data.translations.linkDetails}"
             textSoldOut="${data.translations.soldOut}"
+            textForFree="${data.translations.forFree}"
             textTimeSuffix="${data.translations.timeSuffix}"
           ></m-steps-event-card>`
         })
         .join('')
-  
+
       const noEventsHtml = eventHtml.length ? '' : /* html */ `
         <div class="no-events">
             <p>${data.translations.noEvents}</p>
         </div>`
-  
+
       this.html = ''
       this.html = /* html */ `
         <div class="event-list">
