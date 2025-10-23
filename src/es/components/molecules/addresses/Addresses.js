@@ -130,7 +130,11 @@ export default class Addresses extends Shadow() {
           ${address.accessibilityurl
             ? `<strong><a class="address-link" href="${address.accessibilityurl}" target="_blank">${address.accessibilityurltitle} →</a></strong><br />`
             : ''
-          }          
+          }       
+          ${address.optionalyurl
+            ? `<strong><a class="address-link" href="${address.optionalurl}" target="_blank">${address.optionalurltitle} →</a></strong><br />`
+            : 'nix'
+          }               
           </p>
           ${address.theaterInformationIcons
             ? `<p><span class="address-icons">${this.collectIcons(address.theaterInformationIcons)}</span></p>`
