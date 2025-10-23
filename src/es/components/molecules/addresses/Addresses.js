@@ -131,7 +131,7 @@ export default class Addresses extends Shadow() {
               ? `<strong><a class="address-link" href="${address.accessibilityurl}" target="_blank">${address.accessibilityurltitle} →</a></strong><br />`
               : ''
             }       
-            ${address.optionalyurl
+            ${address.optionalurl
               ? `<strong><a class="address-link" href="${address.optionalurl}" target="_blank">${address.optionalurltitle} →</a></strong><br />`
               : 'nix'
             }               
