@@ -35,7 +35,7 @@
   timeSuffix: string,
 }} Translations */
 
-/** @typedef {'company' | 'location' | 'date'} FilterType */
+/** @typedef {'company' | 'location' | 'date' | 'accessibility'} FilterType */
 
 /** @typedef {
   {
@@ -61,27 +61,27 @@ import { Shadow } from '../../web-components-toolbox/src/es/components/prototype
  * Events (Veranstaltungen)
  * As a controller, this component communicates exclusively through events
  * Example: https://mits-gossau.github.io/web-components-toolbox-steps/src/es/components/web-components-toolbox/docs/Template.html?rootFolder=src&css=./src/css/variablesCustom.css&header=./src/es/components/organisms/header/nav-right-/nav-right-.html&logo=./src/es/components/atoms/logo/default-/default-.html&nav=./src/es/components/molecules/navigation/default-/default-.html&footer=./src/es/components/organisms/footer/default-/default-.html&content=./src/es/components/pages/Spielplan.html
- * 
+ *
  * The endpoint api call at the fetch getter, gets all events plus some translations
  * These events get enriched with the properties companies, locations, dates, maxDate, minDate, which are used by the filters (buttons and flatpickr)
  * buttons have two possible filter-type company or location
- * 
+ *
  * requestListEventsListener:
  * Datepicker (Flatpickr) and buttons trigger the requestListEventListener on interaction, this returns the filtered event list in the event 'list-events'
  * The dispatched event 'list-events' is listened by the buttons, which react accordingly with their active state
  * The event list also reacts on 'list-events' and renders the filtered newly received events
  * The filters are saved as parameters in the URL and get reused except the clear all button is pushed, which has the ID 'filter-clean'
- * 
+ *
  * requestHrefEventListener:
  * Triggers this.setParameter to receive the resulting URL in case that filter-type with that fix value (tag), this is purely informal and triggers no URL/state change
  * As a result, the Button.js can have an href on it's a-tag, for better SEO as well as "right click - open in new tab" feature
- * 
+ *
  * requestListFilterItemsEventsListener:
  * There is a filter factory called FilterList, which requests the possible filters, this is supplied by the enriched fetch, also any url/state is supplied to set the active filters .active
- * 
+ *
  * getDateOptionEventsListener:
  * Is used by the DatePicker (Flatpickr), to select the in url/state set range, min/maxDate
- * 
+ *
  * updatePopState:
  * dispatches two events: 'list-events' and 'set-date' to mirror the browser history navigation
  *
@@ -98,7 +98,7 @@ export default class Events extends Shadow() {
     }, ...args)
 
     this.separator = '➕'
-    /** 
+    /**
      * calculated dates between min/max actual date expl.: 11.10.2023+—+26.10.2023 would be 11.10.2023 + 12.10.2023 + 13.10.20203 + ... + 26.10.2023
      * @type {Map<string, Date[]>}
      */
@@ -114,14 +114,15 @@ export default class Events extends Shadow() {
             let events
             if (event && event.detail && event.detail.this && event.detail.this.getAttribute('filter-type') && event.detail.tags && event.detail.tags[0]) {
               this.setParameter(event.detail.this.getAttribute('filter-type'), event.detail.tags[0], event.detail.pushHistory, event.detail.isActive)
-              events = this.filterEvents(result.events, this.getParameter('company'), this.getParameter('location'), this.getParameter('date'), event.detail?.dateStrSeparator)
+              events = this.filterEvents(result.events, this.getParameter('company'), this.getParameter('location'), this.getParameter('date'), this.getParameter('accessibility'), event.detail?.dateStrSeparator)
             } else if (event && event.detail && event.detail.this && event.detail.this.getAttribute('id') === 'filter-clean') {
               this.setParameter('company', null)
               this.setParameter('location', null)
+              this.setParameter('accessibility', null)
               this.setParameter('date', null)
               events = result.events
             } else {
-              events = this.filterEvents(result.events, this.getParameter('company'), this.getParameter('location'), this.getParameter('date'), event?.detail?.dateStrSeparator)
+              events = this.filterEvents(result.events, this.getParameter('company'), this.getParameter('location'), this.getParameter('date'), this.getParameter('accessibility'), event?.detail?.dateStrSeparator)
             }
             return {
               events,
@@ -129,6 +130,7 @@ export default class Events extends Shadow() {
               filter: {
                 company: this.getParameter('company')?.split(this.separator),
                 location: this.getParameter('location')?.split(this.separator),
+                accessibility: this.getParameter('accessibility')?.split(this.separator),
                 date: this.getParameter('date'),
                 dateReset: !this.getParameter('date'),
                 active: String(!!(this.getParameter('company') || this.getParameter('location') || this.getParameter('date')))
@@ -156,22 +158,38 @@ export default class Events extends Shadow() {
              * @param {FetchAll} result
              * @return {ListFilterItems | {}}
              */
-            result => event.detail.isActive
-              ? event.detail.tags.includes('companies')
-                ? {
-                  items: result.companies,
-                  filterType: 'company',
-                  filterTypePlural: 'companies',
-                  filterActive: this.getParameter('company')
+            result => {
+              if (event.detail.isActive) {
+                if (event.detail.tags.includes('companies')) {
+                  return {
+                    items: result.companies,
+                    filterType: 'company',
+                    filterTypePlural: 'companies',
+                    filterActive: this.getParameter('company')
+                  }
                 }
-                : {
-                  items: result.locations,
-                  filterType: 'location',
-                  filterTypePlural: 'locations',
-                  filterActive: this.getParameter('location')
+                if (event.detail.tags.includes('locations')) {
+                  return {
+                    items: result.locations,
+                    filterType: 'location',
+                    filterTypePlural: 'locations',
+                    filterActive: this.getParameter('location')
+                  }
                 }
-              : {}
-            )
+                if (event.detail.tags.includes('accessibility')) {
+                  return {
+                    items: this.getAllUniqueTheaterIcons(result.events),
+                    filterType: 'accessibility',
+                    filterTypePlural: 'accessibility',
+                    filterActive: this.getParameter('accessibility')
+                  }
+                }
+                return {}
+              } else {
+                return {}
+              }
+            }
+          )
         },
         bubbles: true,
         cancelable: true,
@@ -199,10 +217,10 @@ export default class Events extends Shadow() {
     // dispatches 'list-events' + 'set-date'
     this.updatePopState = event => {
       for (const key in event.state) {
-          this.setParameter(key, event.state[key], false, true)
+        this.setParameter(key, event.state[key], false, true)
       }
       this.requestListEventsListener()
-      new Promise(resolve => this.getDateOptionEventsListener({detail: {resolve}})).then(data => {
+      new Promise(resolve => this.getDateOptionEventsListener({ detail: { resolve } })).then(data => {
         // inform the Flatpickr through this event, since it does not listen to "list-events"
         this.dispatchEvent(new CustomEvent('set-date', {
           detail: data,
@@ -231,6 +249,38 @@ export default class Events extends Shadow() {
   }
 
   /**
+   * You name it whatever you like, but let's call it `getAllUniqueTheaterIcons`
+   * @param {Event[]} events
+   * @return {{alt: string, src: string, hideInFilter: boolean}[]}
+   */
+  getAllUniqueTheaterIcons (events) {
+    const map = new Map()
+
+    for (const ev of events) {
+      const icons = ev?.eventInformationIcons
+      if (!Array.isArray(icons)) continue
+
+      for (const icon of icons) {
+        if (!icon || typeof icon !== 'object') continue
+
+        const alt = String(icon.alt ?? '').trim()
+        const src = String(icon.src ?? '').trim()
+        const hideInFilter = Boolean(icon.hideInFilter ?? false)
+
+        if (!alt && !src) continue
+
+        const key = `${alt}||${src}`
+
+        if (!map.has(key)) {
+          map.set(key, { alt, src, hideInFilter })
+        }
+      }
+    }
+
+    return Array.from(map.values())
+  }
+
+  /**
    * FilterList generated buttons hold two relevant attributes: filter-type (company | location) & tag (string)
    * those attributes are received inside the request-list-events event details
    * also the Flatpickr uses request-list-events
@@ -239,24 +289,27 @@ export default class Events extends Shadow() {
    * @param {string | null} company
    * @param {string | null} location
    * @param {string | null} dates
+   * @param {string | null} accessibility
    * @param {string | null} [dateStrSeparator = this.dateStrSeparator]
    * @return {Event[]}
    */
-  filterEvents (events, company, location, dates, dateStrSeparator = this.dateStrSeparator) {
+  filterEvents (events, company, location, dates, accessibility, dateStrSeparator = this.dateStrSeparator) {
     const dateArray = this.dateArrayMap.get(dates || '') || []
     // generate all date objects between and including a start and end date
     if (dates && dateStrSeparator && !dateArray.length) {
       const [minDate, maxDate] = dates.split(dateStrSeparator).map(date => this.deChDateToDateObj(date))
-      for(const currentDate = new Date(minDate); currentDate <= new Date(maxDate || minDate); currentDate.setDate(currentDate.getDate() + 1)){
+      for (const currentDate = new Date(minDate); currentDate <= new Date(maxDate || minDate); currentDate.setDate(currentDate.getDate() + 1)) {
         dateArray.push(new Date(currentDate))
       }
       this.dateArrayMap.set(dates, dateArray)
     }
     // filter accordingly... expl. if company set check for company, otherwise ignore and return true
     return events.filter(resultEvent => {
-      return (!company || company.includes(resultEvent?.company))
-        && (!location || location.includes(resultEvent?.location))
-        && (!dateArray.length || dateArray.some(date => date.getTime() === resultEvent?.dateObj?.getTime()))
+      const filteredAccessibility = Array.isArray(resultEvent.eventInformationIcons) && resultEvent.eventInformationIcons.some(icon => icon.alt === accessibility)
+      const filteredResultEvent = !filteredAccessibility && (!company || company.includes(resultEvent?.company)) &&
+        (!location || location.includes(resultEvent?.location)) &&
+        (!dateArray.length || dateArray.some(date => date.getTime() === resultEvent?.dateObj?.getTime()))
+      return filteredResultEvent
     })
   }
 
@@ -283,7 +336,7 @@ export default class Events extends Shadow() {
       // @ts-ignore
       const oldParameter = this.getParameter(filterType)
       if (tag && isActive) {
-        if(!oldParameter?.includes(tag)) {
+        if (!oldParameter?.includes(tag)) {
           url.searchParams.set(filterType, oldParameter ? `${oldParameter}${this.separator}${tag}` : tag)
         }
       } else {
@@ -315,7 +368,7 @@ export default class Events extends Shadow() {
 
   /**
    * This fetch contains all needed data and is the only communication with the api endpoint
-   * 
+   *
    * @return {Promise<FetchAll>}
    */
   get fetch () {
@@ -340,7 +393,6 @@ export default class Events extends Shadow() {
       const locations = events.map(event => event.location).sort()
       /** @type {string[]} */
       const dates = events.map(event => event.eventDate)
-
       return {
         events,
         translations,
@@ -356,6 +408,6 @@ export default class Events extends Shadow() {
   // make 10.09.2024 to a date object by turning 2024 to year, 09 to month and 10 to day
   deChDateToDateObj (dateStr) {
     // @ts-ignore
-    return new Date(...dateStr.split('.').reverse().map((date, i) => i === 1 ? Number(date)-1 : date))
+    return new Date(...dateStr.split('.').reverse().map((date, i) => i === 1 ? Number(date) - 1 : date))
   }
 }

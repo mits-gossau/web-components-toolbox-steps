@@ -1,7 +1,5 @@
 <a-steps-container>
-  <c-steps-events
-    endpoint="../../../../../src/es/components/organisms/eventList/example.json"
-    >
+  <c-steps-events endpoint="../../../../../src/es/components/organisms/eventList/example.json">
     <header>
       <a-steps-heading tag="h1" type="h1" text="Spielplan"></a-steps-heading>
       <p>
@@ -18,9 +16,11 @@
           padding-left: 0;
           list-style: none;
         }
+
         :host ul.list-legend li {
           display: flex;
         }
+
         :host ul.list-legend li img[src$="svg"] {
           margin-right: 6px;
           margin-bottom: 4px;
@@ -73,6 +73,7 @@
         }
 
         @media only screen and (min-width: 768px) {
+
           :host a-flatpickr,
           :host a-steps-button:not(:last-child) {
             margin-bottom: 0;
@@ -120,27 +121,28 @@
       </style>
 
       <div class="filter-buttons">
-        <a-flatpickr
-          namespace="flatpickr-default-"
-          filter-type="date"
-          request-event-name="request-list-events"
-          reset-event-name="list-events"
-          reset-detail-property-name="fetch:filter:dateReset"
-          get-date-option-event-name="get-date-option"
-          set-date-event-name="set-date"
-        >
+        <a-flatpickr namespace="flatpickr-default-" filter-type="date" request-event-name="request-list-events"
+          reset-event-name="list-events" reset-detail-property-name="fetch:filter:dateReset"
+          get-date-option-event-name="get-date-option" set-date-event-name="set-date">
           <div><span>Datum auswählen</span><span>→</span><a-icon-mdx icon-name="Calendar" size="1em"></a-icon-mdx></div>
         </a-flatpickr>
 
-        <a-steps-button 
-          label="Compagnien" 
-          id="filter-button-companies" 
-          tag="companies"
-          namespace="button-steps-spielplan-"
-          answer-event-name="list-filter-items"
-          active-detail-property-name="fetch:filterTypePlural"
-          request-event-name="request-list-filter-items"
-        >
+        <a-steps-button label="Compagnien" id="filter-button-companies" tag="companies"
+          namespace="button-steps-spielplan-" answer-event-name="list-filter-items"
+          active-detail-property-name="fetch:filterTypePlural" request-event-name="request-list-filter-items">
+          <span class='icon-right'>
+            <span class="arrow-right">
+              <img src="/src/img/icons/chevron_up.svg" alt="icon pfeil rauf">
+            </span>
+            <span class="arrow-bottom">
+              <img src="/src/img/icons/chevron_down.svg" alt="icon pfeil runter">
+            </span>
+          </span>
+        </a-steps-button>
+
+        <a-steps-button label="Ort" id="filter-button-locations" tag="locations" namespace="button-steps-spielplan-"
+          answer-event-name="list-filter-items" active-detail-property-name="fetch:filterTypePlural"
+          request-event-name="request-list-filter-items">
           <span class='icon-right'>
             <span class="arrow-right">
               <img src="/src/img/icons/chevron_up.svg" alt="icon pfeil rauf">
@@ -152,49 +154,36 @@
         </a-steps-button>
 
         <a-steps-button 
-          label="Ort"
-          id="filter-button-locations"
-          tag="locations"
+          label="Zugänglichkeit" 
+          id="filter-button-accessibility" 
+          tag="accessibility" 
           namespace="button-steps-spielplan-"
-          answer-event-name="list-filter-items"
+          answer-event-name="list-filter-items" 
           active-detail-property-name="fetch:filterTypePlural"
-          request-event-name="request-list-filter-items"
-        >
-          <span class='icon-right'>
-            <span class="arrow-right">
-              <img src="/src/img/icons/chevron_up.svg" alt="icon pfeil rauf">
+          request-event-name="request-list-filter-items">
+            <span class='icon-right'>
+              <span class="arrow-right">
+                <img src="/src/img/icons/chevron_up.svg" alt="icon pfeil rauf">
+              </span>
+              <span class="arrow-bottom">
+                <img src="/src/img/icons/chevron_down.svg" alt="icon pfeil runter">
+              </span>
             </span>
-            <span class="arrow-bottom">
-              <img src="/src/img/icons/chevron_down.svg" alt="icon pfeil runter">
-            </span>
-          </span>
         </a-steps-button>
 
-        <a-button 
-          label="Filter Zurücksetzen" 
-          id="filter-clean"
-          namespace="button-steps-spielplan-reset-"
-          answer-event-name="list-events"
-          active-detail-property-name="fetch:filter:active"
-          tag="true"
-          request-event-name="request-list-events"
-        >
+        <a-button label="Filter Zurücksetzen" id="filter-clean" namespace="button-steps-spielplan-reset-"
+          answer-event-name="list-events" active-detail-property-name="fetch:filter:active" tag="true"
+          request-event-name="request-list-events">
         </a-button>
 
       </div>
 
-      <o-steps-filter-list 
-        answer-event-name="list-filter-items"
-      ></o-steps-filter-list>
+      <o-steps-filter-list answer-event-name="list-filter-items"></o-steps-filter-list>
 
     </section>
 
-    <o-steps-event-list 
-      answer-event-name="list-events" 
-      request-event-name="request-list-events"
-      expired-title="Abgelaufene Events"
-      lang="fr-Fr"
-    ></o-steps-event-list>
+    <o-steps-event-list answer-event-name="list-events" request-event-name="request-list-events"
+      expired-title="Abgelaufene Events" lang="fr-Fr"></o-steps-event-list>
 
   </c-steps-events>
 </a-steps-container>
