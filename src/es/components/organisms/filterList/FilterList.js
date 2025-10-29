@@ -58,21 +58,56 @@ export default class FilterList extends Shadow() {
    */
   renderHTML (data) {
     if (!data || !Array.isArray(data.items)) {
-      return Array.from(this.root.querySelectorAll(`:host > *:not(style)`)).forEach(el => el.classList.add('hidden'))
+      return Array.from(this.root.querySelectorAll(':host > *:not(style)')).forEach(el => el.classList.add('hidden'))
     }
     let ul
     if (ul = this.root.querySelector(`:host > *.${data.filterType}`)) {
       ul.classList.remove('hidden')
     } else {
-      this.html = /* html */`
+      let render = ''
+      if (data.filterType === 'accessibility') {
+        render = /* html */ `
+         <ul class="list-items ${data.filterType}">
+          ${data.items.reduce((accumulator, name) => /* html */`
+            ${accumulator}
+              <li>
+                <a-button
+                  ${name === data.filterActive ? 'class="active"' : ''} 
+                  filter-type="${data.filterType}" 
+                  namespace="button-steps-filter-"
+                  tag="${name.alt}" 
+                  answer-event-name="list-events"
+                  active-detail-property-name="fetch:filter:${data.filterType}" 
+                  request-event-name="request-list-events">
+                    <img src="http://testadmin.steps.ch${name.src}" width="24" height="24" class="accessibility-icon" /> ${name.alt} 
+                </a-button>
+              </li>`,
+            '')
+          }
+        <ul>`
+      } else {
+        render = /* html */ `
         <ul class="list-items ${data.filterType}">
           ${Array.from(new Set(
-            // @ts-ignore
-            data.items
-            // @ts-ignore
-          )).reduce((accumulator, name) => /* html */`${accumulator}<li><a-button ${name === data.filterActive ? 'class="active"' : ''} filter-type="${data.filterType}" namespace="button-steps-filter-" tag="${name}" answer-event-name="list-events" active-detail-property-name="fetch:filter:${data.filterType}" request-event-name="request-list-events">${name}</a-button></li>`, '')}
+          // @ts-ignore
+          data.items
+          // @ts-ignore
+          )).reduce((accumulator, name) => /* html */`
+            ${accumulator}
+              <li>
+                <a-button
+                  ${name === data.filterActive ? 'class="active"' : ''} 
+                  filter-type="${data.filterType}" 
+                  namespace="button-steps-filter-"
+                  tag="${name}" 
+                  answer-event-name="list-events"
+                  active-detail-property-name="fetch:filter:${data.filterType}" 
+                  request-event-name="request-list-events">${name}</a-button></li>`,
+            '')}
         <ul>
       `
+      }
+      this.html = render
     }
     this.root.querySelector(`:host > *:not(.${data.filterType}):not(style)`)?.classList.add('hidden')
     this.dispatchEvent(
