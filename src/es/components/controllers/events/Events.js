@@ -133,7 +133,7 @@ export default class Events extends Shadow() {
                 accessibility: this.getParameter('accessibility')?.split(this.separator),
                 date: this.getParameter('date'),
                 dateReset: !this.getParameter('date'),
-                active: String(!!(this.getParameter('company') || this.getParameter('location') || this.getParameter('date')))
+                active: String(!!(this.getParameter('company') || this.getParameter('location') || this.getParameter('date') || this.getParameter('accessibility')))
               }
             }
           })
@@ -178,7 +178,7 @@ export default class Events extends Shadow() {
                 }
                 if (event.detail.tags.includes('accessibility')) {
                   return {
-                    items: this.getAllUniqueTheaterIcons(result.events),
+                    items: this.getAllUniqueTheaterIcons(result.events).filter(e => !e.hideInFilter).map(icon => icon.alt),
                     filterType: 'accessibility',
                     filterTypePlural: 'accessibility',
                     filterActive: this.getParameter('accessibility')
@@ -265,7 +265,7 @@ export default class Events extends Shadow() {
 
         const alt = String(icon.alt ?? '').trim()
         const src = String(icon.src ?? '').trim()
-        const hideInFilter = Boolean(icon.hideInFilter ?? false)
+        const hideInFilter = icon.hideInFilter.toLowerCase() === 'true'
 
         if (!alt && !src) continue
 
@@ -305,11 +305,9 @@ export default class Events extends Shadow() {
     }
     // filter accordingly... expl. if company set check for company, otherwise ignore and return true
     return events.filter(resultEvent => {
-      const filteredAccessibility = Array.isArray(resultEvent.eventInformationIcons) && resultEvent.eventInformationIcons.some(icon => icon.alt === accessibility)
-      const filteredResultEvent = !filteredAccessibility && (!company || company.includes(resultEvent?.company)) &&
-        (!location || location.includes(resultEvent?.location)) &&
-        (!dateArray.length || dateArray.some(date => date.getTime() === resultEvent?.dateObj?.getTime()))
-      return filteredResultEvent
+      const splittedAccessibilityTags = accessibility ? accessibility.split(this.separator) : []
+      const filteredResultEvent = Array.isArray(resultEvent.eventInformationIcons) && resultEvent.eventInformationIcons.some(icon => splittedAccessibilityTags.includes(icon.alt))
+      return (!accessibility || filteredResultEvent) && (!company || company.includes(resultEvent?.company)) && (!location || location.includes(resultEvent?.location)) && (!dateArray.length || dateArray.some(date => date.getTime() === resultEvent?.dateObj?.getTime()))
     })
   }
 
