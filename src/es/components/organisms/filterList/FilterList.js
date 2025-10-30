@@ -50,6 +50,9 @@ export default class FilterList extends Shadow() {
       :host .hidden {
         display: none;
       }
+      :host a-button {
+        margin: 120p
+      }
     `
   }
 
@@ -79,7 +82,7 @@ export default class FilterList extends Shadow() {
                   answer-event-name="list-events"
                   active-detail-property-name="fetch:filter:${data.filterType}" 
                   request-event-name="request-list-events">
-                    <img src="http://testadmin.steps.ch${name.src}" width="24" height="24" class="accessibility-icon" /> ${name.alt} 
+                    <img src="${this.importMetaUrl}./../../../../../${name.src}" width="24" height="24" class="accessibility-icon" /> ${name.alt} 
                 </a-button>
               </li>`,
             '')
