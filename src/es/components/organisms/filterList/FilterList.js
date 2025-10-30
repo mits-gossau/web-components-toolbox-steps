@@ -67,50 +67,28 @@ export default class FilterList extends Shadow() {
     if (ul = this.root.querySelector(`:host > *.${data.filterType}`)) {
       ul.classList.remove('hidden')
     } else {
-      let render = ''
-      if (data.filterType === 'accessibility') {
-        render = /* html */ `
-         <ul class="list-items ${data.filterType}">
-          ${data.items.reduce((accumulator, name) => /* html */`
-            ${accumulator}
-              <li>
-                <a-button
-                  ${name === data.filterActive ? 'class="active"' : ''} 
-                  filter-type="${data.filterType}" 
-                  namespace="button-steps-filter-"
-                  tag="${name.alt}" 
-                  answer-event-name="list-events"
-                  active-detail-property-name="fetch:filter:${data.filterType}" 
-                  request-event-name="request-list-events">
-                    <img src="${this.importMetaUrl}./../../../../../${name.src}" width="24" height="24" class="accessibility-icon" /> ${name.alt} 
-                </a-button>
-              </li>`,
-            '')
-          }
-        <ul>`
-      } else {
-        render = /* html */ `
-        <ul class="list-items ${data.filterType}">
+      this.html = ''
+      this.html = /* html */` 
+      <ul class="list-items ${data.filterType}">
           ${Array.from(new Set(
-          // @ts-ignore
-          data.items
-          // @ts-ignore
-          )).reduce((accumulator, name) => /* html */`
+        // @ts-ignore
+        data.items
+        // @ts-ignore
+      )).reduce((accumulator, name) => /* html */`
             ${accumulator}
-              <li>
-                <a-button
-                  ${name === data.filterActive ? 'class="active"' : ''} 
-                  filter-type="${data.filterType}" 
-                  namespace="button-steps-filter-"
-                  tag="${name}" 
-                  answer-event-name="list-events"
-                  active-detail-property-name="fetch:filter:${data.filterType}" 
-                  request-event-name="request-list-events">${name}</a-button></li>`,
-            '')}
+            <li>
+              <a-button
+                ${name === data.filterActive ? 'class="active"' : ''} 
+                filter-type="${data.filterType}" 
+                namespace="button-steps-filter-"
+                tag="${name}" 
+                answer-event-name="list-events"
+                active-detail-property-name="fetch:filter:${data.filterType}" 
+                request-event-name="request-list-events">${name}
+              </a-button>
+            </li>`, '')}
         <ul>
       `
-      }
-      this.html = render
     }
     this.root.querySelector(`:host > *:not(.${data.filterType}):not(style)`)?.classList.add('hidden')
     this.dispatchEvent(
