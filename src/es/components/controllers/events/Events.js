@@ -305,11 +305,8 @@ export default class Events extends Shadow() {
     }
     // filter accordingly... expl. if company set check for company, otherwise ignore and return true
     return events.filter(resultEvent => {
-      const filteredAccessibility = Array.isArray(resultEvent.eventInformationIcons) && resultEvent.eventInformationIcons.some(icon => icon.alt === accessibility)
-      const filteredResultEvent = !filteredAccessibility && (!company || company.includes(resultEvent?.company)) &&
-        (!location || location.includes(resultEvent?.location)) &&
-        (!dateArray.length || dateArray.some(date => date.getTime() === resultEvent?.dateObj?.getTime()))
-      return filteredResultEvent
+      const filteredResultEvent = Array.isArray(resultEvent.eventInformationIcons) && resultEvent.eventInformationIcons.some(icon => icon.alt === accessibility)
+      return (!accessibility || filteredResultEvent) && (!company || company.includes(resultEvent?.company)) && (!location || location.includes(resultEvent?.location)) && (!dateArray.length || dateArray.some(date => date.getTime() === resultEvent?.dateObj?.getTime()))
     })
   }
 
