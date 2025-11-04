@@ -22,6 +22,7 @@ export default class EventCard extends Shadow() {
      * @property {string} eventDate - The date of the event.
      * @property {string} eventTime - The time of the event.
      * @property {string[]} eventInformationIcons - An array of URLs representing event information icons.
+     * @property {string[]} eventInformationIconsList - An array of URLs representing event information icons in list format.
      * @property {string} forFree - Indicates if the event is for free.
      * @property {string} location - The location of the event.
      * @property {string} presaleUrl - The URL for purchasing tickets in advance.
@@ -41,6 +42,7 @@ export default class EventCard extends Shadow() {
       eventDate: '',
       eventTime: '',
       eventInformationIcons: [],
+      eventInformationIconsList: [],
       forFree: '',
       location: '',
       presaleUrl: '',
@@ -65,6 +67,7 @@ export default class EventCard extends Shadow() {
       eventDate: this.getAttribute('eventDate'),
       eventTime: this.getAttribute('eventTime'),
       eventInformationIcons: JSON.parse(this.getAttribute('eventInformationIcons')),
+      eventInformationIconsList: JSON.parse(this.getAttribute('eventInformationIconsList')),
       forFree: this.getAttribute('forFree'),
       location: this.getAttribute('location'),
       presaleUrl: this.getAttribute('presaleUrl'),
@@ -235,7 +238,7 @@ export default class EventCard extends Shadow() {
         return icons
       }
 
-      const eventIcons = generateIconHTML(this.event.eventInformationIcons)
+      const eventIconList = this.event.eventInformationIconsList.map(icon => `<img src="${icon.src}" width="24" height="24" alt="${icon.alt}" />`).join(',')
       const theaterIcons = generateIconHTML(this.event.theaterInformationIcons)
 
       // urls
@@ -247,7 +250,7 @@ export default class EventCard extends Shadow() {
       const buttonCta = this.event.soldOut === 'True' ? buttonSoldOut : buttonTickets
       const buttonForFree = `<span class="sold-out">${this.getAttribute('textForFree') || 'Gratis'}</span>`
       const buttonCtaForFree = this.event.forFree === 'True' ? buttonForFree : ''
-      const eventIconsHTML = eventIcons ? `<span class="legend-icons">${eventIcons}</span>` : ''
+      const eventIconListHTML = eventIconList ? `<span class="legend-icons">${eventIconList}</span>` : ''
       const theaterIconsHTML = theaterIcons ? `<span class="legend-icons">${theaterIcons}</span>` : ''
 
       const eventInfoHtml = /* html */ `
@@ -267,7 +270,7 @@ export default class EventCard extends Shadow() {
           </p>
           <p>
             ${this.event.eventTime}<br />
-            ${eventIconsHTML}
+            ${eventIconListHTML}
             ${theaterIconsHTML}
           </p>
           <p class="event-cta">

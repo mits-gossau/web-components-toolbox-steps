@@ -36,6 +36,16 @@
           "hideInFilter": "False"
         }
       ],
+      "eventInformationIconsList": [
+        {
+          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
+          "alt": "Rollstuhlgängig"
+        },
+        {
+          "src": "/media/mkbfwfq1/icon-familien.svg",
+          "alt": "Für die ganze Familie"
+        }
+      ],  
       "eventDateForSort": "2023-09-18T12:00:00",
       "eventTimeForSort": "19:00"
     },

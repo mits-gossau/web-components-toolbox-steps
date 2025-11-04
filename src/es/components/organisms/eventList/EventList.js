@@ -175,6 +175,7 @@ export default class EventList extends Shadow() {
         eventDate,
         eventTime,
         eventInformationIcons,
+        eventInformationIconsList,
         forFree,
         location,
         presaleUrl,
@@ -185,6 +186,7 @@ export default class EventList extends Shadow() {
         theaterInformationIcons
       } = event
       const eventIcons = JSON.stringify(eventInformationIcons || [])
+      const eventIconList = JSON.stringify(eventInformationIconsList || [])
       const theaterIcons = JSON.stringify(theaterInformationIcons || [])
 
       return `<m-steps-event-card 
@@ -194,6 +196,7 @@ export default class EventList extends Shadow() {
         eventDate="${eventDate}"
         eventTime="${eventTime}"
         eventInformationIcons='${eventIcons}'
+        eventInformationIconsList='${eventIconList}'
         location="${location}"
         presaleUrl="${presaleUrl}"
         presaleUrlTitle="${presaleUrlTitle}"
