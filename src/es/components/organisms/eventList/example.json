@@ -1864,12 +1864,21 @@
           "src": "/media/f5qfb3cw/icon-nachbesprechung.svg",
           "alt": "Nachbesprechung",
           "hideInFilter": "False"
+        },
+        {
+          "src": "/media/qhwdvux2/icon_uebertitel.svg",
+          "alt": "Untertitel",
+          "hideInFilter": "False"
         }
       ],
       "eventInformationIconsList": [
         {
           "src": "/media/f5qfb3cw/icon-nachbesprechung.svg",
           "alt": "Nachbesprechung"
+        },
+        {
+          "src": "/media/qhwdvux2/icon_uebertitel.svg",
+          "alt": "Untertitel"
         }
       ],
       "eventDateForSort": "2026-03-19T00:00:00",

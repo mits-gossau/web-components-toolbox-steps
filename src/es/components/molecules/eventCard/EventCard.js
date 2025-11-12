@@ -230,7 +230,11 @@ export default class EventCard extends Shadow() {
       const generateIconHTML = (iconsArray) => {
         let icons = ''
         for (const icon of iconsArray) {
-          if (icon.hideInFilter === 'False') {
+          if (icon.hideInFilter) {
+            if (icon.hideInFilter === 'False') {
+              icons += `<img src="${icon.src}" width="24" height="24" alt="${icon.alt}" />`
+            }
+          } else {
             icons += `<img src="${icon.src}" width="24" height="24" alt="${icon.alt}" />`
           }
         }
