@@ -257,7 +257,9 @@ export default class Events extends Shadow() {
     const map = new Map()
 
     for (const ev of events) {
-      const icons = ev?.eventInformationIcons
+      // const icons = ev?.eventInformationIcons
+      const icons = (ev?.eventInformationIcons || []).concat(ev?.theaterInformationIconsFilter || [])
+
       if (!Array.isArray(icons)) continue
 
       for (const icon of icons) {
@@ -267,7 +269,7 @@ export default class Events extends Shadow() {
         const src = String(icon.src ?? '').trim()
         const hideInFilter = icon.hideInFilter.toLowerCase() === 'true'
 
-        if (!alt && !src) continue
+        if ((!alt && !src) && !hideInFilter) continue
 
         const key = `${alt}||${src}`
 
@@ -306,7 +308,8 @@ export default class Events extends Shadow() {
     // filter accordingly... expl. if company set check for company, otherwise ignore and return true
     return events.filter(resultEvent => {
       const splittedAccessibilityTags = accessibility ? accessibility.split(this.separator) : []
-      const filteredResultEvent = Array.isArray(resultEvent.eventInformationIcons) && resultEvent.eventInformationIcons.some(icon => splittedAccessibilityTags.includes(icon.alt))
+      const accessibilityIcons = (resultEvent.eventInformationIcons || []).concat(resultEvent.theaterInformationIcons || [])
+      const filteredResultEvent = accessibilityIcons.some(icon => splittedAccessibilityTags.includes(icon.alt))
       return (!accessibility || filteredResultEvent) && (!company || company.includes(resultEvent?.company)) && (!location || location.includes(resultEvent?.location)) && (!dateArray.length || dateArray.some(date => date.getTime() === resultEvent?.dateObj?.getTime()))
     })
   }

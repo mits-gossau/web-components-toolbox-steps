@@ -270,8 +270,8 @@ export default class EventCard extends Shadow() {
           </p>
           <p>
             ${this.event.eventTime}<br />
-            ${eventIconListHTML}
-            ${theaterIconsHTML}
+           event: ${eventIconListHTML}
+           theater: ${theaterIconsHTML}
           </p>
           <p class="event-cta">
             ${buttonCtaForFree !== '' ? buttonCtaForFree : buttonCta}

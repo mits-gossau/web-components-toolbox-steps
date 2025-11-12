@@ -1,741 +1,571 @@
 {
   "events": [
     {
-      "location": "Zürich",
-      "theater": "Gessnerallee",
+      "location": "Bern",
+      "theater": "Dampfzentrale Bern",
       "theaterInformationIcons": [
-        {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
-        },
         {
           "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
-          "alt": "Hörschleife"
-        }
-      ],
-      "company": "Saburo Teshigawara, Rihoko Sato (JPN)",
-      "companyDetailPageUrl": "/programm/saburo-teshigawara-rihoko-sato",
-      "production": "«Tristan and Isolde»",
-      "choreographer": "Saburo Teshigawara",
-      "eventName": "Test \"Vorstellung vorbei\"",
-      "eventDate": "18.09.2023",
-      "eventTime": "19:00",
-      "soldOut": "False",
-      "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
-        {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig",
-          "hideInFilter": "False"
+          "alt": "Induktionsschleife"
         },
         {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
-          "hideInFilter": "False"
+          "src": "/media/yghdrg5h/icon_rollstuhlgaengig_klammern.svg",
+          "alt": "Zugänglich mit Unterstützung"
         }
       ],
-      "eventInformationIconsList": [
+      "theaterInformationIconsFilter": [
         {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
-        },
-        {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie"
-        }
-      ],  
-      "eventDateForSort": "2023-09-18T12:00:00",
-      "eventTimeForSort": "19:00"
-    },
-    {
-      "location": "Baden",
-      "theater": "Kurtheater Baden ",
-      "theaterInformationIcons": [
-        {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
-        }
-      ],
-      "company": "Winter Guests (NOR)",
-      "companyDetailPageUrl": "/programm/winter-guests",
-      "production": "«Story, story, die.»",
-      "choreographer": "Alan Lucien Øyen ",
-      "eventName": "winterguests_0424_Baden",
-      "eventDate": "24.04.2024",
-      "eventTime": "19:30",
-      "soldOut": "True",
-      "forFree": "False",
-      "presaleUrl": "https://www.kurtheater.ch/spielplan/details/?id=1921",
-      "presaleUrlTitle": "https://www.kurtheater.ch/spielplan/details/",
-      "eventInformationIcons": [
-        {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
-          "hideInFilter": "False"
-        },
-        {
-          "src": "/media/f5qfb3cw/icon-nachbesprechung.svg",
-          "alt": "Nachbesprechung",
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife",
           "hideInFilter": "True"
         },
         {
-          "src": "/media/oe1ncuvl/icon-uebertitel.svg",
-          "alt": "Deskriptive Untertitel",
+          "src": "/media/yghdrg5h/icon_rollstuhlgaengig_klammern.svg",
+          "alt": "Zugänglich mit Unterstützung",
+          "hideInFilter": "False"
+        }
+      ],
+      "company": "Shechter II (GBR)",
+      "companyDetailPageUrl": "/programm/shechter-ii",
+      "production": "«IN THE BRAIN»",
+      "choreographer": "Hofesh Shechter",
+      "eventName": "ShechterII_0305_Bern",
+      "eventDate": "05.03.2026",
+      "eventTime": "20:00",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://www.dampfzentrale.ch/en/event/e-steps_shechter-ii_in-the-barn_maerz_2026/",
+      "presaleUrlTitle": "https://www.dampfzentrale.ch/en/event/e-steps_shechter-ii_in-the-barn_maerz_2026/",
+      "eventInformationIcons": null,
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-05T00:00:00",
+      "eventTimeForSort": "20:00"
+    },
+    {
+      "location": "Bern",
+      "theater": "Bühnen Bern, Vidmar 1",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife",
           "hideInFilter": "True"
         }
       ],
-      "eventDateForSort": "2024-04-24T19:30:00",
-      "eventTimeForSort": "19:30"
-    },
-    {
-      "location": "Genève ",
-      "theater": "Comédie de Genève",
-      "theaterInformationIcons": [
-        {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
-        },
-        {
-          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
-          "alt": "Hörschleife"
-        }
-      ],
-      "company": "Compagnie Sam-Hester (CH) ",
-      "companyDetailPageUrl": "/programm/compagnie-sam-hester",
-      "production": "«Kantik»",
-      "choreographer": "Perrine Valli",
-      "eventName": "CompagnieSam·Hester_0425_Genève",
-      "eventDate": "25.04.2024",
-      "eventTime": "20:00",
-      "soldOut": "False",
-      "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
-        {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
-          "hideInFilter": "False"
-        }
-      ],
-      "eventDateForSort": "2024-04-25T20:00:00",
-      "eventTimeForSort": "20:00"
-    },
-    {
-      "location": "Zürich",
-      "theater": "Gessnerallee",
-      "theaterInformationIcons": [
-        {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
-        },
-        {
-          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
-          "alt": "Hörschleife"
-        }
-      ],
-      "company": "Mette Ingvartsen (DNK/BEL)",
-      "companyDetailPageUrl": "/programm/mette-ingvartsen",
-      "production": "«The Dancing Public»",
-      "choreographer": "Mette Ingvartsen",
-      "eventName": "MetteIngvartsen_0426_Zürich",
-      "eventDate": "26.04.2024",
-      "eventTime": "20:00",
-      "soldOut": "False",
-      "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
-        {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
-          "hideInFilter": "False"
-        }
-      ],
-      "eventDateForSort": "2024-04-26T20:00:00",
-      "eventTimeForSort": "20:00"
-    },
-    {
-      "location": "Genève ",
-      "theater": "Comédie de Genève",
-      "theaterInformationIcons": [
-        {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
-        },
-        {
-          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
-          "alt": "Hörschleife"
-        }
-      ],
-      "company": "Compagnie Sam-Hester (CH) ",
-      "companyDetailPageUrl": "/programm/compagnie-sam-hester",
-      "production": "«Kantik»",
-      "choreographer": "Perrine Valli",
-      "eventName": "CompagnieSam·Hester_0426_Genève",
-      "eventDate": "26.04.2024",
-      "eventTime": "20:30",
-      "soldOut": "False",
-      "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
-        {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
-          "hideInFilter": "False"
-        }
-      ],
-      "eventDateForSort": "2024-04-26T20:30:00",
-      "eventTimeForSort": "20:30"
-    },
-    {
-      "location": "Genève ",
-      "theater": "Comédie de Genève",
-      "theaterInformationIcons": [
-        {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
-        },
-        {
-          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
-          "alt": "Hörschleife"
-        }
-      ],
-      "company": "Compagnie Sam-Hester (CH) ",
-      "companyDetailPageUrl": "/programm/compagnie-sam-hester",
-      "production": "«Kantik»",
-      "choreographer": "Perrine Valli",
-      "eventName": "CompagnieSam·Hester_0427_Genève",
-      "eventDate": "27.04.2024",
+      "company": "St.Gallen Dance Company / Bern Ballett (CH)",
+      "companyDetailPageUrl": "/programm/st-gallen-dance-company-bern-ballett",
+      "production": "«Twi/light»",
+      "choreographer": "Rachelle Anaïs Scott / Marioenrico D'Angelo",
+      "eventName": "Bern Ballett_St.Gallen Dance Company_0306_Bern",
+      "eventDate": "06.03.2026",
       "eventTime": "19:30",
       "soldOut": "False",
       "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
-        {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
-          "hideInFilter": "False"
-        }
-      ],
-      "eventDateForSort": "2024-04-27T19:30:00",
+      "presaleUrl": "https://buehnenbern.ch/spielplan/programm/tanzfestival-steps/?eventId=1025",
+      "presaleUrlTitle": "https://buehnenbern.ch/spielplan/programm/tanzfestival-steps/",
+      "eventInformationIcons": null,
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-06T00:00:00",
       "eventTimeForSort": "19:30"
-    },
-    {
-      "location": "Zürich",
-      "theater": "Gessnerallee",
-      "theaterInformationIcons": [
-        {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
-        },
-        {
-          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
-          "alt": "Hörschleife"
-        }
-      ],
-      "company": "Mette Ingvartsen (DNK/BEL)",
-      "companyDetailPageUrl": "/programm/mette-ingvartsen",
-      "production": "«The Dancing Public»",
-      "choreographer": "Mette Ingvartsen",
-      "eventName": "MetteIngvartsen_0427_Zürich",
-      "eventDate": "27.04.2024",
-      "eventTime": "20:00",
-      "soldOut": "False",
-      "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
-        {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
-          "hideInFilter": "False"
-        }
-      ],
-      "eventDateForSort": "2024-04-27T20:00:00",
-      "eventTimeForSort": "20:00"
-    },
-    {
-      "location": "Moutier ",
-      "theater": "Aula de Chantemerle",
-      "theaterInformationIcons": [
-        {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
-        }
-      ],
-      "company": "Anton Lachky Company (BEL)",
-      "companyDetailPageUrl": "/programm/anton-lachky-company",
-      "production": "«Die Anderen»",
-      "choreographer": "Anton Lachky",
-      "eventName": "AntonLachkyCompany_0428_Moutier",
-      "eventDate": "28.04.2024",
-      "eventTime": "19:00",
-      "soldOut": "False",
-      "forFree": "False",
-      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-steps",
-      "presaleUrlTitle": "Tickets",
-      "eventInformationIcons": [
-        {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
-          "hideInFilter": "False"
-        }
-      ],
-      "eventDateForSort": "2024-04-28T00:00:00",
-      "eventTimeForSort": "19:00"
-    },
-    {
-      "location": "St. Gallen ",
-      "theater": "Theater St. Gallen, Lokremise ",
-      "theaterInformationIcons": [
-        {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
-        }
-      ],
-      "company": "Cie. Arts Mouvementés for Families (CH)",
-      "companyDetailPageUrl": "/programm/cie-arts-mouvementés-for-families",
-      "production": "«Die Flüstertüten» / «Les Porte-Voix»",
-      "choreographer": "Yasmine Hugonnet",
-      "eventName": "Cie.ArtsM_Families_0428_St.Gallen",
-      "eventDate": "28.04.2024",
-      "eventTime": "14:00",
-      "soldOut": "False",
-      "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
-        {
-          "src": "/media/oe1ncuvl/icon-uebertitel.svg",
-          "alt": "Deskriptive Untertitel",
-          "hideInFilter": "True"
-        },
-        {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
-          "hideInFilter": "False"
-        }
-      ],
-      "eventDateForSort": "2024-04-28T14:00:00",
-      "eventTimeForSort": "14:00"
-    },
-    {
-      "location": "Genève ",
-      "theater": "Comédie de Genève",
-      "theaterInformationIcons": [
-        {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
-        },
-        {
-          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
-          "alt": "Hörschleife"
-        }
-      ],
-      "company": "Compagnie Sam-Hester (CH) ",
-      "companyDetailPageUrl": "/programm/compagnie-sam-hester",
-      "production": "«Kantik»",
-      "choreographer": "Perrine Valli",
-      "eventName": "CompagnieSam·Hester_0428_Genève",
-      "eventDate": "28.04.2024",
-      "eventTime": "15:30",
-      "soldOut": "False",
-      "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
-        {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
-          "hideInFilter": "False"
-        }
-      ],
-      "eventDateForSort": "2024-04-28T15:30:00",
-      "eventTimeForSort": "15:30"
-    },
-    {
-      "location": "Lugano",
-      "theater": "LAC Lugano Arte e Cultura",
-      "theaterInformationIcons": [
-        {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
-        },
-        {
-          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
-          "alt": "Hörschleife"
-        }
-      ],
-      "company": "Kidd Pivot (CAN)",
-      "companyDetailPageUrl": "/programm/kidd-pivot",
-      "production": "Assembly Hall",
-      "choreographer": "Crystal Pite, Jonathon Young",
-      "eventName": "KiddPivot_0428_Lugano",
-      "eventDate": "28.04.2024",
-      "eventTime": "18:00",
-      "soldOut": "False",
-      "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
-        {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
-          "hideInFilter": "False"
-        }
-      ],
-      "eventDateForSort": "2024-04-28T18:00:00",
-      "eventTimeForSort": "18:00"
-    },
-    {
-      "location": "Chur ",
-      "theater": "Theater Chur ",
-      "theaterInformationIcons": [
-        {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
-        }
-      ],
-      "company": "Winter Guests (NOR)",
-      "companyDetailPageUrl": "/programm/winter-guests",
-      "production": "«Story, story, die.»",
-      "choreographer": "Alan Lucien Øyen ",
-      "eventName": "winterguests_0429_Chur",
-      "eventDate": "29.04.2024",
-      "eventTime": "17:00",
-      "soldOut": "False",
-      "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
-        {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
-          "hideInFilter": "False"
-        }
-      ],
-      "eventDateForSort": "2024-04-29T00:00:00",
-      "eventTimeForSort": "17:00"
-    },
-    {
-      "location": "St. Gallen ",
-      "theater": "Theater St. Gallen, Lokremise ",
-      "theaterInformationIcons": [
-        {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
-        }
-      ],
-      "company": "Cie. Arts Mouvementés for Families (CH)",
-      "companyDetailPageUrl": "/programm/cie-arts-mouvementés-for-families",
-      "production": "«Die Flüstertüten» / «Les Porte-Voix»",
-      "choreographer": "Yasmine Hugonnet",
-      "eventName": "Cie.ArtsM_Families_0429_St.Gallen",
-      "eventDate": "29.04.2024",
-      "eventTime": "10:00",
-      "soldOut": "False",
-      "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
-        {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
-          "hideInFilter": "False"
-        },
-        {
-          "src": "/media/oe1ncuvl/icon-uebertitel.svg",
-          "alt": "Deskriptive Untertitel",
-          "hideInFilter": "True"
-        }
-      ],
-      "eventDateForSort": "2024-04-29T10:00:00",
-      "eventTimeForSort": "10:00"
-    },
-    {
-      "location": "Hauterive (NE)",
-      "theater": "Laténium, parc et musée d’archéologie",
-      "theaterInformationIcons": null,
-      "company": "Cie. Arts Mouvementés for Families (CH)",
-      "companyDetailPageUrl": "/programm/cie-arts-mouvementés-for-families",
-      "production": "«Die Flüstertüten» / «Les Porte-Voix»",
-      "choreographer": "Yasmine Hugonnet",
-      "eventName": "Cie.ArtsM_Families_0501_15:00_Hauterive",
-      "eventDate": "01.05.2024",
-      "eventTime": "15:00",
-      "soldOut": "False",
-      "forFree": "False",
-      "presaleUrl": "https://testadmin.steps.ch",
-      "presaleUrlTitle": "Ticketlink",
-      "eventInformationIcons": [
-        {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
-          "hideInFilter": "False"
-        }
-      ],
-      "eventDateForSort": "2024-05-01T15:00:00",
-      "eventTimeForSort": "15:00"
     },
     {
       "location": "Zug",
       "theater": "Theater Casino Zug ",
       "theaterInformationIcons": [
         {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
         },
         {
           "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
-          "alt": "Hörschleife"
+          "alt": "Induktionsschleife"
         }
       ],
-      "company": "Winter Guests (NOR)",
-      "companyDetailPageUrl": "/programm/winter-guests",
-      "production": "«Story, story, die.»",
-      "choreographer": "Alan Lucien Øyen ",
-      "eventName": "winterguests_0502_Zug",
-      "eventDate": "02.05.2024",
-      "eventTime": "17:00",
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife",
+          "hideInFilter": "True"
+        }
+      ],
+      "company": "Compagnie Dyptik (FR)",
+      "companyDetailPageUrl": "/programm/compagnie-dyptik",
+      "production": "«Le Grand Bal»",
+      "choreographer": "Souhail Marchiche & Mehdi Meghari",
+      "eventName": "CompagnieDyptik_0306_Zug",
+      "eventDate": "06.03.2026",
+      "eventTime": "19:30",
       "soldOut": "False",
       "forFree": "False",
-      "presaleUrl": "https://kartenverkauf.theatercasino.ch/selection/event/date?productId=102058207937",
-      "presaleUrlTitle": "https://kartenverkauf.theatercasino.ch/selection/event/date?productId=102058207937",
+      "presaleUrl": "https://www.theatercasino.ch/programm/category/tanz?productId=10229407731690",
+      "presaleUrlTitle": "https://www.theatercasino.ch/programm/category/tanz",
       "eventInformationIcons": [
         {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
+          "src": "/media/15nphmtb/icon_einfuehrung_i.svg",
+          "alt": "Einführung",
           "hideInFilter": "False"
         }
       ],
-      "eventDateForSort": "2024-05-02T00:00:00",
-      "eventTimeForSort": "17:00"
+      "eventInformationIconsList": [
+        {
+          "src": "/media/15nphmtb/icon_einfuehrung_i.svg",
+          "alt": "Einführung"
+        }
+      ],
+      "eventDateForSort": "2026-03-06T00:00:00",
+      "eventTimeForSort": "19:30"
+    },
+    {
+      "location": "Zürich",
+      "theater": "Tanzhaus Zürich",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife",
+          "hideInFilter": "True"
+        }
+      ],
+      "company": "Joy Alpuerto Ritter & Hannes Langolf (DE/GBR) ",
+      "companyDetailPageUrl": "/programm/joy-alpuerto-ritter-hannes-langolf-mit-sarafina-beck",
+      "production": "«The Fall / Risings»",
+      "choreographer": "In Zusammenarbeit mit der Gastkünstlerin Sarafina Beck (CH)",
+      "eventName": "JoyAlpuertoRitter_HannesLangolf_0306_Zürich",
+      "eventDate": "06.03.2026",
+      "eventTime": "20:00",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://www.tanzhaus-zuerich.ch/",
+      "presaleUrlTitle": "https://www.tanzhaus-zuerich.ch/",
+      "eventInformationIcons": null,
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-06T00:00:00",
+      "eventTimeForSort": "20:00"
     },
     {
       "location": "Bern",
       "theater": "Dampfzentrale Bern",
       "theaterInformationIcons": [
         {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife"
+        },
+        {
+          "src": "/media/yghdrg5h/icon_rollstuhlgaengig_klammern.svg",
+          "alt": "Zugänglich mit Unterstützung"
         }
       ],
-      "company": "Mette Ingvartsen (DNK/BEL)",
-      "companyDetailPageUrl": "/programm/mette-ingvartsen",
-      "production": "«The Dancing Public»",
-      "choreographer": "Mette Ingvartsen",
-      "eventName": "MetteIngvartsen_0502_Bern",
-      "eventDate": "02.05.2024",
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife",
+          "hideInFilter": "True"
+        },
+        {
+          "src": "/media/yghdrg5h/icon_rollstuhlgaengig_klammern.svg",
+          "alt": "Zugänglich mit Unterstützung",
+          "hideInFilter": "False"
+        }
+      ],
+      "company": "Shechter II (GBR)",
+      "companyDetailPageUrl": "/programm/shechter-ii",
+      "production": "«IN THE BRAIN»",
+      "choreographer": "Hofesh Shechter",
+      "eventName": "ShechterII_0306_Bern",
+      "eventDate": "06.03.2026",
       "eventTime": "20:00",
       "soldOut": "False",
       "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
-        {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
-          "hideInFilter": "False"
-        }
-      ],
-      "eventDateForSort": "2024-05-02T00:00:00",
+      "presaleUrl": "https://www.dampfzentrale.ch/en/event/e-steps_shechter-ii_in-the-barn_maerz_2026/",
+      "presaleUrlTitle": "https://www.dampfzentrale.ch/en/event/e-steps_shechter-ii_in-the-barn_maerz_2026/",
+      "eventInformationIcons": null,
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-06T00:00:00",
       "eventTimeForSort": "20:00"
     },
     {
-      "location": "Biel/Bienne ",
-      "theater": "Nebia ",
+      "location": "Neuchâtel ",
+      "theater": "Théâtre du Passage",
       "theaterInformationIcons": [
         {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
         },
         {
           "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
-          "alt": "Hörschleife"
+          "alt": "Induktionsschleife"
         }
       ],
-      "company": "Far From The Norm (GBR)",
-      "companyDetailPageUrl": "/programm/far-from-the-norm",
-      "production": "«BLKDOG»",
-      "choreographer": "Botis Seva",
-      "eventName": "FarFromTheNorm_0502_Biel",
-      "eventDate": "02.05.2024",
-      "eventTime": "19:30",
-      "soldOut": "False",
-      "forFree": "False",
-      "presaleUrl": "https://bienne-spfr.shop.secutix.com/selection/event/date?productId=10228931249440&lang=de",
-      "presaleUrlTitle": "https://bienne-spfr.shop.secutix.com/selection/event/date?productId=10228931249440&lang=de",
-      "eventInformationIcons": [
+      "theaterInformationIconsFilter": [
         {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
           "hideInFilter": "False"
-        }
-      ],
-      "eventDateForSort": "2024-05-02T19:30:00",
-      "eventTimeForSort": "19:30"
-    },
-    {
-      "location": "Schaffhausen",
-      "theater": "Stadttheater Schaffhausen ",
-      "theaterInformationIcons": [
-        {
-          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
-          "alt": "Hörschleife"
         },
         {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife",
+          "hideInFilter": "True"
         }
       ],
-      "company": "Anton Lachky Company (BEL)",
-      "companyDetailPageUrl": "/programm/anton-lachky-company",
-      "production": "«Die Anderen»",
-      "choreographer": "Anton Lachky",
-      "eventName": "AntonLachkyCompany_0502_Schaffhausen",
-      "eventDate": "02.05.2024",
-      "eventTime": "19:30",
+      "company": "People Watching (CAN)",
+      "companyDetailPageUrl": "/programm/people-watching",
+      "production": "«Play Dead»",
+      "choreographer": "People Watching ",
+      "eventName": "PeopleWatching_0306_Neuchâtel",
+      "eventDate": "06.03.2026",
+      "eventTime": "20:00",
       "soldOut": "False",
       "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
-        {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
-          "hideInFilter": "False"
-        }
-      ],
-      "eventDateForSort": "2024-05-02T19:30:00",
-      "eventTimeForSort": "19:30"
+      "presaleUrl": "https://www.theatredupassage.ch/programme/detail/60-steps-play-dead",
+      "presaleUrlTitle": "https://www.theatredupassage.ch/programme/detail/60-steps-play-dead",
+      "eventInformationIcons": null,
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-06T00:00:00",
+      "eventTimeForSort": "20:00"
     },
     {
       "location": "Nyon",
       "theater": "Usine à Gaz",
       "theaterInformationIcons": [
         {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
         }
       ],
-      "company": "Compagnie Sam-Hester (CH) ",
-      "companyDetailPageUrl": "/programm/compagnie-sam-hester",
-      "production": "«Kantik»",
-      "choreographer": "Perrine Valli",
-      "eventName": "CompagnieSam·Hester_0503_Nyon",
-      "eventDate": "03.05.2024",
-      "eventTime": "17:00",
-      "soldOut": "False",
-      "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
+      "theaterInformationIconsFilter": [
         {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
           "hideInFilter": "False"
         }
       ],
-      "eventDateForSort": "2024-05-03T00:00:00",
-      "eventTimeForSort": "17:00"
+      "company": "Circumstances (BEL)",
+      "companyDetailPageUrl": "/programm/circumstances",
+      "production": "«Beyond»",
+      "choreographer": "Piet Van Dycke",
+      "eventName": "Circumstances_0306_Nyon",
+      "eventDate": "06.03.2026",
+      "eventTime": "20:30",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://usineagaz.ch/event/circumstances-belbeyond/",
+      "presaleUrlTitle": "https://usineagaz.ch/event/circumstances-belbeyond/",
+      "eventInformationIcons": [
+        {
+          "src": "/media/mkbfwfq1/icon-familien.svg",
+          "alt": "Für alle ab 6 Jahren",
+          "hideInFilter": "False"
+        }
+      ],
+      "eventInformationIconsList": [
+        {
+          "src": "/media/mkbfwfq1/icon-familien.svg",
+          "alt": "Für alle ab 6 Jahren"
+        }
+      ],
+      "eventDateForSort": "2026-03-06T00:00:00",
+      "eventTimeForSort": "20:30"
     },
     {
       "location": "Zürich",
-      "theater": "Theater 11",
+      "theater": "Tanzhaus Zürich",
       "theaterInformationIcons": [
         {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife"
         }
       ],
-      "company": "Kidd Pivot (CAN)",
-      "companyDetailPageUrl": "/programm/kidd-pivot",
-      "production": "Assembly Hall",
-      "choreographer": "Crystal Pite, Jonathon Young",
-      "eventName": "KiddPivot_0503_Zürich",
-      "eventDate": "03.05.2024",
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife",
+          "hideInFilter": "True"
+        }
+      ],
+      "company": "Joy Alpuerto Ritter & Hannes Langolf (DE/GBR) ",
+      "companyDetailPageUrl": "/programm/joy-alpuerto-ritter-hannes-langolf-mit-sarafina-beck",
+      "production": "«The Fall / Risings»",
+      "choreographer": "In Zusammenarbeit mit der Gastkünstlerin Sarafina Beck (CH)",
+      "eventName": "JoyAlpuertoRitter_HannesLangolf_0307_Zürich",
+      "eventDate": "07.03.2026",
       "eventTime": "20:00",
       "soldOut": "False",
       "forFree": "False",
       "presaleUrl": null,
       "presaleUrlTitle": "",
-      "eventInformationIcons": [
-        {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
-          "hideInFilter": "False"
-        }
-      ],
-      "eventDateForSort": "2024-05-03T20:00:00",
+      "eventInformationIcons": null,
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-07T00:00:00",
       "eventTimeForSort": "20:00"
     },
     {
-      "location": "Vevey ",
-      "theater": "Vevey, Théâtre Le Reflet ",
+      "location": "Luzern",
+      "theater": "Luzerner Theater ",
       "theaterInformationIcons": [
         {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife"
+        },
+        {
+          "src": "/media/yghdrg5h/icon_rollstuhlgaengig_klammern.svg",
+          "alt": "Zugänglich mit Unterstützung"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife",
+          "hideInFilter": "True"
+        },
+        {
+          "src": "/media/yghdrg5h/icon_rollstuhlgaengig_klammern.svg",
+          "alt": "Zugänglich mit Unterstützung",
+          "hideInFilter": "False"
+        }
+      ],
+      "company": "tanzmainz (DE)",
+      "companyDetailPageUrl": "/programm/tanzmainz",
+      "production": "«Sphynx»",
+      "choreographer": "Rafaële Giovanola",
+      "eventName": "tanzmainz_0307_Luzern",
+      "eventDate": "07.03.2026",
+      "eventTime": "20:00",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://www.luzernertheater.ch/stepssphynx",
+      "presaleUrlTitle": "https://www.luzernertheater.ch/stepssphynx",
+      "eventInformationIcons": [
+        {
+          "src": "/media/15nphmtb/icon_einfuehrung_i.svg",
+          "alt": "Einführung",
+          "hideInFilter": "False"
+        }
+      ],
+      "eventInformationIconsList": [
+        {
+          "src": "/media/15nphmtb/icon_einfuehrung_i.svg",
+          "alt": "Einführung"
+        }
+      ],
+      "eventDateForSort": "2026-03-07T00:00:00",
+      "eventTimeForSort": "20:00"
+    },
+    {
+      "location": "Zürich",
+      "theater": "Tanzhaus Zürich",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
         },
         {
           "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
-          "alt": "Hörschleife"
+          "alt": "Induktionsschleife"
         }
       ],
-      "company": "Winter Guests (NOR)",
-      "companyDetailPageUrl": "/programm/winter-guests",
-      "production": "«Story, story, die.»",
-      "choreographer": "Alan Lucien Øyen ",
-      "eventName": "winterguests_0504_Vevey",
-      "eventDate": "04.05.2024",
-      "eventTime": "19:00",
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife",
+          "hideInFilter": "True"
+        }
+      ],
+      "company": "Circumstances (BEL)",
+      "companyDetailPageUrl": "/programm/circumstances",
+      "production": "«Beyond»",
+      "choreographer": "Piet Van Dycke",
+      "eventName": "Circumstances_0308_Zuerich",
+      "eventDate": "08.03.2026",
+      "eventTime": "16:00",
       "soldOut": "False",
       "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
+      "presaleUrl": "https://www.tanzhaus-zuerich.ch/veranstaltungen/steps-beyond-080326/58272",
+      "presaleUrlTitle": "https://www.tanzhaus-zuerich.ch/veranstaltungen/steps-beyond-080326/58272",
       "eventInformationIcons": [
         {
           "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
+          "alt": "Für alle ab 6 Jahren",
           "hideInFilter": "False"
         }
       ],
-      "eventDateForSort": "2024-05-04T00:00:00",
-      "eventTimeForSort": "19:00"
+      "eventInformationIconsList": [
+        {
+          "src": "/media/mkbfwfq1/icon-familien.svg",
+          "alt": "Für alle ab 6 Jahren"
+        }
+      ],
+      "eventDateForSort": "2026-03-08T00:00:00",
+      "eventTimeForSort": "16:00"
     },
     {
-      "location": "Sierre ",
-      "theater": "Théâtre Les Halles",
+      "location": "Bern",
+      "theater": "Dampfzentrale Bern",
       "theaterInformationIcons": [
         {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife"
+        },
+        {
+          "src": "/media/yghdrg5h/icon_rollstuhlgaengig_klammern.svg",
+          "alt": "Zugänglich mit Unterstützung"
         }
       ],
-      "company": "Marc Brew Company | Eastman (GBR/BEL)",
-      "companyDetailPageUrl": "/programm/marc-brew-company-eastman",
-      "production": "«An Accident»",
-      "choreographer": "Marc Brew, Sidi Larbi Cherkaoui",
-      "eventName": "MarcBrewCompany|Eastman_0504_Sierre",
-      "eventDate": "04.05.2024",
-      "eventTime": "19:00",
-      "soldOut": "False",
-      "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
+      "theaterInformationIconsFilter": [
         {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife",
+          "hideInFilter": "True"
+        },
+        {
+          "src": "/media/yghdrg5h/icon_rollstuhlgaengig_klammern.svg",
+          "alt": "Zugänglich mit Unterstützung",
           "hideInFilter": "False"
         }
       ],
-      "eventDateForSort": "2024-05-04T19:00:00",
+      "company": "Compagnie Dyptik (FR)",
+      "companyDetailPageUrl": "/programm/compagnie-dyptik",
+      "production": "«Le Grand Bal»",
+      "choreographer": "Souhail Marchiche & Mehdi Meghari",
+      "eventName": "CompagnieDyptik_0308_Bern",
+      "eventDate": "08.03.2026",
+      "eventTime": "18:00",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://www.dampfzentrale.ch/event/steps_compagnie-dyptik_le_grand_bal_maerz_2025/",
+      "presaleUrlTitle": "https://www.dampfzentrale.ch/event/steps_compagnie-dyptik_le_grand_bal_maerz_2025/",
+      "eventInformationIcons": null,
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-08T00:00:00",
+      "eventTimeForSort": "18:00"
+    },
+    {
+      "location": "Biel/Bienne ",
+      "theater": "Nebia",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife",
+          "hideInFilter": "True"
+        }
+      ],
+      "company": "Skånes Dansteater (SWE) / Lloydscompany (NLD)",
+      "companyDetailPageUrl": "/programm/skånes-dansteater-lloydscompany",
+      "production": "«Timeless Encounters»",
+      "choreographer": "Roser López Espinosa / Lloyd Marengo",
+      "eventName": "SkanesDansteater_Lloydscompany_0308_Biel/Bienne",
+      "eventDate": "08.03.2026",
+      "eventTime": "18:00",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://bienne-spfr.shop.secutix.com/selection/event/date?productId=10229384904498",
+      "presaleUrlTitle": "https://bienne-spfr.shop.secutix.com/selection/event/date?productId=10229384904498",
+      "eventInformationIcons": null,
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-08T00:00:00",
+      "eventTimeForSort": "18:00"
+    },
+    {
+      "location": "Vevey ",
+      "theater": "Théâtre Le Reflet",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife",
+          "hideInFilter": "True"
+        }
+      ],
+      "company": "People Watching (CAN)",
+      "companyDetailPageUrl": "/programm/people-watching",
+      "production": "«Play Dead»",
+      "choreographer": "People Watching ",
+      "eventName": "PeopleWatching_0308_Vevey",
+      "eventDate": "08.03.2026",
+      "eventTime": "19:00",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://billetterie.theatredevevey.ch/spectacle?id_spectacle=10002042",
+      "presaleUrlTitle": "https://billetterie.theatredevevey.ch/spectacle?id_spectacle=10002042",
+      "eventInformationIcons": null,
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-08T00:00:00",
       "eventTimeForSort": "19:00"
     },
     {
@@ -743,656 +573,324 @@
       "theater": "Phönix Theater",
       "theaterInformationIcons": [
         {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
+          "src": "/media/yghdrg5h/icon_rollstuhlgaengig_klammern.svg",
+          "alt": "Zugänglich mit Unterstützung"
         }
       ],
-      "company": "Anton Lachky Company (BEL)",
-      "companyDetailPageUrl": "/programm/anton-lachky-company",
-      "production": "«Die Anderen»",
-      "choreographer": "Anton Lachky",
-      "eventName": "AntonLachkyCompany_0504_Steckborn",
-      "eventDate": "04.05.2024",
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/yghdrg5h/icon_rollstuhlgaengig_klammern.svg",
+          "alt": "Zugänglich mit Unterstützung",
+          "hideInFilter": "False"
+        }
+      ],
+      "company": "Joy Alpuerto Ritter & Hannes Langolf (DE/GBR) ",
+      "companyDetailPageUrl": "/programm/joy-alpuerto-ritter-hannes-langolf-mit-sarafina-beck",
+      "production": "«The Fall / Risings»",
+      "choreographer": "In Zusammenarbeit mit der Gastkünstlerin Sarafina Beck (CH)",
+      "eventName": "JoyAlpuertoRitter_HannesLangolf_0309_Steckborn",
+      "eventDate": "09.03.2026",
       "eventTime": "19:30",
       "soldOut": "False",
       "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
-        {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
-          "hideInFilter": "False"
-        }
-      ],
-      "eventDateForSort": "2024-05-04T19:30:00",
+      "presaleUrl": "https://www.phoenix-theater.ch/spielplan/2/131-Steps-The-Fall-Risings/",
+      "presaleUrlTitle": "https://www.phoenix-theater.ch/spielplan/2/131-Steps-The-Fall-Risings/",
+      "eventInformationIcons": null,
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-09T00:00:00",
       "eventTimeForSort": "19:30"
-    },
-    {
-      "location": "Luzern",
-      "theater": "Luzerner Theater ",
-      "theaterInformationIcons": [
-        {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
-        }
-      ],
-      "company": "Saburo Teshigawara, Rihoko Sato (JPN)",
-      "companyDetailPageUrl": "/programm/saburo-teshigawara-rihoko-sato",
-      "production": "«Tristan and Isolde»",
-      "choreographer": "Saburo Teshigawara",
-      "eventName": "SaburoTeshigawara,RihokoSato_0504_Luzern",
-      "eventDate": "04.05.2024",
-      "eventTime": "20:00",
-      "soldOut": "False",
-      "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
-        {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
-          "hideInFilter": "False"
-        }
-      ],
-      "eventDateForSort": "2024-05-04T20:00:00",
-      "eventTimeForSort": "20:00"
-    },
-    {
-      "location": "Fribourg",
-      "theater": "Equilibre",
-      "theaterInformationIcons": [
-        {
-          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
-          "alt": "Hörschleife"
-        },
-        {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
-        }
-      ],
-      "company": "Far From The Norm (GBR)",
-      "companyDetailPageUrl": "/programm/far-from-the-norm",
-      "production": "«BLKDOG»",
-      "choreographer": "Botis Seva",
-      "eventName": "FarFromTheNorm_0505_Fribourg",
-      "eventDate": "05.05.2024",
-      "eventTime": "17:00",
-      "soldOut": "False",
-      "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
-        {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
-          "hideInFilter": "False"
-        }
-      ],
-      "eventDateForSort": "2024-05-05T17:00:00",
-      "eventTimeForSort": "17:00"
-    },
-    {
-      "location": "Sierre ",
-      "theater": "Théâtre Les Halles",
-      "theaterInformationIcons": [
-        {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
-        }
-      ],
-      "company": "Marc Brew Company | Eastman (GBR/BEL)",
-      "companyDetailPageUrl": "/programm/marc-brew-company-eastman",
-      "production": "«An Accident»",
-      "choreographer": "Marc Brew, Sidi Larbi Cherkaoui",
-      "eventName": "MarcBrewCompany|Eastman_0505_Sierre",
-      "eventDate": "05.05.2024",
-      "eventTime": "17:00",
-      "soldOut": "False",
-      "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
-        {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
-          "hideInFilter": "False"
-        }
-      ],
-      "eventDateForSort": "2024-05-05T17:00:00",
-      "eventTimeForSort": "17:00"
-    },
-    {
-      "location": "Biel/Bienne ",
-      "theater": "Nebia ",
-      "theaterInformationIcons": [
-        {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
-        },
-        {
-          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
-          "alt": "Hörschleife"
-        }
-      ],
-      "company": "Compagnie Sam-Hester (CH) ",
-      "companyDetailPageUrl": "/programm/compagnie-sam-hester",
-      "production": "«Kantik»",
-      "choreographer": "Perrine Valli",
-      "eventName": "CompagnieSam·Hester_0505_Biel",
-      "eventDate": "05.05.2024",
-      "eventTime": "18:00",
-      "soldOut": "False",
-      "forFree": "False",
-      "presaleUrl": "https://bienne-spfr.shop.secutix.com/selection/event/date?productId=10228931249442&gtmStepTracking=true&lang=de",
-      "presaleUrlTitle": "https://bienne-spfr.shop.secutix.com/selection/event/date?productId=10228931249442&gtmStepTracking=true&lang=de",
-      "eventInformationIcons": [
-        {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
-          "hideInFilter": "False"
-        }
-      ],
-      "eventDateForSort": "2024-05-05T18:00:00",
-      "eventTimeForSort": "18:00"
-    },
-    {
-      "location": "Basel",
-      "theater": "Kaserne Basel",
-      "theaterInformationIcons": [
-        {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
-        }
-      ],
-      "company": "Cie. Arts Mouvementés (CH)",
-      "companyDetailPageUrl": "/programm/cie-arts-mouvementés",
-      "production": "«Les Porte-Voix –  Cabaret Ventriloque»",
-      "choreographer": "Yasmine Hugonnet",
-      "eventName": "Cie.ArtsMouvementés_0507_Basel",
-      "eventDate": "07.05.2024",
-      "eventTime": "17:00",
-      "soldOut": "False",
-      "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
-        {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
-          "hideInFilter": "False"
-        }
-      ],
-      "eventDateForSort": "2024-05-07T00:00:00",
-      "eventTimeForSort": "17:00"
-    },
-    {
-      "location": "Bern",
-      "theater": "Dampfzentrale Bern",
-      "theaterInformationIcons": [
-        {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
-        }
-      ],
-      "company": "Saburo Teshigawara, Rihoko Sato (JPN)",
-      "companyDetailPageUrl": "/programm/saburo-teshigawara-rihoko-sato",
-      "production": "«Tristan and Isolde»",
-      "choreographer": "Saburo Teshigawara",
-      "eventName": "SaburoTeshigawara,RihokoSato_0507_Bern",
-      "eventDate": "07.05.2024",
-      "eventTime": "20:00",
-      "soldOut": "False",
-      "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
-        {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
-          "hideInFilter": "False"
-        }
-      ],
-      "eventDateForSort": "2024-05-07T00:00:00",
-      "eventTimeForSort": "20:00"
-    },
-    {
-      "location": "Baden",
-      "theater": "Kurtheater Baden ",
-      "theaterInformationIcons": [
-        {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
-        }
-      ],
-      "company": "Far From The Norm (GBR)",
-      "companyDetailPageUrl": "/programm/far-from-the-norm",
-      "production": "«BLKDOG»",
-      "choreographer": "Botis Seva",
-      "eventName": "FarFromTheNorm_0507_Baden",
-      "eventDate": "07.05.2024",
-      "eventTime": "19:30",
-      "soldOut": "False",
-      "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
-        {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
-          "hideInFilter": "False"
-        }
-      ],
-      "eventDateForSort": "2024-05-07T19:30:00",
-      "eventTimeForSort": "19:30"
-    },
-    {
-      "location": "Basel",
-      "theater": "Kaserne Basel",
-      "theaterInformationIcons": [
-        {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
-        }
-      ],
-      "company": "Cie. Arts Mouvementés (CH)",
-      "companyDetailPageUrl": "/programm/cie-arts-mouvementés",
-      "production": "«Les Porte-Voix –  Cabaret Ventriloque»",
-      "choreographer": "Yasmine Hugonnet",
-      "eventName": "Cie.ArtsMouvementés_0508_Basel",
-      "eventDate": "08.05.2024",
-      "eventTime": "20:30",
-      "soldOut": "False",
-      "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
-        {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
-          "hideInFilter": "False"
-        }
-      ],
-      "eventDateForSort": "2024-05-08T00:00:00",
-      "eventTimeForSort": "20:30"
-    },
-    {
-      "location": "Aarau ",
-      "theater": "Bühne Aarau, Alte Reithalle ",
-      "theaterInformationIcons": [
-        {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
-        }
-      ],
-      "company": "Anton Lachky Company (BEL)",
-      "companyDetailPageUrl": "/programm/anton-lachky-company",
-      "production": "«Die Anderen»",
-      "choreographer": "Anton Lachky",
-      "eventName": "AntonLachkyCompany_0508_Aarau",
-      "eventDate": "08.05.2024",
-      "eventTime": "19:00",
-      "soldOut": "False",
-      "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
-        {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
-          "hideInFilter": "False"
-        }
-      ],
-      "eventDateForSort": "2024-05-08T19:00:00",
-      "eventTimeForSort": "19:00"
-    },
-    {
-      "location": "Bern",
-      "theater": "Bühnen Bern, Vidmar 1",
-      "theaterInformationIcons": [
-        {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
-        }
-      ],
-      "company": "Winter Guests (NOR)",
-      "companyDetailPageUrl": "/programm/winter-guests",
-      "production": "«Story, story, die.»",
-      "choreographer": "Alan Lucien Øyen ",
-      "eventName": "winterguests_0509_Bern",
-      "eventDate": "09.05.2024",
-      "eventTime": "17:00",
-      "soldOut": "False",
-      "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
-        {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
-          "hideInFilter": "False"
-        }
-      ],
-      "eventDateForSort": "2024-05-09T00:00:00",
-      "eventTimeForSort": "17:00"
-    },
-    {
-      "location": "La Tour-de-Trême",
-      "theater": "Salle CO2",
-      "theaterInformationIcons": [
-        {
-          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
-          "alt": "Hörschleife"
-        },
-        {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
-        }
-      ],
-      "company": "Marc Brew Company | Eastman (GBR/BEL)",
-      "companyDetailPageUrl": "/programm/marc-brew-company-eastman",
-      "production": "«An Accident»",
-      "choreographer": "Marc Brew, Sidi Larbi Cherkaoui",
-      "eventName": "MarcBrewCompany|Eastman_0510_LaTour-de-Trême",
-      "eventDate": "10.05.2024",
-      "eventTime": "20:00",
-      "soldOut": "False",
-      "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
-        {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
-          "hideInFilter": "False"
-        }
-      ],
-      "eventDateForSort": "2024-05-10T20:00:00",
-      "eventTimeForSort": "20:00"
-    },
-    {
-      "location": "Poschiavo",
-      "theater": "Palestre Scuole Comunali",
-      "theaterInformationIcons": [
-        {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
-        }
-      ],
-      "company": "Anton Lachky Company (BEL)",
-      "companyDetailPageUrl": "/programm/anton-lachky-company",
-      "production": "«Die Anderen»",
-      "choreographer": "Anton Lachky",
-      "eventName": "AntonLachkyCompany_0510_Poschiavo",
-      "eventDate": "10.05.2024",
-      "eventTime": "20:30",
-      "soldOut": "False",
-      "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
-        {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
-          "hideInFilter": "False"
-        }
-      ],
-      "eventDateForSort": "2024-05-10T20:30:00",
-      "eventTimeForSort": "20:30"
-    },
-    {
-      "location": "Bern",
-      "theater": "Dampfzentrale Bern",
-      "theaterInformationIcons": [
-        {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
-        }
-      ],
-      "company": "Far From The Norm (GBR)",
-      "companyDetailPageUrl": "/programm/far-from-the-norm",
-      "production": "«BLKDOG»",
-      "choreographer": "Botis Seva",
-      "eventName": "FarFromTheNorm_0511_Bern",
-      "eventDate": "11.05.2024",
-      "eventTime": "17:00",
-      "soldOut": "False",
-      "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
-        {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
-          "hideInFilter": "False"
-        }
-      ],
-      "eventDateForSort": "2024-05-11T00:00:00",
-      "eventTimeForSort": "17:00"
-    },
-    {
-      "location": "St. Gallen ",
-      "theater": "Theater St. Gallen, Grosse Bühne ",
-      "theaterInformationIcons": [
-        {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
-        }
-      ],
-      "company": "Winter Guests (NOR)",
-      "companyDetailPageUrl": "/programm/winter-guests",
-      "production": "«Story, story, die.»",
-      "choreographer": "Alan Lucien Øyen ",
-      "eventName": "winterguests_0511_St.Gallen",
-      "eventDate": "11.05.2024",
-      "eventTime": "17:00",
-      "soldOut": "False",
-      "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
-        {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
-          "hideInFilter": "False"
-        }
-      ],
-      "eventDateForSort": "2024-05-11T00:00:00",
-      "eventTimeForSort": "17:00"
-    },
-    {
-      "location": "Poschiavo",
-      "theater": "Palestre Scuole Comunali",
-      "theaterInformationIcons": [
-        {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
-        }
-      ],
-      "company": "Anton Lachky Company (BEL)",
-      "companyDetailPageUrl": "/programm/anton-lachky-company",
-      "production": "«Die Anderen»",
-      "choreographer": "Anton Lachky",
-      "eventName": "AntonLachkyCompany_0511_Poschivao",
-      "eventDate": "11.05.2024",
-      "eventTime": "17:00",
-      "soldOut": "False",
-      "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
-        {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
-          "hideInFilter": "False"
-        }
-      ],
-      "eventDateForSort": "2024-05-11T17:00:00",
-      "eventTimeForSort": "17:00"
-    },
-    {
-      "location": "Chiasso",
-      "theater": "Cinema Teatro ",
-      "theaterInformationIcons": [
-        {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
-        }
-      ],
-      "company": "Saburo Teshigawara, Rihoko Sato (JPN)",
-      "companyDetailPageUrl": "/programm/saburo-teshigawara-rihoko-sato",
-      "production": "«Tristan and Isolde»",
-      "choreographer": "Saburo Teshigawara",
-      "eventName": "SaburoTeshigawara,RihokoSato_0512_Chiasso",
-      "eventDate": "12.05.2024",
-      "eventTime": "19:00",
-      "soldOut": "False",
-      "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
-        {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
-          "hideInFilter": "False"
-        }
-      ],
-      "eventDateForSort": "2024-05-12T00:00:00",
-      "eventTimeForSort": "19:00"
-    },
-    {
-      "location": "Luzern",
-      "theater": "Südpol ",
-      "theaterInformationIcons": [
-        {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
-        }
-      ],
-      "company": "Cie. Arts Mouvementés for Families (CH)",
-      "companyDetailPageUrl": "/programm/cie-arts-mouvementés-for-families",
-      "production": "«Die Flüstertüten» / «Les Porte-Voix»",
-      "choreographer": "Yasmine Hugonnet",
-      "eventName": "Cie.ArtsM_Families_0512_Luzern",
-      "eventDate": "12.05.2024",
-      "eventTime": "10:00",
-      "soldOut": "True",
-      "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
-        {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
-          "hideInFilter": "False"
-        },
-        {
-          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
-          "alt": "Hörschleife",
-          "hideInFilter": "False"
-        },
-        {
-          "src": "/media/f5qfb3cw/icon-nachbesprechung.svg",
-          "alt": "Nachbesprechung",
-          "hideInFilter": "True"
-        },
-        {
-          "src": "/media/oe1ncuvl/icon-uebertitel.svg",
-          "alt": "Deskriptive Untertitel",
-          "hideInFilter": "True"
-        }
-      ],
-      "eventDateForSort": "2024-05-12T10:00:00",
-      "eventTimeForSort": "10:00"
-    },
-    {
-      "location": "Luzern",
-      "theater": "Südpol ",
-      "theaterInformationIcons": [
-        {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
-        }
-      ],
-      "company": "Cie. Arts Mouvementés (CH)",
-      "companyDetailPageUrl": "/programm/cie-arts-mouvementés",
-      "production": "«Les Porte-Voix –  Cabaret Ventriloque»",
-      "choreographer": "Yasmine Hugonnet",
-      "eventName": "Cie.ArtsM_Families_0512_14:00_Luzern",
-      "eventDate": "12.05.2024",
-      "eventTime": "14:00",
-      "soldOut": "False",
-      "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
-        {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig",
-          "hideInFilter": "False"
-        }
-      ],
-      "eventDateForSort": "2024-05-12T14:00:00",
-      "eventTimeForSort": "14:00"
     },
     {
       "location": "Solothurn ",
-      "theater": "Stadttheater Solothurn ",
+      "theater": "Theater Orchester Biel Solothurn TOBS!",
       "theaterInformationIcons": [
         {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife"
         }
       ],
-      "company": "Anton Lachky Company (BEL)",
-      "companyDetailPageUrl": "/programm/anton-lachky-company",
-      "production": "«Die Anderen»",
-      "choreographer": "Anton Lachky",
-      "eventName": "AntonLachkyCompany_0514_Solothurn",
-      "eventDate": "14.05.2024",
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife",
+          "hideInFilter": "True"
+        }
+      ],
+      "company": "St.Gallen Dance Company / Bern Ballett (CH)",
+      "companyDetailPageUrl": "/programm/st-gallen-dance-company-bern-ballett",
+      "production": "«Twi/light»",
+      "choreographer": "Rachelle Anaïs Scott / Marioenrico D'Angelo",
+      "eventName": "Bern Ballett_St.Gallen Dance Company_0310_Solothurn",
+      "eventDate": "10.03.2026",
       "eventTime": "19:30",
       "soldOut": "False",
       "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
+      "presaleUrl": "https://webshop.jetticket.net/tobs/SelectSeats?e=6738&lang=de",
+      "presaleUrlTitle": "https://webshop.jetticket.net/tobs/SelectSeats?e=6738&lang=de",
       "eventInformationIcons": [
         {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
+          "src": "/media/f5qfb3cw/icon-nachbesprechung.svg",
+          "alt": "Nachbesprechung",
           "hideInFilter": "False"
         }
       ],
-      "eventDateForSort": "2024-05-14T19:30:00",
+      "eventInformationIconsList": [
+        {
+          "src": "/media/f5qfb3cw/icon-nachbesprechung.svg",
+          "alt": "Nachbesprechung"
+        }
+      ],
+      "eventDateForSort": "2026-03-10T00:00:00",
       "eventTimeForSort": "19:30"
     },
     {
-      "location": "Vernier ",
-      "theater": "Salle du Lignon",
+      "location": "Basel",
+      "theater": "Theater Basel, Grosse Bühne",
       "theaterInformationIcons": [
         {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife"
         }
       ],
-      "company": "Far From The Norm (GBR)",
-      "companyDetailPageUrl": "/programm/far-from-the-norm",
-      "production": "«BLKDOG»",
-      "choreographer": "Botis Seva",
-      "eventName": "FarFromTheNorm_0514_Vernier",
-      "eventDate": "14.05.2024",
-      "eventTime": "20:00",
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife",
+          "hideInFilter": "True"
+        }
+      ],
+      "company": "Shechter II (GBR)",
+      "companyDetailPageUrl": "/programm/shechter-ii",
+      "production": "«IN THE BRAIN»",
+      "choreographer": "Hofesh Shechter",
+      "eventName": "ShechterII_0310_Basel",
+      "eventDate": "10.03.2026",
+      "eventTime": "19:30",
       "soldOut": "False",
       "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
+      "presaleUrl": "https://shop.theater-basel.ch/selection/event/seat?perfId=10229390917317",
+      "presaleUrlTitle": "https://shop.theater-basel.ch/selection/event/seat?perfId=10229390917317",
+      "eventInformationIcons": null,
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-10T00:00:00",
+      "eventTimeForSort": "19:30"
+    },
+    {
+      "location": "Zürich",
+      "theater": "Gessnerallee",
+      "theaterInformationIcons": [
         {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
           "hideInFilter": "False"
         }
       ],
-      "eventDateForSort": "2024-05-14T20:00:00",
+      "company": "tanzmainz (DE)",
+      "companyDetailPageUrl": "/programm/tanzmainz",
+      "production": "«Sphynx»",
+      "choreographer": "Rafaële Giovanola",
+      "eventName": "tanzmainz_0310_Zürich",
+      "eventDate": "10.03.2026",
+      "eventTime": "20:00",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://gessnerallee.ch/en/events/tanzmainz-sphynx",
+      "presaleUrlTitle": "https://gessnerallee.ch/en/events/tanzmainz-sphynx",
+      "eventInformationIcons": null,
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-10T00:00:00",
+      "eventTimeForSort": "20:00"
+    },
+    {
+      "location": "Chur ",
+      "theater": "Theater Chur",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        }
+      ],
+      "company": "Circumstances (BEL)",
+      "companyDetailPageUrl": "/programm/circumstances",
+      "production": "«Beyond»",
+      "choreographer": "Piet Van Dycke",
+      "eventName": "Circumstances_0311_Chur_Schulvorstellung",
+      "eventDate": "11.03.2026",
+      "eventTime": "10:15",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://tickets.vibus.de/00100102000000/Shop/VstDetails.aspx?VstKey=10010200001416000",
+      "presaleUrlTitle": "https://tickets.vibus.de/00100102000000/Shop/VstDetails.aspx?VstKey=10010200001416000",
+      "eventInformationIcons": [
+        {
+          "src": "/media/mkbfwfq1/icon-familien.svg",
+          "alt": "Für alle ab 6 Jahren",
+          "hideInFilter": "False"
+        }
+      ],
+      "eventInformationIconsList": [
+        {
+          "src": "/media/mkbfwfq1/icon-familien.svg",
+          "alt": "Für alle ab 6 Jahren"
+        }
+      ],
+      "eventDateForSort": "2026-03-11T00:00:00",
+      "eventTimeForSort": "10:15"
+    },
+    {
+      "location": "Chur ",
+      "theater": "Theater Chur",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        }
+      ],
+      "company": "Circumstances (BEL)",
+      "companyDetailPageUrl": "/programm/circumstances",
+      "production": "«Beyond»",
+      "choreographer": "Piet Van Dycke",
+      "eventName": "Circumstances_0311_Chur",
+      "eventDate": "11.03.2026",
+      "eventTime": "19:00",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://tickets.vibus.de/00100102000000/Shop/VstDetails.aspx?VstKey=10010200001416001",
+      "presaleUrlTitle": "https://tickets.vibus.de/00100102000000/Shop/VstDetails.aspx?VstKey=10010200001416001",
+      "eventInformationIcons": [
+        {
+          "src": "/media/mkbfwfq1/icon-familien.svg",
+          "alt": "Für alle ab 6 Jahren",
+          "hideInFilter": "False"
+        }
+      ],
+      "eventInformationIconsList": [
+        {
+          "src": "/media/mkbfwfq1/icon-familien.svg",
+          "alt": "Für alle ab 6 Jahren"
+        }
+      ],
+      "eventDateForSort": "2026-03-11T00:00:00",
+      "eventTimeForSort": "19:00"
+    },
+    {
+      "location": "Baden",
+      "theater": "Kurtheater Baden",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife",
+          "hideInFilter": "True"
+        }
+      ],
+      "company": "People Watching (CAN)",
+      "companyDetailPageUrl": "/programm/people-watching",
+      "production": "«Play Dead»",
+      "choreographer": "People Watching ",
+      "eventName": "PeopleWatching_0311_Baden",
+      "eventDate": "11.03.2026",
+      "eventTime": "19:30",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://eventfrog.ch/en/p/theatre-stage/theatre/steps-play-dead-7346499322823850393.html",
+      "presaleUrlTitle": "https://eventfrog.ch/en/p/theatre-stage/theatre/steps-play-dead-7346499322823850393.html",
+      "eventInformationIcons": null,
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-11T00:00:00",
+      "eventTimeForSort": "19:30"
+    },
+    {
+      "location": "Morges",
+      "theater": "Théâtre de Beausobre",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife",
+          "hideInFilter": "True"
+        }
+      ],
+      "company": "Compagnie Dyptik (FR)",
+      "companyDetailPageUrl": "/programm/compagnie-dyptik",
+      "production": "«Le Grand Bal»",
+      "choreographer": "Souhail Marchiche & Mehdi Meghari",
+      "eventName": "CompagnieDyptik_0311_Morges",
+      "eventDate": "11.03.2026",
+      "eventTime": "20:00",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://beausobre.shop.secutix.com/selection/event/date?productId=10229395781978",
+      "presaleUrlTitle": "https://beausobre.shop.secutix.com/selection/event/date?productId=10229395781978",
+      "eventInformationIcons": null,
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-11T00:00:00",
       "eventTimeForSort": "20:00"
     },
     {
@@ -1400,339 +898,1976 @@
       "theater": "LAC Lugano Arte e Cultura",
       "theaterInformationIcons": [
         {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
         },
         {
           "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
-          "alt": "Hörschleife"
+          "alt": "Induktionsschleife"
         }
       ],
-      "company": "Cie. Arts Mouvementés (CH)",
-      "companyDetailPageUrl": "/programm/cie-arts-mouvementés",
-      "production": "«Les Porte-Voix –  Cabaret Ventriloque»",
-      "choreographer": "Yasmine Hugonnet",
-      "eventName": "Cie.ArtsMouvementés_0514_Lugano",
-      "eventDate": "14.05.2024",
-      "eventTime": "20:30",
-      "soldOut": "False",
-      "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
+      "theaterInformationIconsFilter": [
         {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
           "hideInFilter": "False"
-        }
-      ],
-      "eventDateForSort": "2024-05-14T20:30:00",
-      "eventTimeForSort": "20:30"
-    },
-    {
-      "location": "Basel",
-      "theater": "Kaserne Basel",
-      "theaterInformationIcons": [
-        {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
-        }
-      ],
-      "company": "Marc Brew Company | Eastman (GBR/BEL)",
-      "companyDetailPageUrl": "/programm/marc-brew-company-eastman",
-      "production": "«An Accident»",
-      "choreographer": "Marc Brew, Sidi Larbi Cherkaoui",
-      "eventName": "MarcBrewCompany|Eastman_0516_Basel",
-      "eventDate": "16.05.2024",
-      "eventTime": "17:00",
-      "soldOut": "False",
-      "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
-        {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
-          "hideInFilter": "False"
-        }
-      ],
-      "eventDateForSort": "2024-05-16T00:00:00",
-      "eventTimeForSort": "17:00"
-    },
-    {
-      "location": "Basel",
-      "theater": "Theater Basel Schauspielhaus",
-      "theaterInformationIcons": [
-        {
-          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
-          "alt": "Hörschleife"
         },
         {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
-        }
-      ],
-      "company": "Saburo Teshigawara, Rihoko Sato (JPN)",
-      "companyDetailPageUrl": "/programm/saburo-teshigawara-rihoko-sato",
-      "production": "«Tristan and Isolde»",
-      "choreographer": "Saburo Teshigawara",
-      "eventName": "SaburoTeshigawara,RihokoSato_0516_Basel",
-      "eventDate": "16.05.2024",
-      "eventTime": "19:00",
-      "soldOut": "False",
-      "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
-        {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
-          "hideInFilter": "False"
-        }
-      ],
-      "eventDateForSort": "2024-05-16T00:00:00",
-      "eventTimeForSort": "19:00"
-    },
-    {
-      "location": "Neuchâtel ",
-      "theater": "Théâtre du Passage",
-      "theaterInformationIcons": [
-        {
           "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
-          "alt": "Hörschleife"
-        },
-        {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
+          "alt": "Induktionsschleife",
+          "hideInFilter": "True"
         }
       ],
-      "company": "Winter Guests (NOR)",
-      "companyDetailPageUrl": "/programm/winter-guests",
-      "production": "«Story, story, die.»",
-      "choreographer": "Alan Lucien Øyen ",
-      "eventName": "winterguests_0516_Neuchâtel",
-      "eventDate": "16.05.2024",
+      "company": "Skånes Dansteater (SWE) / Lloydscompany (NLD)",
+      "companyDetailPageUrl": "/programm/skånes-dansteater-lloydscompany",
+      "production": "«Timeless Encounters»",
+      "choreographer": "Roser López Espinosa / Lloyd Marengo",
+      "eventName": "SkanesDansteater_Lloydscompany_0311_Lugano",
+      "eventDate": "11.03.2026",
       "eventTime": "20:00",
       "soldOut": "False",
       "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
+      "presaleUrl": "https://www.luganolac.ch/en/lac/programma/evento~lac~25-26~s~timeless~.html",
+      "presaleUrlTitle": "https://www.luganolac.ch/en/lac/programma/evento~lac~25-26~s~timeless~.html",
+      "eventInformationIcons": null,
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-11T00:00:00",
+      "eventTimeForSort": "20:00"
+    },
+    {
+      "location": "Schaffhausen",
+      "theater": "Stadttheater Schaffhausen ",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/yghdrg5h/icon_rollstuhlgaengig_klammern.svg",
+          "alt": "Zugänglich mit Unterstützung"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/yghdrg5h/icon_rollstuhlgaengig_klammern.svg",
+          "alt": "Zugänglich mit Unterstützung",
+          "hideInFilter": "False"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife",
+          "hideInFilter": "True"
+        }
+      ],
+      "company": "Circumstances (BEL)",
+      "companyDetailPageUrl": "/programm/circumstances",
+      "production": "«Beyond»",
+      "choreographer": "Piet Van Dycke",
+      "eventName": "Circumstances_0312_Schaffhausen",
+      "eventDate": "12.03.2026",
+      "eventTime": "19:30",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://tickets.vibus.de/00100641000000/shop/vstdetails.aspx?VstKey=10064100025068000",
+      "presaleUrlTitle": "https://tickets.vibus.de/00100641000000/shop/vstdetails.aspx?VstKey=10064100025068000",
       "eventInformationIcons": [
         {
           "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
+          "alt": "Für alle ab 6 Jahren",
           "hideInFilter": "False"
         }
       ],
-      "eventDateForSort": "2024-05-16T20:00:00",
+      "eventInformationIconsList": [
+        {
+          "src": "/media/mkbfwfq1/icon-familien.svg",
+          "alt": "Für alle ab 6 Jahren"
+        }
+      ],
+      "eventDateForSort": "2026-03-12T00:00:00",
+      "eventTimeForSort": "19:30"
+    },
+    {
+      "location": "Biel/Bienne ",
+      "theater": "Theater Orchester Biel Solothurn TOBS!",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife"
+        },
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife",
+          "hideInFilter": "True"
+        },
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        }
+      ],
+      "company": "St.Gallen Dance Company / Bern Ballett (CH)",
+      "companyDetailPageUrl": "/programm/st-gallen-dance-company-bern-ballett",
+      "production": "«Twi/light»",
+      "choreographer": "Rachelle Anaïs Scott / Marioenrico D'Angelo",
+      "eventName": "BernBallet_StGallenDance Company_0312_Biel_Bienne",
+      "eventDate": "12.03.2026",
+      "eventTime": "19:30",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://webshop.jetticket.net/tobs/SelectSeats?e=6739&lang=de",
+      "presaleUrlTitle": "https://webshop.jetticket.net/tobs/SelectSeats?e=6739&lang=de",
+      "eventInformationIcons": [
+        {
+          "src": "/media/f5qfb3cw/icon-nachbesprechung.svg",
+          "alt": "Nachbesprechung",
+          "hideInFilter": "False"
+        }
+      ],
+      "eventInformationIconsList": [
+        {
+          "src": "/media/f5qfb3cw/icon-nachbesprechung.svg",
+          "alt": "Nachbesprechung"
+        }
+      ],
+      "eventDateForSort": "2026-03-12T00:00:00",
+      "eventTimeForSort": "19:30"
+    },
+    {
+      "location": "Bern",
+      "theater": "Dampfzentrale Bern",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife"
+        },
+        {
+          "src": "/media/yghdrg5h/icon_rollstuhlgaengig_klammern.svg",
+          "alt": "Zugänglich mit Unterstützung"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife",
+          "hideInFilter": "True"
+        },
+        {
+          "src": "/media/yghdrg5h/icon_rollstuhlgaengig_klammern.svg",
+          "alt": "Zugänglich mit Unterstützung",
+          "hideInFilter": "False"
+        }
+      ],
+      "company": "Junk Ensemble (IRL)",
+      "companyDetailPageUrl": "/programm/junk-ensemble",
+      "production": "«Dances Like a Bomb»",
+      "choreographer": "Jessica & Megan Kennedy",
+      "eventName": "JunkEnsemble_0312_Bern",
+      "eventDate": "12.03.2026",
+      "eventTime": "20:00",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://www.dampfzentrale.ch/en/event/e-steps_junk-ensemble_maerz_2026/",
+      "presaleUrlTitle": "https://www.dampfzentrale.ch/en/event/e-steps_junk-ensemble_maerz_2026/",
+      "eventInformationIcons": null,
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-12T00:00:00",
+      "eventTimeForSort": "20:00"
+    },
+    {
+      "location": "Pully",
+      "theater": "L'Octogone ",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        }
+      ],
+      "company": "Joy Alpuerto Ritter & Hannes Langolf (DE/GBR) ",
+      "companyDetailPageUrl": "/programm/joy-alpuerto-ritter-hannes-langolf-mit-sarafina-beck",
+      "production": "«The Fall / Risings»",
+      "choreographer": "In Zusammenarbeit mit der Gastkünstlerin Sarafina Beck (CH)",
+      "eventName": "JoyAlpuertoRitter_HannesLangolf_0312_Pully",
+      "eventDate": "12.03.2026",
+      "eventTime": "20:30",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://indiv.themisweb.fr/0151/fChoixSeance.aspx?idstructure=0151&EventId=1097&request=QcE+w0WHSuDKdxpSxpGjQFFhO3nH7QM/rrhFCJMuYgsSz5iT78rfgBkFX/8F55UBephPEszxNvagXuYsHmdTJA==",
+      "presaleUrlTitle": "https://indiv.themisweb.fr/0151/fChoixSeance.aspx?idstructure=0151&EventId=1097&request=QcE+w0WHSuDKdxpSxpGjQFFhO3nH7QM/rrhFCJMuYgsSz5iT78rfgBkFX/8F55UBephPEszxNvagXuYsHmdTJA==",
+      "eventInformationIcons": null,
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-12T00:00:00",
+      "eventTimeForSort": "20:30"
+    },
+    {
+      "location": "Schaffhausen",
+      "theater": "Stadttheater Schaffhausen ",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/yghdrg5h/icon_rollstuhlgaengig_klammern.svg",
+          "alt": "Zugänglich mit Unterstützung"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/yghdrg5h/icon_rollstuhlgaengig_klammern.svg",
+          "alt": "Zugänglich mit Unterstützung",
+          "hideInFilter": "False"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife",
+          "hideInFilter": "True"
+        }
+      ],
+      "company": "Circumstances (BEL)",
+      "companyDetailPageUrl": "/programm/circumstances",
+      "production": "«Beyond»",
+      "choreographer": "Piet Van Dycke",
+      "eventName": "Circumstances_0313_Schaffhausen_Schulvorstellung",
+      "eventDate": "13.03.2026",
+      "eventTime": "10:30",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://tickets.vibus.de/00100641000000/shop/vstdetails.aspx?VstKey=10064100025069000",
+      "presaleUrlTitle": "https://tickets.vibus.de/00100641000000/shop/vstdetails.aspx?VstKey=10064100025069000",
+      "eventInformationIcons": [
+        {
+          "src": "/media/mkbfwfq1/icon-familien.svg",
+          "alt": "Für alle ab 6 Jahren",
+          "hideInFilter": "False"
+        }
+      ],
+      "eventInformationIconsList": [
+        {
+          "src": "/media/mkbfwfq1/icon-familien.svg",
+          "alt": "Für alle ab 6 Jahren"
+        }
+      ],
+      "eventDateForSort": "2026-03-13T00:00:00",
+      "eventTimeForSort": "10:30"
+    },
+    {
+      "location": "Fribourg",
+      "theater": "Equilibre",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife",
+          "hideInFilter": "True"
+        }
+      ],
+      "company": "GöteborgsOperans Danskompani (SWE)",
+      "companyDetailPageUrl": "/programm/goeteborgsoperans-danskompani",
+      "production": "«Spirit Willing» / «ima»",
+      "choreographer": "Tiffany Tregarthen & David Raymond / Sharon Eyal",
+      "eventName": "GöteborgsOperansDanskompani_0313_Fribourg",
+      "eventDate": "13.03.2026",
+      "eventTime": "20:00",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://www.equilibre-nuithonie.ch/de/spectacles/steps-goeteborgsoperans-danskompani",
+      "presaleUrlTitle": "https://www.equilibre-nuithonie.ch/de/spectacles/steps-goeteborgsoperans-danskompani",
+      "eventInformationIcons": null,
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-13T00:00:00",
+      "eventTimeForSort": "20:00"
+    },
+    {
+      "location": "Zürich",
+      "theater": "Gessnerallee",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        }
+      ],
+      "company": "Shechter II (GBR)",
+      "companyDetailPageUrl": "/programm/shechter-ii",
+      "production": "«IN THE BRAIN»",
+      "choreographer": "Hofesh Shechter",
+      "eventName": "ShechterII_0313_Zürich",
+      "eventDate": "13.03.2026",
+      "eventTime": "20:00",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://gessnerallee.ch/en/events/shechter-in-the-brain",
+      "presaleUrlTitle": "https://gessnerallee.ch/en/events/shechter-in-the-brain",
+      "eventInformationIcons": null,
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-13T00:00:00",
+      "eventTimeForSort": "20:00"
+    },
+    {
+      "location": "Monthey",
+      "theater": "Théâtre du Crochetan",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        }
+      ],
+      "company": "tanzmainz (DE)",
+      "companyDetailPageUrl": "/programm/tanzmainz",
+      "production": "«Sphynx»",
+      "choreographer": "Rafaële Giovanola",
+      "eventName": "tanzmainz_0313_Monthey",
+      "eventDate": "13.03.2026",
+      "eventTime": "20:00",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://billetterie-crochetan.mapado.com/event/539666-steps-tanzmainz-sphynx",
+      "presaleUrlTitle": "https://billetterie-crochetan.mapado.com/event/539666-steps-tanzmainz-sphynx",
+      "eventInformationIcons": null,
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-13T00:00:00",
+      "eventTimeForSort": "20:00"
+    },
+    {
+      "location": "Bulle",
+      "theater": "Saison culturelle CO2",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/yghdrg5h/icon_rollstuhlgaengig_klammern.svg",
+          "alt": "Zugänglich mit Unterstützung"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/yghdrg5h/icon_rollstuhlgaengig_klammern.svg",
+          "alt": "Zugänglich mit Unterstützung",
+          "hideInFilter": "False"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife",
+          "hideInFilter": "True"
+        }
+      ],
+      "company": "People Watching (CAN)",
+      "companyDetailPageUrl": "/programm/people-watching",
+      "production": "«Play Dead»",
+      "choreographer": "People Watching ",
+      "eventName": "PeopleWatching_0313_Bulle",
+      "eventDate": "13.03.2026",
+      "eventTime": "20:00",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://www.co2-spectacle.ch/events/steps-play-dead/",
+      "presaleUrlTitle": "https://www.co2-spectacle.ch/events/steps-play-dead/",
+      "eventInformationIcons": [
+        {
+          "src": "/media/f5qfb3cw/icon-nachbesprechung.svg",
+          "alt": "Nachbesprechung",
+          "hideInFilter": "False"
+        }
+      ],
+      "eventInformationIconsList": [
+        {
+          "src": "/media/f5qfb3cw/icon-nachbesprechung.svg",
+          "alt": "Nachbesprechung"
+        }
+      ],
+      "eventDateForSort": "2026-03-13T00:00:00",
+      "eventTimeForSort": "20:00"
+    },
+    {
+      "location": "Fribourg",
+      "theater": "Equilibre",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife",
+          "hideInFilter": "True"
+        }
+      ],
+      "company": "GöteborgsOperans Danskompani (SWE)",
+      "companyDetailPageUrl": "/programm/goeteborgsoperans-danskompani",
+      "production": "«Spirit Willing» / «ima»",
+      "choreographer": "Tiffany Tregarthen & David Raymond / Sharon Eyal",
+      "eventName": "GöteborgsOperansDanskompani_0314_Fribourg",
+      "eventDate": "14.03.2026",
+      "eventTime": "20:00",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://www.equilibre-nuithonie.ch/de/spectacles/steps-goeteborgsoperans-danskompani",
+      "presaleUrlTitle": "https://www.equilibre-nuithonie.ch/de/spectacles/steps-goeteborgsoperans-danskompani",
+      "eventInformationIcons": null,
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-14T00:00:00",
+      "eventTimeForSort": "20:00"
+    },
+    {
+      "location": "Zürich",
+      "theater": "Gessnerallee",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        }
+      ],
+      "company": "Shechter II (GBR)",
+      "companyDetailPageUrl": "/programm/shechter-ii",
+      "production": "«IN THE BRAIN»",
+      "choreographer": "Hofesh Shechter",
+      "eventName": "ShechterII_0314_Zürich",
+      "eventDate": "14.03.2026",
+      "eventTime": "20:00",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://gessnerallee.ch/en/events/shechter-in-the-brain",
+      "presaleUrlTitle": "https://gessnerallee.ch/en/events/shechter-in-the-brain",
+      "eventInformationIcons": null,
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-14T00:00:00",
+      "eventTimeForSort": "20:00"
+    },
+    {
+      "location": "Bern",
+      "theater": "Dampfzentrale Bern",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife"
+        },
+        {
+          "src": "/media/yghdrg5h/icon_rollstuhlgaengig_klammern.svg",
+          "alt": "Zugänglich mit Unterstützung"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife",
+          "hideInFilter": "True"
+        },
+        {
+          "src": "/media/yghdrg5h/icon_rollstuhlgaengig_klammern.svg",
+          "alt": "Zugänglich mit Unterstützung",
+          "hideInFilter": "False"
+        }
+      ],
+      "company": "Skånes Dansteater (SWE) / Lloydscompany (NLD)",
+      "companyDetailPageUrl": "/programm/skånes-dansteater-lloydscompany",
+      "production": "«Timeless Encounters»",
+      "choreographer": "Roser López Espinosa / Lloyd Marengo",
+      "eventName": "SkanesDansteater_Lloydscompany_0314_Bern",
+      "eventDate": "14.03.2026",
+      "eventTime": "20:00",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://www.dampfzentrale.ch/en/event/e-steps_timeless-encounters_maerz_2026/",
+      "presaleUrlTitle": "https://www.dampfzentrale.ch/en/event/e-steps_timeless-encounters_maerz_2026/",
+      "eventInformationIcons": null,
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-14T00:00:00",
       "eventTimeForSort": "20:00"
     },
     {
       "location": "Bellinzona ",
-      "theater": "Teatro Sociale ",
+      "theater": "Teatro Sociale Bellinzona ",
       "theaterInformationIcons": [
         {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
+          "src": "/media/yghdrg5h/icon_rollstuhlgaengig_klammern.svg",
+          "alt": "Zugänglich mit Unterstützung"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife"
         }
       ],
-      "company": "Anton Lachky Company (BEL)",
-      "companyDetailPageUrl": "/programm/anton-lachky-company",
-      "production": "«Die Anderen»",
-      "choreographer": "Anton Lachky",
-      "eventName": "AntonLachkyCompany_0516_Bellinzona",
-      "eventDate": "16.05.2024",
-      "eventTime": "19:45",
-      "soldOut": "False",
-      "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
+      "theaterInformationIconsFilter": [
         {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
+          "src": "/media/yghdrg5h/icon_rollstuhlgaengig_klammern.svg",
+          "alt": "Zugänglich mit Unterstützung",
           "hideInFilter": "False"
-        }
-      ],
-      "eventDateForSort": "2024-05-16T20:45:00",
-      "eventTimeForSort": "19:45"
-    },
-    {
-      "location": "Basel",
-      "theater": "Kaserne Basel",
-      "theaterInformationIcons": [
+        },
         {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife",
+          "hideInFilter": "True"
         }
       ],
-      "company": "Marc Brew Company | Eastman (GBR/BEL)",
-      "companyDetailPageUrl": "/programm/marc-brew-company-eastman",
-      "production": "«An Accident»",
-      "choreographer": "Marc Brew, Sidi Larbi Cherkaoui",
-      "eventName": "MarcBrewCompany|Eastman_0517_Basel",
-      "eventDate": "17.05.2024",
+      "company": "St.Gallen Dance Company / Bern Ballett (CH)",
+      "companyDetailPageUrl": "/programm/st-gallen-dance-company-bern-ballett",
+      "production": "«Twi/light»",
+      "choreographer": "Rachelle Anaïs Scott / Marioenrico D'Angelo",
+      "eventName": "Bern Ballett_St.Gallen Dance Company_0315_Bellinzona",
+      "eventDate": "15.03.2026",
       "eventTime": "17:00",
       "soldOut": "False",
       "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
+      "presaleUrl": "https://www.ticketcorner.ch/it/event/teatro-sociale-bellinzona-stagione2526-teatro-sociale-20707122/#tab=",
+      "presaleUrlTitle": "https://www.ticketcorner.ch/it/event/teatro-sociale-bellinzona-stagione2526-teatro-sociale-20707122/#tab=",
       "eventInformationIcons": null,
-      "eventDateForSort": "2024-05-17T00:00:00",
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-15T00:00:00",
       "eventTimeForSort": "17:00"
-    },
-    {
-      "location": "Zürich",
-      "theater": "Schauspielhaus Schiffbau",
-      "theaterInformationIcons": [
-        {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
-        }
-      ],
-      "company": "Cie. Arts Mouvementés for Families (CH)",
-      "companyDetailPageUrl": "/programm/cie-arts-mouvementés-for-families",
-      "production": "«Die Flüstertüten» / «Les Porte-Voix»",
-      "choreographer": "Yasmine Hugonnet",
-      "eventName": "Cie.ArtsM_Families_0517_Zürich",
-      "eventDate": "17.05.2024",
-      "eventTime": "17:30",
-      "soldOut": "False",
-      "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
-        {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
-          "hideInFilter": "False"
-        }
-      ],
-      "eventDateForSort": "2024-05-17T17:30:00",
-      "eventTimeForSort": "17:30"
-    },
-    {
-      "location": "Zürich",
-      "theater": "Schauspielhaus Schiffbau",
-      "theaterInformationIcons": [
-        {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
-        }
-      ],
-      "company": "Cie. Arts Mouvementés for Families (CH)",
-      "companyDetailPageUrl": "/programm/cie-arts-mouvementés-for-families",
-      "production": "«Die Flüstertüten» / «Les Porte-Voix»",
-      "choreographer": "Yasmine Hugonnet",
-      "eventName": "Cie.ArtsM_Families_0518_Zürich",
-      "eventDate": "18.05.2024",
-      "eventTime": "14:00",
-      "soldOut": "False",
-      "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
-        {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
-          "hideInFilter": "False"
-        }
-      ],
-      "eventDateForSort": "2024-05-18T14:00:00",
-      "eventTimeForSort": "14:00"
     },
     {
       "location": "Vals ",
       "theater": "Zentrum Glüs",
       "theaterInformationIcons": [
         {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
         }
       ],
-      "company": "Anton Lachky Company (BEL)",
-      "companyDetailPageUrl": "/programm/anton-lachky-company",
-      "production": "«Die Anderen»",
-      "choreographer": "Anton Lachky",
-      "eventName": "AntonLachkyCompany_0518_Vals",
-      "eventDate": "18.05.2024",
-      "eventTime": "20:00",
-      "soldOut": "False",
-      "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
+      "theaterInformationIconsFilter": [
         {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
           "hideInFilter": "False"
         }
       ],
-      "eventDateForSort": "2024-05-18T20:00:00",
-      "eventTimeForSort": "20:00"
+      "company": "Circumstances (BEL)",
+      "companyDetailPageUrl": "/programm/circumstances",
+      "production": "«Beyond»",
+      "choreographer": "Piet Van Dycke",
+      "eventName": "Circumstances_0315_Vals",
+      "eventDate": "15.03.2026",
+      "eventTime": "18:00",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://vals.ch/event/beyond/",
+      "presaleUrlTitle": "https://vals.ch/event/beyond/",
+      "eventInformationIcons": [
+        {
+          "src": "/media/mkbfwfq1/icon-familien.svg",
+          "alt": "Für alle ab 6 Jahren",
+          "hideInFilter": "False"
+        }
+      ],
+      "eventInformationIconsList": [
+        {
+          "src": "/media/mkbfwfq1/icon-familien.svg",
+          "alt": "Für alle ab 6 Jahren"
+        }
+      ],
+      "eventDateForSort": "2026-03-15T00:00:00",
+      "eventTimeForSort": "18:00"
     },
     {
-      "location": "St. Gallen ",
-      "theater": "Theater St. Gallen, Lokremise ",
+      "location": "Moutier ",
+      "theater": "Centre Culturel de la Prévôté",
       "theaterInformationIcons": [
         {
-          "src": "/media/51jfe33o/icon-nicht-rollstuhlgaengig.svg",
-          "alt": "Rollstuhlgängig"
+          "src": "/media/yghdrg5h/icon_rollstuhlgaengig_klammern.svg",
+          "alt": "Zugänglich mit Unterstützung"
         }
       ],
-      "company": "Anton Lachky Company (BEL)",
-      "companyDetailPageUrl": "/programm/anton-lachky-company",
-      "production": "«Die Anderen»",
-      "choreographer": "Anton Lachky",
-      "eventName": "AntonLachkyCompany_0519_St.Gallen",
-      "eventDate": "19.05.2024",
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/yghdrg5h/icon_rollstuhlgaengig_klammern.svg",
+          "alt": "Zugänglich mit Unterstützung",
+          "hideInFilter": "False"
+        }
+      ],
+      "company": "Joy Alpuerto Ritter & Hannes Langolf (DE/GBR) ",
+      "companyDetailPageUrl": "/programm/joy-alpuerto-ritter-hannes-langolf-mit-sarafina-beck",
+      "production": "«The Fall / Risings»",
+      "choreographer": "In Zusammenarbeit mit der Gastkünstlerin Sarafina Beck (CH)",
+      "eventName": "JoyAlpuertoRitter_HannesLangolf_0315_Moutier",
+      "eventDate": "15.03.2026",
+      "eventTime": "18:00",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://www.ccpmoutier.ch/programme/detail/252-steps-the-fall-rising",
+      "presaleUrlTitle": "https://www.ccpmoutier.ch/programme/detail/252-steps-the-fall-rising",
+      "eventInformationIcons": null,
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-15T00:00:00",
+      "eventTimeForSort": "18:00"
+    },
+    {
+      "location": "Lörrach (D)",
+      "theater": "Burghof",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        }
+      ],
+      "company": "tanzmainz (DE)",
+      "companyDetailPageUrl": "/programm/tanzmainz",
+      "production": "«Sphynx»",
+      "choreographer": "Rafaële Giovanola",
+      "eventName": "tanzmainz_0316_Lörrach",
+      "eventDate": "16.03.2026",
       "eventTime": "20:00",
       "soldOut": "False",
       "forFree": "False",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
-        {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
-          "hideInFilter": "False"
-        }
-      ],
-      "eventDateForSort": "2024-05-19T20:00:00",
+      "presaleUrl": "https://burghof.reservix.de/p/reservix/event/2401090",
+      "presaleUrlTitle": "https://burghof.reservix.de/p/reservix/event/2401090",
+      "eventInformationIcons": null,
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-16T00:00:00",
       "eventTimeForSort": "20:00"
     },
     {
-      "location": "Hauterive (NE)",
-      "theater": "Laténium, parc et musée d’archéologie",
-      "theaterInformationIcons": null,
-      "company": "Cie. Arts Mouvementés for Families (CH)",
-      "companyDetailPageUrl": "/programm/cie-arts-mouvementés-for-families",
-      "production": "«Die Flüstertüten» / «Les Porte-Voix»",
-      "choreographer": "Yasmine Hugonnet",
-      "eventName": "Cie.ArtsM_Families_0501_11:00_Hauterive",
-      "eventDate": "05.05.2026",
-      "eventTime": "11:00",
-      "soldOut": "False",
-      "forFree": "True",
-      "presaleUrl": null,
-      "presaleUrlTitle": "",
-      "eventInformationIcons": [
+      "location": "St.Gallen ",
+      "theater": "Theater St.Gallen, Lokremise",
+      "theaterInformationIcons": [
         {
-          "src": "/media/mkbfwfq1/icon-familien.svg",
-          "alt": "Für die ganze Familie",
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
           "hideInFilter": "False"
         }
       ],
-      "eventDateForSort": "2026-05-05T00:00:00",
-      "eventTimeForSort": "11:00"
+      "company": "Circumstances (BEL)",
+      "companyDetailPageUrl": "/programm/circumstances",
+      "production": "«Beyond»",
+      "choreographer": "Piet Van Dycke",
+      "eventName": "Circumstances_0318_St.Gallen",
+      "eventDate": "18.03.2026",
+      "eventTime": "14:00",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://www.konzertundtheater.ch/programm/kalender/2026-03/tanz/steps-beyond/3530/#beyond?a=beyond",
+      "presaleUrlTitle": "https://www.konzertundtheater.ch/programm/kalender/2026-03/tanz/steps-beyond/3530/",
+      "eventInformationIcons": [
+        {
+          "src": "/media/mkbfwfq1/icon-familien.svg",
+          "alt": "Für alle ab 6 Jahren",
+          "hideInFilter": "False"
+        }
+      ],
+      "eventInformationIconsList": [
+        {
+          "src": "/media/mkbfwfq1/icon-familien.svg",
+          "alt": "Für alle ab 6 Jahren"
+        }
+      ],
+      "eventDateForSort": "2026-03-18T00:00:00",
+      "eventTimeForSort": "14:00"
+    },
+    {
+      "location": "Sierre ",
+      "theater": "Théâtre Les Halles",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        }
+      ],
+      "company": "People Watching (CAN)",
+      "companyDetailPageUrl": "/programm/people-watching",
+      "production": "«Play Dead»",
+      "choreographer": "People Watching ",
+      "eventName": "PeopleWatching_0318_Sierre",
+      "eventDate": "18.03.2026",
+      "eventTime": "19:00",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://www.theatre-leshalles.ch/",
+      "presaleUrlTitle": "https://www.theatre-leshalles.ch/",
+      "eventInformationIcons": null,
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-18T00:00:00",
+      "eventTimeForSort": "19:00"
+    },
+    {
+      "location": "Biel/Bienne ",
+      "theater": "Nebia",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife",
+          "hideInFilter": "True"
+        }
+      ],
+      "company": "Shechter II (GBR)",
+      "companyDetailPageUrl": "/programm/shechter-ii",
+      "production": "«IN THE BRAIN»",
+      "choreographer": "Hofesh Shechter",
+      "eventName": "ShechterII_0318_Biel/Bienne",
+      "eventDate": "18.03.2026",
+      "eventTime": "19:30",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://bienne-spfr.shop.secutix.com/selection/event/date?productId=10229384904499",
+      "presaleUrlTitle": "https://bienne-spfr.shop.secutix.com/selection/event/date?productId=10229384904499",
+      "eventInformationIcons": [
+        {
+          "src": "/media/f5qfb3cw/icon-nachbesprechung.svg",
+          "alt": "Nachbesprechung",
+          "hideInFilter": "False"
+        }
+      ],
+      "eventInformationIconsList": [
+        {
+          "src": "/media/f5qfb3cw/icon-nachbesprechung.svg",
+          "alt": "Nachbesprechung"
+        }
+      ],
+      "eventDateForSort": "2026-03-18T00:00:00",
+      "eventTimeForSort": "19:30"
+    },
+    {
+      "location": "Zürich",
+      "theater": "Gessnerallee",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        }
+      ],
+      "company": "Junk Ensemble (IRL)",
+      "companyDetailPageUrl": "/programm/junk-ensemble",
+      "production": "«Dances Like a Bomb»",
+      "choreographer": "Jessica & Megan Kennedy",
+      "eventName": "JunkEnsemble_0318_Zürich",
+      "eventDate": "18.03.2026",
+      "eventTime": "20:00",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://gessnerallee.ch/en/events/junk-ensemble-dances-like-a-bomb",
+      "presaleUrlTitle": "https://gessnerallee.ch/en/events/junk-ensemble-dances-like-a-bomb",
+      "eventInformationIcons": null,
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-18T00:00:00",
+      "eventTimeForSort": "20:00"
+    },
+    {
+      "location": "Annemasse (F)",
+      "theater": "Château Rouge",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife",
+          "hideInFilter": "True"
+        }
+      ],
+      "company": "tanzmainz (DE)",
+      "companyDetailPageUrl": "/programm/tanzmainz",
+      "production": "«Sphynx»",
+      "choreographer": "Rafaële Giovanola",
+      "eventName": "tanzmainz_0318_Annemasse",
+      "eventDate": "18.03.2026",
+      "eventTime": "20:30",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://billetterie.legilog.fr/chateaurouge/?spec_code=STE",
+      "presaleUrlTitle": "https://billetterie.legilog.fr/chateaurouge/?spec_code=STE",
+      "eventInformationIcons": null,
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-18T00:00:00",
+      "eventTimeForSort": "20:30"
+    },
+    {
+      "location": "Basel",
+      "theater": "Theater Basel, Schauspielhaus",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife",
+          "hideInFilter": "True"
+        }
+      ],
+      "company": "St.Gallen Dance Company / Bern Ballett (CH)",
+      "companyDetailPageUrl": "/programm/st-gallen-dance-company-bern-ballett",
+      "production": "«Twi/light»",
+      "choreographer": "Rachelle Anaïs Scott / Marioenrico D'Angelo",
+      "eventName": "Bern Ballett_St.Gallen Dance Company_0319_Basel",
+      "eventDate": "19.03.2026",
+      "eventTime": "19:30",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://www.theater-basel.ch/de/stepsfestivalstgallendancecompany",
+      "presaleUrlTitle": "https://www.theater-basel.ch/de/stepsfestivalstgallendancecompany",
+      "eventInformationIcons": null,
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-19T00:00:00",
+      "eventTimeForSort": "19:30"
+    },
+    {
+      "location": "Baden",
+      "theater": "Kurtheater Baden",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife",
+          "hideInFilter": "True"
+        }
+      ],
+      "company": "GöteborgsOperans Danskompani (SWE)",
+      "companyDetailPageUrl": "/programm/goeteborgsoperans-danskompani",
+      "production": "«Spirit Willing» / «ima»",
+      "choreographer": "Tiffany Tregarthen & David Raymond / Sharon Eyal",
+      "eventName": "GöteborgsOperansDanskompani_0319_Baden",
+      "eventDate": "19.03.2026",
+      "eventTime": "19:30",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://eventfrog.ch/de/p/theater-buehne/tanz/steps-goeteborgsoperans-danskompani-7346140936458484851.html",
+      "presaleUrlTitle": "Tickets",
+      "eventInformationIcons": [
+        {
+          "src": "/media/f5qfb3cw/icon-nachbesprechung.svg",
+          "alt": "Nachbesprechung",
+          "hideInFilter": "False"
+        }
+      ],
+      "eventInformationIconsList": [
+        {
+          "src": "/media/f5qfb3cw/icon-nachbesprechung.svg",
+          "alt": "Nachbesprechung"
+        }
+      ],
+      "eventDateForSort": "2026-03-19T00:00:00",
+      "eventTimeForSort": "19:30"
+    },
+    {
+      "location": "Lörrach (D)",
+      "theater": "Burghof",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        }
+      ],
+      "company": "Compagnie Dyptik (FR)",
+      "companyDetailPageUrl": "/programm/compagnie-dyptik",
+      "production": "«Le Grand Bal»",
+      "choreographer": "Souhail Marchiche & Mehdi Meghari",
+      "eventName": "CompagnieDyptik_0319_Lörrach",
+      "eventDate": "19.03.2026",
+      "eventTime": "20:00",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://burghof.reservix.de/p/reservix/event/2401093",
+      "presaleUrlTitle": "https://burghof.reservix.de/p/reservix/event/2401093",
+      "eventInformationIcons": null,
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-19T00:00:00",
+      "eventTimeForSort": "20:00"
+    },
+    {
+      "location": "Poschiavo",
+      "theater": "Palestre scuole comunali",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        }
+      ],
+      "company": "Circumstances (BEL)",
+      "companyDetailPageUrl": "/programm/circumstances",
+      "production": "«Beyond»",
+      "choreographer": "Piet Van Dycke",
+      "eventName": "Circumstances_0320_Poschiavo",
+      "eventDate": "20.03.2026",
+      "eventTime": "20:30",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://riverbero.ch/de/kommende-veranstaltungen/",
+      "presaleUrlTitle": "https://riverbero.ch/de/kommende-veranstaltungen/",
+      "eventInformationIcons": [
+        {
+          "src": "/media/mkbfwfq1/icon-familien.svg",
+          "alt": "Für alle ab 6 Jahren",
+          "hideInFilter": "False"
+        },
+        {
+          "src": "/media/f5qfb3cw/icon-nachbesprechung.svg",
+          "alt": "Nachbesprechung",
+          "hideInFilter": "False"
+        }
+      ],
+      "eventInformationIconsList": [
+        {
+          "src": "/media/mkbfwfq1/icon-familien.svg",
+          "alt": "Für alle ab 6 Jahren"
+        },
+        {
+          "src": "/media/f5qfb3cw/icon-nachbesprechung.svg",
+          "alt": "Nachbesprechung"
+        }
+      ],
+      "eventDateForSort": "2026-03-20T00:00:00",
+      "eventTimeForSort": "20:30"
+    },
+    {
+      "location": "Poschiavo",
+      "theater": "Palestre scuole comunali",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        }
+      ],
+      "company": "Circumstances (BEL)",
+      "companyDetailPageUrl": "/programm/circumstances",
+      "production": "«Beyond»",
+      "choreographer": "Piet Van Dycke",
+      "eventName": "Circumstances_0321_Poschiavo",
+      "eventDate": "21.03.2026",
+      "eventTime": "17:00",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://riverbero.ch/de/kommende-veranstaltungen/",
+      "presaleUrlTitle": "https://riverbero.ch/de/kommende-veranstaltungen/",
+      "eventInformationIcons": [
+        {
+          "src": "/media/mkbfwfq1/icon-familien.svg",
+          "alt": "Für alle ab 6 Jahren",
+          "hideInFilter": "False"
+        },
+        {
+          "src": "/media/f5qfb3cw/icon-nachbesprechung.svg",
+          "alt": "Nachbesprechung",
+          "hideInFilter": "False"
+        }
+      ],
+      "eventInformationIconsList": [
+        {
+          "src": "/media/mkbfwfq1/icon-familien.svg",
+          "alt": "Für alle ab 6 Jahren"
+        },
+        {
+          "src": "/media/f5qfb3cw/icon-nachbesprechung.svg",
+          "alt": "Nachbesprechung"
+        }
+      ],
+      "eventDateForSort": "2026-03-21T00:00:00",
+      "eventTimeForSort": "17:00"
+    },
+    {
+      "location": "Genève ",
+      "theater": "Comédie de Genève",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife",
+          "hideInFilter": "True"
+        }
+      ],
+      "company": "Shechter II (GBR)",
+      "companyDetailPageUrl": "/programm/shechter-ii",
+      "production": "«IN THE BRAIN»",
+      "choreographer": "Hofesh Shechter",
+      "eventName": "ShechterII_0321_Genève",
+      "eventDate": "21.03.2026",
+      "eventTime": "19:30",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://www.comedie.ch/en/in-the-brain?productId=10229232629314&action=waitinglist&noCreateAcct=true",
+      "presaleUrlTitle": "https://www.comedie.ch/en/in-the-brain",
+      "eventInformationIcons": null,
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-21T00:00:00",
+      "eventTimeForSort": "19:30"
+    },
+    {
+      "location": "St.Gallen ",
+      "theater": "Theater St.Gallen, Lokremise",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        }
+      ],
+      "company": "People Watching (CAN)",
+      "companyDetailPageUrl": "/programm/people-watching",
+      "production": "«Play Dead»",
+      "choreographer": "People Watching ",
+      "eventName": "PeopleWatching_0321_St.Gallen",
+      "eventDate": "21.03.2026",
+      "eventTime": "20:00",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://www.konzertundtheater.ch/programm/kalender/steps-play-dead/3529/?eventId=57",
+      "presaleUrlTitle": "https://www.konzertundtheater.ch/programm/kalender/steps-play-dead/3529/",
+      "eventInformationIcons": [
+        {
+          "src": "/media/f5qfb3cw/icon-nachbesprechung.svg",
+          "alt": "Nachbesprechung",
+          "hideInFilter": "False"
+        }
+      ],
+      "eventInformationIconsList": [
+        {
+          "src": "/media/f5qfb3cw/icon-nachbesprechung.svg",
+          "alt": "Nachbesprechung"
+        }
+      ],
+      "eventDateForSort": "2026-03-21T00:00:00",
+      "eventTimeForSort": "20:00"
+    },
+    {
+      "location": "Bellinzona ",
+      "theater": "Teatro Sociale Bellinzona ",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/yghdrg5h/icon_rollstuhlgaengig_klammern.svg",
+          "alt": "Zugänglich mit Unterstützung"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/yghdrg5h/icon_rollstuhlgaengig_klammern.svg",
+          "alt": "Zugänglich mit Unterstützung",
+          "hideInFilter": "False"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife",
+          "hideInFilter": "True"
+        }
+      ],
+      "company": "Junk Ensemble (IRL)",
+      "companyDetailPageUrl": "/programm/junk-ensemble",
+      "production": "«Dances Like a Bomb»",
+      "choreographer": "Jessica & Megan Kennedy",
+      "eventName": "JunkEnsemble_0321_Bellinzona",
+      "eventDate": "21.03.2026",
+      "eventTime": "20:45",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://www.teatrosociale.ch/Steps-Dances-Like-a-Bomb-4f25ae00?continuaForceCalendarId=527_010ba5d133",
+      "presaleUrlTitle": "https://www.teatrosociale.ch/Steps-Dances-Like-a-Bomb-4f25ae00?continuaForceCalendarId=527_010ba5d133",
+      "eventInformationIcons": null,
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-21T00:00:00",
+      "eventTimeForSort": "20:45"
+    },
+    {
+      "location": "Genève ",
+      "theater": "Comédie de Genève",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife",
+          "hideInFilter": "True"
+        }
+      ],
+      "company": "Shechter II (GBR)",
+      "companyDetailPageUrl": "/programm/shechter-ii",
+      "production": "«IN THE BRAIN»",
+      "choreographer": "Hofesh Shechter",
+      "eventName": "ShechterII_0322_Genève",
+      "eventDate": "22.03.2026",
+      "eventTime": "15:00",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://www.comedie.ch/en/in-the-brain?productId=10229232629314&action=waitinglist&noCreateAcct=true",
+      "presaleUrlTitle": "https://www.comedie.ch/en/in-the-brain",
+      "eventInformationIcons": null,
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-22T00:00:00",
+      "eventTimeForSort": "15:00"
+    },
+    {
+      "location": "Aarau ",
+      "theater": "Bühne Aarau, Alte Reithalle ",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        }
+      ],
+      "company": "Compagnie Dyptik (FR)",
+      "companyDetailPageUrl": "/programm/compagnie-dyptik",
+      "production": "«Le Grand Bal»",
+      "choreographer": "Souhail Marchiche & Mehdi Meghari",
+      "eventName": "CompagnieDyptik_0322_Aarau",
+      "eventDate": "22.03.2026",
+      "eventTime": "19:00",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://www.buehne-aarau.ch/programm/steps-le-grand-bal",
+      "presaleUrlTitle": "https://www.buehne-aarau.ch/programm/steps-le-grand-bal",
+      "eventInformationIcons": null,
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-22T00:00:00",
+      "eventTimeForSort": "19:00"
+    },
+    {
+      "location": "Fribourg",
+      "theater": "Nuithonie",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife",
+          "hideInFilter": "True"
+        }
+      ],
+      "company": "Circumstances (BEL)",
+      "companyDetailPageUrl": "/programm/circumstances",
+      "production": "«Beyond»",
+      "choreographer": "Piet Van Dycke",
+      "eventName": "Circumstances_0324_Fribourg",
+      "eventDate": "24.03.2026",
+      "eventTime": "19:00",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://www.equilibre-nuithonie.ch/de/spectacles/reminder/2976",
+      "presaleUrlTitle": "https://www.equilibre-nuithonie.ch/de/spectacles/reminder/2976",
+      "eventInformationIcons": [
+        {
+          "src": "/media/mkbfwfq1/icon-familien.svg",
+          "alt": "Für alle ab 6 Jahren",
+          "hideInFilter": "False"
+        }
+      ],
+      "eventInformationIconsList": [
+        {
+          "src": "/media/mkbfwfq1/icon-familien.svg",
+          "alt": "Für alle ab 6 Jahren"
+        }
+      ],
+      "eventDateForSort": "2026-03-24T00:00:00",
+      "eventTimeForSort": "19:00"
+    },
+    {
+      "location": "Steckborn",
+      "theater": "Phönix Theater",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/yghdrg5h/icon_rollstuhlgaengig_klammern.svg",
+          "alt": "Zugänglich mit Unterstützung"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/yghdrg5h/icon_rollstuhlgaengig_klammern.svg",
+          "alt": "Zugänglich mit Unterstützung",
+          "hideInFilter": "False"
+        }
+      ],
+      "company": "St.Gallen Dance Company / Bern Ballett (CH)",
+      "companyDetailPageUrl": "/programm/st-gallen-dance-company-bern-ballett",
+      "production": "«Twi/light»",
+      "choreographer": "Rachelle Anaïs Scott / Marioenrico D'Angelo",
+      "eventName": "Bern Ballett_St.Gallen Dance Company_0324_Steckborn",
+      "eventDate": "24.03.2026",
+      "eventTime": "19:30",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://www.phoenix-theater.ch/spielplan/2/130-Steps-Twilight/",
+      "presaleUrlTitle": "https://www.phoenix-theater.ch/spielplan/2/130-Steps-Twilight/",
+      "eventInformationIcons": null,
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-24T00:00:00",
+      "eventTimeForSort": "19:30"
+    },
+    {
+      "location": "Delémont",
+      "theater": "Théâtre du Jura",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        }
+      ],
+      "company": "People Watching (CAN)",
+      "companyDetailPageUrl": "/programm/people-watching",
+      "production": "«Play Dead»",
+      "choreographer": "People Watching ",
+      "eventName": "PeopleWatching_0324_Delemont",
+      "eventDate": "24.03.2026",
+      "eventTime": "19:30",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://billetterie.theatre-du-jura.ch/selection/event/date?productId=10229382533002",
+      "presaleUrlTitle": "https://billetterie.theatre-du-jura.ch/selection/event/date?productId=10229382533002",
+      "eventInformationIcons": null,
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-24T00:00:00",
+      "eventTimeForSort": "19:30"
+    },
+    {
+      "location": "Winterthur",
+      "theater": "Theater Winterthur",
+      "theaterInformationIcons": null,
+      "theaterInformationIconsFilter": null,
+      "company": "GöteborgsOperans Danskompani (SWE)",
+      "companyDetailPageUrl": "/programm/goeteborgsoperans-danskompani",
+      "production": "«Spirit Willing» / «ima»",
+      "choreographer": "Tiffany Tregarthen & David Raymond / Sharon Eyal",
+      "eventName": "GöteborgsOperansDanskompani_0325_Winterthur",
+      "eventDate": "25.03.2026",
+      "eventTime": "19:30",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://theaterwinterthur.ch/goeteborgsoperans-danskompani?eventId=3102",
+      "presaleUrlTitle": "https://theaterwinterthur.ch/goeteborgsoperans-danskompani",
+      "eventInformationIcons": null,
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-25T00:00:00",
+      "eventTimeForSort": "19:30"
+    },
+    {
+      "location": "Vernier ",
+      "theater": "Salle du Lignon",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/yghdrg5h/icon_rollstuhlgaengig_klammern.svg",
+          "alt": "Zugänglich mit Unterstützung"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/yghdrg5h/icon_rollstuhlgaengig_klammern.svg",
+          "alt": "Zugänglich mit Unterstützung",
+          "hideInFilter": "False"
+        }
+      ],
+      "company": "Compagnie Dyptik (FR)",
+      "companyDetailPageUrl": "/programm/compagnie-dyptik",
+      "production": "«Le Grand Bal»",
+      "choreographer": "Souhail Marchiche & Mehdi Meghari",
+      "eventName": "CompagnieDyptik_0325_Vernier",
+      "eventDate": "25.03.2026",
+      "eventTime": "20:00",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://www.leprogramme.ch/danse/le-grand-bal-cie-dyptik-1/vernier/salle-du-lignon",
+      "presaleUrlTitle": "https://www.leprogramme.ch/danse/le-grand-bal-cie-dyptik-1/vernier/salle-du-lignon",
+      "eventInformationIcons": null,
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-25T00:00:00",
+      "eventTimeForSort": "20:00"
+    },
+    {
+      "location": "Aarau ",
+      "theater": "Bühne Aarau, Alte Reithalle ",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        }
+      ],
+      "company": "Junk Ensemble (IRL)",
+      "companyDetailPageUrl": "/programm/junk-ensemble",
+      "production": "«Dances Like a Bomb»",
+      "choreographer": "Jessica & Megan Kennedy",
+      "eventName": "JunkEnsemble_0325_Aarau",
+      "eventDate": "25.03.2026",
+      "eventTime": "20:00",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://www.buehne-aarau.ch/programm/steps-dances-like-a-bomb",
+      "presaleUrlTitle": "https://www.buehne-aarau.ch/programm/steps-dances-like-a-bomb",
+      "eventInformationIcons": [
+        {
+          "src": "/media/f5qfb3cw/icon-nachbesprechung.svg",
+          "alt": "Nachbesprechung",
+          "hideInFilter": "False"
+        }
+      ],
+      "eventInformationIconsList": [
+        {
+          "src": "/media/f5qfb3cw/icon-nachbesprechung.svg",
+          "alt": "Nachbesprechung"
+        }
+      ],
+      "eventDateForSort": "2026-03-25T00:00:00",
+      "eventTimeForSort": "20:00"
+    },
+    {
+      "location": "Fribourg",
+      "theater": "Equilibre",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife",
+          "hideInFilter": "True"
+        }
+      ],
+      "company": "Shechter II (GBR)",
+      "companyDetailPageUrl": "/programm/shechter-ii",
+      "production": "«IN THE BRAIN»",
+      "choreographer": "Hofesh Shechter",
+      "eventName": "ShechterII_0325_Fribourg",
+      "eventDate": "25.03.2026",
+      "eventTime": "20:00",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://www.equilibre-nuithonie.ch/fr/spectacles/steps-shechter-ii",
+      "presaleUrlTitle": "https://www.equilibre-nuithonie.ch/fr/spectacles/steps-shechter-ii",
+      "eventInformationIcons": null,
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-25T00:00:00",
+      "eventTimeForSort": "20:00"
+    },
+    {
+      "location": "Zug",
+      "theater": "Theater Casino Zug ",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife",
+          "hideInFilter": "True"
+        }
+      ],
+      "company": "Circumstances (BEL)",
+      "companyDetailPageUrl": "/programm/circumstances",
+      "production": "«Beyond»",
+      "choreographer": "Piet Van Dycke",
+      "eventName": "Circumstances_0326_Zug_Schulvorstellung",
+      "eventDate": "26.03.2026",
+      "eventTime": "09:30",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://kartenverkauf.theatercasino.ch/selection/event/seat?perfId=10229407732728&productId=10229407731697",
+      "presaleUrlTitle": "https://kartenverkauf.theatercasino.ch/selection/event/seat?perfId=10229407732728&productId=10229407731697",
+      "eventInformationIcons": [
+        {
+          "src": "/media/mkbfwfq1/icon-familien.svg",
+          "alt": "Für alle ab 6 Jahren",
+          "hideInFilter": "False"
+        }
+      ],
+      "eventInformationIconsList": [
+        {
+          "src": "/media/mkbfwfq1/icon-familien.svg",
+          "alt": "Für alle ab 6 Jahren"
+        }
+      ],
+      "eventDateForSort": "2026-03-26T00:00:00",
+      "eventTimeForSort": "09:30"
+    },
+    {
+      "location": "Zug",
+      "theater": "Theater Casino Zug ",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife",
+          "hideInFilter": "True"
+        }
+      ],
+      "company": "Circumstances (BEL)",
+      "companyDetailPageUrl": "/programm/circumstances",
+      "production": "«Beyond»",
+      "choreographer": "Piet Van Dycke",
+      "eventName": "Circumstances_0326_Zug",
+      "eventDate": "26.03.2026",
+      "eventTime": "19:30",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://kartenverkauf.theatercasino.ch/selection/event/seat?perfId=10229407732728&productId=10229407731697?perfId=10229407732728&productId=10229407731697",
+      "presaleUrlTitle": "https://kartenverkauf.theatercasino.ch/selection/event/seat?perfId=10229407732728&productId=10229407731697",
+      "eventInformationIcons": [
+        {
+          "src": "/media/mkbfwfq1/icon-familien.svg",
+          "alt": "Für alle ab 6 Jahren",
+          "hideInFilter": "False"
+        }
+      ],
+      "eventInformationIconsList": [
+        {
+          "src": "/media/mkbfwfq1/icon-familien.svg",
+          "alt": "Für alle ab 6 Jahren"
+        }
+      ],
+      "eventDateForSort": "2026-03-26T00:00:00",
+      "eventTimeForSort": "19:30"
+    },
+    {
+      "location": "Schaffhausen",
+      "theater": "Stadttheater Schaffhausen ",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/yghdrg5h/icon_rollstuhlgaengig_klammern.svg",
+          "alt": "Zugänglich mit Unterstützung"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/yghdrg5h/icon_rollstuhlgaengig_klammern.svg",
+          "alt": "Zugänglich mit Unterstützung",
+          "hideInFilter": "False"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife",
+          "hideInFilter": "True"
+        }
+      ],
+      "company": "People Watching (CAN)",
+      "companyDetailPageUrl": "/programm/people-watching",
+      "production": "«Play Dead»",
+      "choreographer": "People Watching ",
+      "eventName": "PeopleWatching_0326_Schaffhausen",
+      "eventDate": "26.03.2026",
+      "eventTime": "19:30",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://tickets.vibus.de/00100641000000/shop/vstdetails.aspx?VstKey=10064100025074000",
+      "presaleUrlTitle": "https://tickets.vibus.de/00100641000000/shop/vstdetails.aspx?VstKey=10064100025074000",
+      "eventInformationIcons": null,
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-26T00:00:00",
+      "eventTimeForSort": "19:30"
+    },
+    {
+      "location": "St.Gallen ",
+      "theater": "Theater St.Gallen, Lokremise",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        }
+      ],
+      "company": "St.Gallen Dance Company / Bern Ballett (CH)",
+      "companyDetailPageUrl": "/programm/st-gallen-dance-company-bern-ballett",
+      "production": "«Twi/light»",
+      "choreographer": "Rachelle Anaïs Scott / Marioenrico D'Angelo",
+      "eventName": "Bern Ballett_St.Gallen Dance Company_0326_St.Gallen",
+      "eventDate": "26.03.2026",
+      "eventTime": "20:00",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://www.konzertundtheater.ch/programm/kalender/tanz/twi-light/3479/?eventId=58",
+      "presaleUrlTitle": "https://www.konzertundtheater.ch/programm/kalender/tanz/twi-light/3479/",
+      "eventInformationIcons": [
+        {
+          "src": "/media/f5qfb3cw/icon-nachbesprechung.svg",
+          "alt": "Nachbesprechung",
+          "hideInFilter": "False"
+        }
+      ],
+      "eventInformationIconsList": [
+        {
+          "src": "/media/f5qfb3cw/icon-nachbesprechung.svg",
+          "alt": "Nachbesprechung"
+        }
+      ],
+      "eventDateForSort": "2026-03-26T00:00:00",
+      "eventTimeForSort": "20:00"
+    },
+    {
+      "location": "Neuchâtel ",
+      "theater": "Théâtre du Passage",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife",
+          "hideInFilter": "True"
+        }
+      ],
+      "company": "Junk Ensemble (IRL)",
+      "companyDetailPageUrl": "/programm/junk-ensemble",
+      "production": "«Dances Like a Bomb»",
+      "choreographer": "Jessica & Megan Kennedy",
+      "eventName": "JunkEnsemble_0327_Neuchâtel",
+      "eventDate": "27.03.2026",
+      "eventTime": "20:00",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://indiv.themisweb.fr/0098/fChoixSeanceWidget.aspx?idstructure=0098&EventId=2676&request=QcE+w0WHSuAXZB4QG9gWAfX0pYronInF7sULWGP8b4aH12gpp0QByzAQ1E4XpGqP",
+      "presaleUrlTitle": "https://indiv.themisweb.fr/0098/fChoixSeanceWidget.aspx?idstructure=0098&EventId=2676&request=QcE+w0WHSuAXZB4QG9gWAfX0pYronInF7sULWGP8b4aH12gpp0QByzAQ1E4XpGqP",
+      "eventInformationIcons": [
+        {
+          "src": "/media/f5qfb3cw/icon-nachbesprechung.svg",
+          "alt": "Nachbesprechung",
+          "hideInFilter": "False"
+        }
+      ],
+      "eventInformationIconsList": [
+        {
+          "src": "/media/f5qfb3cw/icon-nachbesprechung.svg",
+          "alt": "Nachbesprechung"
+        }
+      ],
+      "eventDateForSort": "2026-03-27T00:00:00",
+      "eventTimeForSort": "20:00"
+    },
+    {
+      "location": "Pully",
+      "theater": "L'Octogone ",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        }
+      ],
+      "company": "Shechter II (GBR)",
+      "companyDetailPageUrl": "/programm/shechter-ii",
+      "production": "«IN THE BRAIN»",
+      "choreographer": "Hofesh Shechter",
+      "eventName": "ShechterII_0328_Pully",
+      "eventDate": "28.03.2026",
+      "eventTime": "20:30",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://indiv.themisweb.fr/0151/fChoixSeance.aspx?idstructure=0151&EventId=1098&request=QcE+w0WHSuDKdxpSxpGjQFFhO3nH7QM/1f5hplNEgaxbHUEVt3Tws7XFgfbeda/csLOnFBLvMbo=",
+      "presaleUrlTitle": "https://indiv.themisweb.fr/0151/fChoixSeance.aspx?idstructure=0151&EventId=1098&request=QcE+w0WHSuDKdxpSxpGjQFFhO3nH7QM/1f5hplNEgaxbHUEVt3Tws7XFgfbeda/csLOnFBLvMbo=",
+      "eventInformationIcons": null,
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-28T00:00:00",
+      "eventTimeForSort": "20:30"
+    },
+    {
+      "location": "Lugano",
+      "theater": "LAC Lugano Arte e Cultura",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        },
+        {
+          "src": "/media/srnn4bjq/icon-hoerbenachteiligung.svg",
+          "alt": "Induktionsschleife",
+          "hideInFilter": "True"
+        }
+      ],
+      "company": "GöteborgsOperans Danskompani (SWE)",
+      "companyDetailPageUrl": "/programm/goeteborgoperans-danskompani-hammer",
+      "production": "«Hammer»",
+      "choreographer": "Alexander Ekman",
+      "eventName": "GöteborgsOperansDanskompani_0329_Lugano",
+      "eventDate": "29.03.2026",
+      "eventTime": "17:00",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://shop.luganolac.ch/webshop/webticket/seatmap?eventId=10233",
+      "presaleUrlTitle": "https://shop.luganolac.ch/webshop/webticket/seatmap?eventId=10233",
+      "eventInformationIcons": null,
+      "eventInformationIconsList": null,
+      "eventDateForSort": "2026-03-29T00:00:00",
+      "eventTimeForSort": "17:00"
+    },
+    {
+      "location": "Nyon",
+      "theater": "Usine à Gaz",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/2xybgftj/icon_rollstuhlgaengig.svg",
+          "alt": "Zugänglich",
+          "hideInFilter": "False"
+        }
+      ],
+      "company": "People Watching (CAN)",
+      "companyDetailPageUrl": "/programm/people-watching",
+      "production": "«Play Dead»",
+      "choreographer": "People Watching ",
+      "eventName": "PeopleWatching_0329_Nyon",
+      "eventDate": "29.03.2026",
+      "eventTime": "17:00",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://usineagaz.ch/event/people-watching-canplay-dead/",
+      "presaleUrlTitle": "https://usineagaz.ch/event/people-watching-canplay-dead/",
+      "eventInformationIcons": [
+        {
+          "src": "/media/f5qfb3cw/icon-nachbesprechung.svg",
+          "alt": "Nachbesprechung",
+          "hideInFilter": "False"
+        }
+      ],
+      "eventInformationIconsList": [
+        {
+          "src": "/media/f5qfb3cw/icon-nachbesprechung.svg",
+          "alt": "Nachbesprechung"
+        }
+      ],
+      "eventDateForSort": "2026-03-29T00:00:00",
+      "eventTimeForSort": "17:00"
+    },
+    {
+      "location": "Vernier ",
+      "theater": "Salle du Lignon",
+      "theaterInformationIcons": [
+        {
+          "src": "/media/yghdrg5h/icon_rollstuhlgaengig_klammern.svg",
+          "alt": "Zugänglich mit Unterstützung"
+        }
+      ],
+      "theaterInformationIconsFilter": [
+        {
+          "src": "/media/yghdrg5h/icon_rollstuhlgaengig_klammern.svg",
+          "alt": "Zugänglich mit Unterstützung",
+          "hideInFilter": "False"
+        }
+      ],
+      "company": "Circumstances (BEL)",
+      "companyDetailPageUrl": "/programm/circumstances",
+      "production": "«Beyond»",
+      "choreographer": "Piet Van Dycke",
+      "eventName": "Circumstances_0329_Vernier",
+      "eventDate": "29.03.2026",
+      "eventTime": "18:00",
+      "soldOut": "False",
+      "forFree": "False",
+      "presaleUrl": "https://infomaniak.events/fr-ch/shop/vernier-saison-2025-2026-MY6PTC95MU/event/1454432",
+      "presaleUrlTitle": "https://infomaniak.events/fr-ch/shop/vernier-saison-2025-2026-MY6PTC95MU/event/1454432",
+      "eventInformationIcons": [
+        {
+          "src": "/media/mkbfwfq1/icon-familien.svg",
+          "alt": "Für alle ab 6 Jahren",
+          "hideInFilter": "False"
+        }
+      ],
+      "eventInformationIconsList": [
+        {
+          "src": "/media/mkbfwfq1/icon-familien.svg",
+          "alt": "Für alle ab 6 Jahren"
+        }
+      ],
+      "eventDateForSort": "2026-03-29T00:00:00",
+      "eventTimeForSort": "18:00"
     }
   ],
   "translations": {
     "buttonTickets": "Tickets",
     "linkDetails": "Mehr Details",
-    "soldOut": "ausverkauft",
-    "timeSuffix": "Uhr",
-    "noEvents": "keine Events",
+    "soldOut": "Ausverkauft",
+    "timeSuffix": "h",
+    "noEvents": "Keine Vorstellungen",
     "forFree": "Gratis"
   }
 }
