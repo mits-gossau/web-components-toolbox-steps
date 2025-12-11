@@ -116,6 +116,7 @@
   --component-spacing: 3rem;
 
   /* border radius */
+  --border-radius-focus-visible: 0 !important;
   --border-radius: 2.5rem;
   --button-secondary-border-radius: var(--border-radius);
   --button-secondary-border-radius-mobile: var(--border-radius);
